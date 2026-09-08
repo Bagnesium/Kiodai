@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "smoke-local-mock-v1",
+  "condition": "infrastructure-smoke",
+  "benchmark_split": "synthetic-local-fixture",
+  "benchmark_commit": "not-applicable-independent-fixture",
+  "scenario": "tests/fixtures/smoke_scenario.json",
+  "prompt": {
+    "base_path": "prompts/baseline_system.txt",
+    "addendum_path": null
+  },
+  "model": {
+    "provider": "mock",
+    "route": "local-deterministic",
+    "allow_route_fallbacks": false,
+    "model_id": "mock/noop-v1",
+    "pricing_usd_per_million_tokens": {"input": 0.0, "output": 0.0}
+  },
+  "sampling": {"temperature": 0.0, "top_p": 1.0},
+  "limits": {
+    "max_output_tokens": 256,
+    "max_context_tokens": 32768,
+    "max_retries": 2,
+    "timeout_seconds": 5,
+    "max_tool_calls_per_step": 4
+  },
+  "execution": {
+    "allow_paid": false,
+    "random_seed": 20260904,
+    "show_task_legend": false,
+    "daily_header_lines": []
+  },
+  "output": {"root": "results/raw"}
+}
+
