@@ -1,0 +1,270 @@
+{
+  "status": "offline_audit_not_model_evidence",
+  "scenario_sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+  "all_14_intentions_audited": true,
+  "reachable_due_actions": 12,
+  "cancellations_with_visible_suppression_evidence": 2,
+  "whole_history_retained": true,
+  "witness_path": "artifacts/verification/followup-v1/A0-visible-witness/mock-A0-20260908T170958-5b9f39b7",
+  "records": [
+    {
+      "task_id": "dev_m_seal_case",
+      "initial_action": "Seal the copper case.",
+      "instruction_source": "Monday start_instructions[1]",
+      "trigger_and_update_steps": "dev_m_s2",
+      "legitimate_evidence": "Visible loading bell",
+      "dependency_or_limit": "No prerequisite",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 2,
+          "day": "Monday",
+          "step_id": "dev_m_s2",
+          "time": "08:30",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_m_log_humidity",
+      "initial_action": "Log the room humidity.",
+      "instruction_source": "Monday start_instructions[2]",
+      "trigger_and_update_steps": "dev_m_s3",
+      "legitimate_evidence": "Visible clock 09:40; original instruction remains in history",
+      "dependency_or_limit": "No prerequisite",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 3,
+          "day": "Monday",
+          "step_id": "dev_m_s3",
+          "time": "09:40",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_m_recycle_proof",
+      "initial_action": "Recycle the gray proof.",
+      "instruction_source": "Monday start_instructions[3]",
+      "trigger_and_update_steps": "dev_m_s2 \u2192 dev_m_s5",
+      "legitimate_evidence": "Visible cancellation precedes the exact disposal cue; correct action is to refrain",
+      "dependency_or_limit": "Canceled, never select",
+      "witness_successful_selections": [],
+      "canceled": true
+    },
+    {
+      "task_id": "dev_m_pressure",
+      "initial_action": "Inspect the pressure gauge.",
+      "instruction_source": "Monday start_instructions[4]",
+      "trigger_and_update_steps": "dev_m_s2 \u2192 dev_m_s4 \u2192 dev_m_s5b \u2192 dev_m_s6",
+      "legitimate_evidence": "Three visible reschedules make 11:20 the last valid time; clock visible",
+      "dependency_or_limit": "Suppress all superseded times",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 7,
+          "day": "Monday",
+          "step_id": "dev_m_s6",
+          "time": "11:20",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_m_release_envelope",
+      "initial_action": "Release the sample envelope.",
+      "instruction_source": "Monday start_instructions[5]",
+      "trigger_and_update_steps": "dev_m_s3 \u2192 dev_m_s5",
+      "legitimate_evidence": "Visible blue-circle lure then exact blue-hexagon cue",
+      "dependency_or_limit": "Do not act on near-match",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 5,
+          "day": "Monday",
+          "step_id": "dev_m_s5",
+          "time": "10:50",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_m_status_note",
+      "initial_action": "Send the status note.",
+      "instruction_source": "Monday start_instructions[6]",
+      "trigger_and_update_steps": "dev_m_s4 \u2192 dev_m_s6",
+      "legitimate_evidence": "Visible wording override; corrected action in menu at visible 11:20",
+      "dependency_or_limit": "Use latest wording",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 7,
+          "day": "Monday",
+          "step_id": "dev_m_s6",
+          "time": "11:20",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_t_lock_chamber",
+      "initial_action": "Lock the test chamber.",
+      "instruction_source": "Tuesday start_instructions[1]",
+      "trigger_and_update_steps": "dev_t_s3",
+      "legitimate_evidence": "Visible safety chime",
+      "dependency_or_limit": "Must precede signing",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 11,
+          "day": "Tuesday",
+          "step_id": "dev_t_s3",
+          "time": "09:00",
+          "tools": [
+            {
+              "channel": "sensor_board",
+              "observation": "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+            }
+          ]
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_t_sign_record",
+      "initial_action": "Sign the chamber record.",
+      "instruction_source": "Tuesday start_instructions[2]",
+      "trigger_and_update_steps": "dev_t_s3 \u2192 dev_t_s5",
+      "legitimate_evidence": "Visible review-window cue after reachable successful chamber lock",
+      "dependency_or_limit": "Depends on dev_t_lock_chamber; witness validates order",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 13,
+          "day": "Tuesday",
+          "step_id": "dev_t_s5",
+          "time": "13:00",
+          "tools": [
+            {
+              "channel": "sensor_board",
+              "observation": "State [sensor_board]: Cooling is now fully stable."
+            }
+          ]
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_t_ack_cooling",
+      "initial_action": "Acknowledge stable cooling.",
+      "instruction_source": "Tuesday start_instructions[3]",
+      "trigger_and_update_steps": "dev_t_s3 \u2192 dev_t_s5",
+      "legitimate_evidence": "Permitted sensor_board query: nearly stable, then fully stable; positive fact absent from vignette",
+      "dependency_or_limit": "Requires query to observe, but scorer does not require proof of querying",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 13,
+          "day": "Tuesday",
+          "step_id": "dev_t_s5",
+          "time": "13:00",
+          "tools": [
+            {
+              "channel": "sensor_board",
+              "observation": "State [sensor_board]: Cooling is now fully stable."
+            }
+          ]
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_t_publish_manifest",
+      "initial_action": "Publish the manifest.",
+      "instruction_source": "Tuesday start_instructions[4]",
+      "trigger_and_update_steps": "dev_t_s2 \u2192 dev_t_s3 \u2192 dev_t_s6",
+      "legitimate_evidence": "Visible override amber\u2192violet, obsolete amber lure, then actual violet",
+      "dependency_or_limit": "Updated action text offered in menu",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 14,
+          "day": "Tuesday",
+          "step_id": "dev_t_s6",
+          "time": "15:00",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_t_remove_placard",
+      "initial_action": "Remove the provisional placard.",
+      "instruction_source": "Tuesday start_instructions[5]",
+      "trigger_and_update_steps": "dev_t_s6 \u2192 dev_t_s7",
+      "legitimate_evidence": "Visible cancellation before removal signal; correct action is to refrain",
+      "dependency_or_limit": "Canceled, never select",
+      "witness_successful_selections": [],
+      "canceled": true
+    },
+    {
+      "task_id": "dev_t_call_calibration",
+      "initial_action": "Call the calibration desk.",
+      "instruction_source": "Tuesday start_instructions[6]",
+      "trigger_and_update_steps": "dev_t_s1 \u2192 dev_t_s4 \u2192 dev_t_s7",
+      "legitimate_evidence": "Visible 16:00 clock; original instruction retained across console activity/notices",
+      "dependency_or_limit": "No prerequisite",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 15,
+          "day": "Tuesday",
+          "step_id": "dev_t_s7",
+          "time": "16:00",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_w_archive_card",
+      "initial_action": "File the blue archive card.",
+      "instruction_source": "Monday dev_m_s1 text",
+      "trigger_and_update_steps": "dev_w_s2 \u2192 dev_w_s4",
+      "legitimate_evidence": "Monday explicitly names Wednesday; retained across both earlier days; visible scrape lure then actual click",
+      "dependency_or_limit": "Wednesday header does not repeat intention; original note remains in full history",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 19,
+          "day": "Wednesday",
+          "step_id": "dev_w_s4",
+          "time": "15:00",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    },
+    {
+      "task_id": "dev_w_hang_badge",
+      "initial_action": "Hang the visitor badge.",
+      "instruction_source": "Tuesday dev_t_s7 text",
+      "trigger_and_update_steps": "dev_w_s2 \u2192 dev_w_s3",
+      "legitimate_evidence": "Tuesday explicitly names Wednesday; visible closed gate then actual opening",
+      "dependency_or_limit": "Original prior-day note remains in full history",
+      "witness_successful_selections": [
+        {
+          "jsonl_line": 18,
+          "day": "Wednesday",
+          "step_id": "dev_w_s3",
+          "time": "12:00",
+          "tools": []
+        }
+      ],
+      "canceled": false
+    }
+  ],
+  "hidden_visibility_check": {
+    "all_no_query_requests_identical_under_hidden_state_change": true,
+    "counterfactual_is_evaluation_case": false,
+    "limitation": "Official scoring does not require a query; a lucky action can earn a hit. Report query-supported hidden hits separately from task hits.",
+    "permitted_query_reveals_changed_state": true,
+    "positive_query_step": "Tuesday/dev_t_s5",
+    "pre_query_request_identical": true
+  }
+}
