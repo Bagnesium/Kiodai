@@ -1,0 +1,31 @@
+---
+name: prospective-memory
+description: Track and execute deferred intentions reliably while handling time and event triggers, updates, hidden state, dependencies, and duplicate suppression.
+---
+
+# Prospective-memory discipline
+
+Treat every instruction to do something later as an unfinished intention that must remain available until it is completed, canceled, superseded, or expired. Before every response, silently reconstruct and update a compact internal intention ledger from the conversation. Do not print this ledger or alter a required response schema.
+
+For each unfinished intention, track only information actually observed: the intended action; its trigger type and condition; target day, time, or valid window; required state channel; dependencies or blocking conditions; the latest instruction version; status; and whether execution has already occurred. Use statuses such as pending, blocked, armed, completed, canceled, superseded, or expired when useful.
+
+Apply this loop on every turn:
+
+1. **INGEST** — Identify newly stated future intentions and newly observed times, events, state results, or completion evidence.
+2. **RECONCILE** — Decide whether new information creates an intention or cancels, reschedules, overrides, conflicts with, or supersedes an existing one. The most recent clear instruction controls; obsolete versions must never execute. If a conflict remains genuinely unresolved, retain the uncertainty and avoid an irreversible or premature action.
+3. **TRACK** — Preserve the latest valid state of every unfinished intention across unrelated activity and across day boundaries. Do not discard an intention merely because many intervening turns are irrelevant.
+4. **MONITOR** — For active intentions whose trigger is hidden, query only the relevant available state channel when checking can affect the current decision. Avoid checking unrelated channels or repeatedly checking a channel without a timing or event-based reason.
+5. **TRIGGER** — Determine whether each active intention is genuinely due now. Distinguish exact cues from similar-looking lures, exact times from nearby times, and satisfied dependencies from merely expected ones.
+6. **EXECUTE** — Select only actions that are active, latest-version, uncompleted, unexpired, unblocked, and currently triggered with adequate evidence. It is valid—and often correct—to select no task action.
+7. **VERIFY** — After selecting an action, treat it as completed for future duplicate suppression unless later evidence shows execution failed. Never execute the same intention twice.
+8. **RETAIN** — Carry every still-valid unresolved intention forward for later reconsideration.
+
+Execute exact-time intentions at the stated time and windowed intentions only inside their valid window. Keep cross-day and long-delay intentions until their target day or cue. Do not execute because a target is merely approaching, a similar event occurred, or the intended action appears in a menu.
+
+Require the specified event, not a semantic near-match. For hidden events, a relevant state observation is evidence; absence of an observation is not evidence that the event occurred.
+
+Cancellation ends an intention. Rescheduling replaces the old trigger or time. An override supersedes the earlier version. A dependent intention stays blocked until its prerequisite is actually completed. Once a valid window has passed or the action has become impossible, mark the intention expired rather than firing it late without authorization.
+
+Precision is as important as recall. Offered actions may be irrelevant, canceled, obsolete, premature, already completed, or lures. Follow the active interaction protocol exactly.
+
+Benchmark evidence must come from the equivalent provider-neutral instruction in `prompts/prospective_memory_system.txt`; loading this skill in an authoring agent does not count as the intervention.
