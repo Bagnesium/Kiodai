@@ -1,0 +1,848 @@
+{
+  "baseline_git_commit": "e1093c470c8981daf522d4ef047a7c3a71e077d7",
+  "created_at_utc": "2026-09-03T19:40:27Z",
+  "file_count": 164,
+  "files": {
+    "data/synthetic_week_v9.json": {
+      "bytes": 98168,
+      "category": "released_benchmark",
+      "sha256": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24"
+    },
+    "runs/all_results_v9/.DS_Store": {
+      "bytes": 8196,
+      "category": "released_results",
+      "sha256": "df135f2ed310dd4b15fa3a3f56d33290216a485855d9a13809bf86ba46616595"
+    },
+    "runs/all_results_v9/build_experiment_output_comparison_report.py": {
+      "bytes": 33695,
+      "category": "released_results",
+      "sha256": "02a0e6c4dbfba41c749b764c4391a4c4fd3b11c8230c3ed3403697db63004e1f"
+    },
+    "runs/all_results_v9/experiment_output_comparison_report.md": {
+      "bytes": 51767,
+      "category": "released_results",
+      "sha256": "ee61a8e26685458531df5847ef7485b83c91ec0e26b0ce085d0fc2d63ddf60df"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-auto-30m-gpt-53-codex-v9-20260326-223612/heartbeat-auto-30m-gpt-53-codex-v9-20260326-223612.jsonl": {
+      "bytes": 18081,
+      "category": "released_results",
+      "sha256": "72dc12eb2945fdeea3f0e9f531a75fdbd40e8568cbee68d3a5fc7410e413fdee"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-auto-30m-gpt-53-codex-v9-20260326-223612/heartbeat-auto-30m-gpt-53-codex-v9-20260326-223612.score.md": {
+      "bytes": 5160,
+      "category": "released_results",
+      "sha256": "b7814dfe7a9ce3a0c538370ead0884314b7f8887bfdb49eaf154ec4eb7fdfa87"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-auto-60m-gpt-53-codex-v9-20260326-224544/heartbeat-auto-60m-gpt-53-codex-v9-20260326-224544.jsonl": {
+      "bytes": 17933,
+      "category": "released_results",
+      "sha256": "a2714a7978b8244e9c8c6d99d7d378e657443aa4c9b790c270dd77f7b5dc864e"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-auto-60m-gpt-53-codex-v9-20260326-224544/heartbeat-auto-60m-gpt-53-codex-v9-20260326-224544.score.md": {
+      "bytes": 5214,
+      "category": "released_results",
+      "sha256": "2644a71e92d3b73f4409453968c2732a8a4cf2c9abdb1a334dba929814d3e6ba"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-proactive-gpt-53-codex-v9-20260326-222555/heartbeat-proactive-gpt-53-codex-v9-20260326-222555.jsonl": {
+      "bytes": 18387,
+      "category": "released_results",
+      "sha256": "1a5d06872cade2bb29e1403285ddabd65d4d89772ac747a9a1c31e97cf809917"
+    },
+    "runs/all_results_v9/gpt-53-codex/heartbeat-proactive-gpt-53-codex-v9-20260326-222555/heartbeat-proactive-gpt-53-codex-v9-20260326-222555.score.md": {
+      "bytes": 5271,
+      "category": "released_results",
+      "sha256": "b0229eeb0e9f0a35a5273c2d2a9e7304ee9a59b000665fe14fabac664db0ba54"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-majority-vote-gpt-53-codex-v9-20260327-182259/hier-majority-vote-gpt-53-codex-v9-20260327-182259.jsonl": {
+      "bytes": 28172,
+      "category": "released_results",
+      "sha256": "ecff67d4151682e3b9899315c6c8c8a4d50899a35d7e4e20e49b4f6aad92be92"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-majority-vote-gpt-53-codex-v9-20260327-182259/hier-majority-vote-gpt-53-codex-v9-20260327-182259.score.md": {
+      "bytes": 5956,
+      "category": "released_results",
+      "sha256": "829e6d0ef8f6a5ea2857c6adfcca619a028151649dbbfd822ccd7d2d8d01e29d"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-unanimous-vote-gpt-53-codex-v9-20260327-182259/hier-unanimous-vote-gpt-53-codex-v9-20260327-182259.jsonl": {
+      "bytes": 26462,
+      "category": "released_results",
+      "sha256": "2a9a2ef82dc0393ab81591b5975efe4d3ab72aa84a75f99162dd4d24837071ea"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-unanimous-vote-gpt-53-codex-v9-20260327-182259/hier-unanimous-vote-gpt-53-codex-v9-20260327-182259.score.md": {
+      "bytes": 5943,
+      "category": "released_results",
+      "sha256": "faa847e6a4cf62db9d97b0ce558ad624b7ed1f5aa980dfd1386feee6787b48c1"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-union-query-gpt-53-codex-v9-20260327-182259/hier-union-query-gpt-53-codex-v9-20260327-182259.jsonl": {
+      "bytes": 25136,
+      "category": "released_results",
+      "sha256": "54ed811acad3f83aa40feb1a02cec9604fd8eac9ad630064e4c687767b7bba23"
+    },
+    "runs/all_results_v9/gpt-53-codex/hier-union-query-gpt-53-codex-v9-20260327-182259/hier-union-query-gpt-53-codex-v9-20260327-182259.score.md": {
+      "bytes": 5936,
+      "category": "released_results",
+      "sha256": "e763209b18ca10a6e91634cc647a5d0c9d49699b4cbf481fdf540b21100093c1"
+    },
+    "runs/all_results_v9/gpt-53-codex/single-baseline-gpt-53-codex-v9-20260326-220452/single-baseline-gpt-53-codex-v9-20260326-220452.jsonl": {
+      "bytes": 18435,
+      "category": "released_results",
+      "sha256": "b776f7b5acf791fe28d88524f9a680cda1bacaca78aeaf5ba7c57930c5c53bf6"
+    },
+    "runs/all_results_v9/gpt-53-codex/single-baseline-gpt-53-codex-v9-20260326-220452/single-baseline-gpt-53-codex-v9-20260326-220452.score.md": {
+      "bytes": 5232,
+      "category": "released_results",
+      "sha256": "f0ee498dbf698d32b43d8cbf41cced3e1cbd4c5573b138c89328e655ec0b4547"
+    },
+    "runs/all_results_v9/gpt-53-codex/single-todo-ledger-gpt-53-codex-v9-20260326-221333/single-todo-ledger-gpt-53-codex-v9-20260326-221333.jsonl": {
+      "bytes": 43500,
+      "category": "released_results",
+      "sha256": "5ea23827d1e29e2049633788388f01bb9754ba1d62e7ddb84eb3d88d380fc621"
+    },
+    "runs/all_results_v9/gpt-53-codex/single-todo-ledger-gpt-53-codex-v9-20260326-221333/single-todo-ledger-gpt-53-codex-v9-20260326-221333.ledger.jsonl": {
+      "bytes": 43236,
+      "category": "released_results",
+      "sha256": "7db086067efa984e4d50e7247c1a2ce735d5dd97be2a455edba380a67d8b16f2"
+    },
+    "runs/all_results_v9/gpt-53-codex/single-todo-ledger-gpt-53-codex-v9-20260326-221333/single-todo-ledger-gpt-53-codex-v9-20260326-221333.score.md": {
+      "bytes": 5053,
+      "category": "released_results",
+      "sha256": "836c18693975af65a3d7791a7cd2eae7831e6b97e70aea9c7cbb0345712ed6f3"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-auto-30m-gpt-54-v9-20260326-213240/heartbeat-auto-30m-gpt-54-v9-20260326-213240.jsonl": {
+      "bytes": 17778,
+      "category": "released_results",
+      "sha256": "e9239d9cf29762c647aa8be812f5d18874be8209e3760e8eb594b3a48c645a5c"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-auto-30m-gpt-54-v9-20260326-213240/heartbeat-auto-30m-gpt-54-v9-20260326-213240.score.md": {
+      "bytes": 5207,
+      "category": "released_results",
+      "sha256": "f896dae046f235ca34a3fc642c31342774c719fffafb5606387280d281252284"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-auto-60m-gpt-54-v9-20260326-220120/heartbeat-auto-60m-gpt-54-v9-20260326-220120.jsonl": {
+      "bytes": 17507,
+      "category": "released_results",
+      "sha256": "ddc752b6739c8444c3086ab8efb1564ae1f4ddcb4b4eb70ad8494a932a152e0f"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-auto-60m-gpt-54-v9-20260326-220120/heartbeat-auto-60m-gpt-54-v9-20260326-220120.score.md": {
+      "bytes": 5022,
+      "category": "released_results",
+      "sha256": "889596e4c5bbe3984ffbbd73265f28e30912f0386ffda2d9f69ea1940b49cf7a"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-proactive-gpt-54-v9-20260326-212845/heartbeat-proactive-gpt-54-v9-20260326-212845.jsonl": {
+      "bytes": 17582,
+      "category": "released_results",
+      "sha256": "57518ec9c5e509516ec4cfe1c097b7a8d13505085f3c05c1c2e634649d66db32"
+    },
+    "runs/all_results_v9/gpt-54/heartbeat-proactive-gpt-54-v9-20260326-212845/heartbeat-proactive-gpt-54-v9-20260326-212845.score.md": {
+      "bytes": 4772,
+      "category": "released_results",
+      "sha256": "db6ea6ecd02c23b6a22123cc451964aa5a8d1c13a4cae61de1dc4dea337d2441"
+    },
+    "runs/all_results_v9/gpt-54/hier-majority-vote-gpt-54-v9-20260327-172057/hier-majority-vote-gpt-54-v9-20260327-172057.jsonl": {
+      "bytes": 29456,
+      "category": "released_results",
+      "sha256": "6cb949c5fa51a663854686834f40cfe8fac01bd0c3a1afa3d1df3a5ab4a221f8"
+    },
+    "runs/all_results_v9/gpt-54/hier-majority-vote-gpt-54-v9-20260327-172057/hier-majority-vote-gpt-54-v9-20260327-172057.score.md": {
+      "bytes": 6019,
+      "category": "released_results",
+      "sha256": "1085f0b4d7391855113da10d379975f78ec720aeef6e0f45ba4167581e3b4af0"
+    },
+    "runs/all_results_v9/gpt-54/hier-unanimous-vote-gpt-54-v9-20260327-172057/hier-unanimous-vote-gpt-54-v9-20260327-172057.jsonl": {
+      "bytes": 27000,
+      "category": "released_results",
+      "sha256": "01630cbd4bf4b813fe1ddc50b34446d198ead7cd6c3b272166e965e2dad12740"
+    },
+    "runs/all_results_v9/gpt-54/hier-unanimous-vote-gpt-54-v9-20260327-172057/hier-unanimous-vote-gpt-54-v9-20260327-172057.score.md": {
+      "bytes": 6005,
+      "category": "released_results",
+      "sha256": "dbe53c3d3a331b773492befac06a8a1de3a32ee63beae7b6fa2d91779739a3b5"
+    },
+    "runs/all_results_v9/gpt-54/hier-union-query-gpt-54-v9-20260327-172057/hier-union-query-gpt-54-v9-20260327-172057.jsonl": {
+      "bytes": 25667,
+      "category": "released_results",
+      "sha256": "984bddb869a6eef59df6fb5409488eba8cc0bb2a6de418c6ca0cc95ac36fabb3"
+    },
+    "runs/all_results_v9/gpt-54/hier-union-query-gpt-54-v9-20260327-172057/hier-union-query-gpt-54-v9-20260327-172057.score.md": {
+      "bytes": 5988,
+      "category": "released_results",
+      "sha256": "10bf63c67c50934fc7db5f2e4f96d31c31120eb7d7d1a4ec8069c1432e7bd070"
+    },
+    "runs/all_results_v9/gpt-54/single-baseline-gpt-54-v9-20260326-210442/single-baseline-gpt-54-v9-20260326-210442.jsonl": {
+      "bytes": 17565,
+      "category": "released_results",
+      "sha256": "2943428bf87722cce6a53b34a60b69b89e1957b1454267e468b25d7859f5d018"
+    },
+    "runs/all_results_v9/gpt-54/single-baseline-gpt-54-v9-20260326-210442/single-baseline-gpt-54-v9-20260326-210442.score.md": {
+      "bytes": 4771,
+      "category": "released_results",
+      "sha256": "cd700a82dc275cb173e6cf93b5a53b2ec55391ef247f679b9867a35fd368dfc9"
+    },
+    "runs/all_results_v9/gpt-54/single-todo-ledger-gpt-54-v9-20260326-211631/single-todo-ledger-gpt-54-v9-20260326-211631.jsonl": {
+      "bytes": 40377,
+      "category": "released_results",
+      "sha256": "c8f9a64ff5c3d75643a8030aae841ea1143f967a899173ddebfc5c33db0d104e"
+    },
+    "runs/all_results_v9/gpt-54/single-todo-ledger-gpt-54-v9-20260326-211631/single-todo-ledger-gpt-54-v9-20260326-211631.ledger.jsonl": {
+      "bytes": 40119,
+      "category": "released_results",
+      "sha256": "8585eca0e8866333272265c3313560b586878dccb595fdc756cab22484bfe0b8"
+    },
+    "runs/all_results_v9/gpt-54/single-todo-ledger-gpt-54-v9-20260326-211631/single-todo-ledger-gpt-54-v9-20260326-211631.score.md": {
+      "bytes": 4825,
+      "category": "released_results",
+      "sha256": "58edd3af89e30388e955f3b2effbfaff87884d183fbc6b06bed70e5dda229313"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-auto-30m-llama-33-70b-instruct-v9-20260326-185736/heartbeat-auto-30m-llama-33-70b-instruct-v9-20260326-185736.jsonl": {
+      "bytes": 17480,
+      "category": "released_results",
+      "sha256": "16e633baae5d2062bbc4fcc66f97a483c2e407b1d390884f1ad6b25149118de9"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-auto-30m-llama-33-70b-instruct-v9-20260326-185736/heartbeat-auto-30m-llama-33-70b-instruct-v9-20260326-185736.score.md": {
+      "bytes": 4671,
+      "category": "released_results",
+      "sha256": "2fc58222b0cb5453a0e3a7afc06c11cb73b754fe56a5098cf982bebb71eda53d"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-auto-60m-llama-33-70b-instruct-v9-20260326-190040/heartbeat-auto-60m-llama-33-70b-instruct-v9-20260326-190040.jsonl": {
+      "bytes": 17472,
+      "category": "released_results",
+      "sha256": "53f8ec937ec8b8582eb88a553e20eb34fb1db4af2ca3059a8a92d5c54af42356"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-auto-60m-llama-33-70b-instruct-v9-20260326-190040/heartbeat-auto-60m-llama-33-70b-instruct-v9-20260326-190040.score.md": {
+      "bytes": 4683,
+      "category": "released_results",
+      "sha256": "9ecba16f0e33a6016ed3a2664f73b934b3be3fb54cb70ebccbd9ffeadba854e0"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-proactive-llama-33-70b-instruct-v9-20260326-181318/heartbeat-proactive-llama-33-70b-instruct-v9-20260326-181318.jsonl": {
+      "bytes": 17740,
+      "category": "released_results",
+      "sha256": "cbb73b7d8ee954a5fd34ea4a9040128c820a4de1e4ef160144a68e407a6a1488"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/heartbeat-proactive-llama-33-70b-instruct-v9-20260326-181318/heartbeat-proactive-llama-33-70b-instruct-v9-20260326-181318.score.md": {
+      "bytes": 4753,
+      "category": "released_results",
+      "sha256": "99d5c892f0a44dc1d381ad6cfa1fee3756366aa426a5b2cc48370efea8065132"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-majority-vote-llama-33-70b-instruct-v9-20260327-152734/hier-majority-vote-llama-33-70b-instruct-v9-20260327-152734.jsonl": {
+      "bytes": 22740,
+      "category": "released_results",
+      "sha256": "2fe39449f77d3459b8a93f3e9f540af1ffd8c7a609754ef41d6cb4aede10fb96"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-majority-vote-llama-33-70b-instruct-v9-20260327-152734/hier-majority-vote-llama-33-70b-instruct-v9-20260327-152734.score.md": {
+      "bytes": 5559,
+      "category": "released_results",
+      "sha256": "2de8c9a150a253e9ba3cd694a9f3fadb04506688c186cf0cdfa99d7c366563d0"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-unanimous-vote-llama-33-70b-instruct-v9-20260327-152734/hier-unanimous-vote-llama-33-70b-instruct-v9-20260327-152734.jsonl": {
+      "bytes": 22349,
+      "category": "released_results",
+      "sha256": "9f0c56cc4cbfe33446a22716c418e271ecfa4a8bcdb41d90f9e8aae7fe09726a"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-unanimous-vote-llama-33-70b-instruct-v9-20260327-152734/hier-unanimous-vote-llama-33-70b-instruct-v9-20260327-152734.score.md": {
+      "bytes": 5556,
+      "category": "released_results",
+      "sha256": "35141d14ee5b9563e724d6cf06ec7ffa88ee43ff9a0549321b48991cc954e7db"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-union-query-llama-33-70b-instruct-v9-20260327-152734/hier-union-query-llama-33-70b-instruct-v9-20260327-152734.jsonl": {
+      "bytes": 22510,
+      "category": "released_results",
+      "sha256": "fc3c5202cbf960e89d5b1fe5f35598ec532e27b3ef133ef00487ee0d62548521"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/hier-union-query-llama-33-70b-instruct-v9-20260327-152734/hier-union-query-llama-33-70b-instruct-v9-20260327-152734.score.md": {
+      "bytes": 5562,
+      "category": "released_results",
+      "sha256": "1c10c8414423a621a916904a172bb9dedafd6ac2e5b321ab35ffefb92d828b4b"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/single-baseline-llama-33-70b-instruct-v9-20260326-174742/single-baseline-llama-33-70b-instruct-v9-20260326-174742.jsonl": {
+      "bytes": 17678,
+      "category": "released_results",
+      "sha256": "c2a2425ffe4f7058e77b445677ab80ef190c668f845a95d19dbafa9dd3c09cf5"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/single-baseline-llama-33-70b-instruct-v9-20260326-174742/single-baseline-llama-33-70b-instruct-v9-20260326-174742.score.md": {
+      "bytes": 4672,
+      "category": "released_results",
+      "sha256": "62d1b7afd781c8a33a1ed676aef81b3e04e09a2090a6613844b97b9342ef4c3a"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405.jsonl": {
+      "bytes": 50725,
+      "category": "released_results",
+      "sha256": "1f51b3cd7a836dc45962efc69fd2be018b1440bc5e725ba3a2465f9239389929"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405.ledger.jsonl": {
+      "bytes": 50448,
+      "category": "released_results",
+      "sha256": "aca02de995c85e7a58013fff90fd81ff7f0f9793b96a513e707782192e3de77c"
+    },
+    "runs/all_results_v9/llama-33-70b-instruct/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405/single-todo-ledger-llama-33-70b-instruct-v9-20260326-183405.score.md": {
+      "bytes": 4664,
+      "category": "released_results",
+      "sha256": "2e46e2aff54e1976703490b5c342baef74984025687e0b5bfdd0aa49237e89d2"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-auto-30m-mistral-large-2512-v9-20260326-201708/heartbeat-auto-30m-mistral-large-2512-v9-20260326-201708.jsonl": {
+      "bytes": 18432,
+      "category": "released_results",
+      "sha256": "baf79ccd35152790238d7e2a28ecff193511cc696ea8790988d846b415346497"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-auto-30m-mistral-large-2512-v9-20260326-201708/heartbeat-auto-30m-mistral-large-2512-v9-20260326-201708.score.md": {
+      "bytes": 5225,
+      "category": "released_results",
+      "sha256": "e9bb9ea719b9940161902a8a5deee0c7a6ab4a57ab981e5c94b1153dfb068b37"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-auto-60m-mistral-large-2512-v9-20260326-202121/heartbeat-auto-60m-mistral-large-2512-v9-20260326-202121.jsonl": {
+      "bytes": 18153,
+      "category": "released_results",
+      "sha256": "3ede6e51569fbc6647ca013698a4cc3644df4d6e2382c0bcc0fc971705be5cd1"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-auto-60m-mistral-large-2512-v9-20260326-202121/heartbeat-auto-60m-mistral-large-2512-v9-20260326-202121.score.md": {
+      "bytes": 5226,
+      "category": "released_results",
+      "sha256": "cc8cf4d1495c13c98f651d83f9a78c7bc583c1b05d395c1dff3939801853fa41"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-proactive-mistral-large-2512-v9-20260326-201326/heartbeat-proactive-mistral-large-2512-v9-20260326-201326.jsonl": {
+      "bytes": 18145,
+      "category": "released_results",
+      "sha256": "9a9f91d313c0bd04f83c4db36194e85dc9e0c3e94f5c7f3bf5a6e09a611d9ad0"
+    },
+    "runs/all_results_v9/mistral-large-2512/heartbeat-proactive-mistral-large-2512-v9-20260326-201326/heartbeat-proactive-mistral-large-2512-v9-20260326-201326.score.md": {
+      "bytes": 5229,
+      "category": "released_results",
+      "sha256": "d783979be032ca41e2ca5bba762b43e97462a2ee23cc3248821188f8a1f1670d"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-majority-vote-mistral-large-2512-v9-20260327-163246/hier-majority-vote-mistral-large-2512-v9-20260327-163246.jsonl": {
+      "bytes": 28412,
+      "category": "released_results",
+      "sha256": "0ec937783531c3c434849c8b8a892d3ed469aae664b565251029ad16ce1c9157"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-majority-vote-mistral-large-2512-v9-20260327-163246/hier-majority-vote-mistral-large-2512-v9-20260327-163246.score.md": {
+      "bytes": 6150,
+      "category": "released_results",
+      "sha256": "088ef8038b4478064221b9902c678634fb5dbdaf642b54504cdb5c8d17c33253"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-unanimous-vote-mistral-large-2512-v9-20260327-163246/hier-unanimous-vote-mistral-large-2512-v9-20260327-163246.jsonl": {
+      "bytes": 26474,
+      "category": "released_results",
+      "sha256": "9438e5e675e12e1fba519b5791635aa53f2cc9b8aaf3ee7b3a62241fdc11c49b"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-unanimous-vote-mistral-large-2512-v9-20260327-163246/hier-unanimous-vote-mistral-large-2512-v9-20260327-163246.score.md": {
+      "bytes": 6132,
+      "category": "released_results",
+      "sha256": "308f662a66bc2d7b11de487f3741ccba0e5193c1fab88831c54861029aeec05e"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-union-query-mistral-large-2512-v9-20260327-163246/hier-union-query-mistral-large-2512-v9-20260327-163246.jsonl": {
+      "bytes": 25975,
+      "category": "released_results",
+      "sha256": "f40178be163f0a54cba6919c741cdbec27ca30d46c244639af4d13a421dc71c2"
+    },
+    "runs/all_results_v9/mistral-large-2512/hier-union-query-mistral-large-2512-v9-20260327-163246/hier-union-query-mistral-large-2512-v9-20260327-163246.score.md": {
+      "bytes": 6133,
+      "category": "released_results",
+      "sha256": "2fe66c3732f879649770b1dab3f9b529db4c7b4acc0488d5aa9533096a10aef6"
+    },
+    "runs/all_results_v9/mistral-large-2512/single-baseline-mistral-large-2512-v9-20260326-190422/single-baseline-mistral-large-2512-v9-20260326-190422.jsonl": {
+      "bytes": 18132,
+      "category": "released_results",
+      "sha256": "1d5918f0a7429853d26e4240884d697a2e43ec53e11ef4050b12a0d472a9fe0a"
+    },
+    "runs/all_results_v9/mistral-large-2512/single-baseline-mistral-large-2512-v9-20260326-190422/single-baseline-mistral-large-2512-v9-20260326-190422.score.md": {
+      "bytes": 5083,
+      "category": "released_results",
+      "sha256": "856082274157cc16b9fc20fb133dfacaac3d817c11a75a533f6a9b66d670d502"
+    },
+    "runs/all_results_v9/mistral-large-2512/single-todo-ledger-mistral-large-2512-v9-20260326-200632/single-todo-ledger-mistral-large-2512-v9-20260326-200632.jsonl": {
+      "bytes": 46634,
+      "category": "released_results",
+      "sha256": "1f5fe63e3573eb2ed55ada0e2685a16628883bb4ed7839412512a7272dd5a327"
+    },
+    "runs/all_results_v9/mistral-large-2512/single-todo-ledger-mistral-large-2512-v9-20260326-200632/single-todo-ledger-mistral-large-2512-v9-20260326-200632.ledger.jsonl": {
+      "bytes": 46362,
+      "category": "released_results",
+      "sha256": "19868cc823d1efc42511c5b2fc03d990c396792fc1373c4486d6e195908973a2"
+    },
+    "runs/all_results_v9/mistral-large-2512/single-todo-ledger-mistral-large-2512-v9-20260326-200632/single-todo-ledger-mistral-large-2512-v9-20260326-200632.score.md": {
+      "bytes": 4790,
+      "category": "released_results",
+      "sha256": "26daa91985e405659b2c935d7e60c89ba3a4323525fc614f72c43c0d7adf8ff7"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-auto-30m-mistral-small-32-24b-instruct-v9-20260326-203234/heartbeat-auto-30m-mistral-small-32-24b-instruct-v9-20260326-203234.jsonl": {
+      "bytes": 16955,
+      "category": "released_results",
+      "sha256": "ce0dcba1a0e7f4d0732544faed8fbfee1b4c569eb1be2ca86f942ecc5bc179b5"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-auto-30m-mistral-small-32-24b-instruct-v9-20260326-203234/heartbeat-auto-30m-mistral-small-32-24b-instruct-v9-20260326-203234.score.md": {
+      "bytes": 4648,
+      "category": "released_results",
+      "sha256": "c6f1f772e237183b78379738b6818d869d4bc96564a2f1d35ad918588876027a"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-auto-60m-mistral-small-32-24b-instruct-v9-20260326-203358/heartbeat-auto-60m-mistral-small-32-24b-instruct-v9-20260326-203358.jsonl": {
+      "bytes": 16983,
+      "category": "released_results",
+      "sha256": "f503e352d7318249fcd315d607d1612c0167d0ef31bfaf2d218eb980606f2276"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-auto-60m-mistral-small-32-24b-instruct-v9-20260326-203358/heartbeat-auto-60m-mistral-small-32-24b-instruct-v9-20260326-203358.score.md": {
+      "bytes": 4669,
+      "category": "released_results",
+      "sha256": "83ffce85eeed728afdd7ed408a1b511642b6a857e55479a463839b88cc74dfaa"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-proactive-mistral-small-32-24b-instruct-v9-20260326-203115/heartbeat-proactive-mistral-small-32-24b-instruct-v9-20260326-203115.jsonl": {
+      "bytes": 17382,
+      "category": "released_results",
+      "sha256": "5f8dee802934c254283d09e0bed70858017e8eb012bdf9f85e2ad371f21fce47"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/heartbeat-proactive-mistral-small-32-24b-instruct-v9-20260326-203115/heartbeat-proactive-mistral-small-32-24b-instruct-v9-20260326-203115.score.md": {
+      "bytes": 4678,
+      "category": "released_results",
+      "sha256": "4f7a71774a61c4f92d221748c1cf3dcb92f2a7e50712067263e478ee2ed1d16d"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-majority-vote-mistral-small-32-24b-instruct-v9-20260327-165947/hier-majority-vote-mistral-small-32-24b-instruct-v9-20260327-165947.jsonl": {
+      "bytes": 29385,
+      "category": "released_results",
+      "sha256": "12e35c54445ce4c5919d6d18bcb88170d970df2a3fc2b6c69a89eaac090a8255"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-majority-vote-mistral-small-32-24b-instruct-v9-20260327-165947/hier-majority-vote-mistral-small-32-24b-instruct-v9-20260327-165947.score.md": {
+      "bytes": 5526,
+      "category": "released_results",
+      "sha256": "9e879504c81aecf372a6fecef19c5c93794716cd0528d5e84cdc056edf1a40d5"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-unanimous-vote-mistral-small-32-24b-instruct-v9-20260327-165947/hier-unanimous-vote-mistral-small-32-24b-instruct-v9-20260327-165947.jsonl": {
+      "bytes": 28306,
+      "category": "released_results",
+      "sha256": "387e1ddac095bdb6346115e82e3bd1fc8c9f51b78c0f1372480a7363063479e1"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-unanimous-vote-mistral-small-32-24b-instruct-v9-20260327-165947/hier-unanimous-vote-mistral-small-32-24b-instruct-v9-20260327-165947.score.md": {
+      "bytes": 5472,
+      "category": "released_results",
+      "sha256": "ec49aebed262b8070f206bd4a10e329bac5cd9be34dcd324cea4effea0fca4d1"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-union-query-mistral-small-32-24b-instruct-v9-20260327-165947/hier-union-query-mistral-small-32-24b-instruct-v9-20260327-165947.jsonl": {
+      "bytes": 28502,
+      "category": "released_results",
+      "sha256": "d76af326e8378012fe873c54473df2b512b46b0221ef5933da539ed7c8bc2de1"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/hier-union-query-mistral-small-32-24b-instruct-v9-20260327-165947/hier-union-query-mistral-small-32-24b-instruct-v9-20260327-165947.score.md": {
+      "bytes": 5510,
+      "category": "released_results",
+      "sha256": "470bd4a1c8e9a8188f8b68426c6b02382d4904c55666f5a4a19a505067566ba6"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/single-baseline-mistral-small-32-24b-instruct-v9-20260326-202512/single-baseline-mistral-small-32-24b-instruct-v9-20260326-202512.jsonl": {
+      "bytes": 17508,
+      "category": "released_results",
+      "sha256": "15902ae497161ca7b47fea251a75740775180aca81049b660e1897cdd49741f1"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/single-baseline-mistral-small-32-24b-instruct-v9-20260326-202512/single-baseline-mistral-small-32-24b-instruct-v9-20260326-202512.score.md": {
+      "bytes": 4683,
+      "category": "released_results",
+      "sha256": "e720df425fc3c64cc0ddda2d9ba9205e96da912ca2bfa0f26c34022e12a21d87"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655.jsonl": {
+      "bytes": 52677,
+      "category": "released_results",
+      "sha256": "fd0d45f9e6f568549647d1b2411ab15d30cfcee5222ec9958d5e09cde179023b"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655.ledger.jsonl": {
+      "bytes": 52393,
+      "category": "released_results",
+      "sha256": "d4a9d1a9511c1096aa9489f38442125d5a1442b09aaad57990f9880cd0cf642e"
+    },
+    "runs/all_results_v9/mistral-small-32-24b-instruct/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655/single-todo-ledger-mistral-small-32-24b-instruct-v9-20260326-202655.score.md": {
+      "bytes": 4679,
+      "category": "released_results",
+      "sha256": "5709cb0c1359d89ff8d8405d3b3f6203c6429a6674d635a1d118313d8e4ced4e"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-auto-30m-qwen3-14b-v9-20260328-153109/heartbeat-auto-30m-qwen3-14b-v9-20260328-153109.jsonl": {
+      "bytes": 24592,
+      "category": "released_results",
+      "sha256": "f0b460b11e47a536a65f1d2dd1536f9f8f03b1922b1a48dc7b77c7c485cc6cf4"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-auto-30m-qwen3-14b-v9-20260328-153109/heartbeat-auto-30m-qwen3-14b-v9-20260328-153109.score.md": {
+      "bytes": 4746,
+      "category": "released_results",
+      "sha256": "62948a6c8f4ae595e27c050fbead0f923dafc5f7f1d4d57118f2be029b6b8ce1"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-auto-60m-qwen3-14b-v9-20260328-153204/heartbeat-auto-60m-qwen3-14b-v9-20260328-153204.jsonl": {
+      "bytes": 22957,
+      "category": "released_results",
+      "sha256": "e109d11b40e85d3eb691ba061dfeb2b4b04d72f793542ff987a8ed83e6ed0aa8"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-auto-60m-qwen3-14b-v9-20260328-153204/heartbeat-auto-60m-qwen3-14b-v9-20260328-153204.score.md": {
+      "bytes": 4733,
+      "category": "released_results",
+      "sha256": "91ed96f70c0f1719ef5561c23db9183bbc133fc6a0dcbb2cd4c08ebc7d5378a8"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-proactive-qwen3-14b-v9-20260328-152653/heartbeat-proactive-qwen3-14b-v9-20260328-152653.jsonl": {
+      "bytes": 18017,
+      "category": "released_results",
+      "sha256": "0cd746c3ca41e8049c6acd0b23a3dd24f1ccce127e45a52381d6af304b7a08ce"
+    },
+    "runs/all_results_v9/qwen3-14b/heartbeat-proactive-qwen3-14b-v9-20260328-152653/heartbeat-proactive-qwen3-14b-v9-20260328-152653.score.md": {
+      "bytes": 4683,
+      "category": "released_results",
+      "sha256": "47a5f453071f66b0a3021c5c6365305451a148ba8e9e22b166152234eb5814f1"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-majority-vote-qwen3-14b-v9-20260328-152801/hier-majority-vote-qwen3-14b-v9-20260328-152801.jsonl": {
+      "bytes": 21889,
+      "category": "released_results",
+      "sha256": "738b3b2d9d11c6ab06a0f0599fa94fc1aa2c6606b6f6b625290902fbfee00294"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-majority-vote-qwen3-14b-v9-20260328-152801/hier-majority-vote-qwen3-14b-v9-20260328-152801.score.md": {
+      "bytes": 4996,
+      "category": "released_results",
+      "sha256": "5b8c96616a5e3127adeba68243b931b6947079d5b5c62065775a643ff14adb50"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-unanimous-vote-qwen3-14b-v9-20260328-152801/hier-unanimous-vote-qwen3-14b-v9-20260328-152801.jsonl": {
+      "bytes": 21006,
+      "category": "released_results",
+      "sha256": "28998657150e350c864d09421ada4d2e8bc8716529b676e4d81ba2737f52f5da"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-unanimous-vote-qwen3-14b-v9-20260328-152801/hier-unanimous-vote-qwen3-14b-v9-20260328-152801.score.md": {
+      "bytes": 4983,
+      "category": "released_results",
+      "sha256": "dd663a890b8f79a96ce2bd877f42d1bda0a9baf12a955d5d87e594fb622959a1"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-union-query-qwen3-14b-v9-20260328-152801/hier-union-query-qwen3-14b-v9-20260328-152801.jsonl": {
+      "bytes": 21594,
+      "category": "released_results",
+      "sha256": "c6d41ca4b49cb7119fbbf9be6b9370866c62ea1703fec9aa1748ae63cdb2403b"
+    },
+    "runs/all_results_v9/qwen3-14b/hier-union-query-qwen3-14b-v9-20260328-152801/hier-union-query-qwen3-14b-v9-20260328-152801.score.md": {
+      "bytes": 4989,
+      "category": "released_results",
+      "sha256": "b7191c2db41a8ccef3b52a21fe3bc83d86b0ccbaa6b6c423ab0a67894f89b1bf"
+    },
+    "runs/all_results_v9/qwen3-14b/single-baseline-qwen3-14b-v9-20260328-152329/single-baseline-qwen3-14b-v9-20260328-152329.jsonl": {
+      "bytes": 18484,
+      "category": "released_results",
+      "sha256": "cef2e78f32d9a6355418659ddcdb1d47050d5d35758688ac30bebfbee5ed5f25"
+    },
+    "runs/all_results_v9/qwen3-14b/single-baseline-qwen3-14b-v9-20260328-152329/single-baseline-qwen3-14b-v9-20260328-152329.score.md": {
+      "bytes": 4691,
+      "category": "released_results",
+      "sha256": "7dd4fac264241cd98a47436b35c52378bc1bb782171325a2fba147821a96eedb"
+    },
+    "runs/all_results_v9/qwen3-14b/single-todo-ledger-qwen3-14b-v9-20260328-152402/single-todo-ledger-qwen3-14b-v9-20260328-152402.jsonl": {
+      "bytes": 30589,
+      "category": "released_results",
+      "sha256": "968a1e52612165c43d3c44aa43d5ee4c0ce3be7ad293da7fa34841d0f8424794"
+    },
+    "runs/all_results_v9/qwen3-14b/single-todo-ledger-qwen3-14b-v9-20260328-152402/single-todo-ledger-qwen3-14b-v9-20260328-152402.ledger.jsonl": {
+      "bytes": 30335,
+      "category": "released_results",
+      "sha256": "c3973519b5477c5f978a967956c563b2c6f15b275b48507cb3548f3778bd8e49"
+    },
+    "runs/all_results_v9/qwen3-14b/single-todo-ledger-qwen3-14b-v9-20260328-152402/single-todo-ledger-qwen3-14b-v9-20260328-152402.score.md": {
+      "bytes": 4691,
+      "category": "released_results",
+      "sha256": "3e6df0fff16c590149ab344e908b67644451155ba6c3d40d26eb395067f55e1f"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-auto-30m-qwen3-32b-v9-20260328-145319/heartbeat-auto-30m-qwen3-32b-v9-20260328-145319.jsonl": {
+      "bytes": 17775,
+      "category": "released_results",
+      "sha256": "0b1c6714a0303d734307ab80b19805411a013785c0ffe5633a38d0048844d347"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-auto-30m-qwen3-32b-v9-20260328-145319/heartbeat-auto-30m-qwen3-32b-v9-20260328-145319.score.md": {
+      "bytes": 5160,
+      "category": "released_results",
+      "sha256": "9c23b1c1265bbbce3c8ffcd01b8185beff0999e3fa2f216cacffae5ea8e3ad34"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-auto-60m-qwen3-32b-v9-20260328-145416/heartbeat-auto-60m-qwen3-32b-v9-20260328-145416.jsonl": {
+      "bytes": 17749,
+      "category": "released_results",
+      "sha256": "b525316c3cfdb98c9472af96a2d08c2a7cce10ff4fa6765de724d896251f4823"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-auto-60m-qwen3-32b-v9-20260328-145416/heartbeat-auto-60m-qwen3-32b-v9-20260328-145416.score.md": {
+      "bytes": 5162,
+      "category": "released_results",
+      "sha256": "526e00af717f39052dbce796f4cae5cd65856b3d6a3db64bcd34349b7d6d9831"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-proactive-qwen3-32b-v9-20260328-141303/heartbeat-proactive-qwen3-32b-v9-20260328-141303.jsonl": {
+      "bytes": 18103,
+      "category": "released_results",
+      "sha256": "1855b8d8286f289a6db7c495b89a58060079bde8ea4cbd25474f5a49a83e438e"
+    },
+    "runs/all_results_v9/qwen3-32b/heartbeat-proactive-qwen3-32b-v9-20260328-141303/heartbeat-proactive-qwen3-32b-v9-20260328-141303.score.md": {
+      "bytes": 4690,
+      "category": "released_results",
+      "sha256": "2aa2874ba586ab30e86dfc6378063064c4e39a582b84e1270773a8672d847944"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-majority-vote-qwen3-32b-v9-20260328-144516/hier-majority-vote-qwen3-32b-v9-20260328-144516.jsonl": {
+      "bytes": 23077,
+      "category": "released_results",
+      "sha256": "4c2196b632e05f3de12f77646db6e4941c96e57e500dcd9eece95ec2c8f3767b"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-majority-vote-qwen3-32b-v9-20260328-144516/hier-majority-vote-qwen3-32b-v9-20260328-144516.score.md": {
+      "bytes": 5208,
+      "category": "released_results",
+      "sha256": "52ceb191e7bffdbd2da94884794e90cf26773050282769d4e41ce466b1e107fa"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-unanimous-vote-qwen3-32b-v9-20260328-144516/hier-unanimous-vote-qwen3-32b-v9-20260328-144516.jsonl": {
+      "bytes": 22658,
+      "category": "released_results",
+      "sha256": "19a2f3aa2ade0b689c9b57eef5f46b6a0d5c806c9caf6957e83cf6c3a0ba5cb9"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-unanimous-vote-qwen3-32b-v9-20260328-144516/hier-unanimous-vote-qwen3-32b-v9-20260328-144516.score.md": {
+      "bytes": 5167,
+      "category": "released_results",
+      "sha256": "31ac0ffd7814e493017f68a86534124604b3fe6ea2d43f0732a9ffa1a21aca9b"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-union-query-qwen3-32b-v9-20260328-144516/hier-union-query-qwen3-32b-v9-20260328-144516.jsonl": {
+      "bytes": 23449,
+      "category": "released_results",
+      "sha256": "933c5a07c64421a73312b4f87cb28a6fbd328c3579a9caea31f45ceb59452909"
+    },
+    "runs/all_results_v9/qwen3-32b/hier-union-query-qwen3-32b-v9-20260328-144516/hier-union-query-qwen3-32b-v9-20260328-144516.score.md": {
+      "bytes": 5223,
+      "category": "released_results",
+      "sha256": "fec06c3a3291ad17d6a360ff73532708711cf178359b95474652499c33751f35"
+    },
+    "runs/all_results_v9/qwen3-32b/single-baseline-qwen3-32b-v9-20260328-140810/single-baseline-qwen3-32b-v9-20260328-140810.jsonl": {
+      "bytes": 17587,
+      "category": "released_results",
+      "sha256": "1e0569a117c9783233158722fe6d314b4093d3964c5ae4d1cf99600500546f1b"
+    },
+    "runs/all_results_v9/qwen3-32b/single-baseline-qwen3-32b-v9-20260328-140810/single-baseline-qwen3-32b-v9-20260328-140810.score.md": {
+      "bytes": 4678,
+      "category": "released_results",
+      "sha256": "7a71fd9daf2ad2499e779c6b1c0c8d32e3b209b0d44126ed02504691ac67de44"
+    },
+    "runs/all_results_v9/qwen3-32b/single-todo-ledger-qwen3-32b-v9-20260328-140849/single-todo-ledger-qwen3-32b-v9-20260328-140849.jsonl": {
+      "bytes": 35192,
+      "category": "released_results",
+      "sha256": "4385cd29ffa6492fcb4c0b674cbdf8fe1eb3b1f17bb85f56380613842859138d"
+    },
+    "runs/all_results_v9/qwen3-32b/single-todo-ledger-qwen3-32b-v9-20260328-140849/single-todo-ledger-qwen3-32b-v9-20260328-140849.ledger.jsonl": {
+      "bytes": 34938,
+      "category": "released_results",
+      "sha256": "27ae3f0db63dc1ab0ac1f8aa43bd7a60899a8a2f3c984d2351850028ede1041f"
+    },
+    "runs/all_results_v9/qwen3-32b/single-todo-ledger-qwen3-32b-v9-20260328-140849/single-todo-ledger-qwen3-32b-v9-20260328-140849.score.md": {
+      "bytes": 4675,
+      "category": "released_results",
+      "sha256": "971aa98c76349442f2d55a2eb56474b1de1d6388223625762dd674d166fa29ac"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-auto-30m-qwen3-8b-v9-20260328-160635/heartbeat-auto-30m-qwen3-8b-v9-20260328-160635.jsonl": {
+      "bytes": 17773,
+      "category": "released_results",
+      "sha256": "b95193dc4c5550bd23cdd041d0bf24ab022b4c38066f1778aa6b0842aecdae06"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-auto-30m-qwen3-8b-v9-20260328-160635/heartbeat-auto-30m-qwen3-8b-v9-20260328-160635.score.md": {
+      "bytes": 4693,
+      "category": "released_results",
+      "sha256": "122af61da0842a4f5ea4f753abf49f19b3df9b518fd883b0be84eb50d99f221e"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-auto-60m-qwen3-8b-v9-20260328-160700/heartbeat-auto-60m-qwen3-8b-v9-20260328-160700.jsonl": {
+      "bytes": 17973,
+      "category": "released_results",
+      "sha256": "0e3fdcb89d90890f80542ff87cc531b8ca507e949347a38fbf51b81f98c175bb"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-auto-60m-qwen3-8b-v9-20260328-160700/heartbeat-auto-60m-qwen3-8b-v9-20260328-160700.score.md": {
+      "bytes": 4696,
+      "category": "released_results",
+      "sha256": "c2ceb5eb7130b860abeed1d21589cd5e44002642eea3b4569e8303cf345f9a3e"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-proactive-qwen3-8b-v9-20260328-155606/heartbeat-proactive-qwen3-8b-v9-20260328-155606.jsonl": {
+      "bytes": 18286,
+      "category": "released_results",
+      "sha256": "45e8eef90a53ec602e8c0c467f1d4639a9ba386725846f7babfdcfb0fce25613"
+    },
+    "runs/all_results_v9/qwen3-8b/heartbeat-proactive-qwen3-8b-v9-20260328-155606/heartbeat-proactive-qwen3-8b-v9-20260328-155606.score.md": {
+      "bytes": 4720,
+      "category": "released_results",
+      "sha256": "a6c57fd03686c188b495cb8fc0fe2a53613556d0a00f6c0752fff3dd7238a2ce"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-majority-vote-qwen3-8b-v9-20260328-160318/hier-majority-vote-qwen3-8b-v9-20260328-160318.jsonl": {
+      "bytes": 25915,
+      "category": "released_results",
+      "sha256": "0b52361d97801be5e4668e083ae1f51d789d9ae49e683510452f085ee3e61dd4"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-majority-vote-qwen3-8b-v9-20260328-160318/hier-majority-vote-qwen3-8b-v9-20260328-160318.score.md": {
+      "bytes": 5449,
+      "category": "released_results",
+      "sha256": "f7b6a099d7dbdaedaf2130fbd95061dabbbde27c6f8ae55df1939762d065930b"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-unanimous-vote-qwen3-8b-v9-20260328-160318/hier-unanimous-vote-qwen3-8b-v9-20260328-160318.jsonl": {
+      "bytes": 25120,
+      "category": "released_results",
+      "sha256": "1de3682947a23988d1e18d9c415ce5552194ad55bc82821ea4ee934e64ffaeea"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-unanimous-vote-qwen3-8b-v9-20260328-160318/hier-unanimous-vote-qwen3-8b-v9-20260328-160318.score.md": {
+      "bytes": 5402,
+      "category": "released_results",
+      "sha256": "3cc32c4b88793f45191f1701c7ec6cd0b1c964db322d6acbe34a700740f39dc9"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-union-query-qwen3-8b-v9-20260328-160318/hier-union-query-qwen3-8b-v9-20260328-160318.jsonl": {
+      "bytes": 25719,
+      "category": "released_results",
+      "sha256": "4bc2493eaf17aa31199d02a64a8339745a30f73f15b3225dcb0b53da5fbfbb87"
+    },
+    "runs/all_results_v9/qwen3-8b/hier-union-query-qwen3-8b-v9-20260328-160318/hier-union-query-qwen3-8b-v9-20260328-160318.score.md": {
+      "bytes": 5445,
+      "category": "released_results",
+      "sha256": "3e4909def234ff016b2007b312af54667096b2ba7863c31b088d86d1cabdb75f"
+    },
+    "runs/all_results_v9/qwen3-8b/single-baseline-qwen3-8b-v9-20260328-155332/single-baseline-qwen3-8b-v9-20260328-155332.jsonl": {
+      "bytes": 17966,
+      "category": "released_results",
+      "sha256": "e5ef2f57f3996ad8b7113f67b01a4c8e90ef02167cf2da5ce227ef4ed78dce04"
+    },
+    "runs/all_results_v9/qwen3-8b/single-baseline-qwen3-8b-v9-20260328-155332/single-baseline-qwen3-8b-v9-20260328-155332.score.md": {
+      "bytes": 4696,
+      "category": "released_results",
+      "sha256": "8b27b9bcb717b8f90867aca90a175a2909411d26768bca565526e825ddde870a"
+    },
+    "runs/all_results_v9/qwen3-8b/single-todo-ledger-qwen3-8b-v9-20260328-155356/single-todo-ledger-qwen3-8b-v9-20260328-155356.jsonl": {
+      "bytes": 36075,
+      "category": "released_results",
+      "sha256": "39046caad629aa6ed6cb8f8c9faa53b6ccfe455caa53cc9b3e365ecfcfcf9a72"
+    },
+    "runs/all_results_v9/qwen3-8b/single-todo-ledger-qwen3-8b-v9-20260328-155356/single-todo-ledger-qwen3-8b-v9-20260328-155356.ledger.jsonl": {
+      "bytes": 35822,
+      "category": "released_results",
+      "sha256": "baa22a58cafa452788d3c2668f4109f04ee4218dee9a96ecf014f6f43598cd68"
+    },
+    "runs/all_results_v9/qwen3-8b/single-todo-ledger-qwen3-8b-v9-20260328-155356/single-todo-ledger-qwen3-8b-v9-20260328-155356.score.md": {
+      "bytes": 4673,
+      "category": "released_results",
+      "sha256": "4e0a14fd504f1f49437db33a7c39d8dc161d34fa2c6f9c23f535a7f9329982c4"
+    },
+    "sim/export_groundtruth.py": {
+      "bytes": 2983,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "3f570fa045f8ce90b6e407cde8a45e457de525dce1d850d0612d275e5149c880"
+    },
+    "sim/generate_week_v9.py": {
+      "bytes": 1428,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "d327d6fc52a3d6384c213fb0b4fc3a00a9074bcfd0e2b5dad76ecf86dfeb172b"
+    },
+    "sim/launch_experiments/run_all_setups.sh": {
+      "bytes": 12141,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "5f5b5e1b3479d25f48eb749d57465a804a3036abee6f134c2332f04c3127eccd"
+    },
+    "sim/pm_bench.py": {
+      "bytes": 175397,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8"
+    },
+    "sim/replay_union_votes.py": {
+      "bytes": 12052,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "3f0f755699c9a358cd400b4c57631ca86d495aa5dc3da62b56fd251425a222ba"
+    },
+    "sim/run_eval.py": {
+      "bytes": 17023,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "bd883f7966d872bbae589ef37d592082a46b67bc132050569bd4080f0ebef5ad"
+    },
+    "sim/run_hierarchical_agent.py": {
+      "bytes": 82106,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "7affd2062bd0303a31a589cbf5678bc7e4eae120efcef19472fc14996b52d15f"
+    },
+    "sim/run_hierarchical_agent_union_query.py": {
+      "bytes": 90401,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "6c09b3e2ddb2a6d001dedbfaf5a7871474411e589fda5cec3b232dbc3a0fad4a"
+    },
+    "sim/run_todo_ledger.py": {
+      "bytes": 32462,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "4488076d7dfeef9885ff27a3cdc3da50b282b45856bcd9df8139959a708c9b01"
+    },
+    "sim/week_builder_v9.py": {
+      "bytes": 86702,
+      "category": "original_runtime_evaluator_generator",
+      "sha256": "268ae7271bb50279825885b397cebfcba5ccd292b31e69227786c37e3bebb106"
+    },
+    "webapp/frontend/eslint.config.js": {
+      "bytes": 616,
+      "category": "browser_scoring_environment",
+      "sha256": "4efe97b16d1200fac0eaf07aa00930a8668b1f96a0be1891ace8c1e712ff0ccb"
+    },
+    "webapp/frontend/package-lock.json": {
+      "bytes": 112559,
+      "category": "browser_scoring_environment",
+      "sha256": "76c10001b51423a079b76aba1b4499330fe9116bf3a9294bbc571db7d51ea158"
+    },
+    "webapp/frontend/package.json": {
+      "bytes": 718,
+      "category": "browser_scoring_environment",
+      "sha256": "9e88c805c51832e0299df86043feca7090e0269885bc4bb48ec1cb5322d26353"
+    },
+    "webapp/frontend/public/scenarios/synthetic_week_v9.json": {
+      "bytes": 98168,
+      "category": "browser_benchmark_copy",
+      "sha256": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24"
+    },
+    "webapp/frontend/src/App.tsx": {
+      "bytes": 26996,
+      "category": "browser_scoring_implementation",
+      "sha256": "2b56ff7a9657c1a32b7fe24e6824c4c912a617434913ee5c1847fcf47e6f16c3"
+    },
+    "webapp/frontend/src/engine.ts": {
+      "bytes": 67884,
+      "category": "browser_scoring_implementation",
+      "sha256": "b94df94f9195efb9d6a0200a322eadb1c8699f45016a746a0d8e338c1c18b3af"
+    },
+    "webapp/frontend/src/index.css": {
+      "bytes": 8766,
+      "category": "browser_scoring_implementation",
+      "sha256": "41d770df664e2043a5f56d06e4b5222a721edac4207bebd5abd6302a2dffff3d"
+    },
+    "webapp/frontend/src/main.tsx": {
+      "bytes": 230,
+      "category": "browser_scoring_implementation",
+      "sha256": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2"
+    },
+    "webapp/frontend/src/storage.ts": {
+      "bytes": 809,
+      "category": "browser_scoring_implementation",
+      "sha256": "d417665164357854d34315ca643493b78b35872b3142db2f519eeacb05cf33ab"
+    },
+    "webapp/frontend/src/types.ts": {
+      "bytes": 5841,
+      "category": "browser_scoring_implementation",
+      "sha256": "78bfab8bb06b6701036e779876755bf581ebd29e70e95628b2bed85a0625d2b4"
+    },
+    "webapp/frontend/tsconfig.app.json": {
+      "bytes": 732,
+      "category": "browser_scoring_environment",
+      "sha256": "922bc5bfb41bdc0768023b2487d54b3ae23c587d999024d4f32cde879ae6f4d8"
+    },
+    "webapp/frontend/tsconfig.json": {
+      "bytes": 119,
+      "category": "browser_scoring_environment",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    "webapp/frontend/tsconfig.node.json": {
+      "bytes": 653,
+      "category": "browser_scoring_environment",
+      "sha256": "c3dd0fb522feba3596713f51b95bd53d781d845d24aedbfa2ac093d8b39c5120"
+    },
+    "webapp/frontend/vite.config.ts": {
+      "bytes": 161,
+      "category": "browser_scoring_environment",
+      "sha256": "4d36db3522a7b2dd10e0936e1004373c7ee65f10f7cd7920cd76410459c15a45"
+    }
+  },
+  "policy": {
+    "browser_environment_files": [
+      "webapp/frontend/eslint.config.js",
+      "webapp/frontend/package-lock.json",
+      "webapp/frontend/package.json",
+      "webapp/frontend/tsconfig.app.json",
+      "webapp/frontend/tsconfig.json",
+      "webapp/frontend/tsconfig.node.json",
+      "webapp/frontend/vite.config.ts"
+    ],
+    "exact_paths": [
+      "data/synthetic_week_v9.json",
+      "webapp/frontend/public/scenarios/synthetic_week_v9.json"
+    ],
+    "protected_trees": [
+      "runs/all_results_v9",
+      "sim",
+      "webapp/frontend/src"
+    ]
+  },
+  "schema_version": 1
+}
