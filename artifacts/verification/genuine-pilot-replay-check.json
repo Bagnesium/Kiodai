@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-09-08T16:51:13.126514+00:00",
+  "pair_id": "live-pair-42433e00474b",
+  "recordings": [
+    {
+      "id": "live-pair-42433e00474b",
+      "title": "first-development-day-pilot-v1 \u00b7 live-pair-42433e00474b"
+    }
+  ],
+  "replay_mode": "RECORDED",
+  "source_mode": "LIVE",
+  "live_enabled": false,
+  "visible_steps": 8,
+  "replay_status": "completed",
+  "model_transport_construction_blocked_during_replay": true,
+  "source_artifacts_unchanged": true,
+  "previous_tls_failures_unchanged": true,
+  "export_path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/genuine-pilot-recorded-42433e00474b.zip",
+  "export_file_count": 25,
+  "export_sha256": "297e04d3b220561a2ca57c3c9fcb62e0742db1a377598b6d91ef3d79c7448e9e",
+  "credential_leak_scan": "passed; key value never emitted",
+  "browser_check": "CUA verified RECORDED selection, genuine pair label, saved steps through 11:20, correct selected actions and evaluator TP=2 FP=0 FN=0 for both; kept tab as deliverable"
+}
