@@ -1,0 +1,125 @@
+{
+  "scenario_name": "kiodai_demo_reschedule_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Send the consultation reminder at 17:00."
+      ],
+      "tasks": [
+        {
+          "id": "demo_consult",
+          "label": "Send the consultation reminder.",
+          "type": "time",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Send the consultation reminder.",
+          "target_time": "17:00"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "16:00",
+          "text": "Review questions for the teacher.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "16:30",
+          "text": "The consultation moved: send its reminder at 18:00 instead of 17:00.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": [
+            {
+              "task_id": "demo_consult",
+              "action": "reschedule",
+              "new_target_time": "18:00"
+            }
+          ]
+        },
+        {
+          "id": "demo_step_3",
+          "time": "17:00",
+          "text": "Discuss the biology exhibition.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "17:59",
+          "text": "The corridor is quiet.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_5",
+          "time": "18:00",
+          "text": "Continue reading the project notes.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_6",
+          "time": "18:10",
+          "text": "The teacher starts another meeting.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "scenario_name": "kiodai_demo_cancel_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Print the consultation handout when the printer opens."
+      ],
+      "tasks": [
+        {
+          "id": "demo_handout",
+          "label": "Print the consultation handout.",
+          "type": "event",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Print the consultation handout.",
+          "cue_id": "demo_printer_open"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "10:00",
+          "text": "Discuss the consultation.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "10:10",
+          "text": "Cancel the handout printing; use the online document.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": [
+            {
+              "task_id": "demo_handout",
+              "action": "cancel"
+            }
+          ]
+        },
+        {
+          "id": "demo_step_3",
+          "time": "10:20",
+          "text": "The printer opens.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [
+            "demo_printer_open"
+          ],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "10:30",
+          "text": "The printer remains available.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}
