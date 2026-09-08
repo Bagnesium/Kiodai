@@ -1,0 +1,434 @@
+{
+  "generated_at_utc": "2026-09-08T16:46:56.574661+00:00",
+  "pair_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b",
+  "analysis_unit": "one scenario/trajectory, one repeat; not eight independent samples",
+  "conditions": {
+    "A0": {
+      "manifest_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/manifest.json",
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "set_f1": 1.0,
+      "completed_steps": 8,
+      "model_attempts": 8,
+      "tool_queries": 0,
+      "invalid_responses": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "input_tokens": 13819,
+      "output_tokens": 269,
+      "total_tokens": 14088,
+      "provider_reported_cached_input_tokens": 4672,
+      "model_latency_seconds": 26.383078,
+      "list_price_usage_estimate_usd": 0.00400013,
+      "provider_reported_cost_usd": 0.00336941,
+      "verified_billed_cost_usd": null
+    },
+    "A1": {
+      "manifest_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/manifest.json",
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "set_f1": 1.0,
+      "completed_steps": 8,
+      "model_attempts": 8,
+      "tool_queries": 0,
+      "invalid_responses": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "input_tokens": 19179,
+      "output_tokens": 269,
+      "total_tokens": 19448,
+      "provider_reported_cached_input_tokens": 8640,
+      "model_latency_seconds": 26.248401,
+      "list_price_usage_estimate_usd": 0.00544733,
+      "provider_reported_cost_usd": 0.00428093,
+      "verified_billed_cost_usd": null
+    }
+  },
+  "a1_minus_a0": {
+    "tp": 0.0,
+    "fp": 0.0,
+    "fn": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "set_f1": 0.0,
+    "model_attempts": 0.0,
+    "tool_queries": 0.0,
+    "invalid_responses": 0.0,
+    "retries": 0.0,
+    "input_tokens": 5360.0,
+    "output_tokens": 0.0,
+    "total_tokens": 5360.0,
+    "model_latency_seconds": -0.134677,
+    "provider_reported_cost_usd": 0.00091152
+  },
+  "trajectories": {
+    "A0": [
+      {
+        "step_id": "dev_m_s1",
+        "time": "08:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "B",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s2",
+        "time": "08:30",
+        "selected_task_ids": [
+          "dev_m_seal_case"
+        ],
+        "due_task_ids": [
+          "dev_m_seal_case"
+        ],
+        "ongoing_choice": "B",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_12",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s3",
+        "time": "09:40",
+        "selected_task_ids": [
+          "dev_m_log_humidity"
+        ],
+        "due_task_ids": [
+          "dev_m_log_humidity"
+        ],
+        "ongoing_choice": "A",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_1",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s4",
+        "time": "10:10",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "B",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s5",
+        "time": "10:50",
+        "selected_task_ids": [
+          "dev_m_release_envelope"
+        ],
+        "due_task_ids": [
+          "dev_m_release_envelope"
+        ],
+        "ongoing_choice": "A",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s5b",
+        "time": "11:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "A",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s6",
+        "time": "11:20",
+        "selected_task_ids": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "due_task_ids": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "ongoing_choice": "B",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          },
+          {
+            "handle": "task_9",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s7",
+        "time": "14:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "A",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      }
+    ],
+    "A1": [
+      {
+        "step_id": "dev_m_s1",
+        "time": "08:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "B",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s2",
+        "time": "08:30",
+        "selected_task_ids": [
+          "dev_m_seal_case"
+        ],
+        "due_task_ids": [
+          "dev_m_seal_case"
+        ],
+        "ongoing_choice": "A",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_12",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s3",
+        "time": "09:40",
+        "selected_task_ids": [
+          "dev_m_log_humidity"
+        ],
+        "due_task_ids": [
+          "dev_m_log_humidity"
+        ],
+        "ongoing_choice": "A",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_1",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s4",
+        "time": "10:10",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "B",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s5",
+        "time": "10:50",
+        "selected_task_ids": [
+          "dev_m_release_envelope"
+        ],
+        "due_task_ids": [
+          "dev_m_release_envelope"
+        ],
+        "ongoing_choice": "A",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s5b",
+        "time": "11:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "A",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      },
+      {
+        "step_id": "dev_m_s6",
+        "time": "11:20",
+        "selected_task_ids": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "due_task_ids": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "ongoing_choice": "B",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          },
+          {
+            "handle": "task_9",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "step_id": "dev_m_s7",
+        "time": "14:00",
+        "selected_task_ids": [],
+        "due_task_ids": [],
+        "ongoing_choice": "A",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "execution": []
+      }
+    ]
+  },
+  "complete_pairs": 1,
+  "incomplete_pairs": [
+    "live-pair-8eafb0fb7cc2",
+    "live-pair-c13c57cee05d"
+  ],
+  "task_selections_identical": true,
+  "prior_startup_failures": [
+    {
+      "pair_id": "live-pair-8eafb0fb7cc2",
+      "path": "results/kiodai/live-pair-8eafb0fb7cc2/pair.json",
+      "status": "interrupted",
+      "interruption_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "runs": {},
+      "completed_timeline_steps": 0,
+      "files_sha256": {
+        "results/kiodai/live-pair-8eafb0fb7cc2/pair.json": "e976bebfcbef395c70a8adbfc7ddbdcb85055c5596247e135b101eedbd4a0b2c"
+      },
+      "runtime_configurations_match_current": true
+    },
+    {
+      "pair_id": "live-pair-c13c57cee05d",
+      "path": "results/kiodai/live-pair-c13c57cee05d/pair.json",
+      "status": "interrupted",
+      "interruption_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "runs": {},
+      "completed_timeline_steps": 0,
+      "files_sha256": {
+        "results/kiodai/live-pair-c13c57cee05d/pair.json": "ebe0b4fcc5f27378ce5d5e3076f17f578973057726a52a4950befa4330ccd2b8"
+      },
+      "runtime_configurations_match_current": true
+    }
+  ],
+  "prior_startup_failure_classification": "TLS infrastructure failure before model requests; no performance score",
+  "preflight_pair_estimate_usd": 0.13677591999999997,
+  "provider_reported_cost_total_usd": 0.00765034,
+  "list_price_usage_estimate_total_usd": 0.00944746,
+  "verified_billed_cost_usd": null,
+  "cost_source": "sum of saved OpenRouter response usage.cost values, corroborated by upstream_inference_cost; no billing statement queried",
+  "artifact_sha256": {
+    "results/kiodai/live-pair-42433e00474b/A0-config.json": "1dfeeaf486431a4312ecc6090449508bb6fca38fb131d62e1667aa28ba805100",
+    "results/kiodai/live-pair-42433e00474b/A1-config.json": "f77bb4dbab508038a7d8f8dc8ced719d418d7e7eb167fa9ff68e955d192caf90",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/actions.jsonl": "975c9395320e42f16a8176a04e7fc6d4d3f8ac6fd8df33d8d2d1bfc0a1fe7a5c",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/config.json": "0fc0e7be25db9e0c1a223fb7373848fe28ed37fc31f72ae28e338d5bb21b4eb2",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/evaluator.jsonl": "d84acdb86bf87f176edd69b7808b8de2d1fd8beb97157c961e0ff462c19a8384",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/manifest.json": "ec3a0bd1b7885859896841850c92ead898b3f1e42a5dde4c4134b02bb1c0b5a8",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/raw_model_calls.jsonl": "c360d7ddb2ce344800c03b2a3acdf563b9882b06632e68c00a2d641b7972aa7a",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/scenario.json": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/score.json": "ee69a51eb025925c47ff84fb161468c7defa616cb532d0fc3f9909ebab89e4b4",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/steps.jsonl": "5d2d9a2b72950092016ace82fcfe8d9609ffb906ecd5d8278287547eb3a767cf",
+    "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/system_prompt.txt": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/actions.jsonl": "293bb6a0958cdb04a3f8ddfdfb7d4d50aa762a8e185880dbf99692493035b450",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/addendum.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/config.json": "f07b39f5cbd419a6ad6ff6a44548b3face5d452f02b2707467cdbb1b0ee6fad5",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/evaluator.jsonl": "d84acdb86bf87f176edd69b7808b8de2d1fd8beb97157c961e0ff462c19a8384",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/manifest.json": "7aad80b9391533089209d6ac058048629ce7619f7c3a8a875ce8c59b29706873",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/raw_model_calls.jsonl": "ff025a834de5f73ee7afa09005d2350f53184e4bf4cf263d00cdb98629fa975f",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/scenario.json": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/score.json": "ee69a51eb025925c47ff84fb161468c7defa616cb532d0fc3f9909ebab89e4b4",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/steps.jsonl": "c3752c7b2b67a2de7966dc50a2c2957d4dbdfddd2eec0821cadbb9afafe70785",
+    "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/system_prompt.txt": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+    "results/kiodai/live-pair-42433e00474b/pair.json": "884439ead5670d39ba9dcf27c6717251e1e5c88d9fb56086c34b74e460266d49"
+  }
+}
