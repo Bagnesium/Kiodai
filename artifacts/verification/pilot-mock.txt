@@ -1,0 +1,1 @@
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-08cdaa90edf7/pair.json
