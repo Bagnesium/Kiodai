@@ -1,0 +1,52 @@
+{
+  "mode": "MOCK",
+  "scenarios": [
+    {
+      "scenario": "time",
+      "pair_id": "mock-pair-f8c4539abdd5",
+      "steps": 5,
+      "status": "completed",
+      "reveal_gate": "passed"
+    },
+    {
+      "scenario": "event",
+      "pair_id": "mock-pair-a9e8fb83bc4d",
+      "steps": 4,
+      "status": "completed",
+      "reveal_gate": "passed"
+    },
+    {
+      "scenario": "cancel",
+      "pair_id": "mock-pair-3e03d64ac9f4",
+      "steps": 4,
+      "status": "completed",
+      "reveal_gate": "passed"
+    },
+    {
+      "scenario": "reschedule",
+      "pair_id": "mock-pair-f31663b5ba47",
+      "steps": 6,
+      "status": "completed",
+      "reveal_gate": "passed"
+    },
+    {
+      "scenario": "completed",
+      "pair_id": "mock-pair-14f8afb4addb",
+      "steps": 4,
+      "status": "completed",
+      "reveal_gate": "passed"
+    },
+    {
+      "scenario": "hidden",
+      "pair_id": "mock-pair-8ab0959bb1ea",
+      "steps": 5,
+      "status": "completed",
+      "reveal_gate": "passed"
+    }
+  ],
+  "export_bytes": 39047,
+  "export_files": 25,
+  "reset": "passed",
+  "live_disabled_gate": "passed",
+  "genuine_recordings": 0
+}

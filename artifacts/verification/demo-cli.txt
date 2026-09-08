@@ -1,0 +1,6 @@
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-d4ba89a7c831/pair.json
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-34f5399f172d/pair.json
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-4d008113ddbb/pair.json
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-aaea1bc1aecb/pair.json
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-19aab5269628/pair.json
+MOCK completed: /Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/mock-pair-891566d658aa/pair.json
