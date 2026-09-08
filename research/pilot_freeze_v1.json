@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-09-08",
+  "live_results_seen": false,
+  "selection_rule": "First chronological day of the recovered development suite, selected before inference because the full-trajectory stress estimate exceeds 0.30 USD. No selection on performance.",
+  "source_path": "data/development/prospective_memory_dev_v1.json",
+  "source_sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+  "files": {
+    "data/pilot/first_development_day_v1.json": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+    "configs/pilot_a0_deepseek_v31.yaml": "f59461cb007f7589bd1c167ab75f43f7f5454aa5f29a7a7cd29bdc58fa3eaedb",
+    "configs/pilot_a1_deepseek_v31.yaml": "8179815ef4cc1232714073096fd7b19d095b06b58def2e0bb7cee643be1661b0"
+  },
+  "repeats": 1,
+  "seed": 20260904,
+  "order": [
+    "A0",
+    "A1"
+  ],
+  "budget_ceiling_usd": 0.3,
+  "limitations": "Development diagnostic only; omits later days and cross-day retention. Original full-development protocol preserved separately. No inherited full-suite success criterion."
+}

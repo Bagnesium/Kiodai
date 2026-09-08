@@ -1,0 +1,277 @@
+{
+  "scenario_name": "kiodai_first_development_day_pilot_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true,
+    "sensor_board": false
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    },
+    "sensor_board": {
+      "mode": "delta"
+    }
+  },
+  "days": [
+    {
+      "name": "Monday",
+      "start_instructions": [
+        "Today's workshop intentions:",
+        "- Seal the copper case when the loading bell rings.",
+        "- Log the room humidity at 09:40.",
+        "- Recycle the gray proof when the disposal lamp turns solid.",
+        "- Inspect the pressure gauge at 10:10.",
+        "- Release the sample envelope when the blue hexagon appears.",
+        "- Send the status note at 11:20."
+      ],
+      "tasks": [
+        {
+          "id": "dev_m_seal_case",
+          "label": "Seal the copper case when the loading bell rings",
+          "type": "event",
+          "cue_id": "dev_m_loading_bell",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Seal the copper case."
+        },
+        {
+          "id": "dev_m_log_humidity",
+          "label": "Log the room humidity at 09:40",
+          "type": "time",
+          "target_time": "09:40",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Log the room humidity."
+        },
+        {
+          "id": "dev_m_recycle_proof",
+          "label": "Recycle the gray proof when the disposal lamp turns solid",
+          "type": "event",
+          "cue_id": "dev_m_disposal_solid",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Recycle the gray proof."
+        },
+        {
+          "id": "dev_m_pressure",
+          "label": "Inspect the pressure gauge at 10:10",
+          "type": "time",
+          "target_time": "10:10",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Inspect the pressure gauge."
+        },
+        {
+          "id": "dev_m_release_envelope",
+          "label": "Release the sample envelope when the blue hexagon appears",
+          "type": "event",
+          "cue_id": "dev_m_blue_hexagon",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Release the sample envelope."
+        },
+        {
+          "id": "dev_m_status_note",
+          "label": "Send the status note at 11:20",
+          "type": "time",
+          "target_time": "11:20",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Send the status note."
+        }
+      ],
+      "lures": [
+        {
+          "id": "dev_lure_align_stapler",
+          "action_text": "Align the desk stapler."
+        },
+        {
+          "id": "dev_lure_fold_wrapper",
+          "action_text": "Fold an empty wrapper."
+        },
+        {
+          "id": "dev_lure_count_clips",
+          "action_text": "Count spare clips."
+        },
+        {
+          "id": "dev_lure_wipe_handle",
+          "action_text": "Wipe a cabinet handle."
+        },
+        {
+          "id": "dev_lure_move_cushion",
+          "action_text": "Move a spare cushion."
+        },
+        {
+          "id": "dev_lure_read_poster",
+          "action_text": "Read the wall poster."
+        },
+        {
+          "id": "dev_lure_sort_pencils",
+          "action_text": "Sort colored pencils."
+        },
+        {
+          "id": "dev_lure_refill_cup",
+          "action_text": "Refill an empty cup."
+        },
+        {
+          "id": "dev_lure_check_laces",
+          "action_text": "Check your shoelaces."
+        },
+        {
+          "id": "dev_lure_stack_coasters",
+          "action_text": "Stack unused coasters."
+        }
+      ],
+      "steps": [
+        {
+          "id": "dev_m_s1",
+          "time": "08:00",
+          "text": "You jot a note: On Wednesday, File the blue archive card when the brass cabinet clicks. Then you sort unrelated delivery slips.",
+          "options": [
+            "A) Open the shutters",
+            "B) Straighten the mat",
+            "C) Check the worktable"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "dev_m_s2",
+          "time": "08:30",
+          "text": "The loading bell rings. A supervisor also cancels recycling the gray proof and moves the pressure-gauge inspection from 10:10 to 10:50.",
+          "options": [
+            "A) Close the ledger",
+            "B) Move the trolley",
+            "C) Mark the clipboard"
+          ],
+          "cues": [
+            "dev_m_loading_bell",
+            "dev_m_cancel_notice",
+            "dev_m_pressure_move_one"
+          ],
+          "updates": [
+            {
+              "task_id": "dev_m_recycle_proof",
+              "action": "cancel",
+              "cue_id": "dev_m_cancel_notice"
+            },
+            {
+              "task_id": "dev_m_pressure",
+              "action": "reschedule",
+              "new_target_time": "10:50",
+              "new_label": "Inspect the pressure gauge at 10:50",
+              "new_action_text": "Inspect the pressure gauge.",
+              "cue_id": "dev_m_pressure_move_one"
+            }
+          ]
+        },
+        {
+          "id": "dev_m_s3",
+          "time": "09:40",
+          "text": "The humidity display settles. A blue circle appears on a nearby carton, similar to but not the requested blue hexagon.",
+          "options": [
+            "A) Note the display",
+            "B) Turn the carton",
+            "C) Adjust the fan"
+          ],
+          "cues": [
+            "dev_m_blue_circle_near"
+          ],
+          "updates": []
+        },
+        {
+          "id": "dev_m_s4",
+          "time": "10:10",
+          "text": "A first message moves the pressure check again, from 10:50 to 11:00; a later correction clearly replaces that time with 11:20. One message gives obsolete wording for the status note; a later correction says to send the corrected status note at 11:20 instead.",
+          "options": [
+            "A) Archive both messages",
+            "B) Underline the correction",
+            "C) Return to assembly"
+          ],
+          "cues": [
+            "dev_m_pressure_move_two",
+            "dev_m_pressure_move_three",
+            "dev_m_status_replace"
+          ],
+          "updates": [
+            {
+              "task_id": "dev_m_pressure",
+              "action": "reschedule",
+              "new_target_time": "11:00",
+              "new_label": "Inspect the pressure gauge at 11:00",
+              "new_action_text": "Inspect the pressure gauge.",
+              "cue_id": "dev_m_pressure_move_two"
+            },
+            {
+              "task_id": "dev_m_pressure",
+              "action": "reschedule",
+              "new_target_time": "11:20",
+              "new_label": "Inspect the pressure gauge at 11:20",
+              "new_action_text": "Inspect the pressure gauge.",
+              "cue_id": "dev_m_pressure_move_three"
+            },
+            {
+              "task_id": "dev_m_status_note",
+              "action": "override",
+              "new_label": "Send the corrected status note at 11:20",
+              "new_action_text": "Send the corrected status note.",
+              "cue_id": "dev_m_status_replace"
+            }
+          ]
+        },
+        {
+          "id": "dev_m_s5",
+          "time": "10:50",
+          "text": "The requested blue hexagon appears on the release panel. At the same time, the canceled proof's disposal lamp turns solid.",
+          "options": [
+            "A) Look at the panel",
+            "B) Clear the side shelf",
+            "C) Tighten the latch"
+          ],
+          "cues": [
+            "dev_m_blue_hexagon",
+            "dev_m_disposal_solid"
+          ],
+          "updates": []
+        },
+        {
+          "id": "dev_m_s5b",
+          "time": "11:00",
+          "text": "The first correction's superseded 11:00 pressure-check time passes; the later 11:20 correction still controls.",
+          "options": [
+            "A) Leave the gauge alone",
+            "B) Sort the fasteners",
+            "C) Wipe the bench"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "dev_m_s6",
+          "time": "11:20",
+          "text": "The corrected pressure-check time and corrected status-note time have both arrived.",
+          "options": [
+            "A) Review the correction",
+            "B) Set down the wrench",
+            "C) Open the console"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "dev_m_s7",
+          "time": "14:00",
+          "text": "A colleague casually asks whether status notes are interesting, but gives no new instruction and no task is due.",
+          "options": [
+            "A) Continue sorting",
+            "B) Read a label",
+            "C) Close the cabinet"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}
