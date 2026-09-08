@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-09-08T15:25:49.294281+00:00",
+  "authorization": {
+    "scope": "Existing frozen small pilot only; no full PM-Bench, extra models, or balance-spending runs",
+    "total_budget_usd": 0.3,
+    "authorized_repeats": 1
+  },
+  "credential_available": false,
+  "status": "blocked_missing_environment_credential",
+  "paid_inference_attempted": false,
+  "model_requests_sent": 0,
+  "usable_matched_pairs": 0,
+  "command": "python3 scripts/run_paired.py --suite pilot --live --budget-usd 0.30",
+  "command_matches_frozen_protocol": true,
+  "cli_default_repeats": 1,
+  "scenario_count": 1,
+  "trajectory_days": 1,
+  "steps_per_condition": 8,
+  "pair_definition": "Two complete eight-step trajectories of the same one-day scenario, one A0 and one A1; not two API calls.",
+  "order": "A0 then A1 at each simulated step",
+  "minimum_model_calls": 16,
+  "maximum_billable_attempts": 64,
+  "seed": 20260904,
+  "model_configuration": {
+    "provider": "openrouter",
+    "route": "novita",
+    "quantizations": [
+      "fp8"
+    ],
+    "allow_route_fallbacks": false,
+    "require_parameters": true,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    },
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "model_id": "deepseek/deepseek-chat-v3.1",
+    "pricing_usd_per_million_tokens": {
+      "input": 0.27,
+      "output": 1.0
+    }
+  },
+  "prompts": {
+    "A0": {
+      "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+      "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+      "addendum_path": null,
+      "addendum_file_sha256": null,
+      "effective_prompt_sha256": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+      "addendum_present": false
+    },
+    "A1": {
+      "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+      "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+      "addendum_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/prospective_memory_system.txt",
+      "addendum_file_sha256": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+      "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+      "addendum_present": true
+    }
+  },
+  "pilot_protocol_sha256": "d6ede7bd8800cfecbf66610c282c830bf35b0e6ab137fd8d4a2887bc9d501e3e",
+  "pilot_freeze_manifest_sha256": "d3b2647316b8be0ef07a78a5801f42e348567302d81d8859f764ed2fc1a87637",
+  "scenario_sha256": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+  "estimate": {
+    "conservative_pair_estimate_usd": 0.13677591999999997,
+    "maximum_attempts": 64,
+    "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+    "billable": false,
+    "guaranteed_billing_cap": false
+  },
+  "full_pair_allowance_check": "passed before any inference; sequential single-pair command has no competing budget consumers",
+  "budget_guard_detail": "Pair startup checks that the full stress estimate fits remaining budget. Each request reserves its estimate before dispatch, including retry attempts. This is a padded heuristic, not a guaranteed bill.",
+  "provider_reported_cost_usd": null,
+  "verified_billed_cost_usd": null,
+  "billable_preflight_requests": 0,
+  "route_availability_check": "Not repeated after credential blocker; no authenticated inference test and no network requests in this preflight."
+}
