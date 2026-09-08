@@ -1,0 +1,128 @@
+{
+  "conservative_estimate": {
+    "billable": false,
+    "conservative_pair_estimate_usd": 0.6370840900000003,
+    "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+    "guaranteed_billing_cap": false,
+    "maximum_attempts": 160
+  },
+  "created_at_utc": "2026-09-08T17:09:59.393799+00:00",
+  "fixtures_warning": "Hand-authored visible-input software witness, not an autonomous model or performance measurement. Live runner never imports it.",
+  "hidden_visibility": {
+    "all_no_query_requests_identical_under_hidden_state_change": true,
+    "counterfactual_is_evaluation_case": false,
+    "limitation": "Official scoring does not require a query; a lucky action can earn a hit. Report query-supported hidden hits separately from task hits.",
+    "permitted_query_reveals_changed_state": true,
+    "positive_query_step": "Tuesday/dev_t_s5",
+    "pre_query_request_identical": true
+  },
+  "mode": "OFFLINE_SOFTWARE_VALIDATION",
+  "model_inference": false,
+  "network_calls": 0,
+  "no_query_control": {
+    "fn": 1,
+    "fp": 0,
+    "path": "artifacts/verification/followup-v1/A0-no-query-control/mock-A0-20260908T170959-b3458fb1",
+    "tp": 11
+  },
+  "proposed_explicit_budget_usd": 0.7,
+  "scenario_file": "data/development/prospective_memory_dev_v1.json",
+  "scenario_sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+  "selection": "Complete existing scenario chosen for coverage before any follow-up inference; no slicing or new evaluated cases.",
+  "usage_informed_estimate": {
+    "assumptions": "Pilot-calibrated input-token/request-byte ratio by condition; fresh complete 20-step histories with two relevant queries per condition (44 calls total), no malformed responses/retries, mean 33.625 output tokens per call. No cache discount assumed. A projection, not new model evidence or a cap.",
+    "conditions": {
+      "A0": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.24861918212403072,
+        "projected_calls": 22,
+        "projected_input_tokens": 63930,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A0-visible-witness/mock-A0-20260908T170958-5b9f39b7",
+        "uncached_list_price_estimate_usd": 0.018001100000000003
+      },
+      "A1": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.22649062931777655,
+        "projected_calls": 22,
+        "projected_input_tokens": 76364,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32",
+        "uncached_list_price_estimate_usd": 0.021358280000000004
+      }
+    },
+    "total_usd": 0.03935938
+  },
+  "witnesses": {
+    "A0": {
+      "mode": "MOCK",
+      "official_score": {
+        "canceled_total": 2,
+        "check_time_calls": 0,
+        "chosen_tasks": 12,
+        "commission": 0,
+        "cross_day_hit": 2,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 2,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 20,
+        "exact_set_match_steps": 20,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 12,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 12,
+        "state_query_calls": 2,
+        "update_canceled": 2,
+        "update_hit": 3,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 5,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "path": "artifacts/verification/followup-v1/A0-visible-witness/mock-A0-20260908T170958-5b9f39b7",
+      "steps": 20
+    },
+    "A1": {
+      "mode": "MOCK",
+      "official_score": {
+        "canceled_total": 2,
+        "check_time_calls": 0,
+        "chosen_tasks": 12,
+        "commission": 0,
+        "cross_day_hit": 2,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 2,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 20,
+        "exact_set_match_steps": 20,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 12,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 12,
+        "state_query_calls": 2,
+        "update_canceled": 2,
+        "update_hit": 3,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 5,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "path": "artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32",
+      "steps": 20
+    }
+  }
+}

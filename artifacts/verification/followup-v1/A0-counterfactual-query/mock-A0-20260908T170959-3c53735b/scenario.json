@@ -1,0 +1,660 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Align the desk stapler.",
+          "id": "dev_lure_align_stapler"
+        },
+        {
+          "action_text": "Fold an empty wrapper.",
+          "id": "dev_lure_fold_wrapper"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "dev_lure_count_clips"
+        },
+        {
+          "action_text": "Wipe a cabinet handle.",
+          "id": "dev_lure_wipe_handle"
+        },
+        {
+          "action_text": "Move a spare cushion.",
+          "id": "dev_lure_move_cushion"
+        },
+        {
+          "action_text": "Read the wall poster.",
+          "id": "dev_lure_read_poster"
+        },
+        {
+          "action_text": "Sort colored pencils.",
+          "id": "dev_lure_sort_pencils"
+        },
+        {
+          "action_text": "Refill an empty cup.",
+          "id": "dev_lure_refill_cup"
+        },
+        {
+          "action_text": "Check your shoelaces.",
+          "id": "dev_lure_check_laces"
+        },
+        {
+          "action_text": "Stack unused coasters.",
+          "id": "dev_lure_stack_coasters"
+        }
+      ],
+      "name": "Monday",
+      "start_instructions": [
+        "Today's workshop intentions:",
+        "- Seal the copper case when the loading bell rings.",
+        "- Log the room humidity at 09:40.",
+        "- Recycle the gray proof when the disposal lamp turns solid.",
+        "- Inspect the pressure gauge at 10:10.",
+        "- Release the sample envelope when the blue hexagon appears.",
+        "- Send the status note at 11:20."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "dev_m_s1",
+          "options": [
+            "A) Open the shutters",
+            "B) Straighten the mat",
+            "C) Check the worktable"
+          ],
+          "text": "You jot a note: On Wednesday, File the blue archive card when the brass cabinet clicks. Then you sort unrelated delivery slips.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_m_loading_bell",
+            "dev_m_cancel_notice",
+            "dev_m_pressure_move_one"
+          ],
+          "id": "dev_m_s2",
+          "options": [
+            "A) Close the ledger",
+            "B) Move the trolley",
+            "C) Mark the clipboard"
+          ],
+          "text": "The loading bell rings. A supervisor also cancels recycling the gray proof and moves the pressure-gauge inspection from 10:10 to 10:50.",
+          "time": "08:30",
+          "updates": [
+            {
+              "action": "cancel",
+              "cue_id": "dev_m_cancel_notice",
+              "task_id": "dev_m_recycle_proof"
+            },
+            {
+              "action": "reschedule",
+              "cue_id": "dev_m_pressure_move_one",
+              "new_action_text": "Inspect the pressure gauge.",
+              "new_label": "Inspect the pressure gauge at 10:50",
+              "new_target_time": "10:50",
+              "task_id": "dev_m_pressure"
+            }
+          ]
+        },
+        {
+          "cues": [
+            "dev_m_blue_circle_near"
+          ],
+          "id": "dev_m_s3",
+          "options": [
+            "A) Note the display",
+            "B) Turn the carton",
+            "C) Adjust the fan"
+          ],
+          "text": "The humidity display settles. A blue circle appears on a nearby carton, similar to but not the requested blue hexagon.",
+          "time": "09:40",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_m_pressure_move_two",
+            "dev_m_pressure_move_three",
+            "dev_m_status_replace"
+          ],
+          "id": "dev_m_s4",
+          "options": [
+            "A) Archive both messages",
+            "B) Underline the correction",
+            "C) Return to assembly"
+          ],
+          "text": "A first message moves the pressure check again, from 10:50 to 11:00; a later correction clearly replaces that time with 11:20. One message gives obsolete wording for the status note; a later correction says to send the corrected status note at 11:20 instead.",
+          "time": "10:10",
+          "updates": [
+            {
+              "action": "reschedule",
+              "cue_id": "dev_m_pressure_move_two",
+              "new_action_text": "Inspect the pressure gauge.",
+              "new_label": "Inspect the pressure gauge at 11:00",
+              "new_target_time": "11:00",
+              "task_id": "dev_m_pressure"
+            },
+            {
+              "action": "reschedule",
+              "cue_id": "dev_m_pressure_move_three",
+              "new_action_text": "Inspect the pressure gauge.",
+              "new_label": "Inspect the pressure gauge at 11:20",
+              "new_target_time": "11:20",
+              "task_id": "dev_m_pressure"
+            },
+            {
+              "action": "override",
+              "cue_id": "dev_m_status_replace",
+              "new_action_text": "Send the corrected status note.",
+              "new_label": "Send the corrected status note at 11:20",
+              "task_id": "dev_m_status_note"
+            }
+          ]
+        },
+        {
+          "cues": [
+            "dev_m_blue_hexagon",
+            "dev_m_disposal_solid"
+          ],
+          "id": "dev_m_s5",
+          "options": [
+            "A) Look at the panel",
+            "B) Clear the side shelf",
+            "C) Tighten the latch"
+          ],
+          "text": "The requested blue hexagon appears on the release panel. At the same time, the canceled proof's disposal lamp turns solid.",
+          "time": "10:50",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "dev_m_s5b",
+          "options": [
+            "A) Leave the gauge alone",
+            "B) Sort the fasteners",
+            "C) Wipe the bench"
+          ],
+          "text": "The first correction's superseded 11:00 pressure-check time passes; the later 11:20 correction still controls.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "dev_m_s6",
+          "options": [
+            "A) Review the correction",
+            "B) Set down the wrench",
+            "C) Open the console"
+          ],
+          "text": "The corrected pressure-check time and corrected status-note time have both arrived.",
+          "time": "11:20",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "dev_m_s7",
+          "options": [
+            "A) Continue sorting",
+            "B) Read a label",
+            "C) Close the cabinet"
+          ],
+          "text": "A colleague casually asks whether status notes are interesting, but gives no new instruction and no task is due.",
+          "time": "14:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Seal the copper case.",
+          "cue_id": "dev_m_loading_bell",
+          "encoding": "start",
+          "id": "dev_m_seal_case",
+          "label": "Seal the copper case when the loading bell rings",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Log the room humidity.",
+          "encoding": "start",
+          "id": "dev_m_log_humidity",
+          "label": "Log the room humidity at 09:40",
+          "regular": false,
+          "target_time": "09:40",
+          "type": "time"
+        },
+        {
+          "action_text": "Recycle the gray proof.",
+          "cue_id": "dev_m_disposal_solid",
+          "encoding": "start",
+          "id": "dev_m_recycle_proof",
+          "label": "Recycle the gray proof when the disposal lamp turns solid",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Inspect the pressure gauge.",
+          "encoding": "start",
+          "id": "dev_m_pressure",
+          "label": "Inspect the pressure gauge at 10:10",
+          "regular": false,
+          "target_time": "10:10",
+          "type": "time"
+        },
+        {
+          "action_text": "Release the sample envelope.",
+          "cue_id": "dev_m_blue_hexagon",
+          "encoding": "start",
+          "id": "dev_m_release_envelope",
+          "label": "Release the sample envelope when the blue hexagon appears",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Send the status note.",
+          "encoding": "start",
+          "id": "dev_m_status_note",
+          "label": "Send the status note at 11:20",
+          "regular": false,
+          "target_time": "11:20",
+          "type": "time"
+        }
+      ]
+    },
+    {
+      "lures": [
+        {
+          "action_text": "Align the desk stapler.",
+          "id": "dev_lure_align_stapler"
+        },
+        {
+          "action_text": "Fold an empty wrapper.",
+          "id": "dev_lure_fold_wrapper"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "dev_lure_count_clips"
+        },
+        {
+          "action_text": "Wipe a cabinet handle.",
+          "id": "dev_lure_wipe_handle"
+        },
+        {
+          "action_text": "Move a spare cushion.",
+          "id": "dev_lure_move_cushion"
+        },
+        {
+          "action_text": "Read the wall poster.",
+          "id": "dev_lure_read_poster"
+        },
+        {
+          "action_text": "Sort colored pencils.",
+          "id": "dev_lure_sort_pencils"
+        },
+        {
+          "action_text": "Refill an empty cup.",
+          "id": "dev_lure_refill_cup"
+        },
+        {
+          "action_text": "Check your shoelaces.",
+          "id": "dev_lure_check_laces"
+        },
+        {
+          "action_text": "Stack unused coasters.",
+          "id": "dev_lure_stack_coasters"
+        }
+      ],
+      "name": "Tuesday",
+      "start_instructions": [
+        "Today's control-room intentions:",
+        "- Lock the test chamber when the safety chime sounds.",
+        "- Sign the chamber record when the review window opens after locking the chamber.",
+        "- Acknowledge cooling only when the sensor board reports fully stable cooling.",
+        "- Publish the manifest when the amber approval appears.",
+        "- Remove the provisional placard when its removal signal appears.",
+        "- Call the calibration desk at 16:00."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "dev_t_s1",
+          "options": [
+            "A) Check the chair",
+            "B) Open the shutters",
+            "C) Set down the folder"
+          ],
+          "text": "You begin with routine console checks and several irrelevant maintenance messages.",
+          "time": "07:30",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_t_manifest_override"
+          ],
+          "id": "dev_t_s2",
+          "options": [
+            "A) Confirm the correction",
+            "B) Pin the notice",
+            "C) Resume the checklist"
+          ],
+          "text": "A correction overrides the amber approval: publish the manifest only when the violet approval appears. The amber signal is obsolete.",
+          "time": "08:00",
+          "updates": [
+            {
+              "action": "override",
+              "cue_id": "dev_t_manifest_override",
+              "new_action_text": "Publish the corrected manifest.",
+              "new_cue_id": "dev_t_violet_approval",
+              "new_label": "Publish the manifest when the violet approval appears",
+              "task_id": "dev_t_publish_manifest"
+            }
+          ]
+        },
+        {
+          "cues": [
+            "dev_t_safety_chime",
+            "dev_t_amber_approval"
+          ],
+          "id": "dev_t_s3",
+          "options": [
+            "A) Face the chamber",
+            "B) Read the side display",
+            "C) Move the clipboard"
+          ],
+          "state_events": {
+            "sensor_board": [
+              {
+                "id": "dev_t_cooling_nearly_stable",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "The safety chime sounds. The obsolete amber approval also appears, while cooling is reported as nearly stable but not fully stable.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "dev_t_s4",
+          "options": [
+            "A) Dismiss a notice",
+            "B) Straighten the console",
+            "C) Check the doorway"
+          ],
+          "text": "Three unrelated equipment notices arrive; none changes an intention or satisfies a trigger.",
+          "time": "11:30",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_t_review_window"
+          ],
+          "id": "dev_t_s5",
+          "options": [
+            "A) Open the record",
+            "B) Check the chamber",
+            "C) Set the timer"
+          ],
+          "state_events": {
+            "sensor_board": [
+              {
+                "id": "audit_only_cooling_not_stable",
+                "text": "Cooling is still settling; stabilization is not complete."
+              }
+            ]
+          },
+          "text": "The chamber review window opens while the cooling process continues out of sight.",
+          "time": "13:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_t_violet_approval",
+            "dev_t_placard_cancel"
+          ],
+          "id": "dev_t_s6",
+          "options": [
+            "A) Read the approval",
+            "B) Close the side panel",
+            "C) Mark the cancellation"
+          ],
+          "text": "The violet approval appears. A separate message cancels removal of the provisional placard.",
+          "time": "15:00",
+          "updates": [
+            {
+              "action": "cancel",
+              "cue_id": "dev_t_placard_cancel",
+              "task_id": "dev_t_remove_placard"
+            }
+          ]
+        },
+        {
+          "cues": [
+            "dev_t_placard_remove"
+          ],
+          "id": "dev_t_s7",
+          "options": [
+            "A) Review the clock",
+            "B) Finish the console log",
+            "C) Turn off the desk lamp"
+          ],
+          "text": "The canceled placard-removal signal appears. You jot a note: On Wednesday, Hang the visitor badge when the east gate opens.",
+          "time": "16:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Lock the test chamber.",
+          "cue_id": "dev_t_safety_chime",
+          "encoding": "start",
+          "id": "dev_t_lock_chamber",
+          "label": "Lock the test chamber when the safety chime sounds",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Sign the chamber record.",
+          "cue_id": "dev_t_review_window",
+          "depends_on": "dev_t_lock_chamber",
+          "encoding": "start",
+          "id": "dev_t_sign_record",
+          "label": "Sign the chamber record when the review window opens after locking the chamber",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Acknowledge stable cooling.",
+          "cue_channel": "sensor_board",
+          "cue_id": "dev_t_cooling_stable",
+          "encoding": "start",
+          "id": "dev_t_ack_cooling",
+          "label": "Acknowledge cooling only when the sensor board reports fully stable cooling",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Publish the manifest.",
+          "cue_id": "dev_t_amber_approval",
+          "encoding": "start",
+          "id": "dev_t_publish_manifest",
+          "label": "Publish the manifest when the amber approval appears",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Remove the provisional placard.",
+          "cue_id": "dev_t_placard_remove",
+          "encoding": "start",
+          "id": "dev_t_remove_placard",
+          "label": "Remove the provisional placard when its removal signal appears",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Call the calibration desk.",
+          "encoding": "start",
+          "id": "dev_t_call_calibration",
+          "label": "Call the calibration desk at 16:00",
+          "regular": false,
+          "target_time": "16:00",
+          "type": "time"
+        }
+      ]
+    },
+    {
+      "lures": [
+        {
+          "action_text": "Align the desk stapler.",
+          "id": "dev_lure_align_stapler"
+        },
+        {
+          "action_text": "Fold an empty wrapper.",
+          "id": "dev_lure_fold_wrapper"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "dev_lure_count_clips"
+        },
+        {
+          "action_text": "Wipe a cabinet handle.",
+          "id": "dev_lure_wipe_handle"
+        },
+        {
+          "action_text": "Move a spare cushion.",
+          "id": "dev_lure_move_cushion"
+        },
+        {
+          "action_text": "Read the wall poster.",
+          "id": "dev_lure_read_poster"
+        },
+        {
+          "action_text": "Sort colored pencils.",
+          "id": "dev_lure_sort_pencils"
+        },
+        {
+          "action_text": "Refill an empty cup.",
+          "id": "dev_lure_refill_cup"
+        },
+        {
+          "action_text": "Check your shoelaces.",
+          "id": "dev_lure_check_laces"
+        },
+        {
+          "action_text": "Stack unused coasters.",
+          "id": "dev_lure_stack_coasters"
+        }
+      ],
+      "name": "Wednesday",
+      "start_instructions": [
+        "Today's immediate intentions:",
+        "- none."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "dev_w_s1",
+          "options": [
+            "A) Open the blinds",
+            "B) Arrange the chairs",
+            "C) Check the floor"
+          ],
+          "text": "A new day begins with ordinary filing and no relevant trigger.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_w_cabinet_scrape_near",
+            "dev_w_gate_closed_near"
+          ],
+          "id": "dev_w_s2",
+          "options": [
+            "A) Look toward the cabinet",
+            "B) Continue filing",
+            "C) Move a box"
+          ],
+          "text": "The brass cabinet shifts with a dull scrape but does not click. The east gate remains closed.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_w_east_gate_open"
+          ],
+          "id": "dev_w_s3",
+          "options": [
+            "A) Check the entrance",
+            "B) Set down the folder",
+            "C) Move to the desk"
+          ],
+          "text": "The east gate opens for visitors.",
+          "time": "12:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "dev_w_brass_cabinet_click"
+          ],
+          "id": "dev_w_s4",
+          "options": [
+            "A) Open the cabinet",
+            "B) Inspect the hinge",
+            "C) Clear the shelf"
+          ],
+          "text": "The brass cabinet finally clicks into its unlocked position.",
+          "time": "15:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "dev_w_s5",
+          "options": [
+            "A) Finish filing",
+            "B) Lock the desk",
+            "C) Turn off the lamp"
+          ],
+          "text": "Someone mentions archive cards in passing, but no new request or trigger is present.",
+          "time": "17:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "File the blue archive card.",
+          "cross_day": true,
+          "cross_day_offset": 2,
+          "cue_id": "dev_w_brass_cabinet_click",
+          "encoding": "start",
+          "id": "dev_w_archive_card",
+          "label": "File the blue archive card when the brass cabinet clicks",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Hang the visitor badge.",
+          "cross_day": true,
+          "cross_day_offset": 1,
+          "cue_id": "dev_w_east_gate_open",
+          "encoding": "start",
+          "id": "dev_w_hang_badge",
+          "label": "Hang the visitor badge when the east gate opens",
+          "regular": false,
+          "type": "event"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "prospective_memory_independent_development_v1",
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    },
+    "sensor_board": {
+      "mode": "delta"
+    }
+  },
+  "state_visibility": {
+    "clock": true,
+    "sensor_board": false
+  },
+  "time_visible_by_default": true
+}
