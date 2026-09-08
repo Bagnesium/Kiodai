@@ -1,0 +1,53 @@
+{
+  "benchmark_commit": "not-applicable-independent-development-v1",
+  "benchmark_split": "frozen-independent-development-v1",
+  "condition": "A1",
+  "execution": {
+    "allow_paid": false,
+    "daily_header_lines": [],
+    "random_seed": 20260904,
+    "show_task_legend": false
+  },
+  "experiment_id": "dev-a1-deepseek-v31-v1",
+  "limits": {
+    "max_context_tokens": 32768,
+    "max_output_tokens": 256,
+    "max_retries": 1,
+    "max_tool_calls_per_step": 1,
+    "timeout_seconds": 120
+  },
+  "model": {
+    "allow_route_fallbacks": false,
+    "api_key_env": "OPENROUTER_API_KEY",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model_id": "deepseek/deepseek-chat-v3.1",
+    "pricing_usd_per_million_tokens": {
+      "input": 0.27,
+      "output": 1.0
+    },
+    "provider": "mock",
+    "quantizations": [
+      "fp8"
+    ],
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    },
+    "require_parameters": true,
+    "route": "novita"
+  },
+  "output": {
+    "root": "results/raw/development"
+  },
+  "prompt": {
+    "addendum_path": "prompts/prospective_memory_system.txt",
+    "base_path": "prompts/baseline_system.txt"
+  },
+  "sampling": {
+    "seed": 20260904,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "scenario": "data/development/prospective_memory_dev_v1.json",
+  "schema_version": 1
+}

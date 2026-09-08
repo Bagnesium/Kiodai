@@ -1,0 +1,217 @@
+{
+  "aggregate_metrics": {
+    "canceled_total": 2,
+    "check_time_calls": 0,
+    "chosen_tasks": 12,
+    "commission": 0,
+    "cross_day_hit": 2,
+    "cross_day_late": 0,
+    "cross_day_miss": 0,
+    "cross_day_total": 2,
+    "dependency_violation": 0,
+    "exact_set_match_reward": 20,
+    "exact_set_match_steps": 20,
+    "exact_set_mismatch_steps": 0,
+    "false_alarm": 0,
+    "hit": 12,
+    "late": 0,
+    "miss": 0,
+    "overkill_steps": 0,
+    "set_fn": 0,
+    "set_fp": 0,
+    "set_tp": 12,
+    "state_query_calls": 2,
+    "update_canceled": 2,
+    "update_hit": 3,
+    "update_late": 0,
+    "update_miss": 0,
+    "update_total": 5,
+    "update_violation": 0,
+    "wrong_content": 0
+  },
+  "artifact_sha256": {
+    "actions.jsonl": "94dd4fc9563839ad85eca8fb76b5af5bd699572ce5d39fb5125394ce22eb83a6",
+    "addendum.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+    "baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "config.json": "947a1501430faefa92c9f05756e3eca0967dad6093571fa791dc006ad503df80",
+    "evaluator.jsonl": "717482d1a38a285fdce9ab0978ecb3b6210f90e05be732105cb68b921d209d96",
+    "failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_model_calls.jsonl": "12af2e0efa6fbc88e0ffc066df038b602e24cbfdb5fc40453210f6b178fe734e",
+    "scenario.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+    "score.json": "9b555bc2d0906e09a8848a48bd0e00ecff0238f9f8e922e1cdd02ba9dd5ce9ed",
+    "steps.jsonl": "c858802cae36c10ef8d28b9c71e1e0dfc841425a705448269640d621c3548e7d",
+    "system_prompt.txt": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+  },
+  "benchmark_commit": "not-applicable-independent-development-v1",
+  "benchmark_hash": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+  "benchmark_split": "frozen-independent-development-v1",
+  "budget": null,
+  "completed_steps": 20,
+  "condition": "A1",
+  "configuration_hash": "7e20d356e16618d82340bccff3a66439de4c20d95e0a3ee1ca1d8e417fe0cc33",
+  "context_limit": 32768,
+  "estimated_cost_usd": 0.0,
+  "evaluator_hash": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+  "exact_model_id": "deepseek/deepseek-chat-v3.1",
+  "excluded_run_count": 0,
+  "exclusion_reasons": [],
+  "experiment_id": "dev-a1-deepseek-v31-v1",
+  "failed_action_count": 0,
+  "failed_run_count": 0,
+  "failure_records": [],
+  "finished_at_utc": "2026-09-08T17:09:59.166Z",
+  "generation_parameters": {
+    "seed": 20260904,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "git_commit": "e1093c470c8981daf522d4ef047a7c3a71e077d7",
+  "git_dirty": true,
+  "git_status": " M README.md\n?? .gitignore\n?? AGENTS.md\n?? DEFENSE_RU.md\n?? IMPLEMENTATION_LOG.md\n?? MANUSCRIPT_UPDATES.md\n?? METHOD.md\n?? MOCK_RESULTS.json\n?? MOCK_RESULTS.md\n?? RESULTS.json\n?? RESULTS.md\n?? STATUS.md\n?? artifacts/\n?? configs/\n?? data/demo/\n?? data/development/\n?? data/pilot/\n?? demo/\n?? docs/\n?? paper/\n?? prompts/\n?? reports/\n?? research/\n?? research_harness/\n?? results/\n?? scripts/\n?? skills/\n?? tests/\n",
+  "heartbeat_enabled": false,
+  "implementation_hashes": {
+    "demo/app.js": "335357c874c86735ac187f7cf38c97ecf4036b65bc70a390e4014875ccddc236",
+    "demo/index.html": "9de969316ab17a6a66b202065f85ced32b46bd7fac3f206d441f5b833e859ae3",
+    "demo/style.css": "570491ca78e22ce6fc9d18512afbb0b652d0e130988a95fdd743db2ec3659b6f",
+    "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+    "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+    "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+    "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+    "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+    "research_harness/followup.py": "9a314bc09ba0582c5304ca2a26c5f573ba2e09576448de5469723e85c22c023a",
+    "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+    "research_harness/live.py": "13b78f373ca4af3c427818544e43dbe1e5608041f4aeef6860c63ed73cd65bb3",
+    "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+    "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+    "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+    "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+    "scripts/analyze_results.py": "89d6d8743ac9922a4ccdd8ba46aa0946809a69b8f7b01849564c264d3743be2b",
+    "scripts/exercise_demo.py": "cfef04415d799697e86fbad1de9d066f43e77b1d7ad11bfb661c54da1e69752c",
+    "scripts/reproduce_baseline.sh": "7239ae3ddf97c69ac4e17b005891d33322d12d2cdbe4e3f7c51744b123cc87ed",
+    "scripts/run_final_method.sh": "16066133c23993d9ec060ab32b5ca82883f61256d5750d7aef4aa306580008a3",
+    "scripts/run_followup.py": "34c4544bf4ee5b45b1e062f21bf488ceecb09df28a600c9891700ab01f54a3f1",
+    "scripts/run_generalization.sh": "6a2439e8734bb9c516291bb05b1952389de2cc7918a0f8ce2d038f2e8f35acb2",
+    "scripts/run_leakage_free.py": "3ef84a28c0df4f0bfd6480d6de08cf81b3a4035fc40cc3c261d4dc9450d98c7d",
+    "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e",
+    "scripts/run_pis.sh": "49872f637e76640d6fe80aa162772584e6eae25d44b09f0c41a9d4fa8dd4fcca",
+    "scripts/run_prompt_only.sh": "3ff6d68830cf2341c07cb8c80cc22e5d807e02d291d625bae20ce1654a6b5001",
+    "scripts/run_smoke_test.sh": "08ac59f8368813cc362babac430a09b4a9c96e216f1d2d31f4e99a4d4f8cf2dc",
+    "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+    "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+    "scripts/verify_local.py": "fd2efe0efa671e7c55b567648b12d38d74538ce90228ecf74cadf22dd8e21da2"
+  },
+  "invalid_attempt_count": 0,
+  "maximum_output_tokens": 256,
+  "mock_token_estimates": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "mode": "MOCK",
+  "model_latency_seconds": null,
+  "model_provider": "mock",
+  "model_reported_versions": [
+    "mock/solvability-witness"
+  ],
+  "pair_id": null,
+  "prompt": {
+    "addendum_file_sha256": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+    "addendum_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/prospective_memory_system.txt",
+    "addendum_present": true,
+    "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+    "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+  },
+  "prompt_hash": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+  "provider_quantizations": [
+    "fp8"
+  ],
+  "provider_require_parameters": true,
+  "provider_route": "novita",
+  "random_seed": 20260904,
+  "raw_output_locations": {
+    "actions": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/actions.jsonl",
+    "evaluator": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/evaluator.jsonl",
+    "failures": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/failures.jsonl",
+    "manifest": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/manifest.json",
+    "raw_model_calls": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/raw_model_calls.jsonl",
+    "score": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/score.json",
+    "steps": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32/steps.jsonl"
+  },
+  "repeat": 0,
+  "reported_cost_usd": 0.0,
+  "resolved_configuration_hash": "71843fc6a32c4102d1ed7e241e60df16b565dce53327f514ed112f1fa724607d",
+  "retry_count": 0,
+  "retry_settings": {
+    "malformed": "one schema-only corrective retry, then empty action set",
+    "max_retries": 1,
+    "total_attempts_per_call": 2,
+    "transport": "retry once without corrective message; interrupt on repeated transport failure"
+  },
+  "route_fallbacks_allowed": false,
+  "route_preflight": null,
+  "run_id": "mock-A1-20260908T170959-0ffacb32",
+  "runtime": {
+    "openai_sdk": "2.24.0",
+    "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "scenario_ids": [
+    {
+      "day": "Monday",
+      "step_ids": [
+        "dev_m_s1",
+        "dev_m_s2",
+        "dev_m_s3",
+        "dev_m_s4",
+        "dev_m_s5",
+        "dev_m_s5b",
+        "dev_m_s6",
+        "dev_m_s7"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "step_ids": [
+        "dev_t_s1",
+        "dev_t_s2",
+        "dev_t_s3",
+        "dev_t_s4",
+        "dev_t_s5",
+        "dev_t_s6",
+        "dev_t_s7"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "step_ids": [
+        "dev_w_s1",
+        "dev_w_s2",
+        "dev_w_s3",
+        "dev_w_s4",
+        "dev_w_s5"
+      ]
+    }
+  ],
+  "schema_version": 2,
+  "started_at_utc": "2026-09-08T17:09:59.131Z",
+  "status": "completed",
+  "temperature": 0.0,
+  "timeout_seconds": 120,
+  "token_usage": {
+    "input_tokens": null,
+    "model_call_attempts": 22,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  "tool_permissions": {
+    "max_tool_calls_per_step": 1,
+    "network_enabled": false,
+    "state_query_channels": [
+      "clock",
+      "sensor_board"
+    ]
+  },
+  "top_p": 1.0,
+  "total_steps": 20,
+  "transport_error_count": 0,
+  "transport_latency_seconds": 0.000625
+}
