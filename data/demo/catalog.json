@@ -1,0 +1,60 @@
+[
+  {
+    "id": "time",
+    "title": "Time after distractions",
+    "path": "data/demo/time.json",
+    "script": {
+      "17:00": [
+        "Submit the research project."
+      ]
+    },
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  },
+  {
+    "id": "event",
+    "title": "Exact event and near match",
+    "path": "data/demo/event.json",
+    "script": {
+      "09:20": [
+        "Send the teacher update."
+      ]
+    },
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  },
+  {
+    "id": "cancel",
+    "title": "Cancellation before the cue",
+    "path": "data/demo/cancel.json",
+    "script": {},
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  },
+  {
+    "id": "reschedule",
+    "title": "Rescheduling and the old deadline",
+    "path": "data/demo/reschedule.json",
+    "script": {
+      "18:00": [
+        "Send the consultation reminder."
+      ]
+    },
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  },
+  {
+    "id": "completed",
+    "title": "Completion and repeated cue",
+    "path": "data/demo/completed.json",
+    "script": {
+      "11:10": [
+        "Save the signed project cover."
+      ]
+    },
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  },
+  {
+    "id": "hidden",
+    "title": "Hidden condition and a permitted query",
+    "path": "data/demo/hidden.json",
+    "script": {},
+    "provenance": "Codex-authored educational demonstration, 2026-09-08; not held out or blind OOD"
+  }
+]

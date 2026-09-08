@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-08",
+  "purpose": "development/demo only",
+  "files": {
+    "data/demo/reschedule.json": "ae4fa65336f734e9fdb80a4e7bd2a4e086469e4a2b52db99dfdb40174ad6ef19",
+    "data/demo/hidden.json": "707b7a14b09c2a2643aeba8b126afba395b5726c45bd8c6a211dd4c034147b15",
+    "data/demo/event.json": "20e7daecb84dabf150f97c8c65cb375f58802830866bf4be48655f5855948b26",
+    "data/demo/completed.json": "155b41b7d1d18b22ab8bfc69b079f675da6cc4935763076f8ede992f4090cc21",
+    "data/demo/time.json": "0e26862063c8ea3a3327980458344ce82cd94b8d05b162354b1d60354e4dc3d2",
+    "data/demo/catalog.json": "0602e83d0e04c78107051725e464dc2952c438d484312794ef536a0cfcc0e70f",
+    "data/demo/cancel.json": "b98eef49001e3037ccd082b2fbfb318cccc8b5e0c3977c98485cc0c11f2a333e"
+  }
+}
