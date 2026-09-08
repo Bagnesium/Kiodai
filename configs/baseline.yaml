@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "experiment_id": "a0-baseline-unapproved",
+  "condition": "A0",
+  "benchmark_split": "released-final-test-do-not-run-before-freeze",
+  "benchmark_commit": "e1093c470c8981daf522d4ef047a7c3a71e077d7",
+  "scenario": "data/synthetic_week_v9.json",
+  "prompt": {"base_path": "prompts/baseline_system.txt", "addendum_path": null},
+  "model": {
+    "provider": "openrouter",
+    "route": "REQUIRED_PROVIDER_PIN",
+    "allow_route_fallbacks": false,
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "model_id": "openai/gpt-5.4",
+    "pricing_usd_per_million_tokens": {"input": 2.5, "output": 15.0}
+  },
+  "sampling": {"temperature": 0.0, "top_p": 1.0},
+  "limits": {"max_output_tokens": 768, "max_context_tokens": 32768, "max_retries": 2, "timeout_seconds": 120, "max_tool_calls_per_step": 20},
+  "execution": {
+    "allow_paid": false,
+    "random_seed": 20260904,
+    "show_task_legend": false,
+    "daily_header_lines": [
+      "Regular tasks for every day:\n- Take antibiotic at breakfast and dinner.\n- Take asthma medication at 11:00 and 21:00."
+    ]
+  },
+  "output": {"root": "results/raw"}
+}
+
