@@ -1,0 +1,179 @@
+{
+  "checked_at_utc": "2026-09-08T16:38:33.188476+00:00",
+  "status": "blocked_missing_environment_credential",
+  "credential_available": false,
+  "authorization_total_usd": 0.3,
+  "authorized_repeats": 1,
+  "command": "python3 scripts/run_paired.py --suite pilot --live --budget-usd 0.30",
+  "command_matches_frozen_protocol": true,
+  "scenario_count": 1,
+  "steps_per_condition": 8,
+  "pair_definition": "One matched scenario repeat: two eight-step trajectories, A0 then A1 at each scheduled step; independent condition state.",
+  "minimum_model_calls": 16,
+  "maximum_attempts": 64,
+  "frozen_integrity": "passed via configs/verify_freeze; protected files, original and pilot configurations, prompts and scenarios unchanged",
+  "prompts": {
+    "A0": {
+      "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+      "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+      "addendum_path": null,
+      "addendum_file_sha256": null,
+      "effective_prompt_sha256": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+      "addendum_present": false
+    },
+    "A1": {
+      "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+      "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+      "addendum_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/prospective_memory_system.txt",
+      "addendum_file_sha256": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+      "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+      "addendum_present": true
+    }
+  },
+  "estimate": {
+    "conservative_pair_estimate_usd": 0.13677591999999997,
+    "maximum_attempts": 64,
+    "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+    "billable": false,
+    "guaranteed_billing_cap": false
+  },
+  "full_pair_headroom_check": "passed; require checks full pair allowance before route lookup; reserve charges estimates before individual calls; one sequential pair only",
+  "budget_limitations": [
+    "Heuristic token allowance, not an exact tokenizer or guaranteed billed cap.",
+    "Budget is process-local and does not load earlier run costs. Previous attempts must be audited before restarting.",
+    "CLI allows extra repeats but default 1 is frozen and the only authorized repeat."
+  ],
+  "previous_attempts": [
+    {
+      "pair_id": "live-pair-8eafb0fb7cc2",
+      "path": "results/kiodai/live-pair-8eafb0fb7cc2/pair.json",
+      "status": "interrupted",
+      "interruption_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "runs": {},
+      "completed_timeline_steps": 0,
+      "files_sha256": {
+        "results/kiodai/live-pair-8eafb0fb7cc2/pair.json": "e976bebfcbef395c70a8adbfc7ddbdcb85055c5596247e135b101eedbd4a0b2c"
+      },
+      "runtime_configurations_match_current": true
+    },
+    {
+      "pair_id": "live-pair-c13c57cee05d",
+      "path": "results/kiodai/live-pair-c13c57cee05d/pair.json",
+      "status": "interrupted",
+      "interruption_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "runs": {},
+      "completed_timeline_steps": 0,
+      "files_sha256": {
+        "results/kiodai/live-pair-c13c57cee05d/pair.json": "ebe0b4fcc5f27378ce5d5e3076f17f578973057726a52a4950befa4330ccd2b8"
+      },
+      "runtime_configurations_match_current": true
+    }
+  ],
+  "previous_failure_classification": "Infrastructure: TLS validation during unauthenticated public metadata GET, before condition sessions or model transport construction.",
+  "previous_model_requests_from_local_evidence": 0,
+  "new_model_requests_sent": 0,
+  "paid_retry_started": false,
+  "usable_matched_pairs": 0,
+  "billable_preflight_requests": 0,
+  "model_inference_cost_from_local_request_evidence_usd": 0.0,
+  "provider_reported_cost_usd": null,
+  "verified_billed_cost_usd": null,
+  "route_preflight": {
+    "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints",
+    "billable": false,
+    "authentication_sent": false,
+    "checked_at_utc": "2026-09-08T16:39:33.861135+00:00",
+    "tls_trust_bundle": "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/certifi/cacert.pem",
+    "tls_verification_disabled": false,
+    "environment_change": "SSL_CERT_FILE set to installed certifi bundle for this read-only probe only; no model/config changes",
+    "tls_verified": true,
+    "raw_artifact": "artifacts/verification/pilot-route-metadata-20260908T163833Z.json",
+    "frozen_route_check": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints",
+      "billable": false,
+      "endpoints": [
+        {
+          "name": "Novita | deepseek/deepseek-chat-v3.1",
+          "model_id": "deepseek/deepseek-chat-v3.1",
+          "model_name": "DeepSeek: DeepSeek V3.1",
+          "context_length": 131072,
+          "pricing": {
+            "prompt": "0.00000027",
+            "completion": "0.000001",
+            "input_cache_read": "0.000000135",
+            "discount": 0
+          },
+          "provider_name": "Novita",
+          "tag": "novita/fp8",
+          "quantization": "fp8",
+          "max_completion_tokens": 32768,
+          "max_prompt_tokens": null,
+          "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "structured_outputs"
+          ],
+          "supports_tool_choice": {
+            "none": true,
+            "auto": true,
+            "required": true,
+            "function": true
+          },
+          "status": 0,
+          "uptime_last_30m": 100,
+          "uptime_last_5m": 100,
+          "uptime_last_1d": 99.96909254267746,
+          "supports_implicit_caching": false,
+          "supports_voice_cloning": false,
+          "latency_last_30m": null,
+          "throughput_last_30m": null
+        }
+      ]
+    },
+    "status": "passed"
+  },
+  "files_sha256": {
+    "research/PILOT_PROTOCOL_V1.md": "d6ede7bd8800cfecbf66610c282c830bf35b0e6ab137fd8d4a2887bc9d501e3e",
+    "research/pilot_freeze_v1.json": "d3b2647316b8be0ef07a78a5801f42e348567302d81d8859f764ed2fc1a87637",
+    "research_harness/live.py": "ac9db2ba715c7d4456ae060f14f6177ab2efd5d3ec9edb1cc106202b3397137d",
+    "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+    "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+    "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e"
+  },
+  "sandbox_route_probe": {
+    "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints",
+    "billable": false,
+    "authentication_sent": false,
+    "status": "failed",
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  "credential_available_outside_sandbox": false,
+  "default_trust_route_probe": {
+    "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints",
+    "billable": false,
+    "authentication_sent": false,
+    "checked_at_utc": "2026-09-08T16:38:55.866335+00:00",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+  },
+  "previous_artifacts_preserved_after_audit": true,
+  "verification": {
+    "tests_artifact": "artifacts/verification/pilot-retry-tests-20260908T163833Z.txt",
+    "integrity_artifact": "artifacts/verification/pilot-retry-integrity-20260908T163833Z.txt",
+    "compileall_exit_code": 0,
+    "live_analysis_complete_pairs": 0,
+    "live_analysis_incomplete_pairs": 2
+  }
+}
