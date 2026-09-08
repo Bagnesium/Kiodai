@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-09-08T16:52:37.011327+00:00",
+  "live_pair_id": "live-pair-42433e00474b",
+  "completed_scenarios": 1,
+  "usable_matched_pairs": 1,
+  "incomplete_startup_attempts": 2,
+  "model_requests": 16,
+  "provider_reported_total_usd": 0.00765034,
+  "verified_billed_cost_usd": null,
+  "post_live_tests": 57,
+  "protected_file_hashes": 164,
+  "frozen_inputs_and_runtime_unchanged": true,
+  "raw_live_artifacts_unchanged": true,
+  "replay_verification": "artifacts/verification/genuine-pilot-replay-check.json",
+  "reports": [
+    "RESULTS.md",
+    "METHOD.md",
+    "MANUSCRIPT_UPDATES.md",
+    "DEFENSE_RU.md"
+  ],
+  "full_report_reproduction_command": "python3 artifacts/verification/analyze_live_pilot_20260908.py",
+  "no_additional_paid_repetitions": true
+}
