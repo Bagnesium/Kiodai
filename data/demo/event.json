@@ -1,0 +1,97 @@
+{
+  "scenario_name": "kiodai_demo_event_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Send the teacher update when the teacher says: FINAL POSTER APPROVED."
+      ],
+      "tasks": [
+        {
+          "id": "demo_update",
+          "label": "Send the teacher update.",
+          "type": "event",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Send the teacher update.",
+          "cue_id": "demo_final_approved"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "09:00",
+          "text": "Read the project outline.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "09:10",
+          "text": "Teacher says: DRAFT POSTER APPROVED.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_3",
+          "time": "09:20",
+          "text": "Teacher says: FINAL POSTER APPROVED.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [
+            "demo_final_approved"
+          ],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "09:30",
+          "text": "Discuss lunch plans.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}

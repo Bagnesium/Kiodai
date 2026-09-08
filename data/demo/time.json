@@ -1,0 +1,107 @@
+{
+  "scenario_name": "kiodai_demo_time_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Submit the research project at 17:00."
+      ],
+      "tasks": [
+        {
+          "id": "demo_submit",
+          "label": "Submit the research project.",
+          "type": "time",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Submit the research project.",
+          "target_time": "17:00"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "16:00",
+          "text": "Review the reference style.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "16:30",
+          "text": "Discuss the school exhibition layout.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_3",
+          "time": "16:59",
+          "text": "The exhibition discussion ends.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "17:00",
+          "text": "Continue reviewing the bibliography.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_5",
+          "time": "17:10",
+          "text": "The class starts another discussion.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}
