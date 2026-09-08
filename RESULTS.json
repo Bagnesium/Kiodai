@@ -1,0 +1,532 @@
+{
+  "mode": "LIVE",
+  "runs": [
+    {
+      "aggregate_metrics": {
+        "canceled_total": 1,
+        "check_time_calls": 0,
+        "chosen_tasks": 5,
+        "commission": 0,
+        "cross_day_hit": 0,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 0,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 8,
+        "exact_set_match_steps": 8,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 5,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 5,
+        "state_query_calls": 0,
+        "update_canceled": 1,
+        "update_hit": 2,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 3,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "artifact_sha256": {
+        "actions.jsonl": "975c9395320e42f16a8176a04e7fc6d4d3f8ac6fd8df33d8d2d1bfc0a1fe7a5c",
+        "baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "config.json": "0fc0e7be25db9e0c1a223fb7373848fe28ed37fc31f72ae28e338d5bb21b4eb2",
+        "evaluator.jsonl": "d84acdb86bf87f176edd69b7808b8de2d1fd8beb97157c961e0ff462c19a8384",
+        "failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw_model_calls.jsonl": "c360d7ddb2ce344800c03b2a3acdf563b9882b06632e68c00a2d641b7972aa7a",
+        "scenario.json": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+        "score.json": "ee69a51eb025925c47ff84fb161468c7defa616cb532d0fc3f9909ebab89e4b4",
+        "steps.jsonl": "5d2d9a2b72950092016ace82fcfe8d9609ffb906ecd5d8278287547eb3a767cf",
+        "system_prompt.txt": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38"
+      },
+      "benchmark_commit": "not-applicable-independent-development-v1",
+      "benchmark_hash": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+      "benchmark_split": "development-first-day-pilot-v1-not-held-out",
+      "budget": {
+        "attempts": 15,
+        "ceiling_usd": 0.3,
+        "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable.",
+        "reported_cost_subtotal_usd": 0.007002929999999999,
+        "reported_cost_usd": 0.007002929999999999,
+        "reserved_estimate_usd": 0.0176046,
+        "unreported_attempts": 0
+      },
+      "completed_steps": 8,
+      "condition": "A0",
+      "configuration_hash": "1dfeeaf486431a4312ecc6090449508bb6fca38fb131d62e1667aa28ba805100",
+      "context_limit": 32768,
+      "estimated_cost_usd": 0.00400013,
+      "evaluator_hash": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+      "exact_model_id": "deepseek/deepseek-chat-v3.1",
+      "excluded_run_count": 0,
+      "exclusion_reasons": [],
+      "experiment_id": "pilot-a0-deepseek-v31-v1",
+      "failed_action_count": 0,
+      "failed_run_count": 0,
+      "failure_records": [],
+      "finished_at_utc": "2026-09-08T16:45:10.003Z",
+      "generation_parameters": {
+        "seed": 20260904,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "git_commit": "e1093c470c8981daf522d4ef047a7c3a71e077d7",
+      "git_dirty": true,
+      "git_status": " M README.md\n?? .gitignore\n?? AGENTS.md\n?? DEFENSE_RU.md\n?? IMPLEMENTATION_LOG.md\n?? MANUSCRIPT_UPDATES.md\n?? METHOD.md\n?? MOCK_RESULTS.json\n?? MOCK_RESULTS.md\n?? RESULTS.json\n?? RESULTS.md\n?? STATUS.md\n?? artifacts/\n?? configs/\n?? data/demo/\n?? data/development/\n?? data/pilot/\n?? demo/\n?? docs/\n?? paper/\n?? prompts/\n?? reports/\n?? research/\n?? research_harness/\n?? results/\n?? scripts/\n?? skills/\n?? tests/\n",
+      "heartbeat_enabled": false,
+      "implementation_hashes": {
+        "demo/app.js": "335357c874c86735ac187f7cf38c97ecf4036b65bc70a390e4014875ccddc236",
+        "demo/index.html": "9de969316ab17a6a66b202065f85ced32b46bd7fac3f206d441f5b833e859ae3",
+        "demo/style.css": "570491ca78e22ce6fc9d18512afbb0b652d0e130988a95fdd743db2ec3659b6f",
+        "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+        "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+        "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+        "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+        "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+        "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+        "research_harness/live.py": "ac9db2ba715c7d4456ae060f14f6177ab2efd5d3ec9edb1cc106202b3397137d",
+        "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+        "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+        "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+        "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+        "scripts/analyze_results.py": "89d6d8743ac9922a4ccdd8ba46aa0946809a69b8f7b01849564c264d3743be2b",
+        "scripts/exercise_demo.py": "cfef04415d799697e86fbad1de9d066f43e77b1d7ad11bfb661c54da1e69752c",
+        "scripts/reproduce_baseline.sh": "7239ae3ddf97c69ac4e17b005891d33322d12d2cdbe4e3f7c51744b123cc87ed",
+        "scripts/run_final_method.sh": "16066133c23993d9ec060ab32b5ca82883f61256d5750d7aef4aa306580008a3",
+        "scripts/run_generalization.sh": "6a2439e8734bb9c516291bb05b1952389de2cc7918a0f8ce2d038f2e8f35acb2",
+        "scripts/run_leakage_free.py": "3ef84a28c0df4f0bfd6480d6de08cf81b3a4035fc40cc3c261d4dc9450d98c7d",
+        "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e",
+        "scripts/run_pis.sh": "49872f637e76640d6fe80aa162772584e6eae25d44b09f0c41a9d4fa8dd4fcca",
+        "scripts/run_prompt_only.sh": "3ff6d68830cf2341c07cb8c80cc22e5d807e02d291d625bae20ce1654a6b5001",
+        "scripts/run_smoke_test.sh": "08ac59f8368813cc362babac430a09b4a9c96e216f1d2d31f4e99a4d4f8cf2dc",
+        "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+        "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+        "scripts/verify_local.py": "fd2efe0efa671e7c55b567648b12d38d74538ce90228ecf74cadf22dd8e21da2"
+      },
+      "invalid_attempt_count": 0,
+      "maximum_output_tokens": 256,
+      "mock_token_estimates": null,
+      "mode": "LIVE",
+      "model_latency_seconds": 26.383078,
+      "model_provider": "openrouter",
+      "model_reported_versions": [
+        "deepseek/deepseek-chat-v3.1"
+      ],
+      "pair_id": "live-pair-42433e00474b",
+      "prompt": {
+        "addendum_file_sha256": null,
+        "addendum_path": null,
+        "addendum_present": false,
+        "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+        "effective_prompt_sha256": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38"
+      },
+      "prompt_hash": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+      "provider_quantizations": [
+        "fp8"
+      ],
+      "provider_require_parameters": true,
+      "provider_route": "novita",
+      "random_seed": 20260904,
+      "raw_output_locations": {
+        "actions": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/actions.jsonl",
+        "evaluator": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/evaluator.jsonl",
+        "failures": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/failures.jsonl",
+        "manifest": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/manifest.json",
+        "raw_model_calls": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/raw_model_calls.jsonl",
+        "score": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/score.json",
+        "steps": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/steps.jsonl"
+      },
+      "repeat": 0,
+      "reported_cost_usd": 0.00336941,
+      "resolved_configuration_hash": "7318d5992f6620d8202d6065f06b3d04fa19fedfa5843a8b41b792d52513b314",
+      "retry_count": 0,
+      "retry_settings": {
+        "malformed": "one schema-only corrective retry, then empty action set",
+        "max_retries": 1,
+        "total_attempts_per_call": 2,
+        "transport": "retry once without corrective message; interrupt on repeated transport failure"
+      },
+      "route_fallbacks_allowed": false,
+      "route_preflight": {
+        "billable": false,
+        "endpoints": [
+          {
+            "context_length": 131072,
+            "latency_last_30m": null,
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "model_id": "deepseek/deepseek-chat-v3.1",
+            "model_name": "DeepSeek: DeepSeek V3.1",
+            "name": "Novita | deepseek/deepseek-chat-v3.1",
+            "pricing": {
+              "completion": "0.000001",
+              "discount": 0,
+              "input_cache_read": "0.000000135",
+              "prompt": "0.00000027"
+            },
+            "provider_name": "Novita",
+            "quantization": "fp8",
+            "status": 0,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "seed",
+              "top_k",
+              "repetition_penalty",
+              "tools",
+              "tool_choice",
+              "response_format",
+              "structured_outputs"
+            ],
+            "supports_implicit_caching": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "novita/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 99.96909254267746,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          }
+        ],
+        "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+      },
+      "run_id": "live-A0-20260908T164420-7848b46b",
+      "runtime": {
+        "openai_sdk": "2.24.0",
+        "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]"
+      },
+      "scenario_ids": [
+        {
+          "day": "Monday",
+          "step_ids": [
+            "dev_m_s1",
+            "dev_m_s2",
+            "dev_m_s3",
+            "dev_m_s4",
+            "dev_m_s5",
+            "dev_m_s5b",
+            "dev_m_s6",
+            "dev_m_s7"
+          ]
+        }
+      ],
+      "schema_version": 2,
+      "started_at_utc": "2026-09-08T16:44:20.778Z",
+      "status": "completed",
+      "temperature": 0.0,
+      "timeout_seconds": 120,
+      "token_usage": {
+        "input_tokens": 13819,
+        "model_call_attempts": 8,
+        "output_tokens": 269,
+        "total_tokens": 14088
+      },
+      "tool_permissions": {
+        "max_tool_calls_per_step": 1,
+        "network_enabled": true,
+        "state_query_channels": [
+          "clock",
+          "sensor_board"
+        ]
+      },
+      "top_p": 1.0,
+      "total_steps": 8,
+      "transport_error_count": 0,
+      "transport_latency_seconds": 26.383078,
+      "_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b/manifest.json"
+    },
+    {
+      "aggregate_metrics": {
+        "canceled_total": 1,
+        "check_time_calls": 0,
+        "chosen_tasks": 5,
+        "commission": 0,
+        "cross_day_hit": 0,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 0,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 8,
+        "exact_set_match_steps": 8,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 5,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 5,
+        "state_query_calls": 0,
+        "update_canceled": 1,
+        "update_hit": 2,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 3,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "artifact_sha256": {
+        "actions.jsonl": "293bb6a0958cdb04a3f8ddfdfb7d4d50aa762a8e185880dbf99692493035b450",
+        "addendum.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+        "baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "config.json": "f07b39f5cbd419a6ad6ff6a44548b3face5d452f02b2707467cdbb1b0ee6fad5",
+        "evaluator.jsonl": "d84acdb86bf87f176edd69b7808b8de2d1fd8beb97157c961e0ff462c19a8384",
+        "failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw_model_calls.jsonl": "ff025a834de5f73ee7afa09005d2350f53184e4bf4cf263d00cdb98629fa975f",
+        "scenario.json": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+        "score.json": "ee69a51eb025925c47ff84fb161468c7defa616cb532d0fc3f9909ebab89e4b4",
+        "steps.jsonl": "c3752c7b2b67a2de7966dc50a2c2957d4dbdfddd2eec0821cadbb9afafe70785",
+        "system_prompt.txt": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+      },
+      "benchmark_commit": "not-applicable-independent-development-v1",
+      "benchmark_hash": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+      "benchmark_split": "development-first-day-pilot-v1-not-held-out",
+      "budget": {
+        "attempts": 16,
+        "ceiling_usd": 0.3,
+        "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable.",
+        "reported_cost_subtotal_usd": 0.007650339999999999,
+        "reported_cost_usd": 0.007650339999999999,
+        "reserved_estimate_usd": 0.01924624,
+        "unreported_attempts": 0
+      },
+      "completed_steps": 8,
+      "condition": "A1",
+      "configuration_hash": "f77bb4dbab508038a7d8f8dc8ced719d418d7e7eb167fa9ff68e955d192caf90",
+      "context_limit": 32768,
+      "estimated_cost_usd": 0.00544733,
+      "evaluator_hash": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+      "exact_model_id": "deepseek/deepseek-chat-v3.1",
+      "excluded_run_count": 0,
+      "exclusion_reasons": [],
+      "experiment_id": "pilot-a1-deepseek-v31-v1",
+      "failed_action_count": 0,
+      "failed_run_count": 0,
+      "failure_records": [],
+      "finished_at_utc": "2026-09-08T16:45:13.552Z",
+      "generation_parameters": {
+        "seed": 20260904,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "git_commit": "e1093c470c8981daf522d4ef047a7c3a71e077d7",
+      "git_dirty": true,
+      "git_status": " M README.md\n?? .gitignore\n?? AGENTS.md\n?? DEFENSE_RU.md\n?? IMPLEMENTATION_LOG.md\n?? MANUSCRIPT_UPDATES.md\n?? METHOD.md\n?? MOCK_RESULTS.json\n?? MOCK_RESULTS.md\n?? RESULTS.json\n?? RESULTS.md\n?? STATUS.md\n?? artifacts/\n?? configs/\n?? data/demo/\n?? data/development/\n?? data/pilot/\n?? demo/\n?? docs/\n?? paper/\n?? prompts/\n?? reports/\n?? research/\n?? research_harness/\n?? results/\n?? scripts/\n?? skills/\n?? tests/\n",
+      "heartbeat_enabled": false,
+      "implementation_hashes": {
+        "demo/app.js": "335357c874c86735ac187f7cf38c97ecf4036b65bc70a390e4014875ccddc236",
+        "demo/index.html": "9de969316ab17a6a66b202065f85ced32b46bd7fac3f206d441f5b833e859ae3",
+        "demo/style.css": "570491ca78e22ce6fc9d18512afbb0b652d0e130988a95fdd743db2ec3659b6f",
+        "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+        "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+        "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+        "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+        "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+        "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+        "research_harness/live.py": "ac9db2ba715c7d4456ae060f14f6177ab2efd5d3ec9edb1cc106202b3397137d",
+        "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+        "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+        "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+        "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+        "scripts/analyze_results.py": "89d6d8743ac9922a4ccdd8ba46aa0946809a69b8f7b01849564c264d3743be2b",
+        "scripts/exercise_demo.py": "cfef04415d799697e86fbad1de9d066f43e77b1d7ad11bfb661c54da1e69752c",
+        "scripts/reproduce_baseline.sh": "7239ae3ddf97c69ac4e17b005891d33322d12d2cdbe4e3f7c51744b123cc87ed",
+        "scripts/run_final_method.sh": "16066133c23993d9ec060ab32b5ca82883f61256d5750d7aef4aa306580008a3",
+        "scripts/run_generalization.sh": "6a2439e8734bb9c516291bb05b1952389de2cc7918a0f8ce2d038f2e8f35acb2",
+        "scripts/run_leakage_free.py": "3ef84a28c0df4f0bfd6480d6de08cf81b3a4035fc40cc3c261d4dc9450d98c7d",
+        "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e",
+        "scripts/run_pis.sh": "49872f637e76640d6fe80aa162772584e6eae25d44b09f0c41a9d4fa8dd4fcca",
+        "scripts/run_prompt_only.sh": "3ff6d68830cf2341c07cb8c80cc22e5d807e02d291d625bae20ce1654a6b5001",
+        "scripts/run_smoke_test.sh": "08ac59f8368813cc362babac430a09b4a9c96e216f1d2d31f4e99a4d4f8cf2dc",
+        "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+        "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+        "scripts/verify_local.py": "fd2efe0efa671e7c55b567648b12d38d74538ce90228ecf74cadf22dd8e21da2"
+      },
+      "invalid_attempt_count": 0,
+      "maximum_output_tokens": 256,
+      "mock_token_estimates": null,
+      "mode": "LIVE",
+      "model_latency_seconds": 26.248401,
+      "model_provider": "openrouter",
+      "model_reported_versions": [
+        "deepseek/deepseek-chat-v3.1"
+      ],
+      "pair_id": "live-pair-42433e00474b",
+      "prompt": {
+        "addendum_file_sha256": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+        "addendum_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/prospective_memory_system.txt",
+        "addendum_present": true,
+        "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+        "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+      },
+      "prompt_hash": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+      "provider_quantizations": [
+        "fp8"
+      ],
+      "provider_require_parameters": true,
+      "provider_route": "novita",
+      "random_seed": 20260904,
+      "raw_output_locations": {
+        "actions": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/actions.jsonl",
+        "evaluator": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/evaluator.jsonl",
+        "failures": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/failures.jsonl",
+        "manifest": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/manifest.json",
+        "raw_model_calls": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/raw_model_calls.jsonl",
+        "score": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/score.json",
+        "steps": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/steps.jsonl"
+      },
+      "repeat": 0,
+      "reported_cost_usd": 0.00428093,
+      "resolved_configuration_hash": "ac38c1c2600fe80bb691dcc7e2367287d22a1fae4aaa5a09b29b517c4f0e4c29",
+      "retry_count": 0,
+      "retry_settings": {
+        "malformed": "one schema-only corrective retry, then empty action set",
+        "max_retries": 1,
+        "total_attempts_per_call": 2,
+        "transport": "retry once without corrective message; interrupt on repeated transport failure"
+      },
+      "route_fallbacks_allowed": false,
+      "route_preflight": {
+        "billable": false,
+        "endpoints": [
+          {
+            "context_length": 131072,
+            "latency_last_30m": null,
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "model_id": "deepseek/deepseek-chat-v3.1",
+            "model_name": "DeepSeek: DeepSeek V3.1",
+            "name": "Novita | deepseek/deepseek-chat-v3.1",
+            "pricing": {
+              "completion": "0.000001",
+              "discount": 0,
+              "input_cache_read": "0.000000135",
+              "prompt": "0.00000027"
+            },
+            "provider_name": "Novita",
+            "quantization": "fp8",
+            "status": 0,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "seed",
+              "top_k",
+              "repetition_penalty",
+              "tools",
+              "tool_choice",
+              "response_format",
+              "structured_outputs"
+            ],
+            "supports_implicit_caching": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "novita/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 99.96909254267746,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          }
+        ],
+        "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+      },
+      "run_id": "live-A1-20260908T164420-2fdeb6e6",
+      "runtime": {
+        "openai_sdk": "2.24.0",
+        "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]"
+      },
+      "scenario_ids": [
+        {
+          "day": "Monday",
+          "step_ids": [
+            "dev_m_s1",
+            "dev_m_s2",
+            "dev_m_s3",
+            "dev_m_s4",
+            "dev_m_s5",
+            "dev_m_s5b",
+            "dev_m_s6",
+            "dev_m_s7"
+          ]
+        }
+      ],
+      "schema_version": 2,
+      "started_at_utc": "2026-09-08T16:44:20.839Z",
+      "status": "completed",
+      "temperature": 0.0,
+      "timeout_seconds": 120,
+      "token_usage": {
+        "input_tokens": 19179,
+        "model_call_attempts": 8,
+        "output_tokens": 269,
+        "total_tokens": 19448
+      },
+      "tool_permissions": {
+        "max_tool_calls_per_step": 1,
+        "network_enabled": true,
+        "state_query_channels": [
+          "clock",
+          "sensor_board"
+        ]
+      },
+      "top_p": 1.0,
+      "total_steps": 8,
+      "transport_error_count": 0,
+      "transport_latency_seconds": 26.248401,
+      "_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6/manifest.json"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "live-pair-42433e00474b",
+      "scenario_sha256": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+      "repeat": 0,
+      "a0_f1": 1.0,
+      "a1_f1": 1.0,
+      "difference": 0.0
+    }
+  ],
+  "incomplete_pairs": [
+    "live-pair-8eafb0fb7cc2",
+    "live-pair-c13c57cee05d"
+  ],
+  "unpaired_runs": [],
+  "scenario_averages": [
+    {
+      "scenario_sha256": "9df2c64cbcad325bd7f07bad69dbb333cc7516f0d836832e265358812e298ca0",
+      "paired_repeats": 1,
+      "mean_difference": 0.0
+    }
+  ],
+  "mean_paired_difference": 0.0,
+  "analysis_unit": "whole scenario/trajectory; average repeats within scenarios first; days and steps are not independent samples"
+}
