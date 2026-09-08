@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "suite_id": "prospective-memory-independent-development-v1",
+  "frozen_at_utc": "2026-09-04T00:00:00Z",
+  "selection_policy": "independently-authored-before-any-A0-or-A1-model-evaluation",
+  "scenario_count": 1,
+  "day_count": 3,
+  "step_count": 20,
+  "task_count": 14,
+  "perfect_play_due_action_count": 12,
+  "groundtruth_fields_embedded": false,
+  "released_week_overlap": {
+    "task_ids": 0,
+    "labels": 0,
+    "action_texts": 0
+  },
+  "files": {
+    "data/development/prospective_memory_dev_v1.json": {
+      "sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4"
+    }
+  },
+  "required_cases": [
+    "simple_time_trigger",
+    "simple_event_trigger",
+    "long_delay_intention",
+    "cancellation",
+    "rescheduling",
+    "multiple_reschedules",
+    "override",
+    "conflicting_instructions",
+    "irrelevant_distraction",
+    "similar_false_trigger",
+    "multiple_simultaneous_intentions",
+    "hidden_state_monitoring",
+    "must_not_execute",
+    "duplicate_execution_trap",
+    "cross_day_intention"
+  ]
+}
