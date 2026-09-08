@@ -1,0 +1,99 @@
+{
+  "scenario_name": "kiodai_demo_completed_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Save the signed project cover when the teacher signs it."
+      ],
+      "tasks": [
+        {
+          "id": "demo_cover",
+          "label": "Save the signed project cover.",
+          "type": "event",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Save the signed project cover.",
+          "cue_id": "demo_signed"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "11:00",
+          "text": "Prepare the project cover.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "11:10",
+          "text": "The teacher signs the project cover.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [
+            "demo_signed"
+          ],
+          "updates": []
+        },
+        {
+          "id": "demo_step_3",
+          "time": "11:20",
+          "text": "A classmate repeats: the teacher signed the project cover.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [
+            "demo_signed"
+          ],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "11:30",
+          "text": "Discuss tomorrow\u2019s classroom schedule.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}

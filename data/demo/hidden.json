@@ -1,0 +1,128 @@
+{
+  "scenario_name": "kiodai_demo_hidden_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true,
+    "teacher_feed": false
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    },
+    "teacher_feed": {
+      "mode": "delta"
+    }
+  },
+  "days": [
+    {
+      "name": "SchoolDay",
+      "start_instructions": [
+        "Submit the revised abstract only when the teacher feed reports: ABSTRACT ACCEPTED. Check the teacher_feed channel when a new bulletin arrives."
+      ],
+      "tasks": [
+        {
+          "id": "demo_abstract",
+          "label": "Submit the revised abstract.",
+          "type": "event",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Submit the revised abstract.",
+          "cue_id": "demo_abstract_accepted",
+          "cue_channel": "teacher_feed"
+        }
+      ],
+      "lures": [
+        {
+          "id": "demo_lure_print",
+          "action_text": "Print an extra poster."
+        },
+        {
+          "id": "demo_lure_invite",
+          "action_text": "Invite the whole class."
+        },
+        {
+          "id": "demo_lure_erase",
+          "action_text": "Erase the draft notes."
+        }
+      ],
+      "steps": [
+        {
+          "id": "demo_step_1",
+          "time": "12:00",
+          "text": "Organize your notes.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_2",
+          "time": "12:10",
+          "text": "A new teacher bulletin arrives.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": [],
+          "state_events": {
+            "teacher_feed": [
+              {
+                "id": "demo_abstract_pending",
+                "text": "ABSTRACT UNDER REVIEW."
+              }
+            ]
+          }
+        },
+        {
+          "id": "demo_step_3",
+          "time": "12:20",
+          "text": "Discuss the school timetable.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "demo_step_4",
+          "time": "12:30",
+          "text": "A new teacher bulletin arrives.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": [],
+          "state_events": {
+            "teacher_feed": [
+              {
+                "id": "demo_abstract_accepted",
+                "text": "ABSTRACT ACCEPTED."
+              }
+            ]
+          }
+        },
+        {
+          "id": "demo_step_5",
+          "time": "12:40",
+          "text": "The class leaves the room.",
+          "options": [
+            "A) Read the project notes",
+            "B) Arrange the slides",
+            "C) Check the reference list"
+          ],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}
