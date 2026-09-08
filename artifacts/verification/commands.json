@@ -1,0 +1,124 @@
+[
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/verify_benchmark_integrity.py"
+    ],
+    "exit_code": 0,
+    "output": "integrity.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/verify_development_suite.py"
+    ],
+    "exit_code": 0,
+    "output": "development-integrity.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "output": "tests.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "-m",
+      "compileall",
+      "-q",
+      "research_harness",
+      "scripts",
+      "tests"
+    ],
+    "exit_code": 0,
+    "output": "compile.txt"
+  },
+  {
+    "command": [
+      "bash",
+      "scripts/run_smoke_test.sh"
+    ],
+    "exit_code": 0,
+    "output": "smoke.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/run_paired.py",
+      "--suite",
+      "demo",
+      "--scenario",
+      "all"
+    ],
+    "exit_code": 0,
+    "output": "demo-cli.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/run_paired.py",
+      "--suite",
+      "pilot"
+    ],
+    "exit_code": 0,
+    "output": "pilot-mock.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/run_paired.py",
+      "--suite",
+      "pilot",
+      "--preflight"
+    ],
+    "exit_code": 0,
+    "output": "pilot-preflight.json"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/run_paired.py",
+      "--suite",
+      "development",
+      "--preflight"
+    ],
+    "exit_code": 0,
+    "output": "development-preflight.json"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/analyze_results.py",
+      "--root",
+      "results/kiodai",
+      "--mode",
+      "MOCK",
+      "--output",
+      "MOCK_RESULTS.md"
+    ],
+    "exit_code": 0,
+    "output": "mock-analysis.txt"
+  },
+  {
+    "command": [
+      "/usr/local/bin/python3",
+      "scripts/analyze_results.py",
+      "--root",
+      "results/kiodai",
+      "--mode",
+      "LIVE",
+      "--output",
+      "RESULTS.md"
+    ],
+    "exit_code": 0,
+    "output": "live-analysis.txt"
+  }
+]

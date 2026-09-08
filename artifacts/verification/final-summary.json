@@ -1,0 +1,20 @@
+{
+  "delivered_files": {
+    "README.md": "9c05c757a8128809c6db333ec480631a4c9bdb6aacd765bac35e8ce9691e7e1a",
+    "RESULTS.md": "baa11f0973807b04b60593e6f1aca836008d2c2eeef5cbda17586cf3a7321707",
+    "MOCK_RESULTS.md": "a530c81ca3c974a04050629baf979974eee4371b12dd22ad6633a8f0faffb2cd",
+    "METHOD.md": "06dbcba91255ef59f32277f93ba2681daac2c1135b38c1e20f3bde7755613833",
+    "DEFENSE_RU.md": "642a08c3f428a18cfa053aee278f5a6845639883b0539557dc033fa5a56543b8",
+    "MANUSCRIPT_UPDATES.md": "67b668cc3053b96ca4ddf51d0c22328ee8e28339ec44e1712a0618382bac5e31",
+    "IMPLEMENTATION_LOG.md": "cfb3fe9d72570cac653ac31c056072e70079654e322eab5e8318936e881ef88d",
+    "STATUS.md": "da4e6bdaeca5eefe7d5d9ba025358fb709b2ca583352883ec88b834b21e7709c"
+  },
+  "tests": 57,
+  "protected_files": 164,
+  "http_scenarios": 6,
+  "genuine_kiodai_model_calls": 0,
+  "paid_inference_performed": false,
+  "browser_console_errors": 0,
+  "local_demo_url": "http://127.0.0.1:8765",
+  "branch": "codex/kiodai-prototype"
+}

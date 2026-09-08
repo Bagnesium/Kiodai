@@ -1,0 +1,39 @@
+test_a0_a1_settings_differ_only_in_metadata_and_addendum (test_development_experiment.DevelopmentExperimentTests.test_a0_a1_settings_differ_only_in_metadata_and_addendum) ... ok
+test_a1_effective_prompt_is_exactly_a0_plus_addendum (test_development_experiment.DevelopmentExperimentTests.test_a1_effective_prompt_is_exactly_a0_plus_addendum) ... ok
+test_frozen_development_suite (test_development_experiment.DevelopmentExperimentTests.test_frozen_development_suite) ... ok
+test_machine_readable_freeze_manifest_matches_files (test_development_experiment.DevelopmentExperimentTests.test_machine_readable_freeze_manifest_matches_files) ... ok
+test_prompt_is_frozen_and_contains_no_released_identifiers (test_development_experiment.DevelopmentExperimentTests.test_prompt_is_frozen_and_contains_no_released_identifiers) ... ok
+test_cancellation_override_and_reschedule_violations (test_evaluator_semantics.EvaluatorSemanticsTests.test_cancellation_override_and_reschedule_violations) ... ok
+test_dependency_violation (test_evaluator_semantics.EvaluatorSemanticsTests.test_dependency_violation) ... ok
+test_deterministic_fixture_perfect_play (test_evaluator_semantics.EvaluatorSemanticsTests.test_deterministic_fixture_perfect_play) ... ok
+test_duplicate_action_is_commission (test_evaluator_semantics.EvaluatorSemanticsTests.test_duplicate_action_is_commission) ... ok
+test_premature_and_late_time_actions (test_evaluator_semantics.EvaluatorSemanticsTests.test_premature_and_late_time_actions) ... ok
+test_all_recorded_protected_hashes_match (test_integrity.ProtectedFileIntegrityTests.test_all_recorded_protected_hashes_match) ... ok
+test_manifest_covers_every_discovered_protected_file (test_integrity.ProtectedFileIntegrityTests.test_manifest_covers_every_discovered_protected_file) ... ok
+test_invalid_responses_retry_then_fail_closed (test_model_gateway.ModelGatewayTests.test_invalid_responses_retry_then_fail_closed) ... FAIL
+test_request_records_provider_and_quantization_pin (test_model_gateway.ModelGatewayTests.test_request_records_provider_and_quantization_pin) ... ok
+test_strict_parser_rejects_trailing_or_duplicate_content (test_model_gateway.ModelGatewayTests.test_strict_parser_rejects_trailing_or_duplicate_content) ... ok
+test_transport_exception_is_logged_as_a_retry (test_model_gateway.ModelGatewayTests.test_transport_exception_is_logged_as_a_retry) ... ok
+test_action_selector_signature_has_no_evaluator_state (test_runner.RunnerTests.test_action_selector_signature_has_no_evaluator_state) ... ok
+test_baseline_prompt_template_matches_original_prompt (test_runner.RunnerTests.test_baseline_prompt_template_matches_original_prompt) ... ok
+test_end_to_end_invalid_response_is_scored_and_not_replaced (test_runner.RunnerTests.test_end_to_end_invalid_response_is_scored_and_not_replaced) ... ok
+test_groundtruth_canonical_ids_and_due_state_never_reach_selector (test_runner.RunnerTests.test_groundtruth_canonical_ids_and_due_state_never_reach_selector) ... ok
+test_manifest_hashes_raw_logging_and_official_score_parity (test_runner.RunnerTests.test_manifest_hashes_raw_logging_and_official_score_parity) ... ok
+test_model_gateway_has_no_evaluator_import_or_state_names (test_runner.RunnerTests.test_model_gateway_has_no_evaluator_import_or_state_names) ... ok
+test_non_mock_provider_requires_double_paid_opt_in (test_runner.RunnerTests.test_non_mock_provider_requires_double_paid_opt_in) ... ok
+test_original_handles_are_logged_before_canonical_mapping (test_runner.RunnerTests.test_original_handles_are_logged_before_canonical_mapping) ... ok
+test_smoke_fixture_identifiers_do_not_overlap_released_benchmark (test_runner.RunnerTests.test_smoke_fixture_identifiers_do_not_overlap_released_benchmark) ... ok
+
+======================================================================
+FAIL: test_invalid_responses_retry_then_fail_closed (test_model_gateway.ModelGatewayTests.test_invalid_responses_retry_then_fail_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/tests/test_model_gateway.py", line 50, in test_invalid_responses_retry_then_fail_closed
+    self.assertEqual(result.attempts, 3)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 3
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.324s
+
+FAILED (failures=1)
