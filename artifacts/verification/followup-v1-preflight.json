@@ -1,0 +1,41 @@
+{
+  "status": "prepared_not_run",
+  "paid_inference": false,
+  "evaluation_id": "full-development-followup-v1",
+  "scenario_count": 1,
+  "days": 3,
+  "steps_per_condition": 20,
+  "repeats": 1,
+  "usage_informed_estimate": {
+    "assumptions": "Pilot-calibrated input-token/request-byte ratio by condition; fresh complete 20-step histories with two relevant queries per condition (44 calls total), no malformed responses/retries, mean 33.625 output tokens per call. No cache discount assumed. A projection, not new model evidence or a cap.",
+    "conditions": {
+      "A0": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.24861918212403072,
+        "projected_calls": 22,
+        "projected_input_tokens": 63930,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A0-visible-witness/mock-A0-20260908T170958-5b9f39b7",
+        "uncached_list_price_estimate_usd": 0.018001100000000003
+      },
+      "A1": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.22649062931777655,
+        "projected_calls": 22,
+        "projected_input_tokens": 76364,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32",
+        "uncached_list_price_estimate_usd": 0.021358280000000004
+      }
+    },
+    "total_usd": 0.03935938
+  },
+  "conservative_estimate": {
+    "conservative_pair_estimate_usd": 0.6370840900000003,
+    "maximum_attempts": 160,
+    "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+    "billable": false,
+    "guaranteed_billing_cap": false
+  },
+  "proposed_budget_usd": 0.7
+}
