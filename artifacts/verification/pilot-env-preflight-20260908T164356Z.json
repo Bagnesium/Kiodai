@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-09-08T16:43:56.371078+00:00",
+  "status": "authorized_cli_completed",
+  "credential_source": "user-authorized local .env; only OPENROUTER_API_KEY parsed, no shell execution",
+  "credential_available": true,
+  "key_value_saved": false,
+  "command": [
+    "python3",
+    "scripts/run_paired.py",
+    "--suite",
+    "pilot",
+    "--live",
+    "--budget-usd",
+    "0.30"
+  ],
+  "authorized_repeats": 1,
+  "authorized_total_budget_usd": 0.3,
+  "command_matches_frozen_protocol": true,
+  "scenario_count": 1,
+  "steps_per_condition": 8,
+  "order": "A0 then A1 at each supplied step",
+  "estimate": {
+    "conservative_pair_estimate_usd": 0.13677591999999997,
+    "maximum_attempts": 64,
+    "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+    "billable": false,
+    "guaranteed_billing_cap": false
+  },
+  "prior_audit": "artifacts/verification/pilot-retry-audit-20260908T163833Z.json",
+  "prior_model_attempts": 0,
+  "previous_artifacts_preserved": true,
+  "freeze_verification": "passed",
+  "tls_setup": "SSL_CERT_FILE set to installed certifi trust bundle; TLS verification enabled",
+  "route_check": "existing Pair startup will perform free pinned route/price/parameter check before inference",
+  "paid_retry_started": true,
+  "cli_started_at_utc": "2026-09-08T16:44:19.325412+00:00",
+  "cli_exit_code": 0,
+  "cli_finished_at_utc": "2026-09-08T16:45:13.654323+00:00",
+  "command_output_artifact": "artifacts/verification/pilot-live-command-20260908T164356Z.txt"
+}
