@@ -1,0 +1,7 @@
+{
+  "conservative_pair_estimate_usd": 0.13677591999999997,
+  "maximum_attempts": 64,
+  "estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+  "billable": false,
+  "guaranteed_billing_cap": false
+}
