@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "experiment_id": "final-evaluation-disabled",
+  "condition": "UNSELECTED",
+  "benchmark_split": "released-final-test-locked",
+  "scenario": "data/synthetic_week_v9.json",
+  "prompt": {"base_path": "prompts/baseline_system.txt", "addendum_path": "prompts/prospective_memory_system.txt"},
+  "model": {"provider": "mock", "route": "disabled", "allow_route_fallbacks": false, "model_id": "mock/disabled", "pricing_usd_per_million_tokens": {"input": 0.0, "output": 0.0}},
+  "sampling": {"temperature": 0.0, "top_p": 1.0},
+  "limits": {"max_output_tokens": 768, "max_context_tokens": 32768, "max_retries": 2, "timeout_seconds": 120, "max_tool_calls_per_step": 20},
+  "execution": {"allow_paid": false, "random_seed": null, "show_task_legend": false, "daily_header_lines": []},
+  "output": {"root": "results/raw"},
+  "status": "locked-until-prompt-freeze"
+}
+
