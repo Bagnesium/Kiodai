@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "full-development-followup-v1",
+  "frozen_at_utc": "2026-09-08T17:13:35.563150+00:00",
+  "planned_after_pilot1_results": true,
+  "paid_execution_approved_at_freeze": false,
+  "followup_model_inference_completed_at_freeze": 0,
+  "provenance": "Complete pre-existing independent development scenario, exploratory; planned after observing first-day pilot. Not blind or independently held out. No new evaluated cases.",
+  "prior_pilot": "live-pair-42433e00474b",
+  "prior_pilot_difference": 0.0,
+  "prior_pilot_pooled": false,
+  "suite": "development",
+  "scenario_count": 1,
+  "days": 3,
+  "steps_per_condition": 20,
+  "intentions": 14,
+  "reachable_due_actions": 12,
+  "scenario_selection": "Whole available development scenario; retain all days, instructions, updates and dependencies. No selection by model outcome.",
+  "repeats": 1,
+  "order": [
+    "A0",
+    "A1"
+  ],
+  "order_policy": "A0 then A1 at each scheduled step; independent histories carried across all days",
+  "seed": 20260904,
+  "minimum_calls_without_queries": 40,
+  "usage_projected_calls": 44,
+  "maximum_attempts": 160,
+  "model": {
+    "provider": "openrouter",
+    "route": "novita",
+    "quantizations": [
+      "fp8"
+    ],
+    "allow_route_fallbacks": false,
+    "require_parameters": true,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    },
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "model_id": "deepseek/deepseek-chat-v3.1",
+    "pricing_usd_per_million_tokens": {
+      "input": 0.27,
+      "output": 1.0
+    }
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 20260904
+  },
+  "limits": {
+    "max_output_tokens": 256,
+    "max_context_tokens": 32768,
+    "max_retries": 1,
+    "timeout_seconds": 120,
+    "max_tool_calls_per_step": 1
+  },
+  "execution": {
+    "allow_paid": true,
+    "random_seed": 20260904,
+    "show_task_legend": false,
+    "daily_header_lines": []
+  },
+  "heartbeat_enabled": false,
+  "conditions": {
+    "A0": {
+      "config_path": "configs/dev_a0_deepseek_v31.yaml",
+      "config_sha256": "2de4e7b9a9f596fa22bcb33861b32eeb1ef7e1dcd1273cc64efd655cc680b27e",
+      "effective_prompt_sha256": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38"
+    },
+    "A1": {
+      "config_path": "configs/dev_a1_deepseek_v31.yaml",
+      "config_sha256": "8b6ba7cee65e2f4f274ad18a64e6f2c97ca7a9a8876313f83925e6b774dc9865",
+      "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+    }
+  },
+  "analysis": "Official full-trajectory TP/FP/FN, precision, recall, Set-F1 and A1 minus A0. One scenario/repeat, descriptive only; steps/days not independent; no pooling with pilot 1; all failures retained. Auxiliary query-supported hidden hit reported separately, scorer unchanged.",
+  "failure_handling": "Shared maximum two attempts per interaction for malformed/transport failures. Schema-only corrective retry, exhausted malformed -> empty action scored; transport failure on final attempt -> interrupt pair. No SDK auto retries, fallback or selective repeats. Preserve all artifacts.",
+  "proposed_budget_usd": 0.7,
+  "usage_informed_estimate": {
+    "assumptions": "Pilot-calibrated input-token/request-byte ratio by condition; fresh complete 20-step histories with two relevant queries per condition (44 calls total), no malformed responses/retries, mean 33.625 output tokens per call. No cache discount assumed. A projection, not new model evidence or a cap.",
+    "conditions": {
+      "A0": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.24861918212403072,
+        "projected_calls": 22,
+        "projected_input_tokens": 63930,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A0-visible-witness/mock-A0-20260908T170958-5b9f39b7",
+        "uncached_list_price_estimate_usd": 0.018001100000000003
+      },
+      "A1": {
+        "pilot_mean_output_tokens": 33.625,
+        "pilot_tokens_per_serialized_request_byte": 0.22649062931777655,
+        "projected_calls": 22,
+        "projected_input_tokens": 76364,
+        "projected_output_tokens": 740,
+        "request_growth_source": "artifacts/verification/followup-v1/A1-visible-witness/mock-A1-20260908T170959-0ffacb32",
+        "uncached_list_price_estimate_usd": 0.021358280000000004
+      }
+    },
+    "total_usd": 0.03935938
+  },
+  "conservative_allowance_usd": 0.63708409,
+  "conservative_estimator": "padded request bytes/4 * 1.6 input tokens; 256 output tokens every attempt; one tool query and one malformed retry per interaction",
+  "budget_rules": "Full pair headroom required before startup; per-request reservations before dispatch, retain unknown costs, account for reported overruns. Free route/price preflight only. Output-directory exclusive gate prevents budget reset by rerunning. Heuristic allowance, not guaranteed billing cap.",
+  "billable_preflight_requests": 0,
+  "output_root": "results/followup_v1",
+  "separate_report": "FOLLOWUP_RESULTS.md",
+  "proposed_live_command": "python3 scripts/run_followup.py --live --budget-usd 0.70 --env-file .env",
+  "files": {
+    "data/development/prospective_memory_dev_v1.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+    "configs/dev_a0_deepseek_v31.yaml": "2de4e7b9a9f596fa22bcb33861b32eeb1ef7e1dcd1273cc64efd655cc680b27e",
+    "configs/dev_a1_deepseek_v31.yaml": "8b6ba7cee65e2f4f274ad18a64e6f2c97ca7a9a8876313f83925e6b774dc9865",
+    "prompts/baseline_system.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "prompts/prospective_memory_system.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+    "research/a0_a1_freeze_manifest.json": "b4d7c5631d2b5f4c73ba00dacc24223c2178039b503f6cf59c791ad55bb18d01",
+    "research/development_suite_manifest.json": "34b79983993b41684df0f530c1453dcd3ae2f55681db713cdc1015cb151cb6fe",
+    "research/protected_hashes.json": "f6aed54f4c6b5ff5366b32b9aa59ed5e826e23a1d25bef944f53723a9d65c4cb",
+    "research/pilot1_preservation_v1.json": "f0e8b62bc16a51ecad49c94036bc6842bf761d69cacdf24480d8e93c92476125",
+    "research/followup_solvability_v1.json": "f726a8526fa2906a772874ec1638f5d0a5af48b67253d669bb7f4f0b90871f01",
+    "COVERAGE.md": "c65f4fcdadea97b9f97a4ddb89cd2334a680093742c8711d4e8f0bd232c6b4b8",
+    "FOLLOWUP_EVALUATION.md": "dc9e41c9be169f45a8c79945fcc33c8945d6c6b909c23873067ac2e03f00401b",
+    "scripts/run_followup.py": "34c4544bf4ee5b45b1e062f21bf488ceecb09df28a600c9891700ab01f54a3f1",
+    "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+    "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+    "sim/pm_bench.py": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+    "artifacts/verification/prepare_followup_v1.py": "9f36f69f255493413981ce313cd8a9f94cccfedb65c0a42b0530bab539151b5a",
+    "artifacts/verification/followup-v1/audit.json": "1b91750d9e4f41180309521d69069f6297331a6aa4e1b363ab457dcd80b2883a",
+    "tests/test_followup.py": "dfc8ebbe13b6997b90f41766979938e47824d54151ef8c82a7c8843207650d52",
+    "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+    "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+    "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+    "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+    "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+    "research_harness/followup.py": "0a913e8200ed779d18bacbdc2b44e81ed4d804ed55b11f00e2200a2fb842eb9d",
+    "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+    "research_harness/live.py": "13b78f373ca4af3c427818544e43dbe1e5608041f4aeef6860c63ed73cd65bb3",
+    "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+    "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+    "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+    "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74"
+  }
+}
