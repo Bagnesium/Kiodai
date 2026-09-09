@@ -1,0 +1,239 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare jade91330 sample.",
+          "id": "private_lure_91330_0"
+        },
+        {
+          "action_text": "Discard the jade91330 case.",
+          "id": "private_lure_91330_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91330_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91330_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91330_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91330_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91330_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91330_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91330_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91330_9"
+        }
+      ],
+      "name": "DayOne",
+      "start_instructions": [
+        "At 10:00 on DayTwo, Register the jade91330 sample.",
+        "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case. Only after \"Register the jade91330 sample.\" succeeds."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91330_0",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91330_1",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91330_2",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91330_3",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "11:00",
+          "updates": []
+        }
+      ],
+      "tasks": []
+    },
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare jade91330 sample.",
+          "id": "private_lure_91330_0"
+        },
+        {
+          "action_text": "Discard the jade91330 case.",
+          "id": "private_lure_91330_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91330_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91330_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91330_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91330_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91330_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91330_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91330_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91330_9"
+        }
+      ],
+      "name": "DayTwo",
+      "start_instructions": [
+        "Continue the work already assigned."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91330_0_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91330_1_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "The jade91330 cabinet creaks, without a click.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91330_2_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "cue_cabinet"
+          ],
+          "id": "private_step_91330_3_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "The jade91330 cabinet clicks.",
+          "time": "11:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Register the jade91330 sample.",
+          "cross_day": true,
+          "cross_day_offset": 1,
+          "encoding": "start",
+          "id": "private_91330_0",
+          "label": "Register the jade91330 sample.",
+          "regular": false,
+          "target_time": "10:00",
+          "type": "time"
+        },
+        {
+          "action_text": "Seal the jade91330 case.",
+          "cross_day": true,
+          "cross_day_offset": 1,
+          "cue_id": "cue_cabinet",
+          "depends_on": "private_91330_0",
+          "encoding": "start",
+          "id": "private_91330_1",
+          "label": "Seal the jade91330 case.",
+          "regular": false,
+          "type": "event"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "v2_cross_day_91330",
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "state_visibility": {
+    "clock": true
+  },
+  "time_visible_by_default": true
+}
