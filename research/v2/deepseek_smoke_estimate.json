@@ -1,0 +1,24 @@
+{
+  "api_response_reported_cost_usd": null,
+  "assumptions": {
+    "expected_retries": 0,
+    "extract_output_each": 750,
+    "input_growth_margin": 1.35,
+    "queries": "up to one deterministic query per checkpoint, zero additional model call for A2; returned text enters selection and later extraction contexts",
+    "retry_sensitivity": "duplicate expected calls plus 1.35 times prior expected output as added retry input; still not the hard bound",
+    "select_output_each": 256
+  },
+  "conservative_complete_allowance_usd": 0.49729536,
+  "conservative_full_study_usd": 19.95251712,
+  "label": "pre-inference usage projection, not evidence",
+  "pilot_source": "results/kiodai/live-pair-42433e00474b",
+  "pilot_tokens_per_request_byte": 0.23525972822289715,
+  "projected_calls_no_retries": 16,
+  "projected_input_tokens": 70751.25783462379,
+  "projected_output_tokens": 8048,
+  "source": "results/v2/mock-verification-v2/v2_hidden_91320/A2/calls.jsonl",
+  "source_sha256": "ef7361299bcebc5d36c4ea1644a87fbddabacb046261272561f8e6cee772799c",
+  "usage_informed_all_attempts_retried_sensitivity_usd": 0.05723517523069685,
+  "usage_informed_cost_usd": 0.027150839615348425,
+  "verified_billed_cost_usd": null
+}
