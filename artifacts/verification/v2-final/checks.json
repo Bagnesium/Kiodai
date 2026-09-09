@@ -1,0 +1,25 @@
+{
+  "baseline_existing_files_changed": "Only appended v2 section in research/CLAIMS.md; previous content hash verified",
+  "compileall": "passed",
+  "dashboard": "CUA verified trajectory/method/checkpoint selectors, negative and positive query evidence, completed records with receipts, and evaluator reveal separate from agent view.",
+  "existing_tests_before": 62,
+  "freeze_sha256": "1514d36f43ad5dc6bae45ec9e54c90683a632eda556963161a2beb90eda30fed",
+  "frozen_preflight": "passed",
+  "javascript_syntax": "passed",
+  "legacy_files": 404,
+  "live_v2_directory_exists": false,
+  "local_attempt": {
+    "completed_checkpoints": 1,
+    "requests": 4,
+    "status": "interrupted",
+    "usable_trajectories": 0
+  },
+  "mock_model_calls_total": 522,
+  "mock_scores_are_model_evidence": false,
+  "mock_steps_total": 288,
+  "mock_trajectories_per_method": 12,
+  "new_paid_inference": false,
+  "protected_files": 164,
+  "smoke": "passed; see smoke.txt",
+  "tests_after": 98
+}
