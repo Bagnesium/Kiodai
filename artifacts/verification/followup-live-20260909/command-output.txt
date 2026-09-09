@@ -1,0 +1,21 @@
+{
+  "evaluation_id": "full-development-followup-v1",
+  "mode": "LIVE",
+  "status": "completed",
+  "started_at_utc": "2026-09-09T13:19:33.828Z",
+  "protocol_sha256": "89d51a15f80a1c944913fccd9bdc3d918d653eca7565030768bb9ea2c8e6eeef",
+  "authorization_usd": 0.7,
+  "previous_pilot_pooled": false,
+  "planned_repeats": 1,
+  "budget": {
+    "ceiling_usd": 0.7,
+    "reserved_estimate_usd": 0.06868424000000001,
+    "reported_cost_usd": 0.03047594,
+    "reported_cost_subtotal_usd": 0.03047594,
+    "unreported_attempts": 0,
+    "attempts": 41,
+    "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable."
+  },
+  "pair_id": "live-pair-bdf241965f35",
+  "finished_at_utc": "2026-09-09T13:21:52.119Z"
+}

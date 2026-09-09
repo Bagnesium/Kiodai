@@ -1,0 +1,577 @@
+{
+  "mode": "LIVE",
+  "runs": [
+    {
+      "aggregate_metrics": {
+        "canceled_total": 2,
+        "check_time_calls": 0,
+        "chosen_tasks": 11,
+        "commission": 0,
+        "cross_day_hit": 2,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 2,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 18,
+        "exact_set_match_steps": 19,
+        "exact_set_mismatch_steps": 1,
+        "false_alarm": 0,
+        "hit": 11,
+        "late": 0,
+        "miss": 1,
+        "overkill_steps": 0,
+        "set_fn": 1,
+        "set_fp": 0,
+        "set_tp": 11,
+        "state_query_calls": 1,
+        "update_canceled": 2,
+        "update_hit": 3,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 5,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "artifact_sha256": {
+        "actions.jsonl": "b6d5a90efedcb43714a5cc7838a385f0e62126690efdd1d6108c0eebbd5e52ac",
+        "baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "config.json": "d709ec555e0317547174291aa5d7d64e516c5fba75559a56243aa50e84021ef4",
+        "evaluator.jsonl": "f1c5e815afb0e595704a73dbecc073beb66337021bb1a94ae25571d98757a31b",
+        "failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw_model_calls.jsonl": "b26dc18387d4d9ae7e02678c1ce1aca5be6796dc9fecc4c73a0a890b2f991099",
+        "scenario.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+        "score.json": "15cd4d67df0926f87a1a498f55e2ad181ea69f54d0e511eb1796f6f1e0a018de",
+        "steps.jsonl": "77b145b29835e086f0c7d8655d2bdd0e606c3b97146e6def07e20db32bf4522b",
+        "system_prompt.txt": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38"
+      },
+      "benchmark_commit": "not-applicable-independent-development-v1",
+      "benchmark_hash": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+      "benchmark_split": "frozen-independent-development-v1",
+      "budget": {
+        "attempts": 40,
+        "ceiling_usd": 0.7,
+        "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable.",
+        "reported_cost_subtotal_usd": 0.029305,
+        "reported_cost_usd": 0.029305,
+        "reserved_estimate_usd": 0.06616456000000001,
+        "unreported_attempts": 0
+      },
+      "completed_steps": 20,
+      "condition": "A0",
+      "configuration_hash": "f7cd7e0d19d4ccec5aaab96cefdef83b047f534821aed9469050c1f949ee6de9",
+      "context_limit": 32768,
+      "estimated_cost_usd": 0.016675170000000003,
+      "evaluator_hash": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+      "exact_model_id": "deepseek/deepseek-chat-v3.1",
+      "excluded_run_count": 0,
+      "exclusion_reasons": [],
+      "experiment_id": "dev-a0-deepseek-v31-v1",
+      "failed_action_count": 0,
+      "failed_run_count": 0,
+      "failure_records": [],
+      "finished_at_utc": "2026-09-09T13:21:49.440Z",
+      "generation_parameters": {
+        "seed": 20260904,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "git_commit": "15e0e2fbd4d91e62a4c9cbd3b3614c24d49ba2a3",
+      "git_dirty": true,
+      "git_status": "?? artifacts/verification/followup-live-20260909/\n",
+      "heartbeat_enabled": false,
+      "implementation_hashes": {
+        "demo/app.js": "335357c874c86735ac187f7cf38c97ecf4036b65bc70a390e4014875ccddc236",
+        "demo/index.html": "9de969316ab17a6a66b202065f85ced32b46bd7fac3f206d441f5b833e859ae3",
+        "demo/style.css": "570491ca78e22ce6fc9d18512afbb0b652d0e130988a95fdd743db2ec3659b6f",
+        "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+        "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+        "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+        "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+        "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+        "research_harness/followup.py": "0a913e8200ed779d18bacbdc2b44e81ed4d804ed55b11f00e2200a2fb842eb9d",
+        "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+        "research_harness/live.py": "13b78f373ca4af3c427818544e43dbe1e5608041f4aeef6860c63ed73cd65bb3",
+        "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+        "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+        "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+        "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+        "scripts/analyze_results.py": "89d6d8743ac9922a4ccdd8ba46aa0946809a69b8f7b01849564c264d3743be2b",
+        "scripts/exercise_demo.py": "cfef04415d799697e86fbad1de9d066f43e77b1d7ad11bfb661c54da1e69752c",
+        "scripts/reproduce_baseline.sh": "7239ae3ddf97c69ac4e17b005891d33322d12d2cdbe4e3f7c51744b123cc87ed",
+        "scripts/run_final_method.sh": "16066133c23993d9ec060ab32b5ca82883f61256d5750d7aef4aa306580008a3",
+        "scripts/run_followup.py": "34c4544bf4ee5b45b1e062f21bf488ceecb09df28a600c9891700ab01f54a3f1",
+        "scripts/run_generalization.sh": "6a2439e8734bb9c516291bb05b1952389de2cc7918a0f8ce2d038f2e8f35acb2",
+        "scripts/run_leakage_free.py": "3ef84a28c0df4f0bfd6480d6de08cf81b3a4035fc40cc3c261d4dc9450d98c7d",
+        "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e",
+        "scripts/run_pis.sh": "49872f637e76640d6fe80aa162772584e6eae25d44b09f0c41a9d4fa8dd4fcca",
+        "scripts/run_prompt_only.sh": "3ff6d68830cf2341c07cb8c80cc22e5d807e02d291d625bae20ce1654a6b5001",
+        "scripts/run_smoke_test.sh": "08ac59f8368813cc362babac430a09b4a9c96e216f1d2d31f4e99a4d4f8cf2dc",
+        "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+        "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+        "scripts/verify_local.py": "fd2efe0efa671e7c55b567648b12d38d74538ce90228ecf74cadf22dd8e21da2"
+      },
+      "invalid_attempt_count": 0,
+      "maximum_output_tokens": 256,
+      "mock_token_estimates": null,
+      "mode": "LIVE",
+      "model_latency_seconds": 68.270222,
+      "model_provider": "openrouter",
+      "model_reported_versions": [
+        "deepseek/deepseek-chat-v3.1"
+      ],
+      "pair_id": "live-pair-bdf241965f35",
+      "prompt": {
+        "addendum_file_sha256": null,
+        "addendum_path": null,
+        "addendum_present": false,
+        "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+        "effective_prompt_sha256": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38"
+      },
+      "prompt_hash": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+      "provider_quantizations": [
+        "fp8"
+      ],
+      "provider_require_parameters": true,
+      "provider_route": "novita",
+      "random_seed": 20260904,
+      "raw_output_locations": {
+        "actions": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/actions.jsonl",
+        "evaluator": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/evaluator.jsonl",
+        "failures": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/failures.jsonl",
+        "manifest": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/manifest.json",
+        "raw_model_calls": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/raw_model_calls.jsonl",
+        "score": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/score.json",
+        "steps": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/steps.jsonl"
+      },
+      "repeat": 0,
+      "reported_cost_usd": 0.01454109,
+      "resolved_configuration_hash": "b3e9c19f775b4a68cd67b30293f57a80e095eecbb68d6a63ebd404dcdb30ab2e",
+      "retry_count": 0,
+      "retry_settings": {
+        "malformed": "one schema-only corrective retry, then empty action set",
+        "max_retries": 1,
+        "total_attempts_per_call": 2,
+        "transport": "retry once without corrective message; interrupt on repeated transport failure"
+      },
+      "route_fallbacks_allowed": false,
+      "route_preflight": {
+        "billable": false,
+        "endpoints": [
+          {
+            "context_length": 131072,
+            "latency_last_30m": null,
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "model_id": "deepseek/deepseek-chat-v3.1",
+            "model_name": "DeepSeek: DeepSeek V3.1",
+            "name": "Novita | deepseek/deepseek-chat-v3.1",
+            "pricing": {
+              "completion": "0.000001",
+              "discount": 0,
+              "input_cache_read": "0.000000135",
+              "prompt": "0.00000027"
+            },
+            "provider_name": "Novita",
+            "quantization": "fp8",
+            "status": 0,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "seed",
+              "top_k",
+              "repetition_penalty",
+              "tools",
+              "tool_choice",
+              "response_format",
+              "structured_outputs"
+            ],
+            "supports_implicit_caching": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "novita/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 99.9786659604364,
+            "uptime_last_30m": 99.96491228070175,
+            "uptime_last_5m": 100
+          }
+        ],
+        "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+      },
+      "run_id": "live-A0-20260909T131935-b7f6531a",
+      "runtime": {
+        "openai_sdk": "2.24.0",
+        "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]"
+      },
+      "scenario_ids": [
+        {
+          "day": "Monday",
+          "step_ids": [
+            "dev_m_s1",
+            "dev_m_s2",
+            "dev_m_s3",
+            "dev_m_s4",
+            "dev_m_s5",
+            "dev_m_s5b",
+            "dev_m_s6",
+            "dev_m_s7"
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "step_ids": [
+            "dev_t_s1",
+            "dev_t_s2",
+            "dev_t_s3",
+            "dev_t_s4",
+            "dev_t_s5",
+            "dev_t_s6",
+            "dev_t_s7"
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "step_ids": [
+            "dev_w_s1",
+            "dev_w_s2",
+            "dev_w_s3",
+            "dev_w_s4",
+            "dev_w_s5"
+          ]
+        }
+      ],
+      "schema_version": 2,
+      "started_at_utc": "2026-09-09T13:19:35.373Z",
+      "status": "completed",
+      "temperature": 0.0,
+      "timeout_seconds": 120,
+      "token_usage": {
+        "input_tokens": 59171,
+        "model_call_attempts": 21,
+        "output_tokens": 699,
+        "total_tokens": 59870
+      },
+      "tool_permissions": {
+        "max_tool_calls_per_step": 1,
+        "network_enabled": true,
+        "state_query_channels": [
+          "clock",
+          "sensor_board"
+        ]
+      },
+      "top_p": 1.0,
+      "total_steps": 20,
+      "transport_error_count": 0,
+      "transport_latency_seconds": 68.270222,
+      "_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/manifest.json"
+    },
+    {
+      "aggregate_metrics": {
+        "canceled_total": 2,
+        "check_time_calls": 0,
+        "chosen_tasks": 11,
+        "commission": 0,
+        "cross_day_hit": 2,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 2,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 18,
+        "exact_set_match_steps": 19,
+        "exact_set_mismatch_steps": 1,
+        "false_alarm": 0,
+        "hit": 11,
+        "late": 0,
+        "miss": 1,
+        "overkill_steps": 0,
+        "set_fn": 1,
+        "set_fp": 0,
+        "set_tp": 11,
+        "state_query_calls": 0,
+        "update_canceled": 2,
+        "update_hit": 3,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 5,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "artifact_sha256": {
+        "actions.jsonl": "f767a9f393032ea1b102098d8a5ea4dec42d6dc0d103aa3d358059aa6b37ce0a",
+        "addendum.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+        "baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "config.json": "677620e2cc39bbe28de6e01732354a0580cb6983ed975b8b9b31502a1d747499",
+        "evaluator.jsonl": "f1c5e815afb0e595704a73dbecc073beb66337021bb1a94ae25571d98757a31b",
+        "failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw_model_calls.jsonl": "20b70fcd52a0f6e0c6f9dd4f720451ad71c26bdf88f4f4780473134de215c046",
+        "scenario.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+        "score.json": "02406c5c49c83b6ec012a2d59dd67368ae3e132a3b38bfe2c843cdac3ea4c5db",
+        "steps.jsonl": "1464a5342106e4844810ccbb29e9c254e21bdd27e55c8d23217def5655b00658",
+        "system_prompt.txt": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+      },
+      "benchmark_commit": "not-applicable-independent-development-v1",
+      "benchmark_hash": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+      "benchmark_split": "frozen-independent-development-v1",
+      "budget": {
+        "attempts": 41,
+        "ceiling_usd": 0.7,
+        "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable.",
+        "reported_cost_subtotal_usd": 0.03047594,
+        "reported_cost_usd": 0.03047594,
+        "reserved_estimate_usd": 0.06868424000000001,
+        "unreported_attempts": 0
+      },
+      "completed_steps": 20,
+      "condition": "A1",
+      "configuration_hash": "634fa04eafb9c6347bad9ea3bf6db62d01006c76baa84df49411db7e7ad64758",
+      "context_limit": 32768,
+      "estimated_cost_usd": 0.019287170000000003,
+      "evaluator_hash": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+      "exact_model_id": "deepseek/deepseek-chat-v3.1",
+      "excluded_run_count": 0,
+      "exclusion_reasons": [],
+      "experiment_id": "dev-a1-deepseek-v31-v1",
+      "failed_action_count": 0,
+      "failed_run_count": 0,
+      "failure_records": [],
+      "finished_at_utc": "2026-09-09T13:21:52.109Z",
+      "generation_parameters": {
+        "seed": 20260904,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "git_commit": "15e0e2fbd4d91e62a4c9cbd3b3614c24d49ba2a3",
+      "git_dirty": true,
+      "git_status": "?? artifacts/verification/followup-live-20260909/\n",
+      "heartbeat_enabled": false,
+      "implementation_hashes": {
+        "demo/app.js": "335357c874c86735ac187f7cf38c97ecf4036b65bc70a390e4014875ccddc236",
+        "demo/index.html": "9de969316ab17a6a66b202065f85ced32b46bd7fac3f206d441f5b833e859ae3",
+        "demo/style.css": "570491ca78e22ce6fc9d18512afbb0b652d0e130988a95fdd743db2ec3659b6f",
+        "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+        "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+        "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+        "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+        "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+        "research_harness/followup.py": "0a913e8200ed779d18bacbdc2b44e81ed4d804ed55b11f00e2200a2fb842eb9d",
+        "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+        "research_harness/live.py": "13b78f373ca4af3c427818544e43dbe1e5608041f4aeef6860c63ed73cd65bb3",
+        "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+        "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+        "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+        "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+        "scripts/analyze_results.py": "89d6d8743ac9922a4ccdd8ba46aa0946809a69b8f7b01849564c264d3743be2b",
+        "scripts/exercise_demo.py": "cfef04415d799697e86fbad1de9d066f43e77b1d7ad11bfb661c54da1e69752c",
+        "scripts/reproduce_baseline.sh": "7239ae3ddf97c69ac4e17b005891d33322d12d2cdbe4e3f7c51744b123cc87ed",
+        "scripts/run_final_method.sh": "16066133c23993d9ec060ab32b5ca82883f61256d5750d7aef4aa306580008a3",
+        "scripts/run_followup.py": "34c4544bf4ee5b45b1e062f21bf488ceecb09df28a600c9891700ab01f54a3f1",
+        "scripts/run_generalization.sh": "6a2439e8734bb9c516291bb05b1952389de2cc7918a0f8ce2d038f2e8f35acb2",
+        "scripts/run_leakage_free.py": "3ef84a28c0df4f0bfd6480d6de08cf81b3a4035fc40cc3c261d4dc9450d98c7d",
+        "scripts/run_paired.py": "cd79dce0d838c70b8b3e6943f29221f00219e8197b27435c9c95cd4352de0d1e",
+        "scripts/run_pis.sh": "49872f637e76640d6fe80aa162772584e6eae25d44b09f0c41a9d4fa8dd4fcca",
+        "scripts/run_prompt_only.sh": "3ff6d68830cf2341c07cb8c80cc22e5d807e02d291d625bae20ce1654a6b5001",
+        "scripts/run_smoke_test.sh": "08ac59f8368813cc362babac430a09b4a9c96e216f1d2d31f4e99a4d4f8cf2dc",
+        "scripts/verify_benchmark_integrity.py": "5f3b61717c7afad56363593b9b75bed9677d87985215b5d90609845e8404c881",
+        "scripts/verify_development_suite.py": "d02fe0af5dd931e870feca757c0d8fe0b4702244adbcbff8c20f449894212c92",
+        "scripts/verify_local.py": "fd2efe0efa671e7c55b567648b12d38d74538ce90228ecf74cadf22dd8e21da2"
+      },
+      "invalid_attempt_count": 0,
+      "maximum_output_tokens": 256,
+      "mock_token_estimates": null,
+      "mode": "LIVE",
+      "model_latency_seconds": 68.147285,
+      "model_provider": "openrouter",
+      "model_reported_versions": [
+        "deepseek/deepseek-chat-v3.1"
+      ],
+      "pair_id": "live-pair-bdf241965f35",
+      "prompt": {
+        "addendum_file_sha256": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+        "addendum_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/prospective_memory_system.txt",
+        "addendum_present": true,
+        "base_prompt_file_sha256": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+        "base_prompt_path": "/Users/bagnesium/Documents/GitHub/Kiodai/prompts/baseline_system.txt",
+        "effective_prompt_sha256": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4"
+      },
+      "prompt_hash": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+      "provider_quantizations": [
+        "fp8"
+      ],
+      "provider_require_parameters": true,
+      "provider_route": "novita",
+      "random_seed": 20260904,
+      "raw_output_locations": {
+        "actions": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/actions.jsonl",
+        "evaluator": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/evaluator.jsonl",
+        "failures": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/failures.jsonl",
+        "manifest": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/manifest.json",
+        "raw_model_calls": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/raw_model_calls.jsonl",
+        "score": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/score.json",
+        "steps": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/steps.jsonl"
+      },
+      "repeat": 0,
+      "reported_cost_usd": 0.01593485,
+      "resolved_configuration_hash": "a9241f3148494e2865a35946bd0984f1dba16bacf720ce89b2fa2939224312bc",
+      "retry_count": 0,
+      "retry_settings": {
+        "malformed": "one schema-only corrective retry, then empty action set",
+        "max_retries": 1,
+        "total_attempts_per_call": 2,
+        "transport": "retry once without corrective message; interrupt on repeated transport failure"
+      },
+      "route_fallbacks_allowed": false,
+      "route_preflight": {
+        "billable": false,
+        "endpoints": [
+          {
+            "context_length": 131072,
+            "latency_last_30m": null,
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "model_id": "deepseek/deepseek-chat-v3.1",
+            "model_name": "DeepSeek: DeepSeek V3.1",
+            "name": "Novita | deepseek/deepseek-chat-v3.1",
+            "pricing": {
+              "completion": "0.000001",
+              "discount": 0,
+              "input_cache_read": "0.000000135",
+              "prompt": "0.00000027"
+            },
+            "provider_name": "Novita",
+            "quantization": "fp8",
+            "status": 0,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "seed",
+              "top_k",
+              "repetition_penalty",
+              "tools",
+              "tool_choice",
+              "response_format",
+              "structured_outputs"
+            ],
+            "supports_implicit_caching": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "novita/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 99.9786659604364,
+            "uptime_last_30m": 99.96491228070175,
+            "uptime_last_5m": 100
+          }
+        ],
+        "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+      },
+      "run_id": "live-A1-20260909T131935-5232d513",
+      "runtime": {
+        "openai_sdk": "2.24.0",
+        "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]"
+      },
+      "scenario_ids": [
+        {
+          "day": "Monday",
+          "step_ids": [
+            "dev_m_s1",
+            "dev_m_s2",
+            "dev_m_s3",
+            "dev_m_s4",
+            "dev_m_s5",
+            "dev_m_s5b",
+            "dev_m_s6",
+            "dev_m_s7"
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "step_ids": [
+            "dev_t_s1",
+            "dev_t_s2",
+            "dev_t_s3",
+            "dev_t_s4",
+            "dev_t_s5",
+            "dev_t_s6",
+            "dev_t_s7"
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "step_ids": [
+            "dev_w_s1",
+            "dev_w_s2",
+            "dev_w_s3",
+            "dev_w_s4",
+            "dev_w_s5"
+          ]
+        }
+      ],
+      "schema_version": 2,
+      "started_at_utc": "2026-09-09T13:19:35.425Z",
+      "status": "completed",
+      "temperature": 0.0,
+      "timeout_seconds": 120,
+      "token_usage": {
+        "input_tokens": 68971,
+        "model_call_attempts": 20,
+        "output_tokens": 665,
+        "total_tokens": 69636
+      },
+      "tool_permissions": {
+        "max_tool_calls_per_step": 1,
+        "network_enabled": true,
+        "state_query_channels": [
+          "clock",
+          "sensor_board"
+        ]
+      },
+      "top_p": 1.0,
+      "total_steps": 20,
+      "transport_error_count": 0,
+      "transport_latency_seconds": 68.147285,
+      "_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/manifest.json"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "live-pair-bdf241965f35",
+      "scenario_sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+      "repeat": 0,
+      "a0_f1": 0.9565217391304348,
+      "a1_f1": 0.9565217391304348,
+      "difference": 0.0
+    }
+  ],
+  "incomplete_pairs": [],
+  "unpaired_runs": [],
+  "scenario_averages": [
+    {
+      "scenario_sha256": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+      "paired_repeats": 1,
+      "mean_difference": 0.0
+    }
+  ],
+  "mean_paired_difference": 0.0,
+  "analysis_unit": "whole scenario/trajectory; average repeats within scenarios first; days and steps are not independent samples"
+}

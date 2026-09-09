@@ -1,0 +1,23 @@
+{
+  "user_authorized_budget_usd": 0.7,
+  "separate_from_pilot1": true,
+  "authorized_repeats": 1,
+  "command": [
+    "python3",
+    "scripts/run_followup.py",
+    "--live",
+    "--budget-usd",
+    "0.70",
+    "--env-file",
+    ".env"
+  ],
+  "frozen_protocol_sha256": "89d51a15f80a1c944913fccd9bdc3d918d653eca7565030768bb9ea2c8e6eeef",
+  "offline_preflight_exit_code": 0,
+  "conservative_allowance_usd": 0.63708409,
+  "tls_verification_required": true,
+  "restart_with_fresh_budget_forbidden": true,
+  "started_at_utc": "2026-09-09T13:19:33.407024+00:00",
+  "git_commit": "15e0e2fbd4d91e62a4c9cbd3b3614c24d49ba2a3",
+  "exit_code": 0,
+  "finished_at_utc": "2026-09-09T13:21:52.230289+00:00"
+}
