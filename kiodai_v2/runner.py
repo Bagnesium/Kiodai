@@ -8,6 +8,7 @@ from research_harness.model_gateway import ModelAction, SelectionResult
 from .agent import Agent
 from .gateway import Gateway
 from .common import append, dump, digest, rows
+from .contract import VERSION
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -73,8 +74,10 @@ def run_case(scenario_path, method, folder, config, transport, mode='MOCK', acco
                                     PM.list_state_channels(scenario), False)
     (folder/'system_prompt.txt').write_text(prompt)
     manifest = {'mode': mode, 'method': method, 'status': 'running', 'prompt': metadata,
+                'implementation_version': VERSION, 'configuration_version': config['version'],
+                'extraction_contract': VERSION if method in ('B_ledger', 'A2') else None,
                 'implementation_hashes_at_start': {str(p.relative_to(ROOT)): digest(p.read_bytes())
-                    for directory, pattern in [('kiodai_v2','*.py'),('research_harness','*.py'),('prompts/v2','*.txt')]
+                    for directory, pattern in [('kiodai_v2','*.py'),('research_harness','*.py'),('prompts/v2','*.txt'),('prompts/v2_1','*.txt')]
                     for p in (ROOT/directory).glob(pattern)},
                 'scenario_sha256': digest(Path(scenario_path).read_bytes()),
                 'heartbeat_enabled': False, 'context': 'matched full history, shared documented receipts',

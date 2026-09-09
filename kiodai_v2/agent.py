@@ -4,6 +4,7 @@ import re
 from pathlib import Path
 from .common import obj, array, CITATION, STRING, citations_valid, validate
 from .store import Store, EXTRACTION
+from .contract import VERSION
 from research_harness.model_gateway import action_schema, parse_action
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,11 +53,12 @@ class Agent:
             self.queries = 0
             if self.method in ('B_ledger', 'A2'):
                 payload = {'observations': frame['observations'], 'new_refs': frame['current_refs'],
-                           'intentions': self.store.records(), 'channels': frame['channels']}
+                           'intentions': self.store.records(), 'channels': frame['channels'],
+                           'contract_version': VERSION}
                 def apply(value):
                     self.store.apply(value, frame['observations'], checkpoint, frame['channels'])
                 value = self.gateway.call('extract', [
-                    {'role': 'system', 'content': (ROOT/'prompts/v2/extract.txt').read_text()},
+                    {'role': 'system', 'content': (ROOT/'prompts/v2_1/extract.txt').read_text()},
                     {'role': 'user', 'content': json.dumps(payload, ensure_ascii=False)}],
                     EXTRACTION, checkpoint, apply)
                 self.blocked = value is None
@@ -89,11 +91,20 @@ class Agent:
             messages.append({'role': 'user', 'content': 'Simulator execution receipts (with checkpoints): ' + json.dumps(frame['receipts'])})
         structured = self.method in ('B_ledger', 'A2')
         if structured:
-            schema['properties']['bindings'] = array(BINDING, 8)
+            binding_schema = json.loads(json.dumps(BINDING))
+            eligible = [key for key, item in self.store.records().items()
+                        if self.store.eligible(key, item['version'])]
+            if eligible:
+                binding_schema['properties']['intention']['enum'] = eligible
+            binding_schema['properties']['handle']['enum'] = list(frame['handles']) or ['NONE']
+            schema['properties']['bindings'] = array(binding_schema, 8 if eligible else 0)
+            if not eligible:
+                schema['properties']['task_ids']['maxItems'] = 0
             schema['required'].append('bindings')
-            messages[0]['content'] += '\n' + (ROOT/'prompts/v2/select.txt').read_text()
+            messages[0]['content'] += '\n' + (ROOT/'prompts/v2_1/select.txt').read_text()
             messages.append({'role': 'user', 'content': json.dumps({
                 'intentions': self.store.records(), 'observations': frame['observations'],
+                'contract_version': VERSION,
                 'current_checkpoint': checkpoint, 'query_remaining': 1 - self.queries,
                 'query_decision': 'controller; choose now' if self.method == 'A2' else 'model may query',
             }, ensure_ascii=False)})
@@ -111,7 +122,7 @@ class Agent:
                 raise ValueError('Cannot execute one intention twice')
             for binding in bindings:
                 if not self.store.eligible(binding['intention'], binding['version']):
-                    raise ValueError('Intention is stale, canceled, unresolved or dependency-blocked')
+                    raise ValueError('bindings.intention/version: use an eligible ledger ID and its current version, not an action description')
                 item = self.store.records()[binding['intention']]
                 # The LLM supplies semantic action mapping. Record exact menu text for audit.
                 # Citation validity is structural, not proof of semantic truth.

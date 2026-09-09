@@ -41,6 +41,8 @@ class V2Tests(unittest.TestCase):
     def revise(self, identifier, kind='revise', version=1):
         op = {**self.operation, 'kind': kind, 'target': identifier, 'expected_version': version,
               'record': self.rec if kind == 'revise' else None}
+        if kind == 'ambiguous':
+            op.update(target=None, expected_version=None)
         self.store.apply({'operations': [op]}, self.observations, 2, ['board'])
 
     def test_schema_rejects_extra_and_duplicate_keys(self):
@@ -223,7 +225,7 @@ class V2Tests(unittest.TestCase):
 
     def test_no_agent_module_imports_private_simulator(self):
         import ast
-        for filename in ('agent.py','store.py','fixture.py','gateway.py','common.py'):
+        for filename in ('agent.py','store.py','fixture.py','gateway.py','common.py','contract.py'):
             tree = ast.parse((ROOT/'kiodai_v2'/filename).read_text())
             imports = [n.module for n in ast.walk(tree) if isinstance(n,ast.ImportFrom)]
             self.assertFalse(any(m and (m.startswith('sim') or m.endswith('runner')) for m in imports))

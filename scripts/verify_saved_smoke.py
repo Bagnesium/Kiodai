@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Read-only integrity, official-score and accounting checks for the saved smoke."""
 import json
+import argparse
 import math
 import sqlite3
 import sys
+import subprocess
 import zipfile
 from pathlib import Path
 
@@ -54,15 +56,21 @@ def equal_number(actual, expected, message):
             and math.isclose(actual, expected, rel_tol=0, abs_tol=1e-10), message)
 
 
-def verify_sources(root):
+def verify_sources(root, source_commit=None):
     """Verify frozen sources without requiring unrelated historical run directories."""
     root = Path(root).resolve()
     checked = set()
     for name in ('research/v2/freeze.json', 'research/v2/deepseek_smoke_v1_freeze.json'):
-        frozen = json.loads((root/name).read_text())
+        content = (root/name).read_bytes()
+        if source_commit is not None:
+            original = subprocess.check_output(['git', 'show', f'{source_commit}:{name}'], cwd=root)
+            require(content == original, 'Historical freeze itself changed: '+name)
+        frozen = json.loads(content)
         for source, expected in frozen['hashes'].items():
             path = inside(root, source, Path('.'))
-            require(digest(path.read_bytes()) == expected, 'Frozen source changed: '+source)
+            content = path.read_bytes() if source_commit is None else subprocess.check_output(
+                ['git', 'show', f'{source_commit}:{source}'], cwd=root)
+            require(digest(content) == expected, 'Frozen source changed: '+source)
             checked.add(source)
     return len(checked)
 
@@ -148,8 +156,14 @@ def verify(root=ROOT):
 
 if __name__ == '__main__':
     try:
-        source_count = verify_sources(ROOT)
-        print(json.dumps({**verify(), 'frozen_source_files': source_count}, indent=2))
+        parser = argparse.ArgumentParser(description=__doc__)
+        parser.add_argument('--historical-sources', action='store_true',
+                            help='Verify original code at the recorded execution commit, not current HEAD')
+        args = parser.parse_args()
+        commit = json.loads((ROOT/INVENTORY).read_text())['execution_commit'] if args.historical_sources else None
+        source_count = verify_sources(ROOT, commit)
+        print(json.dumps({**verify(), 'frozen_source_files': source_count,
+                          'source_commit': commit or 'working tree'}, indent=2))
     except (ValueError, OSError, KeyError, sqlite3.Error, zipfile.BadZipFile) as exc:
         print(str(exc), file=sys.stderr)
         raise SystemExit(2)

@@ -61,6 +61,12 @@ class FixtureTransport:
                     if dependency and dependency[1] in existing:
                         rec['dependencies'] = [existing[dependency[1]]['id']]
                         rec['evidence']['dependencies'] = [cite(ref, dependency[0])]
+                    elif dependency:
+                        # v2.1 fixture contract: a new prerequisite has no ID until
+                        # after this atomic batch. Quarantine until the next update.
+                        rec['trigger'] = 'unknown'
+                        rec['condition'] += '; unresolved prerequisite: ' + dependency[1]
+                        rec['evidence']['condition'] = [cite(ref, dependency[0])]
                 previous = existing.get(action)
                 if previous and previous['status'] in ('completed', 'canceled', 'uncertain', 'attempted'):
                     continue

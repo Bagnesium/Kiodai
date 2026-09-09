@@ -71,6 +71,7 @@ class Gateway:
             raise ValueError('LIVE requires durable accounting and a real transport')
         self.transport, self.config, self.log, self.mode = transport, config, log, mode
         self.accounting = accounting
+        self.sequence = 0
 
     def call(self, kind, messages, schema, checkpoint, validator=None):
         config, model = self.config, self.config['model']
@@ -86,22 +87,37 @@ class Gateway:
             if len(json.dumps(request, ensure_ascii=False).encode()) > config['max_request_bytes']:
                 raise RunStopped('Request byte limit exceeded before inference')
             reservation = self.accounting.reserve(request) if self.accounting else None
+            self.sequence += 1
+            request_id = f'call_{self.sequence:04d}'
             # Persist exact request before send, so a process interruption leaves evidence.
             started = time.perf_counter()
             append(self.log, {'event': 'request', 'mode': self.mode, 'kind': kind,
+                              'request_id': request_id,
                               'checkpoint': checkpoint, 'attempt': attempt, 'reservation': reservation,
                               'utc': utc_now(), 'request': request})
             response = None
             error = None
             value = None
+            stage = 'transport'
             try:
                 response = self.transport.invoke(request, config['timeout_seconds'])
+                stage = 'structure'
                 value = parse(response.raw_text, schema)
                 if validator:
+                    stage = 'application'
                     validator(value)
             except Exception as exc:
                 error = safe_error(exc)
+            if response is None:
+                outcome = 'transport_failure'
+            elif error:
+                outcome = 'retry_exhausted' if attempt == 2 else 'validation_failure'
+            elif kind == 'extract':
+                outcome = 'accepted_operations' if value['operations'] else 'accepted_empty_update'
+            else:
+                outcome = 'accepted_selection'
             append(self.log, {'event': 'response', 'mode': self.mode, 'kind': kind,
+                              'request_id': request_id,
                               'checkpoint': checkpoint, 'attempt': attempt, 'reservation': reservation,
                               'utc': utc_now(), 'latency_seconds': time.perf_counter() - started,
                               'raw_text': response.raw_text if response else None,
@@ -110,6 +126,8 @@ class Gateway:
                               'mock_token_estimates': response.usage if response and self.mode == 'MOCK' else None,
                               'provider': response.provider_metadata if response else None,
                               'reported_model': response.reported_model if response else None,
+                              'validation_stage': stage if error else None,
+                              'outcome': outcome,
                               'validation_error': error if response else None,
                               'transport_error': error if response is None else None})
             if response is None:
@@ -124,5 +142,6 @@ class Gateway:
                 return value
             if attempt == 1:
                 messages += [{'role': 'assistant', 'content': response.raw_text or ''},
-                             {'role': 'user', 'content': 'Invalid schema, reference, or lifecycle constraint. Return the same requested JSON schema using only offered observations, IDs and current versions. Do not invent evidence.'}]
+                             {'role': 'user', 'content': 'Validation failed (' + stage + '): ' + error +
+                              '\nThe rejected batch/action was not applied. Correct this problem using only offered observations, IDs and current versions. Return the same requested JSON schema. Do not invent evidence. An empty operations list is valid only when no supported update is needed; rejection does not mean the instructions disappeared.'}]
         return None

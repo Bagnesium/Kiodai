@@ -1,16 +1,8 @@
 """Agent-side SQLite intention ledger. Never reads a scenario or an evaluator."""
 import json
 import sqlite3
-from .common import array, obj, STRING, NULL_STRING, CITATION, citations_valid, digest, validate
-
-FIELDS = {'action': STRING, 'trigger': {'type': 'string', 'enum': ['time', 'event', 'hidden', 'unknown']},
-          'condition': STRING, 'channel': NULL_STRING, 'when': NULL_STRING,
-          'dependencies': array(STRING)}
-RECORD = obj({**FIELDS, 'evidence': obj({key: array(CITATION) for key in FIELDS})})
-EXTRACTION = obj({'operations': array(obj({
-    'kind': {'type': 'string', 'enum': ['create', 'revise', 'cancel', 'ambiguous']},
-    'target': NULL_STRING, 'expected_version': {'type': ['integer', 'null']},
-    'record': {**RECORD, 'type': ['object', 'null']}, 'sources': array(CITATION)}))})
+from .common import citations_valid, digest, validate
+from .contract import FIELDS, RECORD, EXTRACTION, obligation_sources_valid
 
 
 class Store:
@@ -43,13 +35,13 @@ class Store:
         with self.db:
             records = self.records()
             for op in payload['operations']:
-                citations_valid(op['sources'], observations)
+                obligation_sources_valid(op['sources'], observations)
                 kind, target = op['kind'], op['target']
                 if kind == 'ambiguous':
                     self.event('ambiguous_update', checkpoint=checkpoint, operation=op)
-                    # Quarantine all live intentions: no arbitrary target is chosen.
+                    # Quarantine pending work without unlocking unresolved executions.
                     for item in records.values():
-                        if item['status'] not in ('completed', 'canceled'):
+                        if item['status'] in ('pending', 'failed', 'quarantined'):
                             item['status'] = 'quarantined'
                     continue
                 if kind != 'create':
@@ -65,11 +57,9 @@ class Store:
                     records[target]['update_evidence'] = op['sources']
                 else:
                     record = op['record']
-                    if record is None or not record['action'] or not record['condition']:
-                        raise ValueError('Missing intention content')
                     for field in FIELDS:
-                        if record[field] not in (None, [], 'unknown'):
-                            citations_valid(record['evidence'][field], observations)
+                        if record[field] not in (None, []) or record['evidence'][field]:
+                            citations_valid(record['evidence'][field], observations, path=f'record.evidence.{field}')
                     if record['channel'] is not None and record['channel'] not in channels:
                         raise ValueError('Unavailable channel')
                     if record['trigger'] == 'hidden' and not record['channel']:
@@ -77,15 +67,17 @@ class Store:
                     if any(dep not in records or dep == target for dep in record['dependencies']):
                         raise ValueError('Unknown or self dependency')
                     if kind == 'create':
-                        if target is not None or op['expected_version'] is not None:
-                            raise ValueError('Create cannot nominate an evaluator ID')
+                        if any(item['status'] not in ('completed', 'canceled') and
+                               all(item[f] == record[f] for f in FIELDS) for item in records.values()):
+                            raise ValueError('Duplicate creation; use no change or revise the existing intention')
                         target = 'i_' + digest(json.dumps([op['sources'], record['action']], sort_keys=True).encode())[:16]
                         if target in records:
                             raise ValueError('Duplicate creation')
                         version = 1
                     else:
                         version = records[target]['version'] + 1
-                    records[target] = {**record, 'id': target, 'version': version, 'status': 'pending',
+                    records[target] = {**record, 'id': target, 'version': version,
+                                       'status': 'quarantined' if record['trigger'] == 'unknown' else 'pending',
                                        'update_evidence': op['sources'], 'last_query': None,
                                        'attempt_id': None, 'receipt': None}
                 self.event(kind, checkpoint=checkpoint, id=target, record=records[target])

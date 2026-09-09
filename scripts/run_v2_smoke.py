@@ -34,7 +34,7 @@ def smoke_files():
 
 
 def preflight(check_freeze=True):
-    original, _, full = full_preflight()
+    original, _, full = full_preflight(require_freeze=check_freeze)
     config = json.loads(CONFIG.read_text())
     expected = {**original, 'version': 'v2.0-deepseek-smoke-v1', 'methods': ['A2'],
                 'order': 'one complete v2_hidden_91320 A2 trajectory', 'cap_usd': 1.0}
@@ -87,30 +87,35 @@ def remote_preflight(config, required):
         'structured_outputs_note': 'Advertised JSON-schema support is not a semantic guarantee; client validation remains enforced.'}
 
 
-def execute(config, checks):
+def execute(config, checks, *, live_root=None, scenario_path=None, freeze_path=None):
+    live_root = LIVE_ROOT if live_root is None else Path(live_root)
+    scenario_path = SCENARIO if scenario_path is None else Path(scenario_path)
+    freeze_path = FREEZE if freeze_path is None else Path(freeze_path)
     # Fixed, exclusive directory is the one-shot gate, including failed preflight attempts.
-    LIVE_ROOT.mkdir(parents=True, exist_ok=False)
-    case = SCENARIO.stem
+    live_root.mkdir(parents=True, exist_ok=False)
+    case = scenario_path.stem
     study = {'mode': 'LIVE', 'status': 'starting', 'started_at_utc': utc_now(),
         'methods': ['A2'], 'planned_trajectories': 1, 'repeat': 1, 'runs': [],
         'purpose': 'one development integration smoke; no condition comparison',
+        'scope': 'One A2-only development smoke on an exposed trajectory; no condition comparison or reliability claim.',
         'exposure': 'existing synthetic hidden development case, previously inspected and tested locally',
         'no_pooling_with_historical_studies': True,
+        'configuration_version': config.get('version'),
         'code_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()}
-    dump(LIVE_ROOT/'study.json', study)
-    dump(LIVE_ROOT/'config.json', config)
-    dump(LIVE_ROOT/'preflight.json', checks)
-    (LIVE_ROOT/'freeze.json').write_bytes(FREEZE.read_bytes())
-    accounting = Accounting(LIVE_ROOT/'accounting.sqlite', config['cap_usd'], config)
+    dump(live_root/'study.json', study)
+    dump(live_root/'config.json', config)
+    dump(live_root/'preflight.json', checks)
+    (live_root/'freeze.json').write_bytes(freeze_path.read_bytes())
+    accounting = Accounting(live_root/'accounting.sqlite', config['cap_usd'], config)
     try:
         if accounting.snapshot()['reserved_usd'] + checks['conservative_allowance_usd'] > config['cap_usd']:
             raise RunStopped('Insufficient cumulative allowance for the complete A2 trajectory')
         remote = remote_preflight(config, checks['conservative_allowance_usd'])
-        dump(LIVE_ROOT/'route_and_key_preflight.json', remote)
+        dump(live_root/'route_and_key_preflight.json', remote)
         transport = OpenAICompatibleTransport(os.environ['OPENROUTER_API_KEY'], config['model']['base_url'])
         study.update(status='running', runs=[{'folder': case+'/A2', 'method': 'A2', 'family': 'hidden', 'trajectory': case}])
-        dump(LIVE_ROOT/'study.json', study)
-        run_case(SCENARIO, 'A2', LIVE_ROOT/case/'A2', config, transport, 'LIVE', accounting)
+        dump(live_root/'study.json', study)
+        run_case(scenario_path, 'A2', live_root/case/'A2', config, transport, 'LIVE', accounting)
         study['status'] = 'completed'
     except BaseException as exc:
         study.update(status='interrupted', blocker=safe_error(exc))
@@ -118,10 +123,10 @@ def execute(config, checks):
     finally:
         study.update(budget=accounting.snapshot(), finished_at_utc=utc_now())
         accounting.db.close()
-        dump(LIVE_ROOT/'study.json', study)
-        if study['runs'] and (LIVE_ROOT/study['runs'][0]['folder']/'manifest.json').exists():
-            report(LIVE_ROOT)
-    return LIVE_ROOT
+        dump(live_root/'study.json', study)
+        if study['runs'] and (live_root/study['runs'][0]['folder']/'manifest.json').exists():
+            report(live_root)
+    return live_root
 
 
 def main():

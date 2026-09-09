@@ -2,6 +2,7 @@
 import json
 import shutil
 import sqlite3
+import subprocess
 import tempfile
 import unittest
 import zipfile
@@ -87,7 +88,8 @@ class SavedSmokeIntegrityTests(unittest.TestCase):
             for source in [name, *frozen['hashes']]:
                 target = self.root/source
                 target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(verify.ROOT/source, target)
+                commit = json.loads((verify.ROOT/verify.INVENTORY).read_text())['execution_commit']
+                target.write_bytes(subprocess.check_output(['git', 'show', f'{commit}:{source}'], cwd=verify.ROOT))
         self.assertFalse((self.root/'results/kiodai').exists())
         self.assertFalse((self.root/'results/followup_v1').exists())
         self.assertGreater(verify.verify_sources(self.root), 0)

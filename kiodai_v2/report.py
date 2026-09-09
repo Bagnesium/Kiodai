@@ -123,6 +123,8 @@ def report(study_dir):
     paired_means = {}
     planned = study.get('planned_trajectories', len(set(r['trajectory'] for r in study['runs'])))
     for comparison in ('A2 minus A0','A2 minus B_ledger'):
+        if 'A2' not in study['methods'] or comparison.split(' minus ')[1] not in study['methods']:
+            continue
         selected_pairs = [r for r in pairs if r['comparison'] == comparison]
         paired_means[comparison] = {
             'usable_pairs': len(selected_pairs), 'planned_pairs': planned,
@@ -142,7 +144,7 @@ def report(study_dir):
               'descriptive_micro_aggregate': aggregate,
               'interpretation': ('MOCK verifies mechanics only; these are not model-performance results. ' + study.get('scope','') if study['mode'] == 'MOCK' else
                                  'Real local development smoke on an exposed trajectory; not the frozen OpenRouter comparison.' if study['mode']=='LOCAL_MODEL' else
-                                 'Exploratory same-process synthetic development evaluation; four template families; no intrinsic-memory claim.'),
+                                 study.get('scope', 'Exploratory same-process synthetic development evaluation; four template families; no intrinsic-memory claim.')),
               'aggregation': 'Primary: each full trajectory and paired differences. Micro totals are descriptive. Sequential steps and model calls are not replications. Undefined denominators remain null.',
               'budget': study.get('budget'), 'verified_billed_cost_usd': None}
     dump(root/'report.json', result)
