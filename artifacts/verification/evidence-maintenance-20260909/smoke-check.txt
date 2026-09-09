@@ -1,0 +1,2 @@
+Protected-file integrity OK: 164 files
+/Users/bagnesium/Documents/GitHub/Kiodai/results/raw/mock-infrastructure-smoke-20260909T174814-7e6d4efc/manifest.json

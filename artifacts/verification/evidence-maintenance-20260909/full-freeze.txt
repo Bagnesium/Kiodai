@@ -1,0 +1,19 @@
+{
+  "status": "prepared_no_new_model_evidence",
+  "paid_inference": false,
+  "trajectories": 12,
+  "families": 4,
+  "steps_per_method": 96,
+  "methods": [
+    "A0",
+    "B_ledger",
+    "A2"
+  ],
+  "repetitions": 1,
+  "maximum_attempts": 1344,
+  "conservative_allowance_usd": 19.95251712,
+  "proposed_budget_usd": 20.0,
+  "per_trajectory_reservation_usd": 1.66270976,
+  "preflight_model_calls": 0,
+  "route_metadata_requests_billable": false
+}

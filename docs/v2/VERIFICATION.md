@@ -1,5 +1,7 @@
 # Verification and executed evidence — 9 September 2026
 
+Latest evidence-maintenance checks: **111 tests passed**, including ten saved-evidence and restoration regressions. The read-only verifier reproduced the genuine smoke's scores and accounting, verified 24 archived files and 59 frozen source paths, and made no model calls. Full protocol preflights and all 164 protected hashes passed unchanged. Logs: `artifacts/verification/evidence-maintenance-20260909/`. The experiment results below are preserved, not rerun.
+
 At the original v2 preparation checkpoint, **98 tests passed**: the original 62 plus 36 v2 tests. **164 protected-file hashes passed**. The 404-file historical baseline inventory also passed; the only change to an original file was the explicitly appended v2 claims section. Python compilation, JavaScript syntax, the existing smoke command and frozen v2 preflight passed. Historical logs: `artifacts/verification/v2-final/`.
 
 At the subsequent genuine DeepSeek smoke checkpoint, **101 tests passed**, including three tests for the separate smoke's scope and budget gate. Both freezes and all protected hashes passed unchanged. Saved analysis reproduced byte for byte; the 24-file archive restored successfully into an isolated directory and refused to overwrite different local evidence. All eight RECORDED checkpoints were checked with inference disabled. Logs: `artifacts/verification/deepseek-smoke-final/`. These software checks do not convert the unsuccessful model run into successful integration evidence.

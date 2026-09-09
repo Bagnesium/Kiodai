@@ -1,0 +1,96 @@
+{
+  "checks": {
+    "compile": {
+      "command": [
+        "python3",
+        "-m",
+        "compileall",
+        "-q",
+        "kiodai_v2",
+        "research_harness",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/compile.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "diff": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/diff.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "full-freeze": {
+      "command": [
+        "python3",
+        "scripts/run_v2.py",
+        "--preflight"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/full-freeze.txt",
+      "sha256": "3b2d565ec83041392bd5cb199b390b8e5d3164b1224ce6084b94f8343967823c"
+    },
+    "protected": {
+      "command": [
+        "python3",
+        "scripts/verify_benchmark_integrity.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/protected.txt",
+      "sha256": "f6ac51f533be8d69bea59ba37916df35a5fdf9ad9936e08fd8c5b9346cdecc80"
+    },
+    "saved-evidence": {
+      "command": [
+        "python3",
+        "scripts/verify_saved_smoke.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/saved-evidence.txt",
+      "sha256": "57bec615c5915f138455c6de13a314a0da8f068e0e198401f1cf4267eb749746"
+    },
+    "smoke-check": {
+      "command": [
+        "scripts/run_smoke_test.sh"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/smoke-check.txt",
+      "sha256": "0df4effb834814089186fd02f5367aadf4cb09fa36540834370421523221be1c"
+    },
+    "smoke-freeze": {
+      "command": [
+        "python3",
+        "scripts/run_v2_smoke.py",
+        "--preflight"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/smoke-freeze.txt",
+      "sha256": "8286c847f41a09a1b8c23628165471b796e01e580af4aa8b6877eac114654d32"
+    },
+    "tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/verification/evidence-maintenance-20260909/tests.txt",
+      "sha256": "aa540e5f75a861105b749a8faf97255ed2df9f89888891b18182252d9ff58d3a"
+    }
+  },
+  "frozen_sources_unchanged": true,
+  "full_study_not_launched": true,
+  "new_model_calls": 0,
+  "protected_files": 164,
+  "saved_smoke_unchanged": true,
+  "source_commit": "5ee03c91cd6ea7068a4eb55d91a0683b630f2df5",
+  "tests_passed": 111
+}
