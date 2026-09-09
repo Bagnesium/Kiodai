@@ -1,0 +1,26 @@
+{
+  "catalog": {
+    "inference_enabled": false,
+    "methods": [
+      "A2"
+    ],
+    "mode": "RECORDED",
+    "source_mode": "LIVE",
+    "status": "completed",
+    "trajectories": [
+      "v2_hidden_91320"
+    ]
+  },
+  "checked_checkpoints": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "positive_step_evaluator_fn": 1,
+  "ui_label_correction": "Empty store is not absence of an external ledger; only unfrozen display text changed."
+}

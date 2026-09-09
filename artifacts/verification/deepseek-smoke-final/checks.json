@@ -1,0 +1,20 @@
+{
+  "analysis_reproduction": "byte-for-byte stable",
+  "api_cost_reconciled_to_saved_responses": true,
+  "archive_bytes": 59646,
+  "archive_files": 24,
+  "archive_sha256": "f0b9b400520e0950eeb3d7cd6a3665690613f5e3b13e5432812a8937b432d57b",
+  "credential_absent_from_artifacts": true,
+  "existing_smoke_check": "passed",
+  "full_live_root_absent": true,
+  "isolated_restore": "passed; conflicting local file preserved",
+  "original_full_freeze": "unchanged and verified",
+  "protected_files_verified": 164,
+  "python_compileall": "passed",
+  "real_model_responses": 24,
+  "replay_checked_checkpoints": 8,
+  "smoke_freeze": "verified",
+  "tests": 101,
+  "ui_javascript_syntax": "passed",
+  "verified_billed_cost_usd": null
+}

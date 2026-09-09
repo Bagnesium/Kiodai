@@ -1,0 +1,40 @@
+{
+  "api_response_cost_usd": 0.01525668,
+  "archive": "artifacts/verification/deepseek-smoke-v1-20260909.zip",
+  "archive_sha256": "f0b9b400520e0950eeb3d7cd6a3665690613f5e3b13e5432812a8937b432d57b",
+  "execution_commit": "a754559351ba017bb4fc00aa5e0527ea68d05572",
+  "files": {
+    "results/v2/deepseek-smoke-v1/accounting.sqlite": "f389b34473bcee04dd137385a652092eba18f7185879df2959a1230e9f6d4bda",
+    "results/v2/deepseek-smoke-v1/behavior_audit.json": "426835807342eeec126863c5e870ad7b7c6fa0028b4b26ba810593bee446550e",
+    "results/v2/deepseek-smoke-v1/config.json": "e9615b7f34add9f9097fbf1868737bd6b7f1243a0f7e9200a0e884505d1e180d",
+    "results/v2/deepseek-smoke-v1/freeze.json": "1c9ed2de3ef1ce669862c13abb0cfeb543dd551bdf13360673e1841bdf9dc4fc",
+    "results/v2/deepseek-smoke-v1/full_study_usage_projection.json": "fa3dc7d05d79468a1d86ca0aa199471bb034a3d356a8593407fc738f58c0baf2",
+    "results/v2/deepseek-smoke-v1/preflight.json": "6550c318ecb3abc61339a7892e0cb3eeb2089cd359b9e4df24ec5fd7949c8d90",
+    "results/v2/deepseek-smoke-v1/report.engine.json": "455a62b71f3b0b7a0be83f0c3bd6a39f69a0f41e82d70cf76e8628578b959731",
+    "results/v2/deepseek-smoke-v1/report.engine.md": "0b696eeb7ab829bab37d08d083c4e67180f5376697929e8ebf71fe7c7bc671c8",
+    "results/v2/deepseek-smoke-v1/report.json": "13e821ef806bd1b9bcb9e5a9c327a708c7fb232919dc88a7c34e9de80fce5dd4",
+    "results/v2/deepseek-smoke-v1/report.md": "bdc0d6d47915ec02070d17cf53184d664ffbca9884f64afdc3600e5a9493a332",
+    "results/v2/deepseek-smoke-v1/route_and_key_preflight.json": "9c687bad21f71dc665478d814da63139021ee6978ced7b9a1895895a75930bd8",
+    "results/v2/deepseek-smoke-v1/study.json": "6630bdbcfa0b20160514d7243eb39eeb0083d83e26748b263d78d4f089c31a13",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/actions.jsonl": "2ccdf346de0203839b736ce613d1fbbdcc6da70a32fa2d3ed6a84ce193e796e0",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/agent.jsonl": "1b44a956a5f597ad3f4119dc51eb4442e5af02b25da28a3b9fac4841ff4ebd6f",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/calls.jsonl": "c87f7a250f837f3ba832fc1aa9815aa690a872aefdce1b218ce0d984a4a7f68f",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/config.json": "e9615b7f34add9f9097fbf1868737bd6b7f1243a0f7e9200a0e884505d1e180d",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/failures.jsonl": "c82acbca5841492f62a842868d2d6e8c91d1ef8093a73b89e0a81b4f00a7eec9",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/manifest.json": "14bea77c2a0e619537d6993412a29fea5ec1fd26e02896427fa53a1c9eeb48d9",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/memory.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/memory.sqlite": "6f4bcf79405c00a3022a217d2a89d484438de07ad87be4ca1d6084ecd19558b5",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/scenario.json": "579d0d522ca8e85790dea6da25f3903c874950ba0463147c8bd901e8802280a4",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/score.json": "a07377111f14306f9657edd90b8b687f9d8a8e558388e317974150a4c7afc0f9",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/steps.jsonl": "7995365fa163ddfc94a5ca2b2f75c430b53692f270c9d3da57e4a4c9a8aa2af1",
+    "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/system_prompt.txt": "fe25d58f244025e114546a3837260309eaf4290e7101a8717ff2452b33932d30"
+  },
+  "posthoc_files": {
+    "demo/v2/app.js": "dadee6a1b603f05dd00ffa78983045155d474bafb87b5617247e8233c7561535",
+    "docs/v2/DEEPSEEK_SMOKE_RESULTS.md": "0605fab5734a88999202fa44494218c0a6c1083dfb9ff857cbbc28460540284f",
+    "scripts/analyze_v2_smoke.py": "ed7a81c96c952622a65c5b46fa3d58a7e98380e407d7046f8078ed8b97d9ad2e",
+    "scripts/restore_deepseek_smoke.py": "2d8b2e3a44d8da18b19461b344cc74be1ed273f41ed6eb9d8ef2804399cd5ffc"
+  },
+  "scope": "Only the single genuine DeepSeek smoke, including all failed attempts; original pilot/follow-up/local archives remain untouched",
+  "verified_billed_cost_usd": null
+}
