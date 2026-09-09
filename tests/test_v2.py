@@ -336,6 +336,17 @@ class V2Tests(unittest.TestCase):
         self.assertAlmostEqual(estimate['conservative_allowance_usd'],19.95251712)
         self.assertLessEqual(estimate['conservative_allowance_usd'],20)
 
+    def test_report_pairing_and_complete_study_mean(self):
+        from scripts.run_v2 import execute
+        root=execute(self.root/'study',self.config,[{'path':'data/v2/v2_revision_91300.json','family':'revision'}])
+        result=json.loads((root/'report.json').read_text())
+        self.assertEqual(result['complete_study_paired_means']['A2 minus B_ledger']['mean_set_f1_difference'],0)
+        self.assertEqual(len(result['matched_differences']),2)
+        from kiodai_v2.report import report
+        study=json.loads((root/'study.json').read_text());study['planned_trajectories']=2
+        (root/'study.json').write_text(json.dumps(study))
+        self.assertIsNone(report(root)['complete_study_paired_means']['A2 minus B_ledger']['mean_set_f1_difference'])
+
 
 if __name__ == '__main__':
     unittest.main()

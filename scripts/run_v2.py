@@ -87,6 +87,7 @@ def execute(root, config, catalog, *, live=False, budget_usd=None):
     root.mkdir(parents=True, exist_ok=False)  # refuses overwrite, repeated paid starts, or selective reruns
     mode = 'LIVE' if live else 'MOCK'
     study = {'mode': mode, 'status': 'starting', 'started_at_utc': utc_now(), 'methods': config['methods'],
+             'planned_trajectories': len(catalog),
              'runs': [], 'repeat': 1, 'exposure': 'same-process synthetic development; four template families',
              'no_pooling_with_historical_studies': True}
     dump(root/'study.json', study)

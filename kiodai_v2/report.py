@@ -120,6 +120,14 @@ def report(study_dir):
                 pairs.append({'trajectory': trajectory, 'comparison': 'A2 minus '+comparator,
                               'difference': {k: matched['A2'][k]-matched[comparator][k] if matched['A2'][k] is not None and matched[comparator][k] is not None else None
                                              for k in ('tp','fp','fn','precision','recall','set_f1','model_calls','tool_queries','input_tokens','output_tokens','api_response_cost_usd')}})
+    paired_means = {}
+    planned = study.get('planned_trajectories', len(set(r['trajectory'] for r in study['runs'])))
+    for comparison in ('A2 minus A0','A2 minus B_ledger'):
+        selected_pairs = [r for r in pairs if r['comparison'] == comparison]
+        paired_means[comparison] = {
+            'usable_pairs': len(selected_pairs), 'planned_pairs': planned,
+            'mean_set_f1_difference': (sum(r['difference']['set_f1'] for r in selected_pairs)/planned
+                                     if planned and len(selected_pairs)==planned and all(r['difference']['set_f1'] is not None for r in selected_pairs) else None)}
     aggregate = {}
     for method in study['methods']:
         selected = [r for r in cases if r['method'] == method]
@@ -130,6 +138,7 @@ def report(study_dir):
                              'tool_queries': sum(r['tool_queries'] for r in selected),
                              'invalid_responses': sum(r['invalid_responses'] for r in selected)}
     result = {'mode': study['mode'], 'study_status': study['status'], 'cases': cases, 'matched_differences': pairs,
+              'complete_study_paired_means': paired_means,
               'descriptive_micro_aggregate': aggregate,
               'interpretation': ('MOCK verifies mechanics only; these are not model-performance results. ' + study.get('scope','') if study['mode'] == 'MOCK' else
                                  'Real local development smoke on an exposed trajectory; not the frozen OpenRouter comparison.' if study['mode']=='LOCAL_MODEL' else
