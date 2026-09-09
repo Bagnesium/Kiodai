@@ -17,13 +17,19 @@ def analyze_case(folder):
     folder = Path(folder)
     manifest = verify_case(folder)
     scenario = json.loads((folder/'scenario.json').read_text())
-    official = PM.score_log(scenario, rows(folder/'actions.jsonl'))
-    if json.loads(json.dumps(official)) != json.loads((folder/'score.json').read_text()):
-        raise ValueError('Saved official score does not reproduce')
-    summary = official[0]
+    actions = rows(folder/'actions.jsonl')
+    complete = manifest['status'] == 'completed' and len(actions) == manifest['planned_steps']
+    if complete:
+        official = PM.score_log(scenario, actions)
+        if json.loads(json.dumps(official)) != json.loads((folder/'score.json').read_text()):
+            raise ValueError('Saved official score does not reproduce')
+        summary = official[0]
+    else:
+        summary = None
     calls = [r for r in rows(folder/'calls.jsonl') if r['event'] == 'response']
     requests = [r for r in rows(folder/'calls.jsonl') if r['event'] == 'request']
     steps = rows(folder/'steps.jsonl')
+    observed = metrics(*(sum(s['evaluator'][k] for s in steps) for k in ('tp','fp','fn')))
     trace = rows(folder/'agent.jsonl')
     native_false = []
     for step in steps:
@@ -63,23 +69,27 @@ def analyze_case(folder):
     costs = [(r.get('provider') or {}).get('cost_usd_reported') for r in calls]
     return {'path': str(folder), 'method': manifest['method'], 'mode': manifest['mode'],
             'status': manifest['status'], 'completed_steps': len(steps), 'planned_steps': manifest['planned_steps'],
-            **metrics(summary['set_tp'], summary['set_fp'], summary['set_fn']),
+            **(metrics(summary['set_tp'], summary['set_fp'], summary['set_fn']) if complete else
+               {k:None for k in ('tp','fp','fn','precision','recall','set_f1')}),
+            'primary_usable': complete, 'completed_step_diagnostics_only': observed,
             'official_metrics': summary, 'hidden_opportunities': hidden,
             'native_false_action_diagnostics': native_false,
             'canceled_actions': sum(r['status']=='canceled' for r in native_false),
             'false_actions_on_updated_tasks': sum(bool(r['updated']) for r in native_false),
-            'superseded_versions_executed': 0 if manifest['method'] in ('A2','B_ledger') else None,
+            'superseded_versions_executed': None,
             'duplicate_side_effects_native': None,
-            'premature_actions_native': summary['commission'],
+            'premature_actions_native': summary['commission'] if complete else None,
             'lifecycle_note': 'Superseded-version exclusion is an enforced code invariant. Native commission follows the official scorer. Native duplicate side effects are unidentifiable because completed handles disappear. Separate local lifecycle tests establish only simulator idempotency.',
-            'hidden_due_opportunities': sum(h['due'] for h in hidden),
-            'hidden_hits': sum(h['due'] and h['selected'] for h in hidden),
+            'hidden_due_opportunities': sum(h['due'] for h in hidden) if complete else None,
+            'hidden_hits': sum(h['due'] and h['selected'] for h in hidden) if complete else None,
             'model_calls': len(requests), 'invalid_responses': sum(bool(r['validation_error']) for r in calls),
             'transport_errors': sum(bool(r['transport_error']) for r in calls),
             'interrupted_requests': len(requests)-len(calls),
             'retries': sum(r['attempt'] > 1 for r in requests),
             'tool_queries': sum(len(s['tools']) for s in steps),
             'input_tokens': complete_sum('input_tokens'), 'output_tokens': complete_sum('output_tokens'),
+            'known_input_token_subtotal': sum((r.get('usage') or {}).get('input_tokens') or 0 for r in calls) if any(r.get('usage') for r in calls) else None,
+            'known_output_token_subtotal': sum((r.get('usage') or {}).get('output_tokens') or 0 for r in calls) if any(r.get('usage') for r in calls) else None,
             'latency_seconds': sum(r['latency_seconds'] for r in calls),
             'api_response_cost_usd': sum(costs) if costs and len(requests) == len(calls) and all(c is not None for c in costs) else None,
             'verified_billed_cost_usd': None,
@@ -111,8 +121,9 @@ def report(study_dir):
     aggregate = {}
     for method in study['methods']:
         selected = [r for r in cases if r['method'] == method]
-        counts = [sum(r[k] for r in selected) for k in ('tp','fp','fn')]
-        aggregate[method] = {**metrics(*counts), 'completed_trajectories': sum(r['status']=='completed' for r in selected),
+        usable = [r for r in selected if r['primary_usable']]
+        counts = [sum(r[k] for r in usable) for k in ('tp','fp','fn')]
+        aggregate[method] = {**(metrics(*counts) if usable else {k:None for k in ('tp','fp','fn','precision','recall','set_f1')}), 'completed_trajectories': sum(r['status']=='completed' for r in selected),
                              'model_calls': sum(r['model_calls'] for r in selected),
                              'tool_queries': sum(r['tool_queries'] for r in selected),
                              'invalid_responses': sum(r['invalid_responses'] for r in selected)}

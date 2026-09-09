@@ -1,5 +1,6 @@
 """Public agent controller. Input is serialized observations only, never an environment."""
 import json
+import re
 from pathlib import Path
 from .common import obj, array, CITATION, STRING, citations_valid, validate
 from .store import Store, EXTRACTION
@@ -74,7 +75,9 @@ class Agent:
         if self.blocked:
             return {**empty, 'blocked': 'invalid_extraction', 'bindings': []}
         if self.method == 'A2' and self.queries == 0:
-            tickets = self.store.monitor(checkpoint, frame['channels'], 1)
+            visible_clock = any(re.search(r'\bTime: \d\d:\d\d', frame['observations'][ref]['text'])
+                                for ref in frame['current_refs'])
+            tickets = self.store.monitor(checkpoint, frame['channels'], 1, clock_visible=visible_clock)
             if tickets and self.store.check_valid(tickets[0]):
                 self.queries += 1
                 return {'action': 'query_state', 'choice': 'NONE', 'task_ids': [],

@@ -95,6 +95,9 @@ class FixtureTransport:
             day = day_matches[-1] if day_matches else ''
             time_match = re.findall(r'Time: (\d\d:\d\d)', menu_source)
             visible_time = time_match[-1] if time_match else None
+            if visible_time is None:
+                clock_times = re.findall(r'State \[clock\]: Time (\d\d:\d\d)', narrative)
+                visible_time = clock_times[-1] if clock_times else None
             can_query = 'query_state' in schema['properties']['action']['enum']
             value = {'action': 'choose', 'choice': 'A', 'task_ids': [], 'channel': 'NONE'}
             bindings = []
@@ -112,7 +115,7 @@ class FixtureTransport:
                 for ref, source in current.items():
                     text = source['text']
                     if item['trigger'] == 'time':
-                        satisfied = item['when'] == f'{day} {visible_time}' and 'Step action menu' in text
+                        satisfied = item['when'] == f'{day} {visible_time}' and ('Step action menu' in text or text.startswith('State [clock]'))
                     else:
                         # Ignore the initial instruction/menu when finding a present cue.
                         scene = text.split('A)')[0]

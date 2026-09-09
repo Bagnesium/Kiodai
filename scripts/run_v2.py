@@ -21,7 +21,8 @@ LIVE_ROOT = ROOT/'results/v2/live-frozen-v2'
 def protocol_files():
     paths = [ROOT/'configs/v2.json', ROOT/'scripts/run_v2.py', ROOT/'scripts/generate_v2_cases.py',
              ROOT/'scripts/freeze_v2.py', ROOT/'prompts/baseline_system.txt', ROOT/'prompts/prospective_memory_system.txt',
-             ROOT/'sim/pm_bench.py']
+             ROOT/'sim/pm_bench.py', ROOT/'scripts/local_v2_smoke.py', ROOT/'scripts/v2_cooling_regression.py',
+             ROOT/'scripts/serve_v2.py']
     for directory, pattern in [('kiodai_v2','*.py'), ('prompts/v2','*.txt'), ('data/v2','*.json'),
                                ('research_harness','*.py'), ('tests','test_v2*.py')]:
         paths += list((ROOT/directory).glob(pattern))
@@ -31,6 +32,25 @@ def protocol_files():
 def preflight(require_freeze=True):
     config = json.loads((ROOT/'configs/v2.json').read_text())
     catalog = json.loads((ROOT/'data/v2/catalog.json').read_text())['cases']
+    for manifest_path in ('research/protected_hashes.json','research/pilot1_preservation_v1.json','research/followup_preservation_v1.json'):
+        saved = json.loads((ROOT/manifest_path).read_text())
+        if saved.get('archive') and digest((ROOT/saved['archive']).read_bytes()) != saved['archive_sha256']:
+            raise RunStopped('Historical preservation archive changed')
+        for name, expected in saved['files'].items():
+            # Pilot-era shared METHOD/defense documents were legitimately updated by
+            # the completed follow-up. Their original bytes remain in the pilot archive.
+            if manifest_path.endswith('pilot1_preservation_v1.json') and not name.startswith('results/'):
+                continue
+            expected = expected['sha256'] if isinstance(expected,dict) else expected
+            if digest((ROOT/name).read_bytes()) != expected:
+                raise RunStopped('Preserved historical file changed: '+name)
+    legacy = json.loads((ROOT/'research/v2/legacy_state.json').read_text())
+    for name, record in legacy['files'].items():
+        content = (ROOT/name).read_bytes()
+        if record['policy'] == 'append_only':
+            content = content[:record['bytes']]
+        if digest(content) != record['sha256']:
+            raise RunStopped('Historical baseline changed: '+name)
     if require_freeze:
         frozen = json.loads(FREEZE.read_text())
         actual = {str(p.relative_to(ROOT)): digest(p.read_bytes()) for p in protocol_files()}

@@ -73,6 +73,9 @@ def run_case(scenario_path, method, folder, config, transport, mode='MOCK', acco
                                     PM.list_state_channels(scenario), False)
     (folder/'system_prompt.txt').write_text(prompt)
     manifest = {'mode': mode, 'method': method, 'status': 'running', 'prompt': metadata,
+                'implementation_hashes_at_start': {str(p.relative_to(ROOT)): digest(p.read_bytes())
+                    for directory, pattern in [('kiodai_v2','*.py'),('research_harness','*.py'),('prompts/v2','*.txt')]
+                    for p in (ROOT/directory).glob(pattern)},
                 'scenario_sha256': digest(Path(scenario_path).read_bytes()),
                 'heartbeat_enabled': False, 'context': 'matched full history, shared documented receipts',
                 'independent_unit': 'complete trajectory', 'repeat': 1, 'excluded': False}
@@ -98,9 +101,13 @@ def run_case(scenario_path, method, folder, config, transport, mode='MOCK', acco
     except BaseException as exc:
         from research_harness.model_gateway import safe_error
         manifest.update(status='interrupted', blocker=safe_error(exc))
+        dump(folder/'manifest.json', manifest)
         raise
     finally:
-        dump(folder/'score.json', PM.score_log(scenario, actions))
+        planned = sum(len(day['steps']) for day in scenario['days'])
+        dump(folder/'score.json', PM.score_log(scenario, actions) if len(actions) == planned else
+             {'available': False, 'reason': 'Official scorer requires a complete trajectory. No missing actions were imputed.',
+              'completed_steps': len(actions), 'planned_steps': planned})
         manifest['completed_steps'] = len(actions)
         manifest['planned_steps'] = sum(len(day['steps']) for day in scenario['days'])
         dump(folder/'memory.json', agent.store.records())
@@ -113,6 +120,8 @@ def run_case(scenario_path, method, folder, config, transport, mode='MOCK', acco
 def verify_case(folder):
     folder = Path(folder)
     manifest = json.loads((folder/'manifest.json').read_text())
+    if (folder/'recovery.json').exists():
+        manifest = json.loads((folder/'recovery.json').read_text())
     for name, expected in manifest['files'].items():
         if Path(name).name != name or digest((folder/name).read_bytes()) != expected:
             raise ValueError('Artifact changed: ' + name)

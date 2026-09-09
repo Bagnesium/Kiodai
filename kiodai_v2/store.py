@@ -105,12 +105,15 @@ class Store:
         return bool(item and item['version'] == version and item['status'] in ('pending', 'failed')
                     and all(records[d]['status'] == 'completed' for d in item['dependencies']))
 
-    def monitor(self, checkpoint, channels, remaining):
+    def monitor(self, checkpoint, channels, remaining, clock_visible=True):
         records = self.records()
         candidates = {}
         for key, item in records.items():
-            if self.eligible(key, item['version']) and item['channel'] in channels:
-                candidates.setdefault(item['channel'], []).append([key, item['version']])
+            channel = item['channel']
+            if channel is None and item['trigger'] == 'time' and not clock_visible:
+                channel = 'clock'
+            if self.eligible(key, item['version']) and channel in channels:
+                candidates.setdefault(channel, []).append([key, item['version']])
         last = self.get('channel_checks', {})
         ordered = sorted(candidates, key=lambda channel: (last.get(channel, -1), channel))
         chosen = ordered[:max(0, remaining)]
@@ -120,7 +123,8 @@ class Store:
         return [{'channel': channel, 'versions': candidates[channel]} for channel in chosen]
 
     def check_valid(self, ticket):
-        return any(self.eligible(key, version) and self.records()[key]['channel'] == ticket['channel']
+        return any(self.eligible(key, version) and (self.records()[key]['channel'] == ticket['channel'] or
+                   (ticket['channel'] == 'clock' and self.records()[key]['trigger'] == 'time' and self.records()[key]['channel'] is None))
                    for key, version in ticket['versions'])
 
     def query_received(self, channel, observation, checkpoint):
