@@ -1,35 +1,63 @@
-# Evidence-backed manuscript updates
+# Ready-to-paste manuscript updates — 9 September 2026
 
-The supplied `Kiodai_Daryn_Bagdat_Beimzhan.pages` was inspected read-only by decompressing its Pages IWA body. A nearby DOCX draft was also read; it is a different version and was not treated as the authoritative attachment. Neither source was edited or copied into exports. No full manuscript rewrite was performed.
+These passages use the two separately saved LIVE studies. The supplied Pages manuscript remains unmodified; earlier replacement text is preserved in `artifacts/verification/pilot1-preserved-20260908.zip`. Insert the passages into the corresponding sections after review. Do not replace the original pilot with the follow-up or describe overlapping observations as independent replications.
 
-| Manuscript location / claim | Required update | Evidence |
-|---|---|---|
-| §3.2: exact frozen prompt/hash unavailable | The original prompt was recovered. Identify `prompts/prospective_memory_system.txt`, SHA-256 `fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a`. | `research/a0_a1_freeze_manifest.json`; `research/recovery_snapshot.json`; prompt parity tests |
-| §3.2: mark complete only after confirmation | Qualify this as the conceptual specification. Frozen P1 instead treats selection as completion unless later evidence shows failure. No claim that the stronger rule was implemented in P1. | Frozen prompt, numbered rule 7; `METHOD.md` |
-| §3.3: isolation only described in an earlier engineering message | The current runner logs the model selection before computing the evaluator due set. Sentinel, future-observation and request-parity tests now exercise that path. This is software-boundary evidence. | `research_harness/runner.py`, `model_gateway.py`, `tests/test_runner.py`, `tests/test_prototype.py`, `artifacts/verification/tests.txt` |
-| §3.4: one corrective retry | Current runtime enforces this. Historical smoke config requested two retries; the original gateway merely repeated the request. These were discovered in this audit and corrected without changing frozen study configs. Transport retries are now separately logged and repeated transport failure interrupts the pair. | `METHOD.md`; current gateway/tests; recovery snapshot |
-| §4: planned experiment / dataset | Preserve original full-development protocol, but add the separately frozen eight-step first-day diagnostic pilot. Its selection was cost-driven and occurred before live results. Do not apply full-suite success thresholds to this subset. | `research/PILOT_PROTOCOL_V1.md`; `research/pilot_freeze_v1.json`; `artifacts/verification/pilot-preflight.json` |
-| §4: illustrative 5-point threshold | This was an example, not an observed result. The recovered full-suite preregistration uses other thresholds; the new tiny pilot is descriptive with no success threshold. Do not blend these protocols. | `research/EXPERIMENT_PREREGISTRATION_A0_A1.md`; new pilot protocol |
-| §5.1 / Table 2: 25 tests and 164 hashes only reported historically | The initial recovery rerun reproduced 25 passing tests and 164 matching hashes. The delivered expanded suite's actual count is in `artifacts/verification/tests.txt`; cite that output instead of freezing another unsourced count in the prose. | `artifacts/verification/tests.txt`, `integrity.txt`, `smoke.txt` |
-| §5: no genuine A0/A1 results | Replace with one completed genuine pair: both TP=5, FP=0, FN=0, Set-F1=1.00; A1−A0=0. No accuracy improvement observed in this exploratory development pilot. Keep MOCK separate. | `RESULTS.md`; `artifacts/verification/live-pilot-analysis-20260908.json`; raw pair artifacts |
-| §5: new practical educational scenarios | Six English educational demonstrations now run locally. They were generated during development; they are not multilingual experiments or blind OOD cases. | `data/demo/catalog.json`; `research/demo_freeze_v1.json`; dashboard |
-| §5.3: independent memory / duplicate suppression | Add that the upstream menu removes completed handles and therefore helps suppress duplicates. Frozen P1 cannot be credited with all observed duplicate avoidance. | `sim/pm_bench.py`, `build_step_action_menu`; `METHOD.md` |
-| §5.3: untouched final test | Do not call it untouched. Existing tests inspect released-week identifiers/cues; historical notes discuss released artifacts. Exposure history is incomplete. No final-week prompt tuning was performed in this session. | `tests/test_runner.py`; `tests/test_development_experiment.py`; `research/CLAIMS.md`; `METHOD.md` |
-| §5.5 / supervisor appendix | Preserve blanks and qualifications. Do not invent supervisor approval, student implementation work, independent analysis, or learning progress. | `IMPLEMENTATION_LOG.md`; no student review or supervisor message supplied |
-| Conclusion | A local research prototype and one completed genuine pilot exist. The pilot provides no evidence of an accuracy benefit: both conditions reached the score ceiling. This is not proof of general equivalence. | `RESULTS.md`; `results/kiodai/live-pair-42433e00474b/` |
+## Findings / результаты
 
-Novelty still requires careful qualification. The work studies an exact instruction under explicit controls; neither prospective memory, the general idea of a ledger, PM-Bench, nor fair-evaluation safeguards were invented by the student in this implementation session. A comparison with prior prompts would require additional carefully scoped work and cannot be inferred from local software tests.
+«Первый парный пилот выполнен 8 сентября 2026 года на восьми последовательных шагах одного сценария разработки. В условиях A0 и A1 получены одинаковые результаты: TP=5, FP=0, FN=0; Precision=Recall=Set-F1=1,00. Улучшение точности не обнаружено. Выполнено 16 обращений к модели, без неправильного формата ответов, повторных попыток и запросов к инструментам. A1 использовал на 5360 входных токенов больше. Сумма стоимости, указанной в сохранённых ответах API, составила $0,00765034. Этот результат сохранён отдельно и не заменён последующим исследованием».
 
-## Evidence-backed replacement for §5: genuine experiment
+«После получения первого результата был зафиксирован более широкий разведочный протокол, выполненный 9 сентября 2026 года. Он охватывает полный существующий сценарий разработки: три модельных дня, 20 шагов в каждом условии, один повтор и одну парную траекторию A0/A1. Использована модель deepseek/deepseek-chat-v3.1 через OpenRouter, провайдер Novita, FP8; промпты, параметры генерации, разрешённые инструменты и правила оценки не менялись. A1 отличается добавлением замороженной инструкции P1. В каждом шаге сначала выполнялось A0, затем A1; условия сохраняли отдельные полные истории. Понедельник повторяет материал первого пилота, поэтому последующая проверка не является независимой репликацией или слепым тестом».
 
-«8 сентября 2026 года выполнен один заранее зафиксированный парный пилот: A0 и A1 прошли один сценарий разработки из восьми последовательных шагов. Использовалась модель deepseek/deepseek-chat-v3.1 через OpenRouter, провайдер Novita, FP8, без смены маршрута; условия отличались только добавленной инструкцией P1. Обе траектории завершены. В каждом условии получено TP=5, FP=0, FN=0, Precision=Recall=Set-F1=1,00; разность A1−A0 по этим показателям равна нулю. В обоих условиях выполнено по восемь обращений к модели, без неправильного формата ответа, повторных попыток и запросов к инструментам. Единицей сравнения была целая траектория; восемь шагов не считались восемью независимыми экспериментами».
+| Полная трёхдневная траектория | A0 | A1 | A1−A0 |
+|---|---:|---:|---:|
+| TP | 11 | 11 | 0 |
+| FP | 0 | 0 | 0 |
+| FN | 1 | 1 | 0 |
+| Precision | 1,000000 | 1,000000 | 0 |
+| Recall | 0,916667 | 0,916667 | 0 |
+| Set-F1 | 0,956522 | 0,956522 | 0 |
+| Обращения к модели | 21 | 20 | −1 |
+| Запросы состояния | 1 | 0 | −1 |
+| Входные токены | 59 171 | 68 971 | +9800 |
+| Выходные токены | 699 | 665 | −34 |
+| Стоимость по ответам API, USD | 0,01454109 | 0,01593485 | +0,00139376 |
 
-«Предварительная оценка полной пары с максимально разрешёнными запросами и повторными попытками составляла $0,13677592 при общем разрешённом бюджете $0,30. Сумма стоимости, указанной в сохранённых ответах API, составила $0,00765034: A0 — $0,00336941, A1 — $0,00428093. Это данные ответов провайдера, а не независимо проверенная выписка о списании. У A1 было на 5360 входных токенов больше; число выходных токенов одинаково — по 269. Две более ранние попытки остановились из-за проверки TLS до обращения к модели; их записи сохранены отдельно. Остаток бюджета не использовался для дополнительных повторов».
+«Первичный результат рассчитан по целой траектории: счётчики TP, FP и FN суммируются по её шагам, затем вычисляется Set-F1=2TP/(2TP+FP+FN). У обоих условий Set-F1=22/23≈0,956522, разность A1−A0 равна нулю. Неправильных ответов по формату, повторных попыток и транспортных ошибок не было. Все выбранные действия задач совпали. Отдельное описательное разбиение даёт на повторяющемся понедельнике 5/0/0 и Set-F1=1,00, а на 12 дополнительных шагах — 6/0/1 и Set-F1≈0,923077 у обоих условий. Это части одной истории, а не дополнительные независимые опыты. Основной результат не заменяется оценкой наиболее удачной части».
 
-## Replacement conclusion and limits
+## Observed behavior / наблюдаемое поведение
 
-«В этом разведочном пилоте добавление P1 не улучшило точность: базовое условие уже выполнило все оцениваемые действия правильно. Например, оба условия пропустили отменённый срок 11:00 и выбрали нужные действия в 11:20. Такой результат не доказывает ни общего превосходства, ни равенства методов на других задачах. Пилот содержит один день сценария разработки, не проверяет перенос памяти между днями и не демонстрирует работу со скрытым состоянием: запросов к инструментам не было. Замороженный P1 предполагает завершение после выбора, а не надёжное подтверждение успеха. Среда PM-Bench убирает завершённые действия из меню, поэтому предотвращение повторов нельзя независимо приписать промпту. Фоновые вызовы отключены в обоих условиях».
+«Оба условия пропустили подтверждение стабильного охлаждения во вторник в 13:00. Положительное состояние было доступно только через разрешённый канал sensor_board; видимое сообщение говорило лишь о продолжающемся вне поля зрения охлаждении. A0 запросил этот канал раньше, в 11:30, и получил сообщение, что охлаждение почти стабильно, но ещё не полностью. Этот ответ присутствует в следующем запросе до выбора действия. В 13:00 A0 не проверил состояние повторно, а A1 не запрашивал канал ни разу. Оба выбрали только подписание журнала, подтверждённое видимым сигналом и предыдущим действием блокировки камеры. Оценщик начислил каждому один пропуск скрытой задачи. Успешных скрытых действий, подтверждённых запросом, не было; правильных скрытых действий без такого подтверждения также не было. По этим данным нельзя утверждать успешный мониторинг или восстанавливать внутренние причины решения модели».
 
-«Программные проверки подтверждают корректность проверенных границ реализации, сохранение артефактов и воспроизводимость подсчёта. Они не являются измерением памяти модели. Данные о поведении модели получены из 16 настоящих ответов API в одном парном пилоте. Демонстрации MOCK относятся только к программной проверке».
+«Оба условия успешно выполнили два поручения, заданные в предыдущие дни: повесили пропуск после открытия восточных ворот в среду и поместили архивную карточку после щелчка шкафа. На похожие, но неверные сигналы — закрытые ворота и скрип без щелчка — действия не последовали. В сохранённых запросах на этих шагах присутствуют исходные заметки понедельника и вторника, а меню содержит тексты действий. Поэтому показаны два успешных случая работы с междневными поручениями при доступной полной истории, а не доказательство самостоятельного хранилища памяти».
 
-Sources: `artifacts/verification/live-pilot-analysis-20260908.json`, `results/kiodai/live-pair-42433e00474b/`, `RESULTS.md`, `METHOD.md`, and the preserved retry audit. These are replacement passages for the user's review; the supplied Pages manuscript was not edited. Do not retain older wording that the experiment has never run, or replace it with a claim that Kiodai improved accuracy.
+## Cost / стоимость
+
+«Для последующей проверки был отдельно разрешён общий бюджет $0,70. До запуска оценка на основе использования токенов первого пилота составляла $0,03935938; консервативный резерв с максимально разрешёнными запросами и повторами — $0,63708409. Фактически выполнено 41 обращение; сумма стоимости в ответах API составила $0,03047594. Расчёт по фактическим токенам и тарифу без скидки за кэширование даёт другую величину — $0,03596234. Независимая проверка списания по платёжной выписке не проводилась. A1 использовал на 9800 входных токенов больше (+16,56%) и оказался дороже на $0,00139376 (+9,58%), несмотря на одно обращение меньше. Время обращений суммарно составило 68,270222 с для A0 и 68,147285 с для A1. Это описательные значения одной упорядоченной пары; различия кэширования и истории запросов ограничивают их обобщение. Остаток бюджета не использовался для новых запусков».
+
+## Discussion and limitations / обсуждение и ограничения
+
+«В двух отдельно представленных проверках добавление P1 не дало наблюдаемого повышения точности. В первом пилоте оба условия достигли максимума; в последующей проверке они допустили один и тот же пропуск и получили одинаковую оценку при дополнительных затратах входных токенов у A1. Это не доказывает общего равенства методов или невозможности эффекта в других условиях. Последующая проверка содержит только одну парную траекторию с одним повтором, один скрытый положительный сигнал и два междневных поручения; она запланирована после первого результата и частично с ним пересекается. Последовательные шаги и обращения к модели не считались независимыми повторениями».
+
+«Замороженный P1 предлагает считать действие завершённым после выбора, если позднее не появится свидетельство ошибки. Это слабее требования подтверждать успешное выполнение. Среда PM-Bench сама убирает завершённые действия из меню, поэтому предотвращение повторов нельзя независимо приписать инструкции. Фоновые вызовы и heartbeat отключены в обоих условиях; время продвигает симулятор. Проверка не доказывает автономного наблюдения в реальном времени, надёжной работы настоящих инструментов, переноса на школьные задачи или улучшения учебных результатов. Полная история и меню с текстами действий облегчают задачу».
+
+«Локальные программные проверки подтверждают только проверенные свойства реализации: разделение доступных модели наблюдений и эталонных ответов, сохранение артефактов, соблюдение ограничений и воспроизводимость подсчёта. Они не измеряют память модели. Наблюдения о поведении модели получены из сохранённых настоящих API-ответов; демонстрации MOCK используются только для проверки программы. Исходный PM-Bench, его оценщик и опубликованные результаты являются работой других исследователей. Использование Codex для восстановления и доработки программы и подготовки материалов раскрывается отдельно; личную работу автора и одобрение руководителя нельзя выводить из автоматически созданных файлов».
+
+## Short conclusion / краткое заключение
+
+«В разведочной проверке Kiodai на одной парной трёхдневной траектории оба условия получили TP=11, FP=0, FN=1 и Set-F1≈0,9565. Добавление P1 не повысило точность: оба условия пропустили скрытый сигнал, но выполнили два междневных поручения. A1 использовал на 9800 входных токенов больше. Результат ограничен одним сценарием разработки с полной историей и не доказывает общего равенства методов или автономного мониторинга».
+
+## Claims to remove or qualify before submission
+
+| Older claim | Final evidence-backed treatment |
+|---|---|
+| No genuine experiment / exact prompt unavailable | Two separately reported LIVE studies exist; identify the recovered exact P1 hash in METHOD.md. |
+| Kiodai improved accuracy, achieved SOTA, or created an independent memory mechanism | Unsupported. Report zero observed accuracy differences and measured overhead. |
+| P1 verifies successful execution before completion | Frozen P1 assumes completion after selection; the stronger conceptual rule was not tested. |
+| Duplicate prevention is demonstrated by the prompt | Completed handles are removed by the environment; independent prompt-driven prevention is not established. |
+| Hidden monitoring or autonomous background work succeeded | Both missed the only hidden positive event; heartbeat is off. One negative query is not successful monitoring. |
+| Cross-day behavior was never tested | True of pilot 1 only. The follow-up has two successful cases with full original history still present. |
+| The studies, days, steps or model calls are independent replications | False. One follow-up pair, overlapping Monday, sequential context. |
+| Independently verified billed cost | Unavailable; report saved API-response costs by source. |
+| Supervisor approved / student independently implemented or analyzed everything | Do not invent approval, authorship or understanding. Retain required blanks until the relevant person confirms them. |
+
+Sources: `FOLLOWUP_RESULTS.md`, `artifacts/verification/followup-live-20260909/analysis.json`, `results/followup_v1/live-pair-bdf241965f35/`, `RESULTS.md`, `METHOD.md`, and both preserved study archives. Final local validation output is under `artifacts/verification/followup-live-20260909/`; cite its actual test count rather than historical counts. No new experiment is part of these submission materials.

@@ -1,33 +1,35 @@
-# Current Kiodai status — 8 September 2026
+# Final Kiodai status — 9 September 2026
 
-The frozen $0.30 pilot is complete. Exactly one predeclared matched pair ran, with one scenario and two eight-step trajectories. No extra repeat, model, scenario, prompt tuning, or dashboard redesign was added.
+The separately authorized frozen follow-up **completed once**. Experimental development is finished. There is one usable matched pair, one repeat, 20 steps per condition, and 41 genuine model calls. No invalid response, retry, transport failure, restart, provider substitution or protocol deviation occurred.
 
-| Condition | TP | FP | FN | Precision | Recall | Set-F1 | API-reported USD |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| A0 | 5 | 0 | 0 | 1.00 | 1.00 | 1.00 | 0.00336941 |
-| A1 | 5 | 0 | 0 | 1.00 | 1.00 | 1.00 | 0.00428093 |
+| Full three-day trajectory | A0 | A1 | A1−A0 |
+|---|---:|---:|---:|
+| TP / FP / FN | 11 / 0 / 1 | 11 / 0 / 1 | 0 / 0 / 0 |
+| Precision / Recall / Set-F1 | 1 / 0.916667 / 0.956522 | 1 / 0.916667 / 0.956522 | 0 / 0 / 0 |
+| Calls / queries | 21 / 1 | 20 / 0 | −1 / −1 |
+| Input / output tokens | 59,171 / 699 | 68,971 / 665 | +9,800 / −34 |
+| API-response-reported USD | 0.01454109 | 0.01593485 | +0.00139376 |
 
-No accuracy improvement was observed. Both conditions reached the score ceiling in this exploratory development pilot. All task selections matched; A1 used 5,360 more input tokens. This single pair cannot establish general equivalence or superiority.
+No observed accuracy improvement. All task selections matched. A0 queried the sensor board at Tuesday 11:30, received a negative state and did not query again; A1 made no query. Both missed the hidden positive event at 13:00. Both executed the two Wednesday intentions correctly with the original prior-day messages still in context.
 
-- Pair: `results/kiodai/live-pair-42433e00474b/`; 16 actual calls, no retries, invalid responses, transport errors or tool queries.
-- Cost reported in saved responses: **$0.00765034 total**. Prospective stress estimate: $0.13677592. Usage at uncached list prices: $0.00944746. Verified billed cost is unavailable. The remaining authorization was not spent.
-- Two earlier TLS startup failures remain unchanged and count as incomplete attempts, not model-performance failures. No model call occurred in either.
-- The user-authorized local `.env` supplied only OPENROUTER_API_KEY to the launcher. The key was not printed, copied into artifacts, or tracked. The installed CA bundle enabled verified TLS. The credential blocker is resolved.
-- The genuine pair is available in the existing **RECORDED** selector. Its replay and export were verified without model transport. MOCK remains separate.
-- All **57 tests** and **164 protected-file hashes** passed after inference; frozen development verification and Python compilation passed. See `artifacts/verification/post-live-tests-20260908.txt`, `post-live-integrity-20260908.txt`, `post-live-development-20260908.txt` and `genuine-pilot-replay-check.json`.
-- RESULTS, METHOD, MANUSCRIPT_UPDATES and DEFENSE_RU now describe the actual findings. The supplied manuscript remains unchanged; replacement paragraphs are ready for review.
+Descriptive only: overlapping Monday 5/0/0, F1=1 for both; 12 additional steps 6/0/1, F1≈0.923077 for both. The primary result remains the full trajectory. The follow-up was planned after the original pilot and repeats its Monday portion; they are not independent replications.
 
-Known limits remain: frozen P1 assumes completion after selection; PM-Bench removes completed handles; heartbeat is disabled. This pilot covers only the first development day and demonstrates neither hidden-state querying nor cross-day memory.
+Cost: pre-run usage projection $0.03935938; conservative allowance $0.63708409; authorized ceiling $0.70; actual-token uncached-price estimate $0.03596234; saved API costs **$0.03047594**; independently verified billing **unavailable**. Final budget reservations are $0.06868424, not charges. Zero billable preflight requests or unreported model attempts. Unused authorization was not spent.
 
-Rebuild evidence: `python3 artifacts/verification/analyze_live_pilot_20260908.py`.
-Replay: `python3 -m research_harness.dashboard`, then RECORDED → first-development-day-pilot-v1 · live-pair-42433e00474b.
+The original pilot remains unchanged in `RESULTS.md`/`RESULTS.json`: one eight-step pair, both 5/0/0 and F1=1, A1 +5,360 input tokens, API cost $0.00765034. Both earlier TLS startup failures and the pilot preservation archive remain intact. Frozen preparation documents remain historical snapshots; their “not run” wording describes the time of freezing, not current status.
 
-Detailed evidence: `artifacts/verification/live-pilot-analysis-20260908.json`. Earlier audit: `artifacts/verification/pilot-retry-audit-20260908T163833Z.json`. No further paid inference is needed for this frozen task.
+Final deliverables: `FOLLOWUP_RESULTS.md`, `METHOD.md`, `MANUSCRIPT_UPDATES.md`, `DEFENSE_RU.md`. Actual observations, line references and accounting: `artifacts/verification/followup-live-20260909/analysis.json`. Raw study: `results/followup_v1/`. Preserved archive: `artifacts/verification/followup-live-20260909.zip`. Final check outputs and recorded export are in `artifacts/verification/followup-live-20260909/`.
 
-## Separate follow-up preparation
+Replay without inference:
 
-The completed first pilot above is unchanged and archived. One broader evaluation is now frozen but **not authorized or run**: the whole existing three-day, 20-step development scenario, one matched pair, one repeat. It retains Monday and adds Tuesday/Wednesday rather than slicing away encoding instructions. No new evaluated scenarios or UI features were added.
+```bash
+python3 -m research_harness.dashboard --output-root results/followup_v1 --port 8766
+```
 
-Usage-informed projection: $0.03935938 (44 calls, two queries per condition, no retries, no cache discount). Unchanged stress allowance: $0.63708409 (up to 160 attempts). Proposed explicit new ceiling: $0.70. Existing pilot/dashboard callers still have their $0.30 default cap. `scripts/run_followup.py` validates the separate freeze and requires new `--live --budget-usd 0.70` authorization; default/preflight performs no inference or credential reads.
+Open http://127.0.0.1:8766; RECORDED → `frozen-development-v1 · live-pair-bdf241965f35` → Start run. Steps 12–13 show the query/shared miss; 18–19 show cross-day successes. Rebuild the saved audit with `python3 scripts/analyze_followup_saved.py`.
 
-Local verification now passes **62 tests**, all 164 protected-file hashes, development integrity and compilation. Offline fixtures validate visible-input solvability and hidden-state isolation; their MOCK outcomes are not new model evidence. No `results/followup_v1/` directory exists. See `COVERAGE.md`, `FOLLOWUP_EVALUATION.md`, `research/followup_freeze_v1.json` and `artifacts/verification/followup-v1-tests.txt`.
+Limits: one paired trajectory, one hidden positive event, overlapping development data, full history and action menus; P1 assumes completion after selection, environment removes completed handles, heartbeat disabled. No general superiority/equivalence, independent duplicate prevention or autonomous monitoring claim is supported.
+
+No inference or implementation blocker remains. The Pages manuscript was intentionally not overwritten. Submission still requires the author to transfer/review the ready-to-paste paragraphs and complete any required formatting/signatures; supervisor approval is not invented.
+
+Final validation passed: 62 tests; smoke and compile checks; all 164 protected files; development/follow-up frozen hashes; official rescoring; API cost reconciliation; original-pilot/archive preservation; deterministic offline analysis; complete RECORDED replay and browser-visible shared miss. Credentials were checked absent from new outputs, including nested archives. See `artifacts/verification/followup-live-20260909/checks.json`, `replay-check.json`, `browser-check.json` and `completion.json`.
