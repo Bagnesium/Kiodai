@@ -42,7 +42,7 @@ The freeze is `research/v2/freeze.json`; it records implementation, prompts, sce
 
 The guard reserves **$19.95251712** for the complete evaluation, against an explicit **$20.00** proposed ceiling. It allows one token per UTF-8 request byte plus 1,024 framing tokens, full output caps, all possible query interactions, and a corrective retry at every internal call: up to 1,344 attempts. Each matched triple needs $1.66270976 available before starting. Durable per-attempt reservations occur before send and are never refunded, including timeouts. Route metadata GET is nonbillable and no model preflight is used. The pinned endpoint/prices are rechecked before LIVE. Charges above an allowance cause an immediate stop; independent provider billing cannot be guaranteed by an application estimate.
 
-**No new paid inference has been authorized or executed.** The prior $0.70 applies only to the completed follow-up. A future authorized run is exactly:
+**The full comparison has not been launched or authorized by the later smoke request.** The prior $0.70 applied only to the historical follow-up. The subsequent $1.00 authorization covered one complete A2 development trajectory, documented below; it did not authorize this 36-method-trajectory matrix. The retained full-study command, requiring separate authorization, is:
 
 ```bash
 cd /Users/bagnesium/Documents/GitHub/Kiodai
@@ -50,4 +50,14 @@ python3 scripts/run_v2.py --preflight
 python3 scripts/run_v2.py --live --budget-usd 20.00 --env-file .env
 ```
 
-Only the user should execute the LIVE command after granting that fresh authorization. The `.env` key is parsed locally without interpolation and never printed. LIVE has one fixed artifact directory: `results/v2/live-frozen-v2`. Repeated invocation after any attempt is refused. An incomplete run is reported, not silently shortened or restarted.
+The LIVE command remains deferred. The `.env` key is parsed locally without interpolation and never printed. LIVE has one fixed artifact directory: `results/v2/live-frozen-v2`. Repeated invocation after any attempt is refused. An incomplete run is reported, not silently shortened or restarted.
+
+## Executed development smoke: separate scope, unchanged full freeze
+
+The later DeepSeek smoke used `configs/v2_deepseek_smoke_v1.json` and `research/v2/deepseek_smoke_v1_freeze.json`. Its only configuration differences were study version, A2-only method list, execution-order description and $1.00 cap. The complete existing `v2_hidden_91320` scenario had eight checkpoints and one repeat. Model/provider, prompts, generation, history, allowed tools, validation, execution semantics and scoring were unchanged. A small launcher reused `run_case`, Gateway and Accounting; it did not implement another agent engine or modify the full-study freeze.
+
+The conservative complete allowance was $0.49729536 for up to 32 attempts: eight checkpoints × two extraction attempts × $0.01630848 plus eight × two selection attempts × $0.01477248. A2's deterministic queries need no additional model call; their returned text is covered in selection and growing-history input allowances. Actual execution at commit `a754559351ba017bb4fc00aa5e0527ea68d05572` used 24 attempts, $0.37604352 in durable reservations and $0.01525668 in API-response-reported cost. Independent billing remains unavailable.
+
+All eight checkpoints completed, making one scoreable negative trajectory; none were excluded or retried as a new run. The official TP0/FP0/FN2 and zero committed intentions are reported in [the smoke results](DEEPSEEK_SMOKE_RESULTS.md). Post-hoc review found an empty-condition schema/application contract gap and menu-as-instruction errors. The engine remained unchanged throughout evaluation. This is exposed development evidence from one A2 trajectory, with no comparator, no reliable-extractor claim and no live demonstration of successful hidden monitoring or receipt completion.
+
+The revised $1.03943 planning projection is saved separately in `results/v2/deepseek-smoke-v1/full_study_usage_projection.json`. It incorporates the smoke's observed phase retry rates while retaining full-study history sizes and output allowances. Transfer to other template families and B_ledger is unvalidated. Neither the original `research/v2/cost_projection.json` nor the full conservative allowance of $19.95251712 was changed. The failed integration remains a blocker to claiming a functioning A2 system; no further inference followed it.
