@@ -1,0 +1,453 @@
+{
+  "$defs": {
+    "citation": {
+      "additionalProperties": false,
+      "properties": {
+        "quote": {
+          "pattern": "\\S",
+          "type": "string"
+        },
+        "ref": {
+          "pattern": "\\S",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref",
+        "quote"
+      ],
+      "type": "object"
+    },
+    "evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        },
+        "channel": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        },
+        "condition": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        },
+        "dependencies": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        },
+        "trigger": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        },
+        "when": {
+          "items": {
+            "$ref": "#/$defs/citation"
+          },
+          "maxItems": 16,
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "trigger",
+        "condition",
+        "channel",
+        "when",
+        "dependencies"
+      ],
+      "type": "object"
+    },
+    "record": {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "channel": {
+              "type": "null"
+            },
+            "condition": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "dependencies": {
+              "items": {
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "maxItems": 16,
+              "type": "array"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "trigger": {
+              "enum": [
+                "time"
+              ],
+              "type": "string"
+            },
+            "when": {
+              "pattern": "\\S",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "trigger",
+            "condition",
+            "channel",
+            "when",
+            "dependencies",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "channel": {
+              "type": "null"
+            },
+            "condition": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "dependencies": {
+              "items": {
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "maxItems": 16,
+              "type": "array"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "trigger": {
+              "enum": [
+                "event"
+              ],
+              "type": "string"
+            },
+            "when": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "action",
+            "trigger",
+            "condition",
+            "channel",
+            "when",
+            "dependencies",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "channel": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "condition": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "dependencies": {
+              "items": {
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "maxItems": 16,
+              "type": "array"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "trigger": {
+              "enum": [
+                "hidden"
+              ],
+              "type": "string"
+            },
+            "when": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "action",
+            "trigger",
+            "condition",
+            "channel",
+            "when",
+            "dependencies",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "channel": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "condition": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "dependencies": {
+              "items": {
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "maxItems": 16,
+              "type": "array"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "trigger": {
+              "enum": [
+                "unknown"
+              ],
+              "type": "string"
+            },
+            "when": {
+              "pattern": "\\S",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "action",
+            "trigger",
+            "condition",
+            "channel",
+            "when",
+            "dependencies",
+            "evidence"
+          ],
+          "type": "object"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "operations": {
+      "items": {
+        "anyOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "expected_version": {
+                "type": "null"
+              },
+              "kind": {
+                "enum": [
+                  "create"
+                ],
+                "type": "string"
+              },
+              "record": {
+                "$ref": "#/$defs/record"
+              },
+              "sources": {
+                "items": {
+                  "$ref": "#/$defs/citation"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              "target": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "kind",
+              "target",
+              "expected_version",
+              "record",
+              "sources"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "expected_version": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "kind": {
+                "enum": [
+                  "revise"
+                ],
+                "type": "string"
+              },
+              "record": {
+                "$ref": "#/$defs/record"
+              },
+              "sources": {
+                "items": {
+                  "$ref": "#/$defs/citation"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              "target": {
+                "pattern": "\\S",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "target",
+              "expected_version",
+              "record",
+              "sources"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "expected_version": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "kind": {
+                "enum": [
+                  "cancel"
+                ],
+                "type": "string"
+              },
+              "record": {
+                "type": "null"
+              },
+              "sources": {
+                "items": {
+                  "$ref": "#/$defs/citation"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              "target": {
+                "pattern": "\\S",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "target",
+              "expected_version",
+              "record",
+              "sources"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "expected_version": {
+                "type": "null"
+              },
+              "kind": {
+                "enum": [
+                  "ambiguous"
+                ],
+                "type": "string"
+              },
+              "record": {
+                "type": "null"
+              },
+              "sources": {
+                "items": {
+                  "$ref": "#/$defs/citation"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              "target": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "kind",
+              "target",
+              "expected_version",
+              "record",
+              "sources"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 16,
+      "type": "array"
+    }
+  },
+  "required": [
+    "operations"
+  ],
+  "type": "object"
+}

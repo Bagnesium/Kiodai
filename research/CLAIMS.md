@@ -48,3 +48,11 @@ The user subsequently authorized exactly one intact A2 hidden-state smoke with a
 | Cost and future allowance are established | Saved API costs $0.01525668; independent billing unavailable; full conservative guard unchanged at $19.95251712 | The revised $1.03943 planning projection is uncertain and does not authorize or validate the full study. |
 
 Detailed results, semantic trace, cost sources, preserved failure analysis and replay: `docs/v2/DEEPSEEK_SMOKE_RESULTS.md`. Historical pilot/follow-up results and the original full-study freeze are unchanged. The evaluated engine remains frozen; only post-hoc report scope text and one unfrozen empty-ledger display label were corrected. No further inference follows this smoke.
+
+## v2.1 extraction repair — offline development only
+
+The user subsequently authorized a narrow integration repair, offline tests and local commits, explicitly forbidding new model inference. Implementation `959db38dac8b68f63ecf79420dcd53bea2278cf2` aligns extraction contracts, adds obligation-provenance and unresolved-state constraints, strengthens binding IDs and supplies specific bounded retry feedback. This is a new development revision; original freezes and failed runs remain unchanged.
+
+**146 passing tests**, including 35 new regressions, and `results/v2_1/offline-repair-v1/` verify structural boundaries and MOCK integration: 8 checkpoints, 16 fixture calls, 7 queries, 3 receipt-completed intentions. They do not prove semantic extraction reliability, provider schema enforcement, real-model monitoring/execution success or superiority. A regression deliberately demonstrates that narrative hypothetical entailment remains model-dependent.
+
+One new A2 development smoke is specified in `research/v2_1/smoke_v1.json` and **has not run or been authorized**. Its candidate $1 ceiling covers a $0.49729536 conservative reservation; usage projection $0.03201778 remains uncertain. The old full-study freeze is not a matching v2.1 evaluation. Evidence, limits and commands: `docs/v2_1/EXTRACTION_REPAIR.md`.

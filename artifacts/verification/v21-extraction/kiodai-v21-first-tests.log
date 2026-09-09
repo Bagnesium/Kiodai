@@ -1,0 +1,64 @@
+test_a1_remains_runnable (test_v2.V2Tests.test_a1_remains_runnable) ... ok
+test_all_components_only_receive_public_history (test_v2.V2Tests.test_all_components_only_receive_public_history) ... ok
+test_ambiguous_update_quarantines_without_arbitrary_target (test_v2.V2Tests.test_ambiguous_update_quarantines_without_arbitrary_target) ... ERROR
+test_artifact_tampering_detected (test_v2.V2Tests.test_artifact_tampering_detected) ... ok
+test_budget_rejects_oversized_request_and_insufficient_allowance (test_v2.V2Tests.test_budget_rejects_oversized_request_and_insufficient_allowance) ... ok
+test_budget_reservations_survive_restart (test_v2.V2Tests.test_budget_reservations_survive_restart) ... ok
+test_cancellation_invalidates_scheduled_check (test_v2.V2Tests.test_cancellation_invalidates_scheduled_check) ... ok
+test_dashboard_agent_view_excludes_evaluator_fields (test_v2.V2Tests.test_dashboard_agent_view_excludes_evaluator_fields) ... ok
+test_dependencies_block_until_receipt (test_v2.V2Tests.test_dependencies_block_until_receipt) ... ok
+test_failed_execution_can_retry_same_stable_id (test_v2.V2Tests.test_failed_execution_can_retry_same_stable_id) ... ok
+test_fair_channel_rotation (test_v2.V2Tests.test_fair_channel_rotation) ... ok
+test_frozen_budget_includes_all_three_conditions (test_v2.V2Tests.test_frozen_budget_includes_all_three_conditions) ... ok
+test_full_path_every_family_and_baseline_not_scripted_to_lose (test_v2.V2Tests.test_full_path_every_family_and_baseline_not_scripted_to_lose) ... ok
+test_full_path_hidden_negative_positive_and_receipt (test_v2.V2Tests.test_full_path_hidden_negative_positive_and_receipt) ... ok
+test_hidden_clock_uses_allowed_query_not_evaluator_time (test_v2.V2Tests.test_hidden_clock_uses_allowed_query_not_evaluator_time) ... ok
+test_internal_retries_counted_and_invalid_fails_closed (test_v2.V2Tests.test_internal_retries_counted_and_invalid_fails_closed) ... ok
+test_interrupted_trajectory_preserves_artifacts_without_imputation (test_v2.V2Tests.test_interrupted_trajectory_preserves_artifacts_without_imputation) ... ok
+test_live_cannot_accept_mock_transport_even_with_budget (test_v2.V2Tests.test_live_cannot_accept_mock_transport_even_with_budget) ... ok
+test_metamorphic_names_handles_channels_and_valid_times (test_v2.V2Tests.test_metamorphic_names_handles_channels_and_valid_times) ... ok
+test_missing_or_fabricated_source_rejected_atomically (test_v2.V2Tests.test_missing_or_fabricated_source_rejected_atomically) ... ok
+test_mode_separation (test_v2.V2Tests.test_mode_separation) ... ok
+test_negative_does_not_suppress_next_check (test_v2.V2Tests.test_negative_does_not_suppress_next_check) ... ok
+test_no_agent_module_imports_private_simulator (test_v2.V2Tests.test_no_agent_module_imports_private_simulator) ... ok
+test_null_record_and_multiple_creation (test_v2.V2Tests.test_null_record_and_multiple_creation) ... ok
+test_query_budget_exhaustion_and_grouping (test_v2.V2Tests.test_query_budget_exhaustion_and_grouping) ... ok
+test_reject_private_fields_in_full_boundary (test_v2.V2Tests.test_reject_private_fields_in_full_boundary) ... ok
+test_report_pairing_and_complete_study_mean (test_v2.V2Tests.test_report_pairing_and_complete_study_mean) ... ok
+test_restart_preserves_completion_and_duplicate_protection (test_v2.V2Tests.test_restart_preserves_completion_and_duplicate_protection) ... ok
+test_revision_invalidates_stale_version (test_v2.V2Tests.test_revision_invalidates_stale_version) ... ok
+test_schema_rejects_extra_and_duplicate_keys (test_v2.V2Tests.test_schema_rejects_extra_and_duplicate_keys) ... ok
+test_selection_is_not_completion (test_v2.V2Tests.test_selection_is_not_completion) ... ok
+test_stale_positive_citation_rejected (test_v2.V2Tests.test_stale_positive_citation_rejected) ... ok
+test_state_isolation_between_runs (test_v2.V2Tests.test_state_isolation_between_runs) ... ok
+test_transport_failure_never_falls_back_or_retries (test_v2.V2Tests.test_transport_failure_never_falls_back_or_retries) ... ok
+test_uncertain_simulator_does_not_repeat_side_effect (test_v2.V2Tests.test_uncertain_simulator_does_not_repeat_side_effect) ... ok
+test_unknown_channel_is_not_manufactured (test_v2.V2Tests.test_unknown_channel_is_not_manufactured) ... ok
+
+======================================================================
+ERROR: test_ambiguous_update_quarantines_without_arbitrary_target (test_v2.V2Tests.test_ambiguous_update_quarantines_without_arbitrary_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/tests/test_v2.py", line 71, in test_ambiguous_update_quarantines_without_arbitrary_target
+    self.revise(key, 'ambiguous')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/tests/test_v2.py", line 44, in revise
+    self.store.apply({'operations': [op]}, self.observations, 2, ['board'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/store.py", line 33, in apply
+    validate(payload, EXTRACTION)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/common.py", line 87, in validate
+    validate(value[key], schema['properties'][key], f'{path}.{key}', root)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/common.py", line 94, in validate
+    validate(item, schema['items'], f'{path}[{index}]', root)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/common.py", line 67, in validate
+    raise ValueError(error)
+ValueError: $.operations[0].target: wrong JSON type; expected ['null']
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.601s
+
+FAILED (errors=1)

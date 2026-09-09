@@ -1,0 +1,372 @@
+{
+  "all_finish_reason_stop": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "checkpoint": 1,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        1,
+        2
+      ],
+      "ordinal": 1,
+      "response_id": "gen-1788975238-6Gw2hWqx4LlluVoFnIxT",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 1,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        3,
+        4
+      ],
+      "ordinal": 2,
+      "response_id": "gen-1788975261-ACwn0BBnziyK2YVqrhuW",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 1,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        5,
+        6
+      ],
+      "ordinal": 3,
+      "response_id": "gen-1788975264-OuVZEqOcVIyi057iIa8u",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 2,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        7,
+        8
+      ],
+      "ordinal": 4,
+      "response_id": "gen-1788975267-IRSh8m2wRDpj1NxLcprK",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 2,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        9,
+        10
+      ],
+      "ordinal": 5,
+      "response_id": "gen-1788975291-UtaXZqGDKnZT5KY80nek",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 2,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        11,
+        12
+      ],
+      "ordinal": 6,
+      "response_id": "gen-1788975294-6mYch4B7KPScDPQpV6Z0",
+      "saved_validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 2,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        13,
+        14
+      ],
+      "ordinal": 7,
+      "response_id": "gen-1788975300-5kN2mtzUAWWqnXcgtqkg",
+      "saved_validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 3,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        15,
+        16
+      ],
+      "ordinal": 8,
+      "response_id": "gen-1788975307-UJ4H4Y3ANjZSR16nJvrG",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 3,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        17,
+        18
+      ],
+      "ordinal": 9,
+      "response_id": "gen-1788975330-YIchadctUDW6Q1bPETGi",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 3,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        19,
+        20
+      ],
+      "ordinal": 10,
+      "response_id": "gen-1788975333-sLGHESP2tVO7UfdASGni",
+      "saved_validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 3,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        21,
+        22
+      ],
+      "ordinal": 11,
+      "response_id": "gen-1788975339-zeT6yckD8X9MvNaFDQcJ",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 4,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        23,
+        24
+      ],
+      "ordinal": 12,
+      "response_id": "gen-1788975342-LpKNk35EVmmM00UnUvce",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 4,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        25,
+        26
+      ],
+      "ordinal": 13,
+      "response_id": "gen-1788975344-ii2oWGYVWysGVpyDWuUx",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 5,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        27,
+        28
+      ],
+      "ordinal": 14,
+      "response_id": "gen-1788975347-wdHZHZ1rmsjvTMwzRy0z",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 5,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        29,
+        30
+      ],
+      "ordinal": 15,
+      "response_id": "gen-1788975354-XCga8pwku4JBPB7g9kp5",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 5,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        31,
+        32
+      ],
+      "ordinal": 16,
+      "response_id": "gen-1788975357-5ZlaApj8yWdpZD53KJcy",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 6,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        33,
+        34
+      ],
+      "ordinal": 17,
+      "response_id": "gen-1788975360-NvO92nLvHl3jO96Jd2Ai",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 6,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        35,
+        36
+      ],
+      "ordinal": 18,
+      "response_id": "gen-1788975362-5hJXwtZ28xRp2zgazFxV",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 7,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        37,
+        38
+      ],
+      "ordinal": 19,
+      "response_id": "gen-1788975365-sL9bRkcYH6QHwTbHVYGM",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 7,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        39,
+        40
+      ],
+      "ordinal": 20,
+      "response_id": "gen-1788975372-DlmbrXf518rrgie1za4c",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 7,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        41,
+        42
+      ],
+      "ordinal": 21,
+      "response_id": "gen-1788975374-niFalKr1REjvdq9jsOno",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 8,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        43,
+        44
+      ],
+      "ordinal": 22,
+      "response_id": "gen-1788975378-wubj4Y3KN9cI2lR88daw",
+      "saved_validation_error": "ValueError: Missing intention content",
+      "v21_structural_error": "$.operations[0].record.condition: requires non-whitespace content",
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 8,
+      "finish_reason": "stop",
+      "kind": "extract",
+      "lines": [
+        45,
+        46
+      ],
+      "ordinal": 23,
+      "response_id": "gen-1788975401-iHLoAAstiJqTpOlIlVQX",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 8,
+      "finish_reason": "stop",
+      "kind": "select",
+      "lines": [
+        47,
+        48
+      ],
+      "ordinal": 24,
+      "response_id": "gen-1788975405-dBGv7PwdKjT2YKGE3XAc",
+      "saved_validation_error": null,
+      "v21_structural_error": null,
+      "v2_schema_valid": true
+    }
+  ],
+  "classification": "post-hoc development inspection, no inference",
+  "input_tokens": 57052,
+  "model_calls": 24,
+  "output_tokens": 4380,
+  "retries": 8,
+  "source": "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/calls.jsonl",
+  "transport_errors": 0
+}

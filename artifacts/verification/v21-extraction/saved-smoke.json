@@ -1,0 +1,15 @@
+{
+  "status": "verified_without_writes_or_inference",
+  "archive_files": 24,
+  "completed_checkpoints": 8,
+  "tp": 0,
+  "fp": 0,
+  "fn": 2,
+  "set_f1": 0.0,
+  "attempts": 24,
+  "reserved_usd": 0.37604352,
+  "api_response_cost_usd": 0.01525668,
+  "verified_billed_cost_usd": null,
+  "frozen_source_files": 59,
+  "source_commit": "a754559351ba017bb4fc00aa5e0527ea68d05572"
+}

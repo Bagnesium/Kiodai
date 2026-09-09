@@ -1,0 +1,20 @@
+{
+  "research/v2/artifact_inventory.json": 1355,
+  "research/v2/deepseek_smoke_artifact_inventory.json": 24,
+  "saved_smoke": {
+    "status": "verified_without_writes_or_inference",
+    "archive_files": 24,
+    "completed_checkpoints": 8,
+    "tp": 0,
+    "fp": 0,
+    "fn": 2,
+    "set_f1": 0.0,
+    "attempts": 24,
+    "reserved_usd": 0.37604352,
+    "api_response_cost_usd": 0.01525668,
+    "verified_billed_cost_usd": null
+  },
+  "historical_source_files": 59,
+  "legacy_baseline_files": 404,
+  "protected_files": 164
+}

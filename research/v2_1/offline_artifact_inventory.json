@@ -1,0 +1,22 @@
+{
+  "files": {
+    "results/v2_1/offline-repair-v1/source.json": "461d54585986e10a1e4cd5ae77baf7f23dc51a01f5b4c62924f8e26e4534f903",
+    "results/v2_1/offline-repair-v1/study.json": "45600a7c5564674752fb9c94d06dc7dc6747e803cfe40eeb7d7f0d1131e4d838",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/actions.jsonl": "6a8b88ad519e80f69f0bbc2540a55bff2d3039ca22d7eea7ebbab50a973f7b3a",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/agent.jsonl": "d43bb642e5d2ec7f55251c982dea647ff9130e9d9bcfb283308cd6aa6a998de9",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/calls.jsonl": "ca11c1ce68d37ea3be6def040d27b2f183b882935fcc8a20617e55a4f68e155d",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/config.json": "7561210aa7c0572fc282efbc4b75e8b19adea330c8077f1207a27887a8cce34a",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/manifest.json": "f5d7ed9fb3047b8b782ad32f515320ac0cbe6a3adbd40e50763787fa2efb2351",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/memory.json": "377b0c830a1202091963be164b1d2b569b462f44f47454bc819bf14df03d9060",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/memory.sqlite": "6eaa791c397fb21793956434a7c1d6dda5e63a70afddbb541df723b9317a7cb7",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/scenario.json": "579d0d522ca8e85790dea6da25f3903c874950ba0463147c8bd901e8802280a4",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/score.json": "64129f033033a4ffc247e5c91aad43e848e8e9178ce6212ab947de66c04e3d00",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/steps.jsonl": "b9ffe7ff8c32174587e5bd021ad486d9de62713411080a3681d22530bf80aad7",
+    "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/system_prompt.txt": "fe25d58f244025e114546a3837260309eaf4290e7101a8717ff2452b33932d30",
+    "results/v2_1/offline-repair-v1/verification.json": "14c3fadbeb72381286212efb47216980d27952086f0a4a329301973db6d1c915"
+  },
+  "implementation_commit": "959db38dac8b68f63ecf79420dcd53bea2278cf2",
+  "mode": "MOCK",
+  "model_inference": false
+}

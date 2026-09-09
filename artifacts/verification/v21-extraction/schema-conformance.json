@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "standard": "JSON Schema Draft 2020-12",
+  "jsonschema_version": "4.26.0",
+  "trigger_condition_time_channel_combinations": 144,
+  "scope": "Schema meta-validation and structural acceptance parity for trigger/condition/when/channel combinations; not provider enforcement or model semantics."
+}

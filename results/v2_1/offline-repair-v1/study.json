@@ -1,0 +1,17 @@
+{
+  "methods": [
+    "A2"
+  ],
+  "mode": "MOCK",
+  "planned_trajectories": 1,
+  "repeat": 1,
+  "runs": [
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91320/A2",
+      "method": "A2",
+      "trajectory": "v2_hidden_91320"
+    }
+  ],
+  "status": "completed"
+}

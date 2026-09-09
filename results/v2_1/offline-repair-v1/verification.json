@@ -1,0 +1,47 @@
+{
+  "accepted_empty_updates": 6,
+  "accepted_operations_responses": 2,
+  "checkpoints": 8,
+  "completed_intentions": 3,
+  "mode": "MOCK",
+  "model_requests": 16,
+  "new_model_inference": false,
+  "official_mock_score": {
+    "fn": 0,
+    "fp": 0,
+    "set_f1": 1.0,
+    "tp": 3
+  },
+  "purpose": "Full-pipeline mechanics only; fixture knows the authored public grammar.",
+  "tool_queries": 7,
+  "usage_projection": {
+    "all_calls_retry_sensitivity_usd": 0.12188693724270522,
+    "caveat": "Planning only. Token/byte ratio comes from the failed live smoke; populated-ledger sizes come from a restricted-language mock. No live extraction improvement or tokenizer upper bound is inferred.",
+    "input_growth_margin": 1.35,
+    "input_token_per_request_byte_ratio": 0.24309721843468776,
+    "maximum_actual_mock_request_bytes": 21190,
+    "output_assumptions": {
+      "extract": 750,
+      "select": 256
+    },
+    "projected_calls_without_retries": 16,
+    "projected_input_tokens": 88777,
+    "projected_output_tokens": 8048,
+    "retry_sensitivity_assumptions": {
+      "extra_attempts_per_call": 1,
+      "feedback_framing_bytes": 2048,
+      "previous_output_bytes_per_token": 8,
+      "retry_output": {
+        "baseline": 256,
+        "extract": 3072,
+        "select": 1536
+      }
+    },
+    "sources": {
+      "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/calls.jsonl": "c87f7a250f837f3ba832fc1aa9815aa690a872aefdce1b218ce0d984a4a7f68f",
+      "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/calls.jsonl": "ca11c1ce68d37ea3be6def040d27b2f183b882935fcc8a20617e55a4f68e155d"
+    },
+    "usage_informed_projection_usd": 0.032017780527542956
+  },
+  "validation_failures": 0
+}
