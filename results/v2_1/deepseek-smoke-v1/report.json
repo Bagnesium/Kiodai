@@ -1,0 +1,174 @@
+{
+  "aggregation": "Primary: each full trajectory and paired differences. Micro totals are descriptive. Sequential steps and model calls are not replications. Undefined denominators remain null.",
+  "budget": {
+    "api_response_cost_usd": 0.016737,
+    "attempts": 17,
+    "ceiling_usd": 1.0,
+    "reported_subtotal_usd": 0.016737,
+    "reserved_usd": 0.26342016,
+    "unknown_cost_attempts": 0,
+    "verified_billed_cost_usd": null
+  },
+  "cases": [
+    {
+      "api_response_cost_usd": 0.016737,
+      "canceled_actions": 0,
+      "completed_step_diagnostics_only": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_f1": 1.0,
+        "tp": 3
+      },
+      "completed_steps": 8,
+      "duplicate_side_effects_native": null,
+      "execution_receipts": [
+        {
+          "handle": "task_1",
+          "outcome": "simulator_completed"
+        },
+        {
+          "handle": "task_12",
+          "outcome": "simulator_completed"
+        },
+        {
+          "handle": "task_7",
+          "outcome": "simulator_completed"
+        }
+      ],
+      "false_actions_on_updated_tasks": 0,
+      "family": "hidden",
+      "fn": 0,
+      "fp": 0,
+      "hidden_due_opportunities": 2,
+      "hidden_hits": 2,
+      "hidden_opportunities": [
+        {
+          "agent_trace_record_indices": [
+            13,
+            14
+          ],
+          "category": "query_supported_hit",
+          "channel": "board_cobalt91320",
+          "checkpoint": 7,
+          "day": "DayOne",
+          "due": true,
+          "queries": [
+            {
+              "channel": "board_cobalt91320",
+              "observation": "State [board_cobalt91320]: Cooling is now fully stable."
+            }
+          ],
+          "selected": true,
+          "step_id": "private_step_91320_6",
+          "task_id_evaluator_only": "private_91320_1",
+          "visible_scene": "The review window opens while cooling continues out of sight."
+        },
+        {
+          "agent_trace_record_indices": [
+            13,
+            14
+          ],
+          "category": "query_supported_hit",
+          "channel": "board_cobalt91320",
+          "checkpoint": 7,
+          "day": "DayOne",
+          "due": true,
+          "queries": [
+            {
+              "channel": "board_cobalt91320",
+              "observation": "State [board_cobalt91320]: Cooling is now fully stable."
+            }
+          ],
+          "selected": true,
+          "step_id": "private_step_91320_6",
+          "task_id_evaluator_only": "private_91320_2",
+          "visible_scene": "The review window opens while cooling continues out of sight."
+        }
+      ],
+      "input_tokens": 68964,
+      "interrupted_requests": 0,
+      "invalid_responses": 1,
+      "known_input_token_subtotal": 68964,
+      "known_output_token_subtotal": 2238,
+      "latency_seconds": 96.06000799889443,
+      "lifecycle_note": "Superseded-version exclusion is an enforced code invariant. Native commission follows the official scorer. Native duplicate side effects are unidentifiable because completed handles disappear. Separate local lifecycle tests establish only simulator idempotency.",
+      "lifecycle_outcomes": [
+        "completed",
+        "completed",
+        "completed"
+      ],
+      "method": "A2",
+      "mode": "LIVE",
+      "model_calls": 17,
+      "native_false_action_diagnostics": [],
+      "official_metrics": {
+        "canceled_total": 0,
+        "check_time_calls": 0,
+        "chosen_tasks": 3,
+        "commission": 0,
+        "cross_day_hit": 0,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 0,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 8,
+        "exact_set_match_steps": 8,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 3,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 3,
+        "state_query_calls": 7,
+        "update_canceled": 0,
+        "update_hit": 0,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 0,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "output_tokens": 2238,
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/v2_1/deepseek-smoke-v1/v2_hidden_91320/A2",
+      "planned_steps": 8,
+      "precision": 1.0,
+      "premature_actions_native": 0,
+      "primary_usable": true,
+      "recall": 1.0,
+      "retries": 1,
+      "set_f1": 1.0,
+      "status": "completed",
+      "superseded_versions_executed": 0,
+      "tool_queries": 7,
+      "tp": 3,
+      "trajectory": "v2_hidden_91320",
+      "transport_errors": 0,
+      "verified_billed_cost_usd": null
+    }
+  ],
+  "complete_study_paired_means": {},
+  "descriptive_micro_aggregate": {
+    "A2": {
+      "completed_trajectories": 1,
+      "fn": 0,
+      "fp": 0,
+      "invalid_responses": 1,
+      "model_calls": 17,
+      "precision": 1.0,
+      "recall": 1.0,
+      "set_f1": 1.0,
+      "tool_queries": 7,
+      "tp": 3
+    }
+  },
+  "interpretation": "One A2-only development smoke on an exposed trajectory; no condition comparison or reliability claim.",
+  "matched_differences": [],
+  "mode": "LIVE",
+  "study_status": "completed",
+  "verified_billed_cost_usd": null
+}

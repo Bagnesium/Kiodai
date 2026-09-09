@@ -1,0 +1,71 @@
+{
+  "account_credit_balance": null,
+  "credential_available": true,
+  "independently_verified_billing": null,
+  "key_allowance": {
+    "expires_at": null,
+    "is_free_tier": false,
+    "limit": 2,
+    "limit_remaining": 1.94661704,
+    "limit_reset": null,
+    "usage": 0.05338296
+  },
+  "metadata_requests_billable": false,
+  "model_calls": 0,
+  "route": {
+    "billable": false,
+    "endpoints": [
+      {
+        "context_length": 131072,
+        "latency_last_30m": null,
+        "max_completion_tokens": 32768,
+        "max_prompt_tokens": null,
+        "model_id": "deepseek/deepseek-chat-v3.1",
+        "model_name": "DeepSeek: DeepSeek V3.1",
+        "name": "Novita | deepseek/deepseek-chat-v3.1",
+        "pricing": {
+          "completion": "0.000001",
+          "discount": 0,
+          "input_cache_read": "0.000000135",
+          "prompt": "0.00000027"
+        },
+        "provider_name": "Novita",
+        "quantization": "fp8",
+        "status": 0,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "top_k",
+          "repetition_penalty",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "structured_outputs"
+        ],
+        "supports_implicit_caching": false,
+        "supports_tool_choice": {
+          "auto": true,
+          "function": true,
+          "none": true,
+          "required": true
+        },
+        "supports_voice_cloning": false,
+        "tag": "novita/fp8",
+        "throughput_last_30m": null,
+        "uptime_last_1d": 99.97507056638065,
+        "uptime_last_30m": 99.96395097332372,
+        "uptime_last_5m": 100
+      }
+    ],
+    "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+  },
+  "structured_outputs_note": "Advertised JSON-schema support is not a semantic guarantee; client validation remains enforced.",
+  "utc": "2026-09-09T18:36:10.008Z"
+}

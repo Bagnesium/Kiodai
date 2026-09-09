@@ -1,0 +1,33 @@
+{
+  "analysis_reproduces_exactly": true,
+  "analysis_sha256": "1f2d35ea63b5c68c784ade68375c1c3c8031f0850228d6065bf368ad56fdb098",
+  "analyzer_sha256": "4fffad2264f6870129280abba399e6158fe8689cafa0b979c9e694a125b91a3a",
+  "compileall_exit_code": 0,
+  "dashboard_ui_observed": {
+    "checkpoints": [
+      1,
+      7,
+      8
+    ],
+    "evaluator_hidden_until_reveal": true,
+    "inference_enabled": false,
+    "mode": "RECORDED",
+    "positive_evidence_and_successful_receipts_at_checkpoint": 7,
+    "url": "http://127.0.0.1:8771/"
+  },
+  "historical_baseline_files": 404,
+  "historical_local_mock_archive_files": 1355,
+  "inference_after_authorized_smoke": false,
+  "model_calls_during_verification": 0,
+  "new_frozen_source_files": 40,
+  "new_original_run_files": 20,
+  "original_free_mock_smoke_exit_code": 0,
+  "previous_execution_source_files": 59,
+  "previous_live_archive_files": 24,
+  "protected_files": 164,
+  "raw_archive_sha256": "566625f24819696191b2d5b69d84a2286c9f841b9d2bf01c9b60b55494b6027b",
+  "recorded_request_frames_checked_for_future_and_evaluator_data": 17,
+  "request_inspection_limit": "Observed payload checks; broader component isolation remains covered by frozen tests.",
+  "status": "passed",
+  "unit_tests": 146
+}

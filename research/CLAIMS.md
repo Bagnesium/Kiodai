@@ -56,3 +56,19 @@ The user subsequently authorized a narrow integration repair, offline tests and 
 **146 passing tests**, including 35 new regressions, and `results/v2_1/offline-repair-v1/` verify structural boundaries and MOCK integration: 8 checkpoints, 16 fixture calls, 7 queries, 3 receipt-completed intentions. They do not prove semantic extraction reliability, provider schema enforcement, real-model monitoring/execution success or superiority. A regression deliberately demonstrates that narrative hypothetical entailment remains model-dependent.
 
 One new A2 development smoke is specified in `research/v2_1/smoke_v1.json` and **has not run or been authorized**. Its candidate $1 ceiling covers a $0.49729536 conservative reservation; usage projection $0.03201778 remains uncertain. The old full-study freeze is not a matching v2.1 evaluation. Evidence, limits and commands: `docs/v2_1/EXTRACTION_REPAIR.md`.
+
+
+## Authorized v2.1 development smoke — 9 September 2026
+
+The user subsequently authorized exactly one `v2.1-deepseek-smoke-v1` with a cumulative $1.00 cap. It executed at `392c58f80b61252759d0eb60df98be6c16d94e47` using frozen implementation `959db38dac8b68f63ecf79420dcd53bea2278cf2`. The prepared manifest, implementation and earlier negative results remain unchanged. No further paid inference or comparative evaluation followed.
+
+| Claim | Recorded evidence | Safe wording and limit |
+|---|---|---|
+| The previous empty-ledger bottleneck was resolved | 8/8 checkpoints; 3 creates and 2 revisions; 0 extraction validation failures; 5 accepted empty updates | Supported actions entered the ledger in this one exposed development trajectory. Empty updates are not extra successful extractions. |
+| Extraction is fully faithful | Sealing initially omitted its prerequisite; checkpoint 2 added the dependency but dropped known hidden-trigger fields, leaving the record quarantined through checkpoint 3; checkpoint 4 restored it | Rejected: semantic-field errors remain despite no extraction validation rejection and a perfect task score. |
+| Menu distractor interpretation is reliable | 0 unsupported action proposals and 0 stored distractor intentions in this run | No distractor error observed here; no general reliability or live rejection-mechanism claim. |
+| Monitoring and receipt-based execution can operate end to end | 7 queries, six negative readings followed by a positive reading; 3 task executions and 3 successful simulator receipts; one stale selection citation corrected by the single retry | Narrow development integration feasibility. No autonomous background or external exactly-once execution claim. |
+| A2 has high comparative performance | Official TP3/FP0/FN0, precision/recall/Set-F1 1.00; no comparator | One development task score, not A2 superiority over A0/B_ledger. No reliability interval or independent replication claim. |
+| Cost is recorded and within authorization | 17 calls; 68,964 input / 2,238 output tokens; API-response cost $0.016737; cumulative reservations $0.26342016; 0 unknown-cost attempts | Recorded response costs reconcile with the ledger; independent billing is unavailable. Unused cap grants no further authorization. |
+
+Sources: `docs/v2_1/DEEPSEEK_SMOKE_RESULTS.md`, `results/v2_1/deepseek-smoke-v1/analysis.json`, all 20 original output files and their ZIP/hash inventory in `research/v2_1/live_smoke_v1_inventory.json`. The recommendation is to freeze the current implementation for an A0/B_ledger/A2 comparison with semantic-field errors measured separately; that requires its own matching protocol freeze and fresh authorization.
