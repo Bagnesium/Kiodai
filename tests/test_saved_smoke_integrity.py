@@ -81,6 +81,21 @@ class SavedSmokeIntegrityTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unsupported independently verified billing'):
             verify.verify_accounting(self.study, self.case)
 
+    def test_frozen_source_check_does_not_require_other_live_runs(self):
+        for name in ('research/v2/freeze.json', 'research/v2/deepseek_smoke_v1_freeze.json'):
+            frozen = json.loads((verify.ROOT/name).read_text())
+            for source in [name, *frozen['hashes']]:
+                target = self.root/source
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(verify.ROOT/source, target)
+        self.assertFalse((self.root/'results/kiodai').exists())
+        self.assertFalse((self.root/'results/followup_v1').exists())
+        self.assertGreater(verify.verify_sources(self.root), 0)
+        path = self.root/'prompts/v2/extract.txt'
+        path.write_text(path.read_text()+'\nchanged prompt\n')
+        with self.assertRaisesRegex(ValueError, 'Frozen source changed'):
+            verify.verify_sources(self.root)
+
 
 if __name__ == '__main__':
     unittest.main()

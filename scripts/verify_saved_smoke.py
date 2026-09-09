@@ -54,6 +54,19 @@ def equal_number(actual, expected, message):
             and math.isclose(actual, expected, rel_tol=0, abs_tol=1e-10), message)
 
 
+def verify_sources(root):
+    """Verify frozen sources without requiring unrelated historical run directories."""
+    root = Path(root).resolve()
+    checked = set()
+    for name in ('research/v2/freeze.json', 'research/v2/deepseek_smoke_v1_freeze.json'):
+        frozen = json.loads((root/name).read_text())
+        for source, expected in frozen['hashes'].items():
+            path = inside(root, source, Path('.'))
+            require(digest(path.read_bytes()) == expected, 'Frozen source changed: '+source)
+            checked.add(source)
+    return len(checked)
+
+
 def verify_accounting(root, case_folder):
     """Reconcile saved response costs, not independent provider billing."""
     root = Path(root)
@@ -135,9 +148,8 @@ def verify(root=ROOT):
 
 if __name__ == '__main__':
     try:
-        from scripts.run_v2_smoke import preflight
-        preflight()  # Offline frozen-code and historical-preservation checks.
-        print(json.dumps(verify(), indent=2))
+        source_count = verify_sources(ROOT)
+        print(json.dumps({**verify(), 'frozen_source_files': source_count}, indent=2))
     except (ValueError, OSError, KeyError, sqlite3.Error, zipfile.BadZipFile) as exc:
         print(str(exc), file=sys.stderr)
         raise SystemExit(2)
