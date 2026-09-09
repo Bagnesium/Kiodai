@@ -33,3 +33,18 @@ The user subsequently authorized a separate v2 implementation and free local ver
 | Exactly-once external actions or autonomous monitoring established | None | SQLite simulator idempotency tested separately; native PM-Bench removes completed handles; heartbeat remains disabled. |
 
 Complete v2 protocol, costs, limitations and proposed manuscript text: `docs/v2/METHOD.md`, `docs/v2/FINDINGS_AND_DEFENSE.md`. All v2 cases are exposed synthetic development material, not blind or independently held out.
+
+## Genuine A2 development smoke — 9 September 2026
+
+The user subsequently authorized exactly one intact A2 hidden-state smoke with a cumulative $1.00 cap, expressly withholding the full study. `results/v2/deepseek-smoke-v1/` preserves the complete invocation at code commit `a754559351ba017bb4fc00aa5e0527ea68d05572`; no prompt/model/engine change or paid rerun occurred.
+
+| Claim | Actual evidence | Safe wording |
+|---|---|---|
+| One real A2 trajectory is available | 8/8 checkpoints, 24 model calls, no transport errors; official TP0/FP0/FN2, precision undefined, recall/F1 0 | Complete negative development evidence; not a successful integration. Three instructed tasks remained incomplete; dependent sealing never became due. |
+| DeepSeek operated extraction successfully | 14 schema-valid extraction responses; 6 additional-validation failures; 8 accepted empty updates; 0 accepted operations | A schema/application contract gap and semantic errors prevented a populated ledger. Empty updates are not successful extraction. |
+| Correct citations establish correct intentions | Two rejected drafts promoted the visible discard-menu distractor into an instruction, with real source spans | Citation provenance alone does not establish semantic fidelity. |
+| Monitoring, selection and receipt completion worked end to end | 0 queries, 0 executed task actions, 0 receipts; 3 invalid selection responses and one final fail-closed checkpoint | No such success demonstrated. Negative/positive hidden readings never reached the model. |
+| A2 outperforms a comparator | No comparator in this smoke | No comparative claim permitted; one exposed trajectory is not reliability evidence. |
+| Cost and future allowance are established | Saved API costs $0.01525668; independent billing unavailable; full conservative guard unchanged at $19.95251712 | The revised $1.03943 planning projection is uncertain and does not authorize or validate the full study. |
+
+Detailed results, semantic trace, cost sources, preserved failure analysis and replay: `docs/v2/DEEPSEEK_SMOKE_RESULTS.md`. Historical pilot/follow-up results and the original full-study freeze are unchanged. The evaluated engine remains frozen; only post-hoc report scope text and one unfrozen empty-ledger display label were corrected. No further inference follows this smoke.
