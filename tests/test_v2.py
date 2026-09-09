@@ -270,6 +270,13 @@ class V2Tests(unittest.TestCase):
             Accounting(path,0.2,self.config)
         account.db.close()
 
+    def test_live_cannot_accept_mock_transport_even_with_budget(self):
+        account=Accounting(self.root/'account.sqlite',20,self.config)
+        with self.assertRaises(ValueError):
+            Gateway(MockTransport(),self.config,self.root/'calls.jsonl','LIVE',account)
+        self.assertEqual(account.snapshot()['attempts'],0)
+        account.db.close()
+
     def test_budget_rejects_oversized_request_and_insufficient_allowance(self):
         account=Accounting(self.root/'account.sqlite',0.001,self.config)
         with self.assertRaises(RunStopped):account.reserve({'max_tokens':256})

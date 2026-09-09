@@ -22,7 +22,9 @@ def protocol_files():
     paths = [ROOT/'configs/v2.json', ROOT/'scripts/run_v2.py', ROOT/'scripts/generate_v2_cases.py',
              ROOT/'scripts/freeze_v2.py', ROOT/'prompts/baseline_system.txt', ROOT/'prompts/prospective_memory_system.txt',
              ROOT/'sim/pm_bench.py', ROOT/'scripts/local_v2_smoke.py', ROOT/'scripts/v2_cooling_regression.py',
-             ROOT/'scripts/serve_v2.py']
+             ROOT/'scripts/serve_v2.py', ROOT/'scripts/estimate_v2_cost.py',
+             ROOT/'research/v2/legacy_state.json', ROOT/'research/v2/cost_projection.json',
+             ROOT/'research/v2/source_inventory.json']
     for directory, pattern in [('kiodai_v2','*.py'), ('prompts/v2','*.txt'), ('data/v2','*.json'),
                                ('research_harness','*.py'), ('tests','test_v2*.py')]:
         paths += list((ROOT/directory).glob(pattern))

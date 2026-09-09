@@ -1,0 +1,80 @@
+{
+  "api_response_cost_usd": null,
+  "assumptions": {
+    "cache_discount": 0,
+    "extra_model_query_cycles_per_comparator": 3,
+    "extra_query_request_bytes": 12000,
+    "extraction_output_tokens_per_call": 750,
+    "input_growth_margin": 1.35,
+    "longer_scenario_policy": "Uses actual v2 mock request sizes, not pilot per-trajectory cost.",
+    "structured_selection_output_tokens_per_call": 256,
+    "validation_retries_in_projection": 0
+  },
+  "baseline_output_tokens_per_call": 33.625,
+  "conservative_allowance_usd": 19.95251712,
+  "methods": {
+    "A0": {
+      "projected_calls": 120,
+      "projected_input_tokens": 241111,
+      "projected_output_tokens": 4035,
+      "projected_uncached_cost_usd": 0.06913487534523251
+    },
+    "A2": {
+      "projected_calls": 192,
+      "projected_input_tokens": 691083,
+      "projected_output_tokens": 96576,
+      "projected_uncached_cost_usd": 0.2831685221030714
+    },
+    "B_ledger": {
+      "projected_calls": 216,
+      "projected_input_tokens": 804325,
+      "projected_output_tokens": 102720,
+      "projected_uncached_cost_usd": 0.31988763015508836
+    }
+  },
+  "pilot_input_tokens": 32998,
+  "pilot_request_bytes": 140262,
+  "pilot_tokens_per_request_byte": 0.23525972822289715,
+  "projection_input_artifact_hashes": {
+    "results/v2/development/verified-mechanics/v2_cross_day_91330/A0/calls.jsonl": "51dac879ee6965ad8f2554f98d2bc4adc9784b4591cd9cea66060db236b4ec1e",
+    "results/v2/development/verified-mechanics/v2_cross_day_91330/A2/calls.jsonl": "51d5b1cac3e7e005df4c13f3799dd5e592db61bf8672970956d7aaa5c129df6d",
+    "results/v2/development/verified-mechanics/v2_cross_day_91330/B_ledger/calls.jsonl": "80f83361b06c1fd8e03302643ee6915a35007ebf820c47d57a2b8b484ed01e9c",
+    "results/v2/development/verified-mechanics/v2_cross_day_91331/A0/calls.jsonl": "fa6cd06791e0a351bc2b61731d5009b80890c2822368665581fdbc787b6aead1",
+    "results/v2/development/verified-mechanics/v2_cross_day_91331/A2/calls.jsonl": "1f1f45c98cd30ca1f4ea6496bc110e73978c99bed6c1e9617647e6fc34be43be",
+    "results/v2/development/verified-mechanics/v2_cross_day_91331/B_ledger/calls.jsonl": "175ae26220bbe400dddcd122e85adf88db6e7f3f4122fc259c0b54d150792c8b",
+    "results/v2/development/verified-mechanics/v2_cross_day_91332/A0/calls.jsonl": "3632a756bda65614657b8934c2dfeea5ae061692125df46a524a8451c63e03a6",
+    "results/v2/development/verified-mechanics/v2_cross_day_91332/A2/calls.jsonl": "d9300ff84dcaed74cce2e28baa65191914560338e3aaf278346c2a2686f4621e",
+    "results/v2/development/verified-mechanics/v2_cross_day_91332/B_ledger/calls.jsonl": "824ca469f0e3589c9f3d4d4be8ff2cc6564c39fabe62b496cc3188f18c17b68f",
+    "results/v2/development/verified-mechanics/v2_hidden_91320/A0/calls.jsonl": "e4778f6b412b52250e8af0f35c0068946814fde1d7c592f3d2df03c78bb9a7af",
+    "results/v2/development/verified-mechanics/v2_hidden_91320/A2/calls.jsonl": "1e616bdbe02877121897df5df82e79ad9a8ea8332e6533be92d903eea158b778",
+    "results/v2/development/verified-mechanics/v2_hidden_91320/B_ledger/calls.jsonl": "c79ce42c9765e3ef076d3e7eba2ddf93fa582d439676a8c6f86d2be0a14e15d1",
+    "results/v2/development/verified-mechanics/v2_hidden_91321/A0/calls.jsonl": "a8dcea3dadb0ac3f30b7fda667ce2484eaddd2b93b3a0f1d8d6de655faa5bfd7",
+    "results/v2/development/verified-mechanics/v2_hidden_91321/A2/calls.jsonl": "ff9e842219b473fa49f8cd24b59f963f241c65632a5c19b9d8c444e68a7154d1",
+    "results/v2/development/verified-mechanics/v2_hidden_91321/B_ledger/calls.jsonl": "31529ef02726dc7913dcfb031935ecaff0a189128651633a46385ee7beba84b2",
+    "results/v2/development/verified-mechanics/v2_hidden_91322/A0/calls.jsonl": "13a9dcc65ec150ebc7296699868023da0c47f275c36244f8a2a95246bb122384",
+    "results/v2/development/verified-mechanics/v2_hidden_91322/A2/calls.jsonl": "b0d5749dd87f8c011fd9d7482fae749324148dcf4406500b16e12909b0b2c5c4",
+    "results/v2/development/verified-mechanics/v2_hidden_91322/B_ledger/calls.jsonl": "680ce0781679cd0db9fdbc3187ba8b2b4c236f9fd3303bc39c60e2f43592d754",
+    "results/v2/development/verified-mechanics/v2_revision_91300/A0/calls.jsonl": "4c259b72688c1181201ef4ce0c62237e5b4e3d9078c6ca332f6dda4d0e7f70d9",
+    "results/v2/development/verified-mechanics/v2_revision_91300/A2/calls.jsonl": "de404efc944549c3828561a68d7ffa9774c295dd6f78828546d6e22c5c44b79c",
+    "results/v2/development/verified-mechanics/v2_revision_91300/B_ledger/calls.jsonl": "358d9e715a4d6fa71990951921f6166c00cf9cf9b51997d6bcb865b7d2dd8948",
+    "results/v2/development/verified-mechanics/v2_revision_91301/A0/calls.jsonl": "9bfc35bd2213543c4699081de13a9911a0e603858a70ebb55517fae6e78e0f86",
+    "results/v2/development/verified-mechanics/v2_revision_91301/A2/calls.jsonl": "6b8f2e370237fa5261fe845b14b982f1545948f672a227e90cf6554e069a5743",
+    "results/v2/development/verified-mechanics/v2_revision_91301/B_ledger/calls.jsonl": "60fed4c1e09868f816cb060faa7770d92bd90c8189e54855e7b7e4d9391871e8",
+    "results/v2/development/verified-mechanics/v2_revision_91302/A0/calls.jsonl": "d02d5df12b3b7b0184007e6e685545ed8fe8a8333be36bb8c515d72e1b5600cb",
+    "results/v2/development/verified-mechanics/v2_revision_91302/A2/calls.jsonl": "858a765e0da37b7297e21fb73d6ff520ffe145a8f2755ff82262ebfe248caf33",
+    "results/v2/development/verified-mechanics/v2_revision_91302/B_ledger/calls.jsonl": "2700d532a4b1c0d55b5f74029052b9003b6b0beb1df22db666ebc6ae876e0e04",
+    "results/v2/development/verified-mechanics/v2_visible_events_91310/A0/calls.jsonl": "2782722399424ac66e46a5f55bcdbe89388efa875d198cd677f505257d02bc79",
+    "results/v2/development/verified-mechanics/v2_visible_events_91310/A2/calls.jsonl": "eacaecad6144f4514058cb27cadf45ec8371fc08f33df94ffe33ab88f29697ec",
+    "results/v2/development/verified-mechanics/v2_visible_events_91310/B_ledger/calls.jsonl": "fdf623348dcd04c3bc7ff0967f2bb24c06aa6d337c2bce9dbf04b553c7c6cb11",
+    "results/v2/development/verified-mechanics/v2_visible_events_91311/A0/calls.jsonl": "2bbdfa85e4b7e5f25a68ccf1795d4b2f39205172fd8233366643e367ff99f993",
+    "results/v2/development/verified-mechanics/v2_visible_events_91311/A2/calls.jsonl": "2fa02794c22c68f56f0c6cac35ccaa613b9ea3724e3aea676f02ccc19a7de84e",
+    "results/v2/development/verified-mechanics/v2_visible_events_91311/B_ledger/calls.jsonl": "f5a9b12b5e81bb6f91e1b3fc01e61c0b78c0a7dca23edc6118a7b24359fab65e",
+    "results/v2/development/verified-mechanics/v2_visible_events_91312/A0/calls.jsonl": "6d3feb141fc46cd0e6bc3871446196095dfdd3a4b69b24bb0f4f0e8ab415aff0",
+    "results/v2/development/verified-mechanics/v2_visible_events_91312/A2/calls.jsonl": "f33d4dc5ab9a6fc1b581e6e9078c7d0b01898f33c79533ac52f4172725a7aa8d",
+    "results/v2/development/verified-mechanics/v2_visible_events_91312/B_ledger/calls.jsonl": "dd5fe63a152a109db06ce28a43efad4a545070a67feec56a9fea92eca81d29fe"
+  },
+  "proposed_budget_usd": 20.0,
+  "source_pilot": "results/kiodai/live-pair-42433e00474b",
+  "usage_informed_projection_usd": 0.6721910276033923,
+  "verified_billed_cost_usd": null
+}

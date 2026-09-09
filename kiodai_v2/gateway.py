@@ -4,7 +4,7 @@ import math
 import sqlite3
 import time
 from .common import append, parse
-from research_harness.model_gateway import RunStopped, safe_error, utc_now
+from research_harness.model_gateway import RunStopped, safe_error, utc_now, OpenAICompatibleTransport
 
 
 class Accounting:
@@ -67,7 +67,7 @@ class Gateway:
             raise ValueError('Replay is not an inference mode')
         if mode == 'LOCAL_MODEL' and not getattr(transport, 'is_local', False):
             raise ValueError('LOCAL_MODEL requires the loopback-only local transport')
-        if mode == 'LIVE' and (accounting is None or getattr(transport, 'is_mock', False)):
+        if mode == 'LIVE' and (accounting is None or type(transport) is not OpenAICompatibleTransport):
             raise ValueError('LIVE requires durable accounting and a real transport')
         self.transport, self.config, self.log, self.mode = transport, config, log, mode
         self.accounting = accounting

@@ -14,7 +14,7 @@ def metrics(tp, fp, fn):
 
 
 def analyze_case(folder):
-    folder = Path(folder)
+    folder = Path(folder).resolve()
     manifest = verify_case(folder)
     scenario = json.loads((folder/'scenario.json').read_text())
     actions = rows(folder/'actions.jsonl')
@@ -76,7 +76,9 @@ def analyze_case(folder):
             'native_false_action_diagnostics': native_false,
             'canceled_actions': sum(r['status']=='canceled' for r in native_false),
             'false_actions_on_updated_tasks': sum(bool(r['updated']) for r in native_false),
-            'superseded_versions_executed': None,
+            'superseded_versions_executed': (sum(binding['version'] != row['intentions'].get(binding['intention'],{}).get('version')
+                                                   for row in trace for binding in row['decision'].get('bindings',[]))
+                                            if manifest['method'] in ('A2','B_ledger') else None),
             'duplicate_side_effects_native': None,
             'premature_actions_native': summary['commission'] if complete else None,
             'lifecycle_note': 'Superseded-version exclusion is an enforced code invariant. Native commission follows the official scorer. Native duplicate side effects are unidentifiable because completed handles disappear. Separate local lifecycle tests establish only simulator idempotency.',
@@ -98,7 +100,7 @@ def analyze_case(folder):
 
 
 def report(study_dir):
-    root = Path(study_dir)
+    root = Path(study_dir).resolve()
     study = json.loads((root/'study.json').read_text())
     cases = []
     pairs = []

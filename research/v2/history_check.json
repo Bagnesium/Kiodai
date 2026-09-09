@@ -1,0 +1,63 @@
+{
+  "checked_on": "2026-09-09",
+  "official_rescoring_and_saved_step_counts_agree": true,
+  "overlap": "Monday observations are not independent evidence; do not pool.",
+  "runs": [
+    {
+      "api_response_cost_usd": 0.00336941,
+      "calls": 8,
+      "condition": "A0",
+      "fn": 0,
+      "fp": 0,
+      "input_tokens": 13819,
+      "output_tokens": 269,
+      "path": "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b",
+      "queries": 0,
+      "set_f1": 1.0,
+      "tp": 5,
+      "verified_billed_cost_usd": null
+    },
+    {
+      "api_response_cost_usd": 0.00428093,
+      "calls": 8,
+      "condition": "A1",
+      "fn": 0,
+      "fp": 0,
+      "input_tokens": 19179,
+      "output_tokens": 269,
+      "path": "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6",
+      "queries": 0,
+      "set_f1": 1.0,
+      "tp": 5,
+      "verified_billed_cost_usd": null
+    },
+    {
+      "api_response_cost_usd": 0.01454109,
+      "calls": 21,
+      "condition": "A0",
+      "fn": 1,
+      "fp": 0,
+      "input_tokens": 59171,
+      "output_tokens": 699,
+      "path": "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a",
+      "queries": 1,
+      "set_f1": 0.9565217391304348,
+      "tp": 11,
+      "verified_billed_cost_usd": null
+    },
+    {
+      "api_response_cost_usd": 0.01593485,
+      "calls": 20,
+      "condition": "A1",
+      "fn": 1,
+      "fp": 0,
+      "input_tokens": 68971,
+      "output_tokens": 665,
+      "path": "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513",
+      "queries": 0,
+      "set_f1": 0.9565217391304348,
+      "tp": 11,
+      "verified_billed_cost_usd": null
+    }
+  ]
+}
