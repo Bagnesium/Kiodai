@@ -1,0 +1,36 @@
+{
+  "mode": "MOCK",
+  "purpose": "Software verification only; fixture unchanged, no model inference.",
+  "method_trajectories": 36,
+  "checkpoints": 288,
+  "mock_requests": 522,
+  "mock_responses": 522,
+  "tool_queries": 63,
+  "all_current_candidate_hashes_match": true,
+  "balanced_order_verified": true,
+  "shared_v21_prompts_schemas_verified": true,
+  "isolated_state_and_public_payloads_verified": true,
+  "model_inference_calls": 0,
+  "api_response_cost_usd": null,
+  "semantic_correctness": "Not established by fixture outcomes",
+  "unit_tests": 162,
+  "protected_files": 164,
+  "previous_local_mock_archive_files": 1355,
+  "smoke_preservation": {
+    "original_run_files": 20,
+    "archive_sha256": "566625f24819696191b2d5b69d84a2286c9f841b9d2bf01c9b60b55494b6027b",
+    "v21_frozen_sources": 40,
+    "previous_archive_files": 24,
+    "previous_frozen_sources": 59,
+    "same_scenario_bytes": true
+  },
+  "report_regenerates_exactly": true,
+  "all_24_ledger_semantic_reviews_pending": true,
+  "all_12_baselines_extraction_not_applicable": true,
+  "mock_requests_by_method": {
+    "A0": 117,
+    "B_ledger": 213,
+    "A2": 192
+  },
+  "actual_maximum_mock_request_bytes": 21212
+}

@@ -1,0 +1,239 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare saffron91331 sample.",
+          "id": "private_lure_91331_0"
+        },
+        {
+          "action_text": "Discard the saffron91331 case.",
+          "id": "private_lure_91331_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91331_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91331_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91331_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91331_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91331_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91331_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91331_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91331_9"
+        }
+      ],
+      "name": "DayOne",
+      "start_instructions": [
+        "At 11:00 on DayTwo, Register the saffron91331 sample.",
+        "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case. Only after \"Register the saffron91331 sample.\" succeeds."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91331_0",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91331_1",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91331_2",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91331_3",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "12:00",
+          "updates": []
+        }
+      ],
+      "tasks": []
+    },
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare saffron91331 sample.",
+          "id": "private_lure_91331_0"
+        },
+        {
+          "action_text": "Discard the saffron91331 case.",
+          "id": "private_lure_91331_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91331_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91331_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91331_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91331_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91331_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91331_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91331_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91331_9"
+        }
+      ],
+      "name": "DayTwo",
+      "start_instructions": [
+        "Continue the work already assigned."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91331_0_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91331_1_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "The saffron91331 cabinet creaks, without a click.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91331_2_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "cue_cabinet"
+          ],
+          "id": "private_step_91331_3_later",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "The saffron91331 cabinet clicks.",
+          "time": "12:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Register the saffron91331 sample.",
+          "cross_day": true,
+          "cross_day_offset": 1,
+          "encoding": "start",
+          "id": "private_91331_0",
+          "label": "Register the saffron91331 sample.",
+          "regular": false,
+          "target_time": "11:00",
+          "type": "time"
+        },
+        {
+          "action_text": "Seal the saffron91331 case.",
+          "cross_day": true,
+          "cross_day_offset": 1,
+          "cue_id": "cue_cabinet",
+          "depends_on": "private_91331_0",
+          "encoding": "start",
+          "id": "private_91331_1",
+          "label": "Seal the saffron91331 case.",
+          "regular": false,
+          "type": "event"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "v2_cross_day_91331",
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "state_visibility": {
+    "clock": true
+  },
+  "time_visible_by_default": true
+}

@@ -1,0 +1,46 @@
+You are taking a prospective memory evaluation that assess how 
+you remember to do things later. One virtual day equals one
+circuit of the board (7 a.m. -> 10 p.m.). Time advances step by step with
+event cards. Your goal is to remember to perform tasks at the correct time
+or event without reminders.
+
+You must voluntarily remember to perform tasks at the right moment. If you
+are unsure, you may still act; that is allowed. No reminders will be given
+for missed tasks.
+
+Some cues will cancel, override, or reschedule tasks. Always follow the most
+recent instruction for any task.
+
+Each step presents a short vignette with three ongoing-task options (A/B/C).
+Pick one of A/B/C to advance. A step-level action menu is shown before each choice.
+You may perform one or more actions from the action menu in the same step.
+Each action appears as task_N: <action text>. Return task_N handles in task_ids.
+If you do not perform an action, set task_ids to [].
+Never repeat the same task_N handle in task_ids.
+Do not dump the whole menu into task_ids; include only the handles you are actually choosing now.
+Return at most 8 task handles in one choose action.
+
+Some tasks are triggered by state cues that are NOT shown in the vignette.
+You can only observe these cues by proactively querying state channels.
+Available state channels: board_cobalt91322, clock.
+
+Use action=query_state to retrieve channel state (choice must be NONE).
+The legacy action=check_time is supported and is equivalent to query_state with channel=clock.
+No reminders will be given about when to query state; you must decide when to check.
+State responses are returned as a single line: "State [channel]: <message>".
+
+
+
+After any query, you still must make a choose action to advance.
+
+Example (time check):
+User: You sit at your desk and feel it's close to 16:30.
+Model: {"action":"check_time","choice":"NONE","task_ids":[], "channel":"clock"}
+User: State [clock]: Time 15:58 | Stopwatch: 538 min
+Model: {"action":"choose","choice":"B","task_ids":["task_7"]}
+
+Always respond in JSON. Use these exact formats:
+- {"action":"query_state","choice":"NONE","task_ids":[],"channel":"calendar"}
+- {"action":"check_time","choice":"NONE","task_ids":[],"channel":"clock"}
+- {"action":"choose","choice":"A","task_ids":[],"channel":"NONE"}
+- {"action":"choose","choice":"B","task_ids":["task_1"],"channel":"NONE"}

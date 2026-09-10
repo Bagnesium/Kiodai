@@ -1,0 +1,94 @@
+{
+  "i_313bb494d8e22a94": {
+    "action": "Register the jade91311 sample.",
+    "attempt_id": "exec_a38d17fd5f8b1f44e11a",
+    "channel": null,
+    "condition": "jade91311 hexagon",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "When you see \"jade91311 hexagon\", Register the jade91311 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "When you see \"jade91311 hexagon\", Register the jade91311 sample.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "When you see \"jade91311 hexagon\", Register the jade91311 sample.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_313bb494d8e22a94",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_a38d17fd5f8b1f44e11a",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "When you see \"jade91311 hexagon\", Register the jade91311 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": null
+  },
+  "i_49d40ccdbd04f04d": {
+    "action": "Seal the jade91311 case.",
+    "attempt_id": "exec_e76ba9faa4577c45a0fa",
+    "channel": null,
+    "condition": "jade91311 triangle",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "For \"Seal the jade91311 case.\" replace the earlier cue with \"jade91311 triangle\"",
+          "ref": "m6"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "For \"Seal the jade91311 case.\" replace the earlier cue with \"jade91311 triangle\"",
+          "ref": "m6"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "For \"Seal the jade91311 case.\" replace the earlier cue with \"jade91311 triangle\"",
+          "ref": "m6"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_49d40ccdbd04f04d",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_e76ba9faa4577c45a0fa",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "For \"Seal the jade91311 case.\" replace the earlier cue with \"jade91311 triangle\"",
+        "ref": "m6"
+      }
+    ],
+    "version": 2,
+    "when": null
+  }
+}

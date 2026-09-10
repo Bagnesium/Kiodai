@@ -1,0 +1,35 @@
+{
+  "A0": {
+    "mock_initial_calls": 117,
+    "expected_calls_including_retry_fraction": 117,
+    "expected_input_tokens": 240118.02927357977,
+    "expected_output_tokens": 3780.8149207971387,
+    "usage_informed_expected_usd": 0.06861268282466369,
+    "retry_heavy_attempts": 384,
+    "retry_heavy_usd": 0.39442543908564,
+    "padded_sensitivity_requests_above_byte_gate": 0,
+    "conservative_allowance_usd": 5.18111232
+  },
+  "B_ledger": {
+    "mock_initial_calls": 213,
+    "expected_calls_including_retry_fraction": 227.625,
+    "expected_input_tokens": 1189996.163806102,
+    "expected_output_tokens": 19889.32523275862,
+    "usage_informed_expected_usd": 0.3411882894604062,
+    "retry_heavy_attempts": 576,
+    "retry_heavy_usd": 2.428525559530023,
+    "padded_sensitivity_requests_above_byte_gate": 0,
+    "conservative_allowance_usd": 8.80386048
+  },
+  "A2": {
+    "mock_initial_calls": 192,
+    "expected_calls_including_retry_fraction": 204.0,
+    "expected_input_tokens": 1049490.3517861506,
+    "expected_output_tokens": 18935.00648275862,
+    "usage_informed_expected_usd": 0.30229740146501927,
+    "retry_heavy_attempts": 384,
+    "retry_heavy_usd": 1.749425466948852,
+    "padded_sensitivity_requests_above_byte_gate": 0,
+    "conservative_allowance_usd": 5.96754432
+  }
+}

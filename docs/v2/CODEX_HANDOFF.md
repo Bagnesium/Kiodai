@@ -1,43 +1,55 @@
-# Current Kiodai handoff — recorded v2.1 smoke
+# Current Kiodai handoff — frozen comparison awaiting authorization
 
-Repository: `/Users/bagnesium/Documents/GitHub/Kiodai`. Author: Bagdat Beimzhan. Deadline: **September 13, 2026**, Asia/Almaty. Read `AGENTS.md` before work.
+Repository: `/Users/bagnesium/Documents/GitHub/Kiodai`. Author: Bagdat Beimzhan. Deadline: **13 September 2026**, Asia/Almaty. Read `AGENTS.md` before work.
 
-Branch: **`codex/kiodai-v2.1-extraction`**. Evaluated implementation: **`959db38dac8b68f63ecf79420dcd53bea2278cf2`**. Smoke execution commit: **`392c58f80b61252759d0eb60df98be6c16d94e47`**. The subsequent evidence commit only adds the recording, read-only analysis and documentation. The prior preparation handoff remains at `392c58f:docs/v2/CODEX_HANDOFF.md`.
+Branch: **`codex/kiodai-v2.1-extraction`**. Candidate behavior: **`959db38dac8b68f63ecf79420dcd53bea2278cf2`**, unchanged. Successful smoke executed at `392c58f80b61252759d0eb60df98be6c16d94e47`, preserved at `b1f4a0007003021b16bb50d238192cc063fd2e55`. Comparison support: **`832d6ff1e3f43f9086da9d6aac33b79f5212ecdc`**. The following preparation-evidence commit adds the manifest, protocol, full MOCK recording and this handoff. Prior smoke handoff remains at `b1f4a00:docs/v2/CODEX_HANDOFF.md`.
 
-The user explicitly authorized exactly one `v2.1-deepseek-smoke-v1` with a cumulative $1.00 ceiling. It **ran once and completed** after the existing preflight, without modifying the frozen implementation/configuration/prompts/scenario/retries/evaluator/manifest. **No additional paid inference, selective rerun, full study, push or deployment is authorized.** Existing key credit and unused budget authorize nothing further.
+**No paid or network model inference is authorized. No new model inference ran during comparison preparation.** The user authorized only offline preparation and local commits. Prior spending permissions are exhausted regardless of unused credit. No push, deployment, fresh smoke or selective rerun is authorized.
 
-Read **[the live smoke report](../v2_1/DEEPSEEK_SMOKE_RESULTS.md)** first, then [the repair report](../v2_1/EXTRACTION_REPAIR.md) for implementation details. The prepared manifest `research/v2_1/smoke_v1.json` stays unchanged, including its historical preparation-time status. Later authorization and preservation are recorded separately in `research/v2_1/live_smoke_v1_inventory.json`.
+Read **[COMPARISON_PROTOCOL.md](../v2_1/COMPARISON_PROTOCOL.md)** first. The sole frozen study is **`research/v2_1/comparison_v1.json`**, identifier **`v2.1-comparison-v1`**: 12 existing trajectories, four template families, A0/B_ledger/A2, one repeat, 36 method-trajectories, 288 checkpoints. Primary contrast: A2 minus B_ledger paired trajectory Set-F1; secondary: A2 minus A0. All cases are exposed development material. Only `v2_hidden_91320` overlaps the genuine/local smokes; the other eleven are not blind. Family and overlap breakdowns are predeclared.
 
-## Actual result
+## What is frozen
 
-`results/v2_1/deepseek-smoke-v1/`: genuine LIVE, displayed as RECORDED. **8/8 checkpoints; 3 intentions stored; 3 creates + 2 revisions; 5 accepted empty updates; 0 extraction validation failures; 0 distractor proposals/stored intentions; 1 selection validation failure, corrected by the single retry; 7 queries; 3 task executions and successful receipts.** All three intentions completed. Official **TP3/FP0/FN0, precision/recall/Set-F1 1.00**. Seventeen calls, 68,964 input / 2,238 output tokens, API-response cost **$0.016737**, reservations **$0.26342016**, no unknown-cost attempts. Independent billing unavailable.
+No candidate extraction/schema/prompt, semantic/quarantine rule, monitor, retry, lifecycle/execution behavior, provider/model or official scorer changed. New code only wraps the existing executor and analyzes saved outputs. Both ledger conditions still load the same repaired v2.1 modules and prompts.
 
-Do not equate the perfect score with perfect extraction. Sealing v1 omitted its dependency at checkpoint 1; at checkpoint 2 the model added registration's ID but dropped known trigger fields and quarantined v2. Checkpoint 3's empty update retained that defect. Checkpoint 4 restored a complete hidden trigger with the dependency at v3. Registration completed at checkpoint 2; sealing and archive at checkpoint 7. The selection retry corrected a stale `m1` citation to current `m6`. All intermediate errors remain in the original files.
+- `scripts/run_v21_comparison.py`: named authorization/ceiling gates, seeded complete catalog, new manifest path, fixed LIVE output. Reuses `scripts/run_v2.py:execute` and `kiodai_v2.runner.run_case`; no new execution engine.
+- `scripts/report_v21_comparison.py`: all planned units including missing/invalid runs, primary paired means, descriptive micro/family/overlap tables, dependency/hidden/evidence diagnostics and manual semantic-review queue.
+- `scripts/prepare_v21_comparison.py`: offline exposure audit, successful-smoke/historical-baseline cost calibration, full-MOCK verification and one-time freeze creation. The freeze already exists; do not overwrite it.
+- `configs/v21_comparison_v1.json`: existing generation/provider/resource settings; new version and predeclared order only. Order seed 20260910; each method occupies each position once per family. Generation seed stays 20260904.
+- `tests/test_comparison_preparation.py`: 16 new tests for scope/order, gates, unchanged candidate, partial reports, dependency denominators, review semantics, zero denominators and durable accounting.
 
-This resolves the previous empty-ledger bottleneck and demonstrates narrow integration feasibility. It does not establish reliability, dependency fidelity throughout, provider enforcement of every schema keyword, or A2 superiority over A0/B_ledger. The recommendation is to freeze this implementation for comparison with semantic-field errors measured alongside task score; a new matching comparative freeze and fresh spending authorization are still required. Do not tune/select evaluation cases based on whether A0 loses.
+The manifest hashes **59 source/config/scenario files**, **442 preparation recording files**, and calibration/exposure/provenance evidence. The full MOCK run preceded final manifest creation to supply costing data; its source hashes and exact specification match the final freeze. Genuine output `results/v2_1/comparison-v1/` is absent. MOCK cannot use that path. A later LIVE invocation requires a clean checkout, the exact study token and $20.00 cap. No supported resume exists; an interrupted directory is not permission to restart. Preserve partial evidence and reserved unknown charges.
 
-## Implementation and evidence map
+## Offline verification and cost
 
-- `kiodai_v2/contract.py`, `common.py`, `store.py`, `agent.py`: shared schema/context validation, atomic batches, dependencies/version/receipt constraints, eligible binding IDs. Semantic entailment remains model-dependent.
-- `prompts/v2_1/` and `gateway.py`: revised extraction/selection instructions, specific bounded feedback and explicit outcome metadata. Shared B_ledger/A2 repair; monitoring distinction remains narrow.
-- `scripts/run_v21_smoke.py`: existing engine, frozen one-smoke scope; its live output already exists and must not be restarted.
-- `scripts/analyze_v21_smoke.py`: post-run read-only archive/report/accounting/trace analysis. Outputs JSON to stdout, makes no inference calls, never rewrites original reports.
-- `results/v2_1/deepseek-smoke-v1/analysis.json`: reproducible derived analysis; original raw files and reports unchanged.
-- `artifacts/verification/v21-deepseek-smoke-v1-20260909.zip`: all 20 original output files captured before analysis, inventory in `research/v2_1/live_smoke_v1_inventory.json`.
-- `results/v2_1/deepseek-smoke-v1/verification/`: post-run test and integrity records.
+**162 tests pass, 164 protected hashes pass, compilation passes.** Full existing-fixture MOCK: **36/36 method-trajectories, 288 checkpoints, 522 requests/responses, 63 queries**. State reset, shared repaired loading, public payload boundaries, order, accounting, reporting and MOCK labels verified. All 24 ledger semantic reviews remain pending; A0 extraction is not applicable. No correctness claim from valid JSON or mock outcomes.
 
-**146 tests pass; 164 protected hashes pass; compilation and original free MOCK smoke pass.** Forty v2.1 frozen files match. Historical preservation checks retain 404 baseline files, 1,355 local/MOCK archive files, 24 original DeepSeek archive files and 59 original source paths at their execution commit. Original freezes and failed artifacts are unchanged; CLAIMS gains an append-only entry.
+Evidence: `results/v2_1/comparison-preparation-v1/`, including `comparison_report.json/.md`, `semantic_review_template.json` and raw case files; verification logs under `artifacts/verification/v21-comparison-preparation/`. The read-only preflight passes with zero network requests/model calls. Original 40 candidate hashes, 404 historical baseline files, 1,355 local/MOCK archived files, both genuine smokes (24 original v2 files and 20 original v2.1 files), and original execution source hashes remain verified. No historical freeze or result was rewritten.
 
-The previous genuine v2 smoke remains `results/v2/deepseek-smoke-v1/`, execution commit `a754559351ba017bb4fc00aa5e0527ea68d05572`: 8/8 checkpoints, TP0/FP0/FN2, empty ledger, no queries/actions/receipts, 24 calls, 8 retries, $0.01525668 API-response cost. The score denominator differs because only v2.1 completes registration, making dependent sealing due. Historical A0/A1 studies found no observed P1 benefit and overlap; never pool them as independent replications.
+Usage-informed estimate **$0.71209837**, retry-heavy sensitivity **$4.57237647**, conservative allowance **$19.95251712**. Recommended complete-study cumulative ceiling **$20.00**. These are not charges. Guard covers 1,344 attempts; it requires full-study feasibility, then checks each matched block and reserves each attempt without refunds. Token/byte calibration, full-history MOCK sizes and assumed retries are uncertain; B_ledger has no genuine v2.1 calibration. Route/pricing metadata will be checked only after fresh authorization; no billable preflight occurred.
 
-## Read-only commands
+## Existing genuine evidence and limitations
+
+Successful v2.1 smoke remains `results/v2_1/deepseek-smoke-v1/`: 8/8 checkpoints; 3 intentions, 7 queries, 3 successful receipts; TP3/FP0/FN0, Set-F1 1.00; 17 calls, 68,964 input / 2,238 output tokens, API-response cost $0.016737. Independent billing unavailable. Sealing initially omitted its prerequisite, then lost known trigger fields during quarantine before repair at checkpoint 4. That defect remains a measurement target, not a silent repair.
+
+The previous failed v2 smoke remains TP0/FP0/FN2, empty ledger, 24 calls and $0.01525668. Dependent sealing never became due there. Both scenarios/scorers are unchanged. Historical A0/A1 studies showed no observed P1 improvement and overlap; do not pool them as independent replications. The existing successful-smoke RECORDED viewer was available at http://127.0.0.1:8771/ and remains separate from MOCK preparation.
+
+## Exact next action
+
+Free/offline:
 
 ```bash
-python3 scripts/analyze_v21_smoke.py > /tmp/kiodai-v21-recorded-analysis.json
-python3 scripts/run_v21_smoke.py --preflight
-python3 scripts/verify_saved_smoke.py --historical-sources
-python3 scripts/verify_benchmark_integrity.py
-python3 scripts/serve_v2.py --study results/v2_1/deepseek-smoke-v1 --port 8771
+python3 scripts/run_v21_comparison.py --preflight
 ```
 
-The RECORDED dashboard was started at **http://127.0.0.1:8771/**, with inference disabled. Inspect checkpoints 1, 2, 4 and 7. The prior v2 recording can be served separately on port 8768. Original full-v2 preflight correctly rejects changed v2.1 sources; do not rewrite old hashes. No comparative run has been launched. The next research step is a separately reviewed matching freeze, not more smoke inference.
+**Not yet authorized**:
+
+```bash
+python3 scripts/run_v21_comparison.py --live --authorize-study v2.1-comparison-v1 --budget-usd 20.00 --env-file .env
+```
+
+The user can authorize by sending:
+
+> I authorize exactly v2.1-comparison-v1 once, with a cumulative paid-inference ceiling of $20.00, following its frozen 12-trajectory A0/B_ledger/A2 protocol. Run the existing preflight first. No prompt or configuration changes, selective reruns, or additional experiments afterward. Preserve all outputs and interrupted attempts.
+
+Stop after preparation. Do not infer approval from the candidate ceiling, key credit, this handoff, or earlier smoke permission. After a future authorized run, use `scripts/report_v21_comparison.py --study results/v2_1/comparison-v1`; manual annotation copies create separate reviewed reports with `--annotations PATH`. Pending reviews are not zero errors; task score is not semantic extraction fidelity.

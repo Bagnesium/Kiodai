@@ -1,0 +1,263 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare cobalt91320 sample.",
+          "id": "private_lure_91320_0"
+        },
+        {
+          "action_text": "Discard the cobalt91320 case.",
+          "id": "private_lure_91320_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91320_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91320_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91320_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91320_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91320_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91320_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91320_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91320_9"
+        }
+      ],
+      "name": "DayOne",
+      "start_instructions": [
+        "Today's one-off tasks (new):",
+        "- At 08:00 on DayOne, Register the cobalt91320 sample.",
+        "- When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.",
+        "- When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91320_0",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_0",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "07:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_1",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_1",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_2",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_2",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_3",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_3",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "10:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_4",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_4",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_5",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_5",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "12:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_6",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_stable",
+                "text": "Cooling is now fully stable."
+              }
+            ]
+          },
+          "text": "The review window opens while cooling continues out of sight.",
+          "time": "13:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91320_7",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "state_events": {
+            "board_cobalt91320": [
+              {
+                "id": "cue_negative_7",
+                "text": "Cooling is nearly stable; final stabilization is not complete."
+              }
+            ]
+          },
+          "text": "Discuss unrelated stationery prices.",
+          "time": "14:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Register the cobalt91320 sample.",
+          "encoding": "start",
+          "id": "private_91320_0",
+          "label": "Register the cobalt91320 sample.",
+          "regular": false,
+          "target_time": "08:00",
+          "type": "time"
+        },
+        {
+          "action_text": "Seal the cobalt91320 case.",
+          "cue_channel": "board_cobalt91320",
+          "cue_id": "cue_stable",
+          "depends_on": "private_91320_0",
+          "encoding": "start",
+          "id": "private_91320_1",
+          "label": "Seal the cobalt91320 case.",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Archive the cobalt91320 note.",
+          "cue_channel": "board_cobalt91320",
+          "cue_id": "cue_stable",
+          "encoding": "start",
+          "id": "private_91320_2",
+          "label": "Archive the cobalt91320 note.",
+          "regular": false,
+          "type": "event"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "v2_hidden_91320",
+  "state_channels": {
+    "board_cobalt91320": {
+      "mode": "snapshot"
+    },
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "state_visibility": {
+    "board_cobalt91320": false,
+    "clock": true
+  },
+  "time_visible_by_default": true
+}

@@ -72,3 +72,14 @@ The user subsequently authorized exactly one `v2.1-deepseek-smoke-v1` with a cum
 | Cost is recorded and within authorization | 17 calls; 68,964 input / 2,238 output tokens; API-response cost $0.016737; cumulative reservations $0.26342016; 0 unknown-cost attempts | Recorded response costs reconcile with the ledger; independent billing is unavailable. Unused cap grants no further authorization. |
 
 Sources: `docs/v2_1/DEEPSEEK_SMOKE_RESULTS.md`, `results/v2_1/deepseek-smoke-v1/analysis.json`, all 20 original output files and their ZIP/hash inventory in `research/v2_1/live_smoke_v1_inventory.json`. The recommendation is to freeze the current implementation for an A0/B_ledger/A2 comparison with semantic-field errors measured separately; that requires its own matching protocol freeze and fresh authorization.
+
+
+## Frozen v2.1 comparison preparation — 10 September 2026
+
+The user authorized only evaluation preparation, offline verification and local commits. Candidate `959db38` is unchanged, including the known prerequisite-formation defect. New support `832d6ff` reuses the existing executor and adds explicit study scope and post-run reporting. `research/v2_1/comparison_v1.json` freezes 12 existing trajectories, four dependent template families, A0/B_ledger/A2 and one repeat, with seed-balanced method positions. Primary contrast is paired trajectory Set-F1, A2 minus B_ledger; A2 minus A0 is secondary.
+
+**No comparative model result exists and no new model inference ran.** The full unchanged-fixture MOCK run (`results/v2_1/comparison-preparation-v1/`) completed 36 method-trajectories, 288 checkpoints, 522 fixture requests and 63 queries. This verifies software mechanics and reporting only. All 24 ledger semantic reviews remain pending, not zero; A0 extraction is not applicable. 162 tests and 164 protected hashes pass. Earlier freezes, prompts, successes and failures are preserved.
+
+All twelve cases were exposed during development/MOCK verification; `v2_hidden_91320` also overlaps the failed and successful network smokes and interrupted local-model smoke. The other eleven are not independently held out. Family and smoke-overlap breakdowns are predeclared; checkpoints/calls/renamed variants are not independent replications. The protocol distinguishes task scores, semantic errors, query evidence/cost and dependency-blocked obligations.
+
+The current planning estimate is $0.71209837, retry-heavy sensitivity $4.57237647, conservative allowance $19.95251712, recommended cumulative authorization $20.00. These are assumptions/guards, not observed comparative costs. A matching named authorization is still required. See `docs/v2_1/COMPARISON_PROTOCOL.md`; no new effectiveness, superiority, reliability or equivalence claim is permitted.
