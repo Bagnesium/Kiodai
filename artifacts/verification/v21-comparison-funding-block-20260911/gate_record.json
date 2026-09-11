@@ -1,0 +1,57 @@
+{
+  "study": "v2.1-comparison-v1",
+  "status": "authorized_but_not_started_funding_blocked",
+  "code_commit_checked": "d7e92d38fc333846670ae196c9ee37f9d616f61a",
+  "candidate_commit": "959db38dac8b68f63ecf79420dcd53bea2278cf2",
+  "frozen_manifest": "research/v2_1/comparison_v1.json",
+  "frozen_manifest_sha256": "bfaf52df48553e35978f39f406fd5eb3d78c918a5ac2713a0a169746f23036d5",
+  "preflight_passed": true,
+  "source_config_scenario_hashes_verified": 59,
+  "preparation_evidence_hashes_verified": 442,
+  "provenance_evidence_hashes_verified": 65,
+  "authorization_received": true,
+  "authorized_ceiling_usd": 20,
+  "conservative_allowance_usd": 19.952517120000003,
+  "key_limit_usd": 5,
+  "key_remaining_usd": 4.92988004,
+  "account_credit_balance_usd": 9.92988004,
+  "blockers": [
+    "Key allowance below the full conservative allowance",
+    "Account credit balance below the full conservative allowance"
+  ],
+  "live_command_invoked": false,
+  "live_output_exists": false,
+  "completed_method_trajectories": 0,
+  "complete_matched_blocks": 0,
+  "model_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "paid_inference_spend_usd": 0,
+  "api_response_reported_study_cost_usd": null,
+  "independently_verified_study_billing_usd": null,
+  "account_metadata_get_requests": 2,
+  "account_settings_changed": false,
+  "primary_paired_difference": null,
+  "secondary_paired_difference": null,
+  "recorded_comparison_available": false,
+  "notes": [
+    "No LIVE attempt, interrupted run, task results, or recorded comparison was created.",
+    "Preflight status wording is the unchanged frozen preparation label, not a denial that authorization was received.",
+    "Account totals are read-only aggregate metadata, not an independent audit of study billing.",
+    "No model or route inference request was sent; the route preflight inside LIVE was not reached."
+  ],
+  "verification": {
+    "unittest": {
+      "exit_code": 0,
+      "tests": 162,
+      "duration_seconds": 13.305
+    },
+    "protected_hashes": {
+      "exit_code": 0,
+      "files": 164
+    },
+    "compileall_exit_code": 0,
+    "final_frozen_preflight_exit_code": 0,
+    "git_diff_check_exit_code": 0
+  }
+}

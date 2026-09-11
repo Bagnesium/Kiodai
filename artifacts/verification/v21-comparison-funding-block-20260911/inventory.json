@@ -1,0 +1,19 @@
+{
+  "record_type": "pre_inference_funding_gate_not_a_model_run",
+  "hash_algorithm": "sha256",
+  "files": {
+    "artifacts/verification/v21-comparison-funding-block-20260911/authorization.txt": "b67f9c6c0ae1c83f0bef78d3a45a0de20fa11c1cb62fdcbb583704e85255beaa",
+    "artifacts/verification/v21-comparison-funding-block-20260911/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/verification/v21-comparison-funding-block-20260911/final_preflight.json": "e6726e8576b7629e7f6ed2a730e92573eae61096b6749bd5d9f55947bbccb2a5",
+    "artifacts/verification/v21-comparison-funding-block-20260911/gate_record.json": "57c8251631ed29b6197d2ebc3214fd5536ca53d0d006fdc0ea179582755daf6c",
+    "artifacts/verification/v21-comparison-funding-block-20260911/preflight.json": "e6726e8576b7629e7f6ed2a730e92573eae61096b6749bd5d9f55947bbccb2a5",
+    "artifacts/verification/v21-comparison-funding-block-20260911/protected_hashes.log": "f6ac51f533be8d69bea59ba37916df35a5fdf9ad9936e08fd8c5b9346cdecc80",
+    "artifacts/verification/v21-comparison-funding-block-20260911/spending_check.json": "ee5b836d16e51b380752724481c6d3a8000176d6d1e888e2cc027689abdcb1d0",
+    "artifacts/verification/v21-comparison-funding-block-20260911/spending_check.py": "48e6b8c524a7e00d3df87bda190315d80b87483d93e0d3400e7c368f66c97a07",
+    "artifacts/verification/v21-comparison-funding-block-20260911/tests.log": "07724cd0de97f5f705bdee41f4b79f4bb74ed796c9268d39f1989e11cc7c18b3",
+    "docs/v2_1/COMPARISON_FUNDING_BLOCK.md": "6472a0e14c2eed56500dc6e5d6715eb60ad93992274ec46a51a86dd97eb48c8e",
+    "docs/v2/CODEX_HANDOFF.md": "0905dd0396be78a5040f9b8da0fe667a13dcf7246a79f85d060f134057f89603",
+    "V2.md": "2879f27631b097504ab3f0cdcaa0a40db5a75414a5e6b43f52513e3862ceb3a8",
+    "research/CLAIMS.md": "29360d786ad948f754de060135a309a38bd2dd9b66724a830974e3c4cbd3f828"
+  }
+}

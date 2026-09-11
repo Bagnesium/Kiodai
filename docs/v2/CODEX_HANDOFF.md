@@ -1,4 +1,14 @@
-# Current Kiodai handoff — frozen comparison awaiting authorization
+# Current Kiodai handoff — comparison authorized, blocked before inference
+
+**11 September 2026:** The user authorized exactly frozen `v2.1-comparison-v1` once, with a cumulative $20.00 paid-inference ceiling, and required stopping before inference if external funding could not cover $19.95251712. The existing offline preflight passed at `d7e92d38fc333846670ae196c9ee37f9d616f61a`; all 59 frozen source/config/scenario files, 442 preparation files and 65 provenance files matched. No frozen implementation or configuration was changed.
+
+Authenticated read-only OpenRouter key and credit checks returned HTTP 200 at 07:06:07 UTC: **key limit $5.00, remaining key allowance $4.92988004; account credit $9.92988004** ($10.00 credits minus $0.07011996 usage). Both available amounts are below the required conservative allowance. **Stopped before the LIVE command; zero model calls, zero inference tokens, zero paid inference.** Settings and funds were not changed. No interrupted study or reservations exist. `results/v2_1/comparison-v1/` remains absent; 0/36 method-trajectories and 0/12 matched blocks exist. Comparative metrics and semantic review are unavailable, not zero errors or zero task scores.
+
+Read [COMPARISON_FUNDING_BLOCK.md](../v2_1/COMPARISON_FUNDING_BLOCK.md). Sanitized check evidence, authorization and offline verification are under `artifacts/verification/v21-comparison-funding-block-20260911/`. The API account totals are not independent study billing. There is no genuine comparison replay; the previous smoke remains available with the existing RECORDED viewer. No additional inference, automatic retry, account change or push was performed or scheduled.
+
+Authorization is limited to this one frozen study and its stated funding checks; it does not authorize any other inference. This turn stopped at the funding gate. Any user-directed continuation must respect that gate and the existing one-attempt/no-resume policy. The historical preparation handoff below is retained for context; its statements that authorization has not arrived are superseded by this update. The frozen manifest itself retains its original preparation-time fields unchanged.
+
+## Historical preparation handoff — 10 September 2026
 
 Repository: `/Users/bagnesium/Documents/GitHub/Kiodai`. Author: Bagdat Beimzhan. Deadline: **13 September 2026**, Asia/Almaty. Read `AGENTS.md` before work.
 

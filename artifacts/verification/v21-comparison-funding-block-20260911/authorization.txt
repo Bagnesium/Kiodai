@@ -1,0 +1,103 @@
+I authorize exactly the frozen study v2.1-comparison-v1 ONCE, with a cumulative paid-inference ceiling of $20.00.
+
+This authorization covers only its declared 12 trajectories, four template families, A0/B_ledger/A2 conditions, one repeat, and permitted in-protocol retries.
+
+It does not authorize additional studies, selective reruns, new models, or development experiments.
+
+## 1. Preflight and spending checks
+
+From the existing Kiodai repository, run:
+
+python3 scripts/run_v21_comparison.py --preflight
+
+Confirm that the current implementation and loaded configurations match the frozen comparison manifest.
+
+Check the remaining OpenRouter key allowance through a read-only account/key check, without printing credentials. Check funded account credit where available.
+
+The prior key allowance may still be $2. Do not assume a $20 local flag changes the OpenRouter limit.
+
+Do not:
+- Change account or key settings.
+- Purchase credits or enable automatic top-ups.
+- Request secrets in chat.
+- Bypass budget controls.
+- Disable TLS verification.
+
+If preflight fails or an external spending restriction prevents funding the declared conservative allowance, stop before model inference and report the specific blocker.
+
+If account credit cannot be verified with the available credentials, report that uncertainty rather than claiming it was checked. Do not request a more powerful credential automatically.
+
+## 2. Execute the frozen study
+
+After the required checks pass, run exactly:
+
+python3 scripts/run_v21_comparison.py --live --authorize-study v2.1-comparison-v1 --budget-usd 20.00 --env-file .env
+
+Do not change prompts, schemas, monitoring, quarantine, retries, scenarios, model/provider configuration, execution semantics, or scoring before or during the run.
+
+Preserve all raw outputs, validation failures, queries, action selections, execution receipts, usage, and costs.
+
+Follow the frozen per-request failure policy. Do not replace failed responses with mocks or omit scoreable model failures.
+
+Restart/resume is unsupported. If the study is interrupted, preserve the partial artifacts and reservations. Do not start the entire study again or reset its cumulative spending allowance.
+
+Do not spend the unused balance on additional work.
+
+## 3. Analyze according to the frozen protocol
+
+Primary:
+Mean paired per-trajectory Set-F1 difference, A2 minus B_ledger.
+
+Secondary:
+A2 minus A0.
+
+Report the declared per-trajectory, template-family, and smoke-overlap breakdowns. Do not replace the primary result with a more favorable subsection.
+
+Keep official aggregate scores distinct from mean per-trajectory scores.
+
+Include:
+- Completed method-trajectories and complete matched blocks.
+- TP, FP, FN, precision, recall, and Set-F1.
+- Instructed obligations, due obligations, dependency-blocked obligations, and unfinished obligations.
+- Relevant queries, unnecessary queries, and evidence-supported hidden-task successes.
+- Extraction, application, selection, and retry failures.
+- Calls, input/output tokens, latency, and API-reported cost.
+
+Review semantic extraction errors separately from final task scores, especially missing prerequisites and quarantined intentions. Use saved source observations and outputs for post-run inspection.
+
+Do not mark unreviewed semantics as correct. Where evidence is ambiguous, record that explicitly.
+
+A higher score obtained through additional monitoring must be reported with its extra queries and resource use.
+
+Do not treat 288 checkpoints or 36 method-trajectories as independent experimental replications. Preserve the limitations of exposed development data, four template families, one repeat, and non-compute-matched methods.
+
+## 4. Save the findings and stop
+
+Generate a genuine comparison report from the saved artifacts.
+
+Make the study available in the existing RECORDED dashboard mode without redesigning the interface.
+
+Update the handoff and prepare concise, evidence-backed manuscript findings and a short Russian defense explanation. Preserve all historical results.
+
+Run relevant offline verification. Commit intended reports and evidence locally; do not push.
+
+No additional model inference after the declared study.
+
+## Final response
+
+Give me:
+
+1. Whether the study completed and how many matched blocks are usable.
+2. A compact A0/B_ledger/A2 results table.
+3. The primary and secondary paired differences.
+4. Whether A2 improved monitoring, and the supporting trace evidence.
+5. Semantic errors that the final task scores conceal.
+6. Resource usage and cost, distinguishing API-reported cost from independently verified billing.
+7. One concrete example where methods differed, or an explicit statement that none was observed.
+8. A plain-English conclusion: what this experiment supports and what it does not.
+9. A short Russian paragraph suitable for the paper.
+10. Artifact paths and genuine recorded-replay instructions.
+
+Report positive, negative, or mixed findings equally honestly.
+
+Do not propose another architecture or experiment afterward. Finish this comparison and its reporting.
