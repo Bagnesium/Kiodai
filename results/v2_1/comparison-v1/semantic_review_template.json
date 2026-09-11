@@ -1,0 +1,339 @@
+{
+  "cases": [
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "findings": [],
+      "method": "A2",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91300"
+    },
+    {
+      "findings": [],
+      "method": "B_ledger",
+      "notes": null,
+      "query_necessity_review": {
+        "notes": null,
+        "status": "pending",
+        "unnecessary_checkpoints": []
+      },
+      "review_status": "pending",
+      "reviewer": null,
+      "trajectory": "v2_revision_91300"
+    }
+  ],
+  "categories": [
+    "missing_prerequisite",
+    "missing_required_field",
+    "incorrect_trigger",
+    "incorrect_binding",
+    "unsupported_intention",
+    "missing_intention",
+    "quarantined_unresolved",
+    "other"
+  ],
+  "finding_fields": {
+    "category": "one listed category",
+    "first_checkpoint": "integer",
+    "intention_id": "ledger ID or null for missing",
+    "notes": "required explanation",
+    "obligation": "day/task_id or null for unsupported intention",
+    "repair_checkpoint": "integer or null",
+    "source_refs": [
+      "ref/quote or raw file:line"
+    ]
+  },
+  "instructions": "For every ledger case review all instructions, checkpoints, accepted/rejected drafts and action bindings. An empty findings list means zero only after review_status=reviewed with reviewer and notes. Record repaired defects too. Use evaluator obligation keys only here.",
+  "scope": "Manual post-run review only; never an agent input or replacement scorer."
+}

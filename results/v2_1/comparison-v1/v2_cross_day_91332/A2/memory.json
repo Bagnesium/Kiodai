@@ -1,0 +1,100 @@
+{
+  "i_5ae6956bf30c2aa0": {
+    "action": "Register the jade91332 sample.",
+    "attempt_id": null,
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the jade91332 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 09:00 on DayTwo",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 09:00 on DayTwo",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_5ae6956bf30c2aa0",
+    "last_query": null,
+    "receipt": null,
+    "status": "pending",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 09:00 on DayTwo, Register the jade91332 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayTwo 09:00"
+  },
+  "i_fffdb1e0e4de4de9": {
+    "action": "Seal the jade91332 case.",
+    "attempt_id": null,
+    "channel": null,
+    "condition": "jade91332 cabinet clicks",
+    "dependencies": [
+      "i_5ae6956bf30c2aa0"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the jade91332 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "jade91332 cabinet clicks",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Only after \"Register the jade91332 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "On DayTwo when you see \"jade91332 cabinet clicks\", Seal the jade91332 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "On DayTwo",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_fffdb1e0e4de4de9",
+    "last_query": null,
+    "receipt": null,
+    "status": "pending",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "On DayTwo when you see \"jade91332 cabinet clicks\", Seal the jade91332 case. Only after \"Register the jade91332 sample.\" succeeds.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": "DayTwo"
+  }
+}

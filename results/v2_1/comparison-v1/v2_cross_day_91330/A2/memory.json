@@ -1,0 +1,100 @@
+{
+  "i_34903a4bab212a77": {
+    "action": "Seal the jade91330 case.",
+    "attempt_id": null,
+    "channel": null,
+    "condition": "jade91330 cabinet clicks",
+    "dependencies": [
+      "i_ded08043445a1a53"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the jade91330 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "jade91330 cabinet clicks",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Only after \"Register the jade91330 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case. Only after \"Register the jade91330 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "On DayTwo",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_34903a4bab212a77",
+    "last_query": null,
+    "receipt": null,
+    "status": "pending",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case. Only after \"Register the jade91330 sample.\" succeeds.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": "DayTwo"
+  },
+  "i_ded08043445a1a53": {
+    "action": "Register the jade91330 sample.",
+    "attempt_id": null,
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the jade91330 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 10:00 on DayTwo",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 10:00 on DayTwo",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_ded08043445a1a53",
+    "last_query": null,
+    "receipt": null,
+    "status": "pending",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayTwo 10:00"
+  }
+}

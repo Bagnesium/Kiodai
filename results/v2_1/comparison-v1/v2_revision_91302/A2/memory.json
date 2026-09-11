@@ -1,0 +1,88 @@
+{
+  "i_59f4e0bcd64a58cf": {
+    "action": "Seal the jade91302 case",
+    "attempt_id": null,
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the jade91302 case",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 12:00 on DayOne",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 12:00 on DayOne",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_59f4e0bcd64a58cf",
+    "last_query": null,
+    "receipt": null,
+    "status": "canceled",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "Do not carry out \"Seal the jade91302 case.\"; that request has been canceled.",
+        "ref": "m10"
+      }
+    ],
+    "version": 2,
+    "when": "DayOne 12:00"
+  },
+  "i_f2efb28cb6c7e0e2": {
+    "action": "Register the jade91302 sample",
+    "attempt_id": null,
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the jade91302 sample.",
+          "ref": "m6"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "is now due at 14:00 on DayOne",
+          "ref": "m6"
+        }
+      ],
+      "when": [
+        {
+          "quote": "is now due at 14:00 on DayOne",
+          "ref": "m6"
+        }
+      ]
+    },
+    "id": "i_f2efb28cb6c7e0e2",
+    "last_query": null,
+    "receipt": null,
+    "status": "pending",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "Change of schedule: \"Register the jade91302 sample.\" is now due at 14:00 on DayOne; replace the earlier time.",
+        "ref": "m6"
+      }
+    ],
+    "version": 7,
+    "when": "DayOne 14:00"
+  }
+}

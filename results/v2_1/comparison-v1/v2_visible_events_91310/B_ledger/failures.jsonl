@@ -1,0 +1,1 @@
+{"attempts": 1, "day": "DayOne", "executed_task_ids": [], "interaction_index": 1, "last_raw_text": "{\"action\": \"choose\", \"choice\": \"A\", \"task_ids\": [], \"channel\": \"NONE\"}", "raw_selected_handles": [], "reason": "invalid_extraction", "record_type": "fail_closed_action", "step_id": "private_step_91310_0", "timestamp_utc": "2026-09-11T08:23:02.520Z"}

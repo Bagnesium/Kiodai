@@ -1,0 +1,178 @@
+[
+  {
+    "canceled_total": 0,
+    "check_time_calls": 1,
+    "chosen_tasks": 2,
+    "commission": 0,
+    "cross_day_hit": 2,
+    "cross_day_late": 0,
+    "cross_day_miss": 0,
+    "cross_day_total": 2,
+    "dependency_violation": 0,
+    "exact_set_match_reward": 8,
+    "exact_set_match_steps": 8,
+    "exact_set_mismatch_steps": 0,
+    "false_alarm": 0,
+    "hit": 2,
+    "late": 0,
+    "miss": 0,
+    "overkill_steps": 0,
+    "set_fn": 0,
+    "set_fp": 0,
+    "set_tp": 2,
+    "state_query_calls": 1,
+    "update_canceled": 0,
+    "update_hit": 0,
+    "update_late": 0,
+    "update_miss": 0,
+    "update_total": 0,
+    "update_violation": 0,
+    "wrong_content": 0
+  },
+  {
+    "DayOne": {
+      "by_monitoring": {
+        "no_proactive_monitoring": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        },
+        "proactive_monitoring_required": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        }
+      },
+      "by_monitoring_channel": {},
+      "by_regular": {
+        "irregular": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        },
+        "regular": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        }
+      },
+      "by_type": {},
+      "metrics": {
+        "canceled_total": 0,
+        "check_time_calls": 0,
+        "chosen_tasks": 0,
+        "commission": 0,
+        "cross_day_hit": 0,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 0,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 4,
+        "exact_set_match_steps": 4,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 0,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 0,
+        "state_query_calls": 0,
+        "update_canceled": 0,
+        "update_hit": 0,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 0,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "state_query_calls_by_channel": {},
+      "steps": 4
+    },
+    "DayTwo": {
+      "by_monitoring": {
+        "no_proactive_monitoring": {
+          "hit": 2,
+          "late": 0,
+          "miss": 0,
+          "total": 2
+        },
+        "proactive_monitoring_required": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        }
+      },
+      "by_monitoring_channel": {},
+      "by_regular": {
+        "irregular": {
+          "hit": 2,
+          "late": 0,
+          "miss": 0,
+          "total": 2
+        },
+        "regular": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        }
+      },
+      "by_type": {
+        "event": {
+          "hit": 1,
+          "late": 0,
+          "miss": 0,
+          "total": 1
+        },
+        "time": {
+          "hit": 1,
+          "late": 0,
+          "miss": 0,
+          "total": 1
+        }
+      },
+      "metrics": {
+        "canceled_total": 0,
+        "check_time_calls": 1,
+        "chosen_tasks": 2,
+        "commission": 0,
+        "cross_day_hit": 2,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 2,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 4,
+        "exact_set_match_steps": 4,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 2,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 2,
+        "state_query_calls": 1,
+        "update_canceled": 0,
+        "update_hit": 0,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 0,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "state_query_calls_by_channel": {
+        "clock": 1
+      },
+      "steps": 4
+    }
+  },
+  8
+]

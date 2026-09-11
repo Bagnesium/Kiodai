@@ -1,0 +1,143 @@
+I have topped up my OpenRouter account balance to $21.93 and set the API key’s configured limit to $21.93.
+
+I explicitly authorize ONE execution of the frozen study:
+
+v2.1-comparison-v1
+
+CUMULATIVE PAID-INFERENCE CEILING: $20.00.
+
+The remaining account balance is not permission to exceed $20. This authorization includes every billable request and permitted retry associated with this study.
+
+Proceed after the checks below pass. Do not ask for authorization again, create another preparation phase, or modify the experiment.
+
+## 1. Verify the existing study and funding
+
+Work in:
+/Users/bagnesium/Documents/GitHub/Kiodai
+
+Read the current repository instructions and these existing files:
+- research/v2_1/comparison_v1.json
+- docs/v2_1/COMPARISON_PROTOCOL.md
+- docs/v2_1/COMPARISON_FUNDING_BLOCK.md
+- The latest handoff.
+
+The previous funding-blocked attempt performed ZERO model calls. This authorization is for the first actual execution, not a repeat.
+
+Check existing artifacts before starting. If an unexpected genuine comparison run has already started, do not blindly launch a duplicate or reset its spending allowance.
+
+Run the existing free preflight:
+
+python3 scripts/run_v21_comparison.py --preflight
+
+Verify that the loaded candidate, prompts, configurations, scenarios, and scorer match the frozen manifest.
+
+Through existing read-only OpenRouter checks, verify:
+- Remaining key allowance, not merely its configured limit.
+- Available account credit.
+
+Both must cover the frozen conservative requirement, previously reported as $19.95251712.
+
+Do not change account settings, purchase credits, enable automatic top-ups, expose credentials, or weaken budget checks.
+
+If a required check fails, stop before inference and report the exact blocker. Otherwise proceed directly.
+
+## 2. Execute exactly the frozen comparison
+
+Run:
+
+python3 scripts/run_v21_comparison.py --live --authorize-study v2.1-comparison-v1 --budget-usd 20.00 --env-file .env
+
+Execute the declared protocol:
+- 12 trajectories.
+- Four template families.
+- A0, B_ledger, and A2.
+- One repeat.
+- 36 method-trajectories in 12 matched three-method blocks.
+- The frozen balanced method order.
+
+Keep the pinned model/provider, prompts, schemas, extraction, monitoring, quarantine, tool allowances, retries, execution semantics, and scoring unchanged.
+
+Do not fix the known prerequisite-extraction defect before or during the study. Measure it.
+
+Do not:
+- Run another smoke test.
+- Substitute models or providers.
+- Tune against observed results.
+- Replace live failures with mock outputs.
+- Selectively repeat poor results.
+- Exclude scoreable mistakes.
+- Launch additional experiments afterward.
+
+Use only the frozen per-request retry and failure policy.
+
+Restart/resume is unsupported. If the study is interrupted, preserve all partial artifacts and budget reservations. Do not restart it with a fresh allowance or improvise a resume mechanism.
+
+Keep cumulative spending within $20. Leave unused authorization unspent.
+
+## 3. Analyze the genuine results
+
+Follow the frozen protocol rather than choosing an analysis after seeing which method wins.
+
+Primary comparison:
+Mean paired per-trajectory Set-F1 difference, A2 minus B_ledger.
+
+Secondary comparison:
+A2 minus A0.
+
+Keep mean per-trajectory scores distinct from scores computed from aggregated TP/FP/FN.
+
+Report:
+- Completion status and usable matched-block count.
+- Per-method TP, FP, FN, precision, recall, and Set-F1.
+- Per-trajectory and template-family results.
+- The predeclared smoke-overlap breakdown.
+- Instructed, due, dependency-blocked, and unfinished obligations.
+- Hidden-condition queries and evidence-supported successes.
+- Extraction, selection, validation, and retry failures.
+- Model calls, input/output tokens, latency, and API-reported costs.
+
+Audit semantic errors separately from task scores, particularly missing prerequisites, unsupported intentions, quarantine, and later corrections. Mark uncertain or unreviewed cases explicitly.
+
+Do not interpret valid JSON as correct understanding.
+
+Explain additional monitoring together with its query and resource costs.
+
+Preserve the limits of exposed development scenarios, four template families, one repeat, and a comparison that is not compute-matched. Do not treat checkpoints or model calls as independent replications.
+
+## 4. Save results and finish the submission materials
+
+Generate the genuine comparison report from saved artifacts.
+
+Preserve raw requests, responses, validation errors, queries, actions, receipts, configurations, hashes, usage, costs, and interrupted attempts.
+
+Make completed genuine recordings available through the existing RECORDED dashboard. Do not redesign it.
+
+Update:
+- The handoff.
+- Evidence-backed manuscript replacement paragraphs.
+- The Russian defense explanation.
+
+Keep historical experiments and their conclusions intact. Do not overwrite the Pages manuscript blindly.
+
+Run relevant offline verification after reporting. Commit only intended artifacts and documentation locally. Do not push.
+
+## 5. Final response
+
+Start with three plain-English sentences:
+- Whether the comparison completed.
+- Whether Kiodai outperformed B_ledger and A0 in this study.
+- What the result does and does not establish.
+
+Then provide:
+1. A compact actual A0/B_ledger/A2 results table.
+2. The primary and secondary paired differences.
+3. Monitoring findings and semantic errors hidden by final task scores.
+4. Resource usage and API-reported cost. Keep independently verified billing separate.
+5. One concrete behavioral comparison supported by saved traces.
+6. A short Russian conclusion suitable for the paper.
+7. Exact report/artifact paths and recorded-replay instructions.
+8. Remaining submission tasks, if any.
+
+Report negative, mixed, or positive findings equally honestly.
+
+Do not propose another experiment or architecture afterward. Complete this authorized comparison and its reporting.

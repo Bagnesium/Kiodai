@@ -1,3 +1,27 @@
+# Current Kiodai handoff — frozen comparison completed
+
+**11 September 2026:** The authorized `v2.1-comparison-v1` ran exactly once, with no implementation or protocol changes, from commit `cd0ce89e10d036918d1af06e5f5f2140930a0981`. All **36 method-trajectories, 288 checkpoints and 12 matched blocks** completed. Mean trajectory Set-F1: **A0 0.864286, B_ledger 0.811111, A2 0.480556**. Frozen primary A2 − B_ledger = **−0.330556**; secondary A2 − A0 = **−0.383730**. A2 did not outperform either comparator in this study. Exposed development scenarios, four dependent families, one repeat, full history and unequal compute limit generalization.
+
+Read [COMPARISON_RESULTS.md](../v2_1/COMPARISON_RESULTS.md) and [manuscript replacement paragraphs / Russian defense](../v2_1/FINDINGS_AND_DEFENSE.md). All 24 ledger cases and 12 baseline traces were reviewed from saved instructions/drafts/bindings/receipts. Both ledger methods stored all 27 intentions eventually; completion was A0 22, B_ledger 18, A2 12. Schema acceptance did not prevent prerequisite, stale-trigger or binding errors. Five unsupported menu-intention proposals per ledger method were rejected; none was stored. A2 made 18 hidden queries for 3 supported hits; B_ledger 8 for 4 and A0 15 for 6. Never-due dependency-blocked obligations remain separate from official FN.
+
+**602 recorded requests/responses**, 1,932,135 input / 90,598 output tokens; API-response cost **$0.45130261**, all known and reconciled. Durable reservations **$9.13802496** under the cumulative **$20.00** ceiling. Independent billed cost is unavailable. Before the run, read-only funding checks showed key allowance $21.85988004 and account credit $21.92988004, covering $19.95251712. The previous funding-blocked attempt made zero model calls.
+
+Genuine recording: `results/v2_1/comparison-v1/`. Original 445 files preserved in `artifacts/v2_1/comparison_v1_original_run.zip`, inventory `research/v2_1/live_comparison_v1_inventory.json`. Source-linked review and supplementary analysis are additional files, not replacements. Authorization, funding evidence and offline verification are in `artifacts/verification/v21-comparison-live-20260911/`. The older funding-block inventory is bound to its original commit and the preserved `prior_funding_block_original.zip`, because current status documents have now changed.
+
+Replay with the unchanged viewer:
+
+```bash
+python3 scripts/serve_v2.py --study results/v2_1/comparison-v1 --port 8772
+```
+
+Open `http://127.0.0.1:8772/`; select trajectory/method/checkpoint in **RECORDED** mode. Inference is disabled. The original smoke viewer at 8771 is separate. Saved analysis can be reproduced with `scripts/report_v21_comparison.py --study results/v2_1/comparison-v1 --annotations results/v2_1/comparison-v1/semantic_review.json` and the read-only `artifacts/verification/v21-comparison-live-20260911/audit_saved_comparison.py` helper.
+
+**No further model inference is authorized or scheduled. Do not rerun, resume, repair, selectively repeat or launch another experiment. No push.** The completed comparison is the submission evidence. Pages was not overwritten; remaining author tasks are review/integration of the replacement paragraphs and tables, consistency of historical/current claims, references/formatting and final export. Candidate `959db38` and all frozen sources remain unchanged; the manifest retains its historical preparation-time status fields rather than being rewritten after outcomes.
+
+## Historical handoff preserved below
+
+The following text is retained as the previous state. Its “current,” “absent,” “blocked,” and “not yet authorized” statements are historical and are superseded by the completed execution above.
+
 # Current Kiodai handoff — comparison authorized, blocked before inference
 
 **11 September 2026:** The user authorized exactly frozen `v2.1-comparison-v1` once, with a cumulative $20.00 paid-inference ceiling, and required stopping before inference if external funding could not cover $19.95251712. The existing offline preflight passed at `d7e92d38fc333846670ae196c9ee37f9d616f61a`; all 59 frozen source/config/scenario files, 442 preparation files and 65 provenance files matched. No frozen implementation or configuration was changed.

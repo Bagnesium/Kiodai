@@ -1,0 +1,94 @@
+{
+  "i_84ca223ff244ac0d": {
+    "action": "Seal the silver91312 case",
+    "attempt_id": "exec_fd8d515562095a82d1b4",
+    "channel": null,
+    "condition": "silver91312 triangle",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the silver91312 case",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "\"silver91312 triangle\"",
+          "ref": "m6"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "For \"Seal the silver91312 case.\" replace the earlier cue with \"silver91312 triangle\".",
+          "ref": "m6"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_84ca223ff244ac0d",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_fd8d515562095a82d1b4",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "For \"Seal the silver91312 case.\" replace the earlier cue with \"silver91312 triangle\".",
+        "ref": "m6"
+      }
+    ],
+    "version": 4,
+    "when": null
+  },
+  "i_c74f0f9369807f50": {
+    "action": "Register the silver91312 sample",
+    "attempt_id": "exec_aca5e692f892cfcb72ee",
+    "channel": null,
+    "condition": "silver91312 hexagon",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the silver91312 sample",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "\"silver91312 hexagon\"",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "When you see \"silver91312 hexagon\", Register the silver91312 sample.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_c74f0f9369807f50",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_aca5e692f892cfcb72ee",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "When you see \"silver91312 hexagon\", Register the silver91312 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": null
+  }
+}
