@@ -1,0 +1,83 @@
+{
+  "sources": [
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/output/daryn_2026/source/manuscript.md",
+      "sha256": "f5cf514062d2237b5b2df05c4acea500772209df2d1fc70fe8cd3e07f91e6a08"
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/docs/v2_1/COMPARISON_RESULTS.md",
+      "sha256": "6bc51823f303c3dc7a12c2b93263d757ece38c96386904e3b2a3cece1fe8cea2"
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/research/v2_1/comparison_v1.json",
+      "sha256": "bfaf52df48553e35978f39f406fd5eb3d78c918a5ac2713a0a169746f23036d5"
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/v2_1/comparison-v1/comparison_report_reviewed.json",
+      "sha256": "5f11d3c8d70165a7b6aa3c27ccd9fccf8c57347d17383275670aae7231d737ce"
+    },
+    {
+      "path": "/Users/bagnesium/Downloads/Kiodai_Bagdat_Beimzhan.docx",
+      "sha256": "13981c10d9cc9e712ae10060a5f32c7526718c2a23d559f17b5048d4ca3f21dd"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Kiodai_Daryn_2026_defense.pdf",
+      "sha256": "5a8a225f82ccac991365a4955aae7d003559d0614df5f58550634e33dd7df910",
+      "bytes": 395895
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Kiodai_Daryn_2026_defense.pptx",
+      "sha256": "43e9ce06a69f904b09a926ec74501d5cb642921e5406d71f3fd89b6c0bfcd64c",
+      "bytes": 79044
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Данные_диаграмм.csv",
+      "sha256": "2b2c0d3fb1678c659b5443600bb51f3c4a8d556547c93fb70e069222b3d80b89",
+      "bytes": 346
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Источники_и_ограничения.md",
+      "sha256": "ff2b1ec36878cf2b532f078b70e968b3cf098f205addc8c86366436a3d1f5ded",
+      "bytes": 10240
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Ответы_на_вопросы.md",
+      "sha256": "aedd867751fcc0629a3bd6ce15d7e6badc2d115ae8d45e5f00427ca684450106",
+      "bytes": 10723
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Спецификация_стенда.md",
+      "sha256": "af68ddfe38ef520c8122526248bd7f89a944ef3b15220f9da4c8205350d268e9",
+      "bytes": 5759
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Спецификация_стенда.pdf",
+      "sha256": "197f1b324914b6093ec60223a97d6c3b11766632a0f06a17adadd18be4d90a87",
+      "bytes": 80518
+    },
+    {
+      "path": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Сценарий_защиты.md",
+      "sha256": "7b5eb282ecf1268c46b873b625d5b2b1a5b14058e5d604345dd450d0c7083a05",
+      "bytes": 21438
+    }
+  ],
+  "verification": {
+    "protected_files": 164,
+    "tests_passed": 162,
+    "mock_smoke": "pass",
+    "frozen_preflight": "pass",
+    "slide_count": 14,
+    "main_slides": 10,
+    "backup_slides": 4,
+    "speech_seconds": 420,
+    "rendered_and_reviewed_all": true,
+    "pdf_text_matches_slide_text": true,
+    "native_charts": 2,
+    "native_tables": 2,
+    "powerpoint_open_test": false,
+    "new_model_experiments": 0,
+    "obligation_accounting": "verified 3 cancellations, 27 = 24 + 3"
+  }
+}
