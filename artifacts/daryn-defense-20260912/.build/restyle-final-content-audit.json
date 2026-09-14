@@ -1,0 +1,130 @@
+{
+  "source": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Kiodai_Daryn_2026_defense_revised.pptx",
+  "output": "/Users/bagnesium/Documents/GitHub/Kiodai/artifacts/daryn-defense-20260912/output/Kiodai_Daryn_2026_redesigned.pptx",
+  "sha256": "d8ee160413a2d0250e1e002cd8b571e67f056b07ab1c87a519cdb919a5517a5a",
+  "slides": [
+    {
+      "slide": 1,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 2,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 3,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 4,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 5,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 6,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 7,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 8,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 9,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 10,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 11,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 12,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 13,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    },
+    {
+      "slide": 14,
+      "text_tokens_preserved": true,
+      "table_cells_preserved": true,
+      "connector_count_preserved": true,
+      "notes_byte_identical": true
+    }
+  ],
+  "slide_count": 14,
+  "original_chart_data_formulas_and_workbooks_preserved": true,
+  "all_speaker_notes_byte_identical": true,
+  "all_native_table_cells_exactly_equal": true,
+  "final_pdf_text_omissions": [],
+  "visual_reviewed_slides": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "final_render_changes_after_first_review": [
+    8,
+    12
+  ]
+}
