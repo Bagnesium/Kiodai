@@ -1,0 +1,35 @@
+{
+  "study": "v2.1-comparison-v1",
+  "checked_at_utc": "2026-09-11T07:57:12.675658+00:00",
+  "required_conservative_allowance_usd": 19.95251712,
+  "authorized_local_ceiling_usd": 20.0,
+  "http_method": "GET",
+  "tls_verification": true,
+  "model_calls": 0,
+  "settings_changed": false,
+  "independently_verified_study_billing": null,
+  "key": {
+    "url": "https://openrouter.ai/api/v1/key",
+    "http_status": 200,
+    "data": {
+      "limit": 21.93,
+      "limit_remaining": 21.85988004,
+      "limit_reset": null,
+      "usage": 0.07011996,
+      "is_free_tier": false,
+      "expires_at": null
+    }
+  },
+  "credits": {
+    "url": "https://openrouter.ai/api/v1/credits",
+    "http_status": 200,
+    "data": {
+      "total_credits": 22,
+      "total_usage": 0.07011996
+    }
+  },
+  "key_allowance_covers_required": true,
+  "account_credit_balance_usd": 21.92988004,
+  "account_credit_covers_required": true,
+  "decision": "funding_checks_permit_start"
+}

@@ -1,0 +1,35 @@
+17
+9. Список использованных источников
+Внешние научные источники
+[1] Liu G., Gabriel S. PM-Bench: Evaluating Prospective Memory in LLM Agents. arXiv:2607.12385v1,  
+14.07.2026. URL: https://arxiv.org/abs/2607.12385v1.
+[2] Rendell P. G., Craik F. I. M. Virtual week and actual week: Age-related differences in prospective  
+memory. Applied Cognitive Psychology. 2000. Vol. 14, No. 7. P. S43–S62. DOI: 10.1002/acp.770. URL:  
+https://onlinelibrary.wiley.com/doi/10.1002/acp.770.
+[3] Zhang T., Wang X., Zhang Q., Chen Q., Li K., Chen Y., Wang D., Meng H., Lu Y. TriggerBench:  
+Investigating Prospective Memory for Large Language Models. arXiv:2606.23459v1, 22.06.2026. URL:  
+https://arxiv.org/abs/2606.23459v1.
+[4]  Hu Y., Wang  Y., McAuley J.  Evaluating Memory  in  LLM  Agents  via  Incremental  Multi-Turn  
+Interactions.  arXiv:2507.05257.  Первоначально  2025;  использована  v4  от  28.06.2026.  URL:  
+https://arxiv.org/abs/2507.05257v4.
+[5] Zhao J., Wu C. Making Prospective Memory SLM-Shaped: Typed Intention Stores for Small-Model  
+Agents. arXiv:2609.01272v1, 01.09.2026. URL: https://arxiv.org/abs/2609.01272v1.
+Внутренние материалы проекта Kiodai
+[6]  Kiodai.  Зафиксированный  протокол  и  реализация  v2.1-comparison-v1.  10–11.09.2026.  
+research/v2_1/comparison_v1.json;  configs/v21_comparison_v1.json;  kiodai_v2/agent.py,  store.py;  
+prompts/v2_1/. Версии указаны в разделе 4.1.
+[7]  Kiodai.  Первичные  записи  и  итоговые  оценки  v2.1-comparison-v1.  11.09.2026.  
+results/v2_1/comparison-v1/:  scenario.json,  calls.jsonl,  actions.jsonl,  steps.jsonl,  score.json  в  36  
+каталогах;  comparison_report_reviewed.json.  Инвентарь:  
+research/v2_1/live_comparison_v1_inventory.json.
+[8]  Kiodai.  Историческая  рукопись;  RESULTS.json,  FOLLOWUP_RESULTS.md  и  
+FOLLOWUP_RESULTS.json;  записи  live-pair-42433e00474b  и  live-pair-bdf241965f35.  Пилоты  
+A0/A1, 08–09.09.2026.
+[9] Kiodai. Разработка  v2 и  отдельный  smoke v2.1. docs/v2/DEEPSEEK_SMOKE_RESULTS.md;  
+docs/v2_1/DEEPSEEK_SMOKE_RESULTS.md;  results/v2_1/deepseek-smoke-v1/analysis.json.  
+09.09.2026.
+[10]  Kiodai.  Послезапусковой  разбор  ошибок.  results/v2_1/comparison-v1/semantic_review.json,  
+baseline_behavior_review.json; docs/v2_1/COMPARISON_RESULTS.md. 11.09.2026. ИИ-аннотации;  
+ключевые случаи сверены с исходными журналами.
+Дата проверки внешних записей и локальных материалов: 12.09.2026. Полные указатели, хеши,  
+данные рисунков и результаты повторного расчёта включены в отдельные материалы проверки.

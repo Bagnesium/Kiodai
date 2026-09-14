@@ -1,0 +1,1817 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/zru6nm",
+    "id": "zru6nm",
+    "slide": 11,
+    "layoutId": "b8ccb44d-5843-4764-97cf-540112f08690",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8F9F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b8ccb44d-5843-4764-97cf-540112f08690",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8fyto3qh",
+      "id": "1",
+      "bbox": [
+        64,
+        28,
+        400,
+        28
+      ],
+      "geometry": "rect",
+      "text": "РЕЗЕРВ A",
+      "textPreview": "РЕЗЕРВ A",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Arial",
+        "color": "#368276",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "РЕЗЕРВ A"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "РЕЗЕРВ A",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Arial",
+            "color": "#368276",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "РЕЗЕРВ A",
+              "fontSize": 20,
+              "typeface": "Arial",
+              "color": "#368276",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7epsvy9c",
+      "id": "2",
+      "bbox": [
+        64,
+        73,
+        1152,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Метрики и полные результаты",
+      "textPreview": "Метрики и полные результаты",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Метрики и полные результаты"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Метрики и полные результаты",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Метрики и полные результаты",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mdgrmd8r",
+      "id": "3",
+      "bbox": [
+        64,
+        657,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7at8r6",
+      "id": "4",
+      "bbox": [
+        64,
+        672,
+        1070,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Источник: COMPARISON_RESULTS, Primary results и Resources; все 12 траекторий",
+      "textPreview": "Источник: COMPARISON_RESULTS, Primary results и Resources; все 12 траекторий",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Источник: COMPARISON_RESULTS, Primary results и Resources; все 12 траекторий"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Источник: COMPARISON_RESULTS, Primary results и Resources; все 12 траекторий",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Источник: COMPARISON_RESULTS, Primary results и Resources; все 12 траекторий",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kbe9k3ql",
+      "id": "5",
+      "bbox": [
+        1140,
+        669,
+        76,
+        31
+      ],
+      "geometry": "rect",
+      "text": "A",
+      "textPreview": "A",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/y9s32hkz",
+      "id": "6",
+      "bbox": [
+        64,
+        204,
+        1152,
+        257
+      ],
+      "text": "Метод | Среднее\nSet-F1 | Micro\nSet-F1 | TP | FP | FN | Вызовы | API, USD\nA0 | 0,8643 | 0,8462 | 22 | 6 | 2 | 117 | 0,04047\nB_ledger | 0,8111 | 0,8372 | 18 | 4 | 3 | 251 | 0,21212\nA2 | 0,4806 | 0,6667 | 12 | 5 | 7 | 234 | 0,19871",
+      "textPreview": "Метод | Среднее | Set-F1 | Micro | Set-F1 | TP | FP | FN | Вызовы | API, USD | A0 | 0,8643 | 0,8462 | 22 | 6 | 2 | 117 | 0,04047 | B_ledg...",
+      "rows": 4,
+      "cols": 8,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            64,
+            204,
+            175,
+            64.25
+          ],
+          "text": "Метод",
+          "textPreview": "Метод",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Метод",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Метод",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            239,
+            204,
+            160,
+            64.25
+          ],
+          "text": "Среднее\nSet-F1",
+          "textPreview": "Среднее | Set-F1",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Среднее",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Среднее",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Set-F1",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Set-F1",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            399,
+            204,
+            145,
+            64.25
+          ],
+          "text": "Micro\nSet-F1",
+          "textPreview": "Micro | Set-F1",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Micro",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Micro",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Set-F1",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Set-F1",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            544,
+            204,
+            75,
+            64.25
+          ],
+          "text": "TP",
+          "textPreview": "TP",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TP",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TP",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            619,
+            204,
+            75,
+            64.25
+          ],
+          "text": "FP",
+          "textPreview": "FP",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "FP",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "FP",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 1,
+          "column": 6,
+          "bbox": [
+            694,
+            204,
+            75,
+            64.25
+          ],
+          "text": "FN",
+          "textPreview": "FN",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "FN",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "FN",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 1,
+          "column": 7,
+          "bbox": [
+            769,
+            204,
+            155,
+            64.25
+          ],
+          "text": "Вызовы",
+          "textPreview": "Вызовы",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Вызовы",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Вызовы",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 1,
+          "column": 8,
+          "bbox": [
+            924,
+            204,
+            292,
+            64.25
+          ],
+          "text": "API, USD",
+          "textPreview": "API, USD",
+          "fillColor": "#E8EFEC",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "API, USD",
+              "resolvedTextStyle": {
+                "fontSize": 24,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "API, USD",
+                  "fontSize": 24,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            64,
+            268.25,
+            175,
+            64.25
+          ],
+          "text": "A0",
+          "textPreview": "A0",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "A0",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#2D5E7C",
+                "bold": true,
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "A0",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#2D5E7C",
+                  "bold": true,
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            239,
+            268.25,
+            160,
+            64.25
+          ],
+          "text": "0,8643",
+          "textPreview": "0,8643",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8643",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8643",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            399,
+            268.25,
+            145,
+            64.25
+          ],
+          "text": "0,8462",
+          "textPreview": "0,8462",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8462",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8462",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            544,
+            268.25,
+            75,
+            64.25
+          ],
+          "text": "22",
+          "textPreview": "22",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "22",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "22",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            619,
+            268.25,
+            75,
+            64.25
+          ],
+          "text": "6",
+          "textPreview": "6",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "6",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "6",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 2,
+          "column": 6,
+          "bbox": [
+            694,
+            268.25,
+            75,
+            64.25
+          ],
+          "text": "2",
+          "textPreview": "2",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 2,
+          "column": 7,
+          "bbox": [
+            769,
+            268.25,
+            155,
+            64.25
+          ],
+          "text": "117",
+          "textPreview": "117",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "117",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "117",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 2,
+          "column": 8,
+          "bbox": [
+            924,
+            268.25,
+            292,
+            64.25
+          ],
+          "text": "0,04047",
+          "textPreview": "0,04047",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,04047",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,04047",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            64,
+            332.5,
+            175,
+            64.25
+          ],
+          "text": "B_ledger",
+          "textPreview": "B_ledger",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "B_ledger",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#368276",
+                "bold": true,
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "B_ledger",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#368276",
+                  "bold": true,
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            239,
+            332.5,
+            160,
+            64.25
+          ],
+          "text": "0,8111",
+          "textPreview": "0,8111",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8111",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8111",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            399,
+            332.5,
+            145,
+            64.25
+          ],
+          "text": "0,8372",
+          "textPreview": "0,8372",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8372",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8372",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            544,
+            332.5,
+            75,
+            64.25
+          ],
+          "text": "18",
+          "textPreview": "18",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "18",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "18",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            619,
+            332.5,
+            75,
+            64.25
+          ],
+          "text": "4",
+          "textPreview": "4",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 3,
+          "column": 6,
+          "bbox": [
+            694,
+            332.5,
+            75,
+            64.25
+          ],
+          "text": "3",
+          "textPreview": "3",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "3",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "3",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 3,
+          "column": 7,
+          "bbox": [
+            769,
+            332.5,
+            155,
+            64.25
+          ],
+          "text": "251",
+          "textPreview": "251",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "251",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "251",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 3,
+          "column": 8,
+          "bbox": [
+            924,
+            332.5,
+            292,
+            64.25
+          ],
+          "text": "0,21212",
+          "textPreview": "0,21212",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,21212",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,21212",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            64,
+            396.75,
+            175,
+            64.25
+          ],
+          "text": "A2",
+          "textPreview": "A2",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "A2",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#A76449",
+                "bold": true,
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "A2",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#A76449",
+                  "bold": true,
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            239,
+            396.75,
+            160,
+            64.25
+          ],
+          "text": "0,4806",
+          "textPreview": "0,4806",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,4806",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,4806",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            399,
+            396.75,
+            145,
+            64.25
+          ],
+          "text": "0,6667",
+          "textPreview": "0,6667",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,6667",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,6667",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            544,
+            396.75,
+            75,
+            64.25
+          ],
+          "text": "12",
+          "textPreview": "12",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "12",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "12",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "row": 4,
+          "column": 5,
+          "bbox": [
+            619,
+            396.75,
+            75,
+            64.25
+          ],
+          "text": "5",
+          "textPreview": "5",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "row": 4,
+          "column": 6,
+          "bbox": [
+            694,
+            396.75,
+            75,
+            64.25
+          ],
+          "text": "7",
+          "textPreview": "7",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "7",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "7",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 31,
+          "row": 4,
+          "column": 7,
+          "bbox": [
+            769,
+            396.75,
+            155,
+            64.25
+          ],
+          "text": "234",
+          "textPreview": "234",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "234",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "234",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 32,
+          "row": 4,
+          "column": 8,
+          "bbox": [
+            924,
+            396.75,
+            292,
+            64.25
+          ],
+          "text": "0,19871",
+          "textPreview": "0,19871",
+          "fillColor": "#F8F9F7",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,19871",
+              "resolvedTextStyle": {
+                "fontSize": 26,
+                "typeface": "Arial",
+                "color": "#172B36",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,19871",
+                  "fontSize": 26,
+                  "typeface": "Arial",
+                  "color": "#172B36",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ypwrit8f",
+      "id": "7",
+      "bbox": [
+        64,
+        491,
+        1152,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Set-F1 = 2TP / (2TP + FP + FN)",
+      "textPreview": "Set-F1 = 2TP / (2TP + FP + FN)",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 34,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Set-F1 = 2TP / (2TP + FP + FN)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Set-F1 = 2TP / (2TP + FP + FN)",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Set-F1 = 2TP / (2TP + FP + FN)",
+              "fontSize": 34,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58ra5sra",
+      "id": "8",
+      "bbox": [
+        64,
+        547,
+        1152,
+        35
+      ],
+      "geometry": "rect",
+      "text": "TP: верное действие. FP: лишнее. FN: пропущенное.",
+      "textPreview": "TP: верное действие. FP: лишнее. FN: пропущенное.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TP: верное действие. FP: лишнее. FN: пропущенное."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TP: верное действие. FP: лишнее. FN: пропущенное.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TP: верное действие. FP: лишнее. FN: пропущенное.",
+              "fontSize": 25,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47itwnqp",
+      "id": "9",
+      "bbox": [
+        64,
+        593,
+        1152,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Среднее: равный вес каждой траектории. Micro: сначала сумма TP, FP, FN.\nСуммарные счётчики не восстанавливают распределение оценок по траекториям.",
+      "textPreview": "Среднее: равный вес каждой траектории. Micro: сначала сумма TP, FP, FN. | Суммарные счётчики не восстанавливают распределение оценок по т...",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Среднее: равный вес каждой траектории. Micro: сначала сумма TP, FP, FN."
+          },
+          {
+            "index": 2,
+            "text": "Суммарные счётчики не восстанавливают распределение оценок по траекториям."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Среднее: равный вес каждой траектории. Micro: сначала сумма TP, FP, FN.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Среднее: равный вес каждой траектории. Micro: сначала сумма TP, FP, FN.",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Суммарные счётчики не восстанавливают распределение оценок по траекториям.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Суммарные счётчики не восстанавливают распределение оценок по траекториям.",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

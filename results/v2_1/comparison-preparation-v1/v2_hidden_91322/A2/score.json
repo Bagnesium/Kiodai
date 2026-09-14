@@ -1,0 +1,121 @@
+[
+  {
+    "canceled_total": 0,
+    "check_time_calls": 0,
+    "chosen_tasks": 3,
+    "commission": 0,
+    "cross_day_hit": 0,
+    "cross_day_late": 0,
+    "cross_day_miss": 0,
+    "cross_day_total": 0,
+    "dependency_violation": 0,
+    "exact_set_match_reward": 8,
+    "exact_set_match_steps": 8,
+    "exact_set_mismatch_steps": 0,
+    "false_alarm": 0,
+    "hit": 3,
+    "late": 0,
+    "miss": 0,
+    "overkill_steps": 0,
+    "set_fn": 0,
+    "set_fp": 0,
+    "set_tp": 3,
+    "state_query_calls": 7,
+    "update_canceled": 0,
+    "update_hit": 0,
+    "update_late": 0,
+    "update_miss": 0,
+    "update_total": 0,
+    "update_violation": 0,
+    "wrong_content": 0
+  },
+  {
+    "DayOne": {
+      "by_monitoring": {
+        "no_proactive_monitoring": {
+          "hit": 1,
+          "late": 0,
+          "miss": 0,
+          "total": 1
+        },
+        "proactive_monitoring_required": {
+          "hit": 2,
+          "late": 0,
+          "miss": 0,
+          "total": 2
+        }
+      },
+      "by_monitoring_channel": {
+        "board_cobalt91322": {
+          "hit": 2,
+          "late": 0,
+          "miss": 0,
+          "total": 2
+        }
+      },
+      "by_regular": {
+        "irregular": {
+          "hit": 3,
+          "late": 0,
+          "miss": 0,
+          "total": 3
+        },
+        "regular": {
+          "hit": 0,
+          "late": 0,
+          "miss": 0,
+          "total": 0
+        }
+      },
+      "by_type": {
+        "event": {
+          "hit": 2,
+          "late": 0,
+          "miss": 0,
+          "total": 2
+        },
+        "time": {
+          "hit": 1,
+          "late": 0,
+          "miss": 0,
+          "total": 1
+        }
+      },
+      "metrics": {
+        "canceled_total": 0,
+        "check_time_calls": 0,
+        "chosen_tasks": 3,
+        "commission": 0,
+        "cross_day_hit": 0,
+        "cross_day_late": 0,
+        "cross_day_miss": 0,
+        "cross_day_total": 0,
+        "dependency_violation": 0,
+        "exact_set_match_reward": 8,
+        "exact_set_match_steps": 8,
+        "exact_set_mismatch_steps": 0,
+        "false_alarm": 0,
+        "hit": 3,
+        "late": 0,
+        "miss": 0,
+        "overkill_steps": 0,
+        "set_fn": 0,
+        "set_fp": 0,
+        "set_tp": 3,
+        "state_query_calls": 7,
+        "update_canceled": 0,
+        "update_hit": 0,
+        "update_late": 0,
+        "update_miss": 0,
+        "update_total": 0,
+        "update_violation": 0,
+        "wrong_content": 0
+      },
+      "state_query_calls_by_channel": {
+        "board_cobalt91322": 7
+      },
+      "steps": 8
+    }
+  },
+  8
+]

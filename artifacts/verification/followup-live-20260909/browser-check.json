@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "url": "http://127.0.0.1:8766/",
+  "mode": "RECORDED",
+  "pair_id": "live-pair-bdf241965f35",
+  "visible_step": 13,
+  "A0": {
+    "selected": "task_14: Sign the chamber record.",
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "missed": "dev_t_ack_cooling"
+  },
+  "A1": {
+    "selected": "task_14: Sign the chamber record.",
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "missed": "dev_t_ack_cooling"
+  },
+  "interface_redesigned": false,
+  "source": "Observed browser accessibility state after selecting RECORDED, advancing 13 saved steps and revealing evaluator."
+}

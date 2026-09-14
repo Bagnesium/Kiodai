@@ -1,0 +1,16 @@
+{
+  "status": "prepared_requires_fresh_authorization",
+  "preflight_model_calls": 0,
+  "contract_version": "v2.1-extraction",
+  "checkpoints": 8,
+  "method": "A2",
+  "repetitions": 1,
+  "maximum_model_attempts": 32,
+  "maximum_tool_queries": 8,
+  "conservative_allowance_usd": 0.49729536,
+  "candidate_ceiling_usd": 1.0,
+  "historical_archive_files": 24,
+  "historical_source_files": 59,
+  "historical_source_commit": "a754559351ba017bb4fc00aa5e0527ea68d05572",
+  "extraction_schema_sha256": "00ed9e5cbd6c2f1c6b00dad2cc7115df277cddaa424c0da3b5d620712a274ed1"
+}

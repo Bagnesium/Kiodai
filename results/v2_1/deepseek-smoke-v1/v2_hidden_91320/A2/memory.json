@@ -1,0 +1,175 @@
+{
+  "i_36ff23e32fe6eeab": {
+    "action": "Register the cobalt91320 sample.",
+    "attempt_id": "exec_fef723131e3b1492e959",
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the cobalt91320 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 08:00 on DayOne",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 08:00 on DayOne",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_36ff23e32fe6eeab",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_fef723131e3b1492e959",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 08:00 on DayOne, Register the cobalt91320 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayOne 08:00"
+  },
+  "i_3bda66d76486b326": {
+    "action": "Archive the cobalt91320 note.",
+    "attempt_id": "exec_9ae0e3ab2712dbe7a316",
+    "channel": "board_cobalt91320",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Archive the cobalt91320 note.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "board_cobalt91320",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "\"Cooling is now fully stable.\"",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_3bda66d76486b326",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m28",
+        "text": "State [board_cobalt91320]: Cooling is now fully stable."
+      },
+      "version": 1
+    },
+    "receipt": {
+      "execution_id": "exec_9ae0e3ab2712dbe7a316",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": null
+  },
+  "i_d1449d3ad46683d8": {
+    "action": "Seal the cobalt91320 case.",
+    "attempt_id": "exec_873246b04005024d59b5",
+    "channel": "board_cobalt91320",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [
+      "i_36ff23e32fe6eeab"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the cobalt91320 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "board_cobalt91320",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "\"Cooling is now fully stable.\"",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Only after \"Register the cobalt91320 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_d1449d3ad46683d8",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m28",
+        "text": "State [board_cobalt91320]: Cooling is now fully stable."
+      },
+      "version": 3
+    },
+    "receipt": {
+      "execution_id": "exec_873246b04005024d59b5",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.",
+        "ref": "m1"
+      }
+    ],
+    "version": 3,
+    "when": null
+  }
+}

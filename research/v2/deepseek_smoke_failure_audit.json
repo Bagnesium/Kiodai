@@ -1,0 +1,106 @@
+{
+  "attempts": [
+    {
+      "atomic_no_records": true,
+      "attempt": 1,
+      "checkpoint": 1,
+      "done_reason": "stop",
+      "invalid_citations": [
+        {
+          "path": "/operations/0/record/evidence/condition/0",
+          "quote": "null",
+          "ref": "m1"
+        },
+        {
+          "path": "/operations/0/record/evidence/when/0",
+          "quote": "null",
+          "ref": "m1"
+        },
+        {
+          "path": "/operations/0/record/evidence/dependencies/0",
+          "quote": "Register the cobalt91320 sample",
+          "ref": "board_cobalt91320"
+        }
+      ],
+      "latency_seconds": 31.944477792014368,
+      "reproduced_validator_error": "Citation is not an observed span",
+      "transport_error": null,
+      "usage": {
+        "input_tokens": 662,
+        "output_tokens": 411
+      },
+      "validation_error": "ValueError: Citation is not an observed span"
+    },
+    {
+      "atomic_no_records": true,
+      "attempt": 2,
+      "checkpoint": 1,
+      "done_reason": "stop",
+      "invalid_citations": [
+        {
+          "path": "/operations/0/record/evidence/trigger/0",
+          "quote": "08:00",
+          "ref": "m2"
+        },
+        {
+          "path": "/operations/0/record/evidence/condition/0",
+          "quote": "null",
+          "ref": "m2"
+        },
+        {
+          "path": "/operations/0/record/evidence/channel/0",
+          "quote": "board_cobalt91320",
+          "ref": "m2"
+        },
+        {
+          "path": "/operations/0/record/evidence/when/0",
+          "quote": "null",
+          "ref": "m2"
+        },
+        {
+          "path": "/operations/0/record/evidence/dependencies/0",
+          "quote": "m2",
+          "ref": "m2"
+        }
+      ],
+      "latency_seconds": 14.319443374988623,
+      "reproduced_validator_error": "Citation is not an observed span",
+      "transport_error": null,
+      "usage": {
+        "input_tokens": 1109,
+        "output_tokens": 400
+      },
+      "validation_error": "ValueError: Citation is not an observed span"
+    },
+    {
+      "attempt": 1,
+      "checkpoint": 2,
+      "done_reason": "length",
+      "latency_seconds": 107.8708755839616,
+      "transport_error": null,
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 3072
+      },
+      "validation_error": "JSONDecodeError: Unterminated string starting at: line 613 column 7 (char 10552)"
+    },
+    {
+      "attempt": 2,
+      "checkpoint": 2,
+      "done_reason": null,
+      "latency_seconds": 120.00170608400367,
+      "transport_error": "TimeoutError: timed out",
+      "usage": null,
+      "validation_error": null
+    }
+  ],
+  "local_calls_sha256": "a1b22cc1f1884213223c70888e0730a7cbeae2f5d9848c250220a6e749b40c12",
+  "sizing": {
+    "fixture_not_model_evidence": true,
+    "output_allowance_tokens": 3072,
+    "reason": "Compact complete three-intention fixture is 2721 UTF-8 bytes, plausibly below 3072 tokens. Not an exact DeepSeek tokenizer prediction or semantic guarantee.",
+    "source": "results/v2/mock-verification-v2/v2_hidden_91320/A2/calls.jsonl",
+    "source_sha256": "ef7361299bcebc5d36c4ea1644a87fbddabacb046261272561f8e6cee772799c",
+    "three_create_response_utf8_bytes": 2721
+  }
+}

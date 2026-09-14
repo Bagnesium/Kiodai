@@ -1,0 +1,13 @@
+{
+  "checkpoints": 8,
+  "method": "A2",
+  "repetitions": 1,
+  "maximum_model_attempts": 32,
+  "maximum_tool_queries": 8,
+  "extract_attempt_allowance_usd": 0.01630848,
+  "select_attempt_allowance_usd": 0.014772480000000001,
+  "conservative_allowance_usd": 0.49729536,
+  "authorized_cap_usd": 1.0,
+  "full_study_conservative_allowance_usd": 19.95251712,
+  "preflight_model_calls": 0
+}

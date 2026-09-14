@@ -1,0 +1,180 @@
+{
+  "i_803d356f3ed3b16e": {
+    "action": "Archive the jade91321 note.",
+    "attempt_id": "exec_3fe0d67850c7b2bfff61",
+    "channel": "board_jade91321",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Archive the jade91321 note.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Archive the jade91321 note.",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Archive the jade91321 note.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Archive the jade91321 note.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_803d356f3ed3b16e",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m28",
+        "text": "State [board_jade91321]: Cooling is now fully stable."
+      },
+      "version": 1
+    },
+    "receipt": {
+      "execution_id": "exec_3fe0d67850c7b2bfff61",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Archive the jade91321 note.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": null
+  },
+  "i_db16f9c51b9d19dc": {
+    "action": "Seal the jade91321 case.",
+    "attempt_id": "exec_5c7870bd0f9b2946f85e",
+    "channel": "board_jade91321",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [
+      "i_fa9451205b462f12"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Seal the jade91321 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Seal the jade91321 case.",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Seal the jade91321 case.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Seal the jade91321 case. Only after \"Register the jade91321 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Seal the jade91321 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_db16f9c51b9d19dc",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m28",
+        "text": "State [board_jade91321]: Cooling is now fully stable."
+      },
+      "version": 2
+    },
+    "receipt": {
+      "execution_id": "exec_5c7870bd0f9b2946f85e",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_jade91321 reports \"Cooling is now fully stable.\", Seal the jade91321 case.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": null
+  },
+  "i_fa9451205b462f12": {
+    "action": "Register the jade91321 sample.",
+    "attempt_id": "exec_816c9f77e526dbe65fad",
+    "channel": null,
+    "condition": "At 09:00 on DayOne, Register the jade91321 sample.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "At 09:00 on DayOne, Register the jade91321 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "At 09:00 on DayOne, Register the jade91321 sample.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 09:00 on DayOne, Register the jade91321 sample.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 09:00 on DayOne, Register the jade91321 sample.",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_fa9451205b462f12",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_816c9f77e526dbe65fad",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 09:00 on DayOne, Register the jade91321 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayOne 09:00"
+  }
+}

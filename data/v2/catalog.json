@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "path": "data/v2/v2_revision_91300.json",
+      "seed": 91300
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "path": "data/v2/v2_revision_91301.json",
+      "seed": 91301
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "path": "data/v2/v2_revision_91302.json",
+      "seed": 91302
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "path": "data/v2/v2_visible_events_91310.json",
+      "seed": 91310
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "path": "data/v2/v2_visible_events_91311.json",
+      "seed": 91311
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "path": "data/v2/v2_visible_events_91312.json",
+      "seed": 91312
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "path": "data/v2/v2_hidden_91320.json",
+      "seed": 91320
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "path": "data/v2/v2_hidden_91321.json",
+      "seed": 91321
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "path": "data/v2/v2_hidden_91322.json",
+      "seed": 91322
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "path": "data/v2/v2_cross_day_91330.json",
+      "seed": 91330
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "path": "data/v2/v2_cross_day_91331.json",
+      "seed": 91331
+    },
+    {
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "path": "data/v2/v2_cross_day_91332.json",
+      "seed": 91332
+    }
+  ],
+  "generator": "scripts/generate_v2_cases.py",
+  "origin": "Four new synthetic PM-compatible templates, informed by inspected PM-Bench development cases and TriggerBench negative controls. No published test set is claimed.",
+  "selection": "All three predefined seeds in each family; no selection by model outcomes."
+}

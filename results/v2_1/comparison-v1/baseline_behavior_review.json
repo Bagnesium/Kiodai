@@ -1,0 +1,230 @@
+{
+  "scope": "Post-run trace/query review. No agent input. Necessity means relevance from public evidence and unfinished obligations, not oracle-optimal polling.",
+  "cases": [
+    {
+      "trajectory": "v2_hidden_91320",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 13 response drafts, 8 checkpoint actions and receipts inspected. Registers at cp2; queries negative state cp3-6 and positive state cp7; seals and archives at cp7 with successful simulator receipts. No false task actions or invalid responses. Every board query addresses unfinished hidden obligations; no demonstrably unnecessary query. No extraction representation exists in A0.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_hidden_91320/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_hidden_91320/A0/calls.jsonl:4",
+        "results/v2_1/comparison-v1/v2_hidden_91320/A0/calls.jsonl:24",
+        "results/v2_1/comparison-v1/v2_hidden_91320/A0/steps.jsonl:2",
+        "results/v2_1/comparison-v1/v2_hidden_91320/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_hidden_91321",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 13 response drafts, 8 checkpoint actions and receipts inspected. Registers at cp2; queries negative state cp3-6 and positive state cp7; seals and archives at cp7 with successful simulator receipts. No false task actions or invalid responses. Every board query addresses unfinished hidden obligations; no demonstrably unnecessary query. No extraction representation exists in A0.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_hidden_91321/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_hidden_91321/A0/calls.jsonl:4",
+        "results/v2_1/comparison-v1/v2_hidden_91321/A0/calls.jsonl:24",
+        "results/v2_1/comparison-v1/v2_hidden_91321/A0/steps.jsonl:2",
+        "results/v2_1/comparison-v1/v2_hidden_91321/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_hidden_91322",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 13 response drafts, 8 checkpoint actions and receipts inspected. Registers at cp2; queries negative state cp3-6 and positive state cp7; seals and archives at cp7 with successful simulator receipts. No false task actions or invalid responses. Every board query addresses unfinished hidden obligations; no demonstrably unnecessary query. No extraction representation exists in A0.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_hidden_91322/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_hidden_91322/A0/calls.jsonl:4",
+        "results/v2_1/comparison-v1/v2_hidden_91322/A0/calls.jsonl:24",
+        "results/v2_1/comparison-v1/v2_hidden_91322/A0/steps.jsonl:2",
+        "results/v2_1/comparison-v1/v2_hidden_91322/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91310",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All 8 responses/checkpoints inspected. Ignores negated hexagon cp2. Seals prematurely on superseded lantern cp4 and receives simulator_not_completed. Registers correctly cp6, omits sealing at the new triangle cue cp7 despite prior failure receipt. TP1 FP1 FN1. This is observed failure to follow the revised cue and recover, not proof of forgetting or assuming success. No queries.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_visible_events_91310/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_visible_events_91310/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_visible_events_91310/A0/calls.jsonl:14",
+        "results/v2_1/comparison-v1/v2_visible_events_91310/A0/steps.jsonl:4",
+        "results/v2_1/comparison-v1/v2_visible_events_91310/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91311",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All 8 responses/checkpoints inspected. Ignores negated hexagon cp2. Seals prematurely on superseded lantern cp4 and receives simulator_not_completed. Registers correctly cp6, omits sealing at the new triangle cue cp7 despite prior failure receipt. TP1 FP1 FN1. This is observed failure to follow the revised cue and recover, not proof of forgetting or assuming success. No queries.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_visible_events_91311/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_visible_events_91311/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_visible_events_91311/A0/calls.jsonl:14",
+        "results/v2_1/comparison-v1/v2_visible_events_91311/A0/steps.jsonl:4",
+        "results/v2_1/comparison-v1/v2_visible_events_91311/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91312",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All 8 responses/checkpoints inspected. Ignores negated hexagon cp2, but prematurely seals on obsolete lantern cp4 and receives failure. Registers cp6 and this time correctly seals at revised triangle cp7 with success. TP2 FP1 FN0. No queries; no internal explanation inferred.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_visible_events_91312/A0/scenario.json",
+        "results/v2_1/comparison-v1/v2_visible_events_91312/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_visible_events_91312/A0/calls.jsonl:14",
+        "results/v2_1/comparison-v1/v2_visible_events_91312/A0/steps.jsonl:4",
+        "results/v2_1/comparison-v1/v2_visible_events_91312/A0/steps.jsonl:7"
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91331",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 8 response drafts and 8 checkpoint actions/receipts inspected. Spare distractor executed at DayOne 11:00 and DayTwo 09:00; real registration prematurely at DayTwo 10:00. All three fail. Registration at DayTwo 11:00 and sealing at 12:00 both succeed. TP2 FP3 FN0, no queries or validation failures; extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/calls.jsonl:6",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/calls.jsonl:10",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/calls.jsonl:12",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/calls.jsonl:14",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/calls.jsonl:16",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_cross_day_91331/A0/scenario.json"
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91332",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 9 response drafts and 8 checkpoints reviewed. Cp3 proposes unoffered task_5 on DayOne at nominal registration hour; validation rejects it and retry abstains. No executed false action. DayTwo registration cp7 and sealing cp8 succeed. TP2 FP0 FN0; one validation retry; no queries. Extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/calls.jsonl:6",
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/calls.jsonl:16",
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/calls.jsonl:18",
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_cross_day_91332/A0/scenario.json"
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91330",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 9 response drafts and 8 checkpoint actions/receipts reviewed. Cp3 proposes unoffered task_5 on DayOne at nominal registration hour; validation rejects it and retry abstains. No executed false action. DayTwo registration cp7 and sealing cp8 succeed. TP2 FP0 FN0; one validation retry; no queries. Extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/calls.jsonl:6",
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/calls.jsonl:16",
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/calls.jsonl:18",
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_cross_day_91330/A0/scenario.json"
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91301",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [
+        3
+      ],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 9 responses and 8 checkpoints reviewed. Honors final 15:00 registration time and sealing cancellation; registration succeeds at cp7, no false actions or validation errors. Cp3 clock query repeats Time 11:00 / Stopwatch 120 min already in current visible message (calls.jsonl:5); informationally redundant. Extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/calls.jsonl:5",
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/calls.jsonl:6",
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/calls.jsonl:16",
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_revision_91301/A0/scenario.json"
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91302",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [
+        4,
+        6
+      ],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 10 response drafts and 8 checkpoints reviewed. Correctly honors latest 14:00 registration and sealing cancellation; TP1 FP0 FN0, no validation errors. Clock checks cp4 and cp6 repeat already visible time/stopwatch values (calls.jsonl:7 and :13); informationally redundant in fixed-checkpoint simulator. Extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/calls.jsonl:7",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/calls.jsonl:13",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/calls.jsonl:14",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/calls.jsonl:18",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_revision_91302/A0/scenario.json"
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91300",
+      "method": "A0",
+      "status": "reviewed",
+      "relevant_query_checkpoints": [],
+      "unnecessary_query_checkpoints": [
+        3
+      ],
+      "uncertain_query_checkpoints": [],
+      "notes": "All instructions, 9 responses and 8 checkpoints reviewed. Honors latest 13:00 registration schedule and sealing cancellation; registration succeeds cp7, TP1 FP0 FN0, no validation errors. One cp3 clock query repeats Time 09:00 / Stopwatch 120 min already visible (calls.jsonl:5); informationally redundant. Extraction not applicable.",
+      "source_refs": [
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/calls.jsonl:5",
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/calls.jsonl:6",
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/calls.jsonl:8",
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/calls.jsonl:16",
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/steps.jsonl",
+        "results/v2_1/comparison-v1/v2_revision_91300/A0/scenario.json"
+      ]
+    }
+  ]
+}

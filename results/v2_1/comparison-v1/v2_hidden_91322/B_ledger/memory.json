@@ -1,0 +1,169 @@
+{
+  "i_03f566d207977b50": {
+    "action": "Register the cobalt91322 sample.",
+    "attempt_id": null,
+    "channel": null,
+    "condition": null,
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Register the cobalt91322 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 10:00 on DayOne",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 10:00 on DayOne",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_03f566d207977b50",
+    "last_query": null,
+    "receipt": null,
+    "status": "canceled",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "Time: 14:00 | Stopwatch: 300 min",
+        "ref": "m14"
+      }
+    ],
+    "version": 2,
+    "when": "DayOne 10:00"
+  },
+  "i_2bb5fdd81f55c08b": {
+    "action": "Archive the cobalt91322 note.",
+    "attempt_id": "exec_1022674b53ef784db174",
+    "channel": "board_cobalt91322",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Archive the cobalt91322 note.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "board_cobalt91322",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "\"Cooling is now fully stable.\"",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "When board_cobalt91322 reports \"Cooling is now fully stable.\", Archive the cobalt91322 note.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_2bb5fdd81f55c08b",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m20",
+        "text": "State [board_cobalt91322]: Cooling is now fully stable."
+      },
+      "version": 1
+    },
+    "receipt": {
+      "execution_id": "exec_1022674b53ef784db174",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_cobalt91322 reports \"Cooling is now fully stable.\", Archive the cobalt91322 note.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": null
+  },
+  "i_32eed3e206a06cd0": {
+    "action": "Seal the cobalt91322 case.",
+    "attempt_id": null,
+    "channel": "board_cobalt91322",
+    "condition": "Cooling is now fully stable.",
+    "dependencies": [
+      "i_03f566d207977b50"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "Seal the cobalt91322 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [
+        {
+          "quote": "board_cobalt91322",
+          "ref": "m1"
+        }
+      ],
+      "condition": [
+        {
+          "quote": "\"Cooling is now fully stable.\"",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Only after \"Register the cobalt91322 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "When board_cobalt91322 reports \"Cooling is now fully stable.\", Seal the cobalt91322 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": []
+    },
+    "id": "i_32eed3e206a06cd0",
+    "last_query": {
+      "checkpoint": 7,
+      "observation": {
+        "checkpoint": 7,
+        "kind": "query",
+        "ref": "m20",
+        "text": "State [board_cobalt91322]: Cooling is now fully stable."
+      },
+      "version": 2
+    },
+    "receipt": null,
+    "status": "pending",
+    "trigger": "hidden",
+    "update_evidence": [
+      {
+        "quote": "When board_cobalt91322 reports \"Cooling is now fully stable.\", Seal the cobalt91322 case. Only after \"Register the cobalt91322 sample.\" succeeds.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": null
+  }
+}

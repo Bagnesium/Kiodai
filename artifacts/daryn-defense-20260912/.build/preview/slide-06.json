@@ -1,0 +1,527 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/tj3v1s",
+    "id": "tj3v1s",
+    "slide": 6,
+    "layoutId": "b8ccb44d-5843-4764-97cf-540112f08690",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8F9F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b8ccb44d-5843-4764-97cf-540112f08690",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36dgb29s",
+      "id": "1",
+      "bbox": [
+        64,
+        43,
+        1152,
+        117
+      ],
+      "geometry": "rect",
+      "text": "Дополнительные вычисления не дали\nулучшения в этой серии",
+      "textPreview": "Дополнительные вычисления не дали | улучшения в этой серии",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Дополнительные вычисления не дали"
+          },
+          {
+            "index": 2,
+            "text": "улучшения в этой серии"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Дополнительные вычисления не дали",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Дополнительные вычисления не дали",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "улучшения в этой серии",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "улучшения в этой серии",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47mh47ad",
+      "id": "2",
+      "bbox": [
+        64,
+        657,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5svydsry",
+      "id": "3",
+      "bbox": [
+        64,
+        672,
+        1070,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Источник: COMPARISON_RESULTS, Resources and billing status",
+      "textPreview": "Источник: COMPARISON_RESULTS, Resources and billing status",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Источник: COMPARISON_RESULTS, Resources and billing status"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Источник: COMPARISON_RESULTS, Resources and billing status",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Источник: COMPARISON_RESULTS, Resources and billing status",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u1kfydsb",
+      "id": "4",
+      "bbox": [
+        1140,
+        669,
+        76,
+        31
+      ],
+      "geometry": "rect",
+      "text": "06",
+      "textPreview": "06",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "06",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v2tg7i9w",
+      "id": "5",
+      "bbox": [
+        64,
+        172,
+        1090,
+        43
+      ],
+      "geometry": "rect",
+      "text": "Записанная стоимость API, USD",
+      "textPreview": "Записанная стоимость API, USD",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Записанная стоимость API, USD"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Записанная стоимость API, USD",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Записанная стоимость API, USD",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "chart",
+      "scope": "slide",
+      "aid": "ch/ovapkzit",
+      "id": "6",
+      "bbox": [
+        68,
+        220,
+        1120,
+        327
+      ],
+      "chartType": "bar"
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4by9sr2",
+      "id": "7",
+      "bbox": [
+        64,
+        568,
+        700,
+        49
+      ],
+      "geometry": "rect",
+      "text": "A2 / A0 ≈ 4,91 раза",
+      "textPreview": "A2 / A0 ≈ 4,91 раза",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 36,
+        "typeface": "Arial",
+        "color": "#A76449",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A2 / A0 ≈ 4,91 раза"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A2 / A0 ≈ 4,91 раза",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A2 / A0 ≈ 4,91 раза",
+              "fontSize": 36,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/exozahsf",
+      "id": "8",
+      "bbox": [
+        64,
+        622,
+        1152,
+        29
+      ],
+      "geometry": "rect",
+      "text": "Стоимость этой серии по API. Не текущие тарифы и не затраты разработки.",
+      "textPreview": "Стоимость этой серии по API. Не текущие тарифы и не затраты разработки.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Стоимость этой серии по API. Не текущие тарифы и не затраты разработки."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Стоимость этой серии по API. Не текущие тарифы и не затраты разработки.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Стоимость этой серии по API. Не текущие тарифы и не затраты разработки.",
+              "fontSize": 22,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

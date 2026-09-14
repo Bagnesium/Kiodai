@@ -1,0 +1,956 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/kqup5h",
+    "id": "kqup5h",
+    "slide": 7,
+    "layoutId": "b8ccb44d-5843-4764-97cf-540112f08690",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8F9F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b8ccb44d-5843-4764-97cf-540112f08690",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/edgze1g3",
+      "id": "1",
+      "bbox": [
+        64,
+        43,
+        1152,
+        117
+      ],
+      "geometry": "rect",
+      "text": "После замены условия вернулся старый триггер",
+      "textPreview": "После замены условия вернулся старый триггер",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "После замены условия вернулся старый триггер"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "После замены условия вернулся старый триггер",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "После замены условия вернулся старый триггер",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gry9gfe",
+      "id": "2",
+      "bbox": [
+        64,
+        657,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfihgbyt",
+      "id": "3",
+      "bbox": [
+        64,
+        672,
+        1070,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Трасса A2: v2_visible_events_91310, steps.jsonl, точки 3–7; перевод и сокращение",
+      "textPreview": "Трасса A2: v2_visible_events_91310, steps.jsonl, точки 3–7; перевод и сокращение",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Трасса A2: v2_visible_events_91310, steps.jsonl, точки 3–7; перевод и сокращение"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Трасса A2: v2_visible_events_91310, steps.jsonl, точки 3–7; перевод и сокращение",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Трасса A2: v2_visible_events_91310, steps.jsonl, точки 3–7; перевод и сокращение",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3i9gbqxk",
+      "id": "4",
+      "bbox": [
+        1140,
+        669,
+        76,
+        31
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2h0zilgz",
+      "id": "5",
+      "bbox": [
+        64,
+        176,
+        1152,
+        74
+      ],
+      "geometry": "rect",
+      "text": "Поручение: запечатать контейнер при новом сигнале «треугольник».",
+      "textPreview": "Поручение: запечатать контейнер при новом сигнале «треугольник».",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Поручение: запечатать контейнер при новом сигнале «треугольник»."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Поручение: запечатать контейнер при новом сигнале «треугольник».",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Поручение: запечатать контейнер при новом сигнале «треугольник».",
+              "fontSize": 30,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4rid0fq",
+      "id": "6",
+      "bbox": [
+        64,
+        276,
+        324,
+        231
+      ],
+      "geometry": "rect",
+      "text": "Точка 3\n\nСохранён\nтреугольник\nВерсия 2",
+      "textPreview": "Точка 3 |  | Сохранён | треугольник | Версия 2",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 10,
+          "right": 12,
+          "bottom": 10,
+          "left": 12
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Точка 3"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "Сохранён"
+          },
+          {
+            "index": 4,
+            "text": "треугольник"
+          },
+          {
+            "index": 5,
+            "text": "Версия 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Точка 3",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Точка 3",
+              "fontSize": 29,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Сохранён",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Сохранён",
+              "fontSize": 29,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "треугольник",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "треугольник",
+              "fontSize": 29,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "Версия 2",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Версия 2",
+              "fontSize": 29,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojihkvy5",
+      "id": "7",
+      "bbox": [
+        476,
+        276,
+        326,
+        231
+      ],
+      "geometry": "rect",
+      "text": "Точка 4\n\nПоявился фонарь\nОн вернулся в запись\nВерсия 3",
+      "textPreview": "Точка 4 |  | Появился фонарь | Он вернулся в запись | Версия 3",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 28,
+        "typeface": "Arial",
+        "color": "#A76449",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 10,
+          "right": 12,
+          "bottom": 10,
+          "left": 12
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Точка 4"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "Появился фонарь"
+          },
+          {
+            "index": 4,
+            "text": "Он вернулся в запись"
+          },
+          {
+            "index": 5,
+            "text": "Версия 3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Точка 4",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Точка 4",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Появился фонарь",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Появился фонарь",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Он вернулся в запись",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Он вернулся в запись",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "Версия 3",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Версия 3",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jm5gzmhg",
+      "id": "8",
+      "bbox": [
+        890,
+        276,
+        326,
+        231
+      ],
+      "geometry": "rect",
+      "text": "Действие\n\nПопытка запечатать\nБез подтверждения\nFP = 1",
+      "textPreview": "Действие |  | Попытка запечатать | Без подтверждения | FP = 1",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 28,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 10,
+          "right": 12,
+          "bottom": 10,
+          "left": 12
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Действие"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "Попытка запечатать"
+          },
+          {
+            "index": 4,
+            "text": "Без подтверждения"
+          },
+          {
+            "index": 5,
+            "text": "FP = 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Действие",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Действие",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Попытка запечатать",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Попытка запечатать",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Без подтверждения",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Без подтверждения",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "FP = 1",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FP = 1",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ilwz6hgv",
+      "id": "9",
+      "bbox": [
+        388,
+        391.5,
+        88,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#52656C",
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wvul0jqt",
+      "id": "10",
+      "bbox": [
+        802,
+        391.5,
+        88,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#52656C",
+      "lineWidth": 2
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xw3mto7e",
+      "id": "11",
+      "bbox": [
+        64,
+        540,
+        1152,
+        45
+      ],
+      "geometry": "rect",
+      "text": "Точка 5: условие восстановлено. Ранняя ошибка осталась в оценке.",
+      "textPreview": "Точка 5: условие восстановлено. Ранняя ошибка осталась в оценке.",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 26,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Точка 5: условие восстановлено. Ранняя ошибка осталась в оценке."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Точка 5: условие восстановлено. Ранняя ошибка осталась в оценке.",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Точка 5: условие восстановлено. Ранняя ошибка осталась в оценке.",
+              "fontSize": 26,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/atc3y98n",
+      "id": "12",
+      "bbox": [
+        64,
+        601,
+        1152,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Локальная ошибка обновления и действия. Причина общего отставания не установлена.",
+      "textPreview": "Локальная ошибка обновления и действия. Причина общего отставания не установлена.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Arial",
+        "color": "#A76449",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Локальная ошибка обновления и действия. Причина общего отставания не установлена."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Локальная ошибка обновления и действия. Причина общего отставания не установлена.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Arial",
+            "color": "#A76449",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Локальная ошибка обновления и действия. Причина общего отставания не установлена.",
+              "fontSize": 25,
+              "typeface": "Arial",
+              "color": "#A76449",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

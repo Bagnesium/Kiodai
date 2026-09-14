@@ -1,0 +1,111 @@
+{
+  "i_d22da0e58abf8da1": {
+    "action": "Seal the jade91330 case.",
+    "attempt_id": "exec_9c5bccc072198de1588c",
+    "channel": null,
+    "condition": "jade91330 cabinet clicks",
+    "dependencies": [
+      "i_ded08043445a1a53"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Seal the jade91330 case. Only after \"Register the jade91330 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case.",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_d22da0e58abf8da1",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_9c5bccc072198de1588c",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "On DayTwo when you see \"jade91330 cabinet clicks\", Seal the jade91330 case.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": "DayTwo"
+  },
+  "i_ded08043445a1a53": {
+    "action": "Register the jade91330 sample.",
+    "attempt_id": "exec_37dfd0a863ac79507a85",
+    "channel": null,
+    "condition": "At 10:00 on DayTwo, Register the jade91330 sample.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_ded08043445a1a53",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_37dfd0a863ac79507a85",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 10:00 on DayTwo, Register the jade91330 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayTwo 10:00"
+  }
+}

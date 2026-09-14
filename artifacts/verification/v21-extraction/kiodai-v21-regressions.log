@@ -1,0 +1,45 @@
+test_actionable_error_reaches_bounded_retry_and_every_call_is_accounted (test_v21_extraction.ExtractionContractTests.test_actionable_error_reaches_bounded_retry_and_every_call_is_accounted) ... ERROR
+test_all_three_saved_selection_failures_remain_rejected_without_state_mutation (test_v21_extraction.ExtractionContractTests.test_all_three_saved_selection_failures_remain_rejected_without_state_mutation) ... ok
+test_ambiguous_update_does_not_unlock_uncertain_execution (test_v21_extraction.ExtractionContractTests.test_ambiguous_update_does_not_unlock_uncertain_execution) ... ok
+test_contextual_error_reaches_retry_without_expected_answers (test_v21_extraction.ExtractionContractTests.test_contextual_error_reaches_retry_without_expected_answers) ... ok
+test_duplicate_creation_even_with_a_different_source_ref (test_v21_extraction.ExtractionContractTests.test_duplicate_creation_even_with_a_different_source_ref) ... ok
+test_genuine_requests_using_menu_vocabulary_and_quoted_titles_pass (test_v21_extraction.ExtractionContractTests.test_genuine_requests_using_menu_vocabulary_and_quoted_titles_pass) ... ok
+test_invalid_refs_spans_and_unused_evidence_reject_without_mutation (test_v21_extraction.ExtractionContractTests.test_invalid_refs_spans_and_unused_evidence_reject_without_mutation) ... ok
+test_legitimate_empty_update_and_repeated_no_change (test_v21_extraction.ExtractionContractTests.test_legitimate_empty_update_and_repeated_no_change) ... ok
+test_menu_or_tool_cannot_create_even_with_structurally_valid_record (test_v21_extraction.ExtractionContractTests.test_menu_or_tool_cannot_create_even_with_structurally_valid_record) ... ok
+test_metamorphic_entities_handles_paraphrases_and_shifted_times (test_v21_extraction.ExtractionContractTests.test_metamorphic_entities_handles_paraphrases_and_shifted_times) ... ok
+test_missing_null_empty_whitespace_conditions_by_trigger (test_v21_extraction.ExtractionContractTests.test_missing_null_empty_whitespace_conditions_by_trigger) ... ok
+test_multiple_valid_intentions_and_atomic_invalid_batch (test_v21_extraction.ExtractionContractTests.test_multiple_valid_intentions_and_atomic_invalid_batch) ... ok
+test_narrative_entailment_is_explicitly_not_a_deterministic_guarantee (test_v21_extraction.ExtractionContractTests.test_narrative_entailment_is_explicitly_not_a_deterministic_guarantee) ... ok
+test_operation_specific_structure_and_version_minimum (test_v21_extraction.ExtractionContractTests.test_operation_specific_structure_and_version_minimum) ... ok
+test_retry_exhaustion_is_fail_closed_not_an_empty_success (test_v21_extraction.ExtractionContractTests.test_retry_exhaustion_is_fail_closed_not_an_empty_success) ... ok
+test_revise_cancel_stale_version_and_dependency_cycles (test_v21_extraction.ExtractionContractTests.test_revise_cancel_stale_version_and_dependency_cycles) ... ok
+test_saved_empty_condition_reproduces_old_gap_and_new_rejection (test_v21_extraction.ExtractionContractTests.test_saved_empty_condition_reproduces_old_gap_and_new_rejection) ... ok
+test_saved_menu_distractors_have_valid_quotes_but_no_obligation_source (test_v21_extraction.ExtractionContractTests.test_saved_menu_distractors_have_valid_quotes_but_no_obligation_source) ... ok
+test_shared_extraction_requests_and_results_for_b_ledger_and_a2 (test_v21_extraction.ExtractionContractTests.test_shared_extraction_requests_and_results_for_b_ledger_and_a2) ... ok
+test_stale_citation_is_separate_from_binding_identifier_failure (test_v21_extraction.ExtractionContractTests.test_stale_citation_is_separate_from_binding_identifier_failure) ... ok
+test_transport_failure_has_one_logged_request_no_repair (test_v21_extraction.ExtractionContractTests.test_transport_failure_has_one_logged_request_no_repair) ... ok
+test_trigger_specific_required_fields (test_v21_extraction.ExtractionContractTests.test_trigger_specific_required_fields) ... ok
+test_unknown_dependency_is_quarantined_until_bound_by_revision (test_v21_extraction.ExtractionContractTests.test_unknown_dependency_is_quarantined_until_bound_by_revision) ... ok
+test_valid_trigger_variants_and_unknown_cannot_act (test_v21_extraction.ExtractionContractTests.test_valid_trigger_variants_and_unknown_cannot_act) ... ok
+
+======================================================================
+ERROR: test_actionable_error_reaches_bounded_retry_and_every_call_is_accounted (test_v21_extraction.ExtractionContractTests.test_actionable_error_reaches_bounded_retry_and_every_call_is_accounted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/tests/test_v21_extraction.py", line 262, in test_actionable_error_reaches_bounded_retry_and_every_call_is_accounted
+    agent.receive(json.dumps(frame(self.obs)))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/agent.py", line 59, in receive
+    value = self.gateway.call('extract', [
+        {'role': 'system', 'content': (ROOT/'prompts/v2_1/extract.txt').read_text()},
+        {'role': 'user', 'content': json.dumps(payload, ensure_ascii=False)}],
+        EXTRACTION, checkpoint, apply)
+  File "/Users/bagnesium/Documents/GitHub/Kiodai/kiodai_v2/gateway.py", line 134, in call
+    raise RunStopped('Returned model/provider differs from pinned route')
+research_harness.model_gateway.RunStopped: Returned model/provider differs from pinned route
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.049s
+
+FAILED (errors=1)

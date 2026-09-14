@@ -1,0 +1,4 @@
+method,tp,fp,fn,model_calls,input_tokens,output_tokens,board_queries,executions,successful_receipts,selection_validation_failures,total_instructed_obligations,unique_obligations_ever_due,unique_obligations_blocked_at_trigger,completed_obligations,unfinished_including_canceled,unfinished_not_canceled,canceled_obligations,query_supported_successes,mean_trajectory_set_f1,micro_set_f1,api_cost_usd
+A0,22,6,2,117,177855,3175,15,28,22,2,27,24,0,22,5,2,3,6,0.8642857142857143,0.8461538461538461,0.04047361
+B_ledger,18,4,3,251,910740,44534,8,22,18,24,27,21,3,18,9,6,3,4,0.8111111111111112,0.8372093023255814,0.21212084
+A2,12,5,7,234,843540,42889,18,17,12,15,27,19,5,12,15,12,3,3,0.48055555555555557,0.6666666666666666,0.19870816

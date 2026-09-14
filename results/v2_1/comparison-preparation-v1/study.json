@@ -1,0 +1,233 @@
+{
+  "exposure": "same-process synthetic development; four template families",
+  "finished_at_utc": "2026-09-10T06:29:40.105Z",
+  "methods": [
+    "A2",
+    "B_ledger",
+    "A0"
+  ],
+  "mode": "MOCK",
+  "no_pooling_with_historical_studies": true,
+  "planned_trajectories": 12,
+  "repeat": 1,
+  "runs": [
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91320/A2",
+      "method": "A2",
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91320/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91320/A0",
+      "method": "A0",
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91321/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91321/A0",
+      "method": "A0",
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91321/A2",
+      "method": "A2",
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91322/A0",
+      "method": "A0",
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91322/A2",
+      "method": "A2",
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "family": "hidden",
+      "folder": "v2_hidden_91322/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91310/A2",
+      "method": "A2",
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91310/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91310/A0",
+      "method": "A0",
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91311/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91311/A0",
+      "method": "A0",
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91311/A2",
+      "method": "A2",
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91312/A0",
+      "method": "A0",
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91312/A2",
+      "method": "A2",
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "family": "visible_events",
+      "folder": "v2_visible_events_91312/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91331/A2",
+      "method": "A2",
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91331/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91331/A0",
+      "method": "A0",
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91332/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91332/A0",
+      "method": "A0",
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91332/A2",
+      "method": "A2",
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91330/A0",
+      "method": "A0",
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91330/A2",
+      "method": "A2",
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "family": "cross_day",
+      "folder": "v2_cross_day_91330/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91301/A2",
+      "method": "A2",
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91301/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91301/A0",
+      "method": "A0",
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91302/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91302/A0",
+      "method": "A0",
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91302/A2",
+      "method": "A2",
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91300/A0",
+      "method": "A0",
+      "trajectory": "v2_revision_91300"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91300/A2",
+      "method": "A2",
+      "trajectory": "v2_revision_91300"
+    },
+    {
+      "family": "revision",
+      "folder": "v2_revision_91300/B_ledger",
+      "method": "B_ledger",
+      "trajectory": "v2_revision_91300"
+    }
+  ],
+  "started_at_utc": "2026-09-10T06:29:39.357Z",
+  "status": "completed"
+}

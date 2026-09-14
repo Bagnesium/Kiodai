@@ -1,0 +1,198 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare jade91302 sample.",
+          "id": "private_lure_91302_0"
+        },
+        {
+          "action_text": "Discard the jade91302 case.",
+          "id": "private_lure_91302_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91302_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91302_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91302_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91302_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91302_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91302_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91302_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91302_9"
+        }
+      ],
+      "name": "DayOne",
+      "start_instructions": [
+        "Today's one-off tasks (new):",
+        "- At 11:00 on DayOne, Register the jade91302 sample. At 12:00 on DayOne, Seal the jade91302 case."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91302_0",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_1",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Change of schedule: \"Register the jade91302 sample.\" is now due at 13:00 on DayOne; replace the earlier time.",
+          "time": "09:00",
+          "updates": [
+            {
+              "action": "reschedule",
+              "new_target_time": "13:00",
+              "task_id": "private_91302_0"
+            }
+          ]
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_2",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Change of schedule: \"Register the jade91302 sample.\" is now due at 14:00 on DayOne; replace the earlier time.",
+          "time": "10:00",
+          "updates": [
+            {
+              "action": "reschedule",
+              "new_target_time": "14:00",
+              "task_id": "private_91302_0"
+            }
+          ]
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_3",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_4",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Do not carry out \"Seal the jade91302 case.\"; that request has been canceled.",
+          "time": "12:00",
+          "updates": [
+            {
+              "action": "cancel",
+              "task_id": "private_91302_1"
+            }
+          ]
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_5",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "13:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_6",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "14:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91302_7",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "15:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Register the jade91302 sample.",
+          "encoding": "start",
+          "id": "private_91302_0",
+          "label": "Register the jade91302 sample.",
+          "regular": false,
+          "target_time": "11:00",
+          "type": "time"
+        },
+        {
+          "action_text": "Seal the jade91302 case.",
+          "encoding": "start",
+          "id": "private_91302_1",
+          "label": "Seal the jade91302 case.",
+          "regular": false,
+          "target_time": "12:00",
+          "type": "time"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "v2_revision_91302",
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "state_visibility": {
+    "clock": true
+  },
+  "time_visible_by_default": true
+}

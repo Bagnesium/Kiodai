@@ -1,0 +1,9 @@
+{
+  "candidate_frozen_files": 40,
+  "checkpoints": 288,
+  "conservative_allowance_usd": 19.952517120000003,
+  "method_trajectories": 36,
+  "preflight_model_calls": 0,
+  "preflight_network_requests": 0,
+  "status": "prepared_requires_fresh_authorization"
+}

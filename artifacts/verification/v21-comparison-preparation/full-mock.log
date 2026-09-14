@@ -1,0 +1,16 @@
+{
+  "mode": "MOCK",
+  "purpose": "Software verification only; fixture unchanged, no model inference.",
+  "method_trajectories": 36,
+  "checkpoints": 288,
+  "mock_requests": 522,
+  "mock_responses": 522,
+  "tool_queries": 63,
+  "all_current_candidate_hashes_match": true,
+  "balanced_order_verified": true,
+  "shared_v21_prompts_schemas_verified": true,
+  "isolated_state_and_public_payloads_verified": true,
+  "model_inference_calls": 0,
+  "api_response_cost_usd": null,
+  "semantic_correctness": "Not established by fixture outcomes"
+}

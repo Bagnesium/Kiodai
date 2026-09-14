@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="468" height="278" preserveAspectRatio="xMinYMin meet" viewBox="0 0 468 278" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="468" height="278"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-278)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="3" y="235" width="135" height="39" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="24.943359375" y="257.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,515) scale(1,-1)">Публичная история</text>
+			<text x="37.28466796875" y="245.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,491) scale(1,-1)">и наблюдения</text>
+			<rect x="168" y="235" width="135" height="39" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="192.46533203125" y="257.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,515) scale(1,-1)">Модель извлекает</text>
+			<text x="193.17822265625" y="245.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,491) scale(1,-1)">и пересматривает</text>
+			<rect x="333" y="235" width="132" height="39" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="369.20751953125" y="257.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,515) scale(1,-1)">Общий Store</text>
+			<text x="361.25830078125" y="245.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,491) scale(1,-1)">записи и версии</text>
+			<path d="M 139,254 L 165,254 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="165 254, 159.5973 256.6098, 159.5973 251.3902" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<path d="M 304,254 L 330,254 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="330 254, 324.5973 256.6098, 324.5973 251.3902" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<rect x="60" y="160" width="157" height="43" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(90%,94%,92%); fill-rule: evenodd;"/>
+			<text x="118.4853515625" y="184.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,369) scale(1,-1)">B_ledger</text>
+			<text x="79.173828125" y="172.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,345) scale(1,-1)">Запрос выбирает модель</text>
+			<rect x="262" y="160" width="160" height="43" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,90%,88%); fill-rule: evenodd;"/>
+			<text x="335.88427734375" y="184.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,369) scale(1,-1)">A2</text>
+			<text x="275.55224609375" y="172.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,345) scale(1,-1)">Канал выбирает контроллер</text>
+			<path d="M 360,233 L 340,205 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="340 205, 345.2639 207.8794, 341.0166 210.9133" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<path d="M 335,236 L 143,205 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="143 205, 148.7496 203.2847, 147.9176 208.4376" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<rect x="68" y="84" width="332" height="45" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="126.37548828125" y="109.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,219) scale(1,-1)">Свидетельство → модель выбирает действие</text>
+			<text x="140.9482421875" y="97.5" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,195) scale(1,-1)">Проверяются привязка, версия и статус</text>
+			<path d="M 140,158 L 156,131 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="156 131, 155.4909 136.9784, 151.0005 134.3174" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<path d="M 342,158 L 314,131 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="314 131, 319.7006 132.8715, 316.0775 136.6288" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<rect x="3" y="6" width="222" height="48" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="34.1197509765625" y="33.0" style="font-family: Arial; font-size: 9.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">Исполнение в симуляторе → receipt</text>
+			<text x="38.1971435546875" y="21.0" style="font-family: Arial; font-size: 9.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,42) scale(1,-1)">Результат обновляет общий Store</text>
+			<rect x="248" y="6" width="217" height="48" rx="3" ry="3" style="stroke: rgb(40%,44%,47%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="284.8162841796875" y="33.0" style="font-family: Arial; font-size: 9.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">Отдельное состояние оценщика</text>
+			<text x="287.54150390625" y="21.0" style="font-family: Arial; font-size: 9.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,42) scale(1,-1)">Сопоставление действия с due</text>
+			<path d="M 156,82 L 115,57 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="115 57, 120.9715 57.58445, 118.2541 62.04091" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+			<path d="M 314,82 L 358,57 Z" style="stroke: rgb(27%,32%,36%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 3, 2;"/>
+			<polygon points="358 57, 354.5919 61.93808, 352.0133 57.39987" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,32%,36%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

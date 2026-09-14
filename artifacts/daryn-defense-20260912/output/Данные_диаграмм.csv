@@ -1,0 +1,4 @@
+﻿method,mean_trajectory_Set_F1,micro_Set_F1,TP,FP,FN,calls,API_USD_displayed,API_USD_recorded,hidden_board_queries,query_supported_successes,selection_validation_failures
+A0,0.8643,0.8462,22,6,2,117,0.04047,0.04047361,15,6,2
+B_ledger,0.8111,0.8372,18,4,3,251,0.21212,0.21212084,8,4,24
+A2,0.4806,0.6667,12,5,7,234,0.19871,0.19870816,18,3,15

@@ -1,0 +1,24 @@
+{
+  "tests_passed": 162,
+  "protected_hashes_passed": 164,
+  "compile_passed": true,
+  "free_final_preflight_passed": true,
+  "original_recording_files_unchanged": 445,
+  "semantic_cases_reviewed": 24,
+  "baseline_cases_reviewed": 12,
+  "independent_semantic_annotator": false,
+  "unreviewed_cases": 0,
+  "credential_value_not_present_in_intended_outputs": true,
+  "ui_verification": {
+    "mode": "RECORDED",
+    "trajectory": "v2_hidden_91322",
+    "method": "A2",
+    "checkpoint": 7,
+    "positive_board_observation": true,
+    "successful_receipts": 2,
+    "evaluator_hidden_until_reveal": true,
+    "all_twelve_trajectories_selectable": true,
+    "browser_tab": "http://127.0.0.1:8772/"
+  },
+  "additional_inference_after_study": false
+}

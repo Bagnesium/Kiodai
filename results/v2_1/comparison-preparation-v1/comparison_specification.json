@@ -1,0 +1,388 @@
+{
+  "analysis_policy": {
+    "dependencies": "Unique instructed, ever-due, dependency-blocked at a trigger opportunity, unfinished and canceled obligations, alongside unchanged official scores.",
+    "headline": "Arithmetic mean of the 12 per-trajectory A2 minus B_ledger Set-F1 differences; require all declared pairs and completed study, otherwise null. A2 minus A0 separately.",
+    "hidden": "Relevant same-checkpoint query-supported hits, other visible-supported hits, unsupported-evidence hits, misses and false actions. Query counts and necessity review; no immediate hit does not prove an unnecessary query.",
+    "missing": "Unstarted/interrupted/unusable units remain present with null primary metrics. Completed-pair diagnostics labeled separately; no imputation, selective exclusions or reruns.",
+    "secondary_tables": "Every declared method-trajectory; each template family; previous network-smoke case versus other 11 exposed cases; descriptive micro TP/FP/FN totals and rates.",
+    "semantic": "Separate manual-review queue for both ledger methods: required fields/prerequisites, triggers, bindings, unsupported intentions, quarantine and repairing revisions; timing relative to recorded first due. A0 not applicable. Pending review is not zero errors.",
+    "units": "12 matched blocks from four dependent template families; checkpoints/calls/renamed variants are not independent replications. No significance, superiority, equivalence or held-out claim from preparation."
+  },
+  "budget_guard": {
+    "by_method": {
+      "A0": 5.18111232,
+      "A2": 5.96754432,
+      "B_ledger": 8.80386048
+    },
+    "by_method_and_trajectory": {
+      "A0": {
+        "v2_cross_day_91330": 0.43175936000000004,
+        "v2_cross_day_91331": 0.43175936000000004,
+        "v2_cross_day_91332": 0.43175936000000004,
+        "v2_hidden_91320": 0.43175936000000004,
+        "v2_hidden_91321": 0.43175936000000004,
+        "v2_hidden_91322": 0.43175936000000004,
+        "v2_revision_91300": 0.43175936000000004,
+        "v2_revision_91301": 0.43175936000000004,
+        "v2_revision_91302": 0.43175936000000004,
+        "v2_visible_events_91310": 0.43175936000000004,
+        "v2_visible_events_91311": 0.43175936000000004,
+        "v2_visible_events_91312": 0.43175936000000004
+      },
+      "A2": {
+        "v2_cross_day_91330": 0.49729536,
+        "v2_cross_day_91331": 0.49729536,
+        "v2_cross_day_91332": 0.49729536,
+        "v2_hidden_91320": 0.49729536,
+        "v2_hidden_91321": 0.49729536,
+        "v2_hidden_91322": 0.49729536,
+        "v2_revision_91300": 0.49729536,
+        "v2_revision_91301": 0.49729536,
+        "v2_revision_91302": 0.49729536,
+        "v2_visible_events_91310": 0.49729536,
+        "v2_visible_events_91311": 0.49729536,
+        "v2_visible_events_91312": 0.49729536
+      },
+      "B_ledger": {
+        "v2_cross_day_91330": 0.73365504,
+        "v2_cross_day_91331": 0.73365504,
+        "v2_cross_day_91332": 0.73365504,
+        "v2_hidden_91320": 0.73365504,
+        "v2_hidden_91321": 0.73365504,
+        "v2_hidden_91322": 0.73365504,
+        "v2_revision_91300": 0.73365504,
+        "v2_revision_91301": 0.73365504,
+        "v2_revision_91302": 0.73365504,
+        "v2_visible_events_91310": 0.73365504,
+        "v2_visible_events_91311": 0.73365504,
+        "v2_visible_events_91312": 0.73365504
+      }
+    },
+    "complete_study_allowance_usd": 19.952517120000003,
+    "policy": "Preflight requires the full conservative allowance. Executor checks feasibility for each matched block, then durably reserves each attempt. Reservations are never refunded; no resume or restart is supported.",
+    "recommended_authorization_usd": 20.0
+  },
+  "candidate_implementation_commit": "959db38dac8b68f63ecf79420dcd53bea2278cf2",
+  "checkpoints_per_method": 96,
+  "config": {
+    "cap_usd": 20.0,
+    "context": "full history",
+    "heartbeat": false,
+    "max_queries_per_step": 1,
+    "max_request_bytes": 48000,
+    "max_validation_retries": 1,
+    "methods": [
+      "A2",
+      "B_ledger",
+      "A0"
+    ],
+    "model": {
+      "allow_route_fallbacks": false,
+      "api_key_env": "OPENROUTER_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model_id": "deepseek/deepseek-chat-v3.1",
+      "pricing_usd_per_million_tokens": {
+        "input": 0.27,
+        "output": 1.0
+      },
+      "provider": "openrouter",
+      "quantizations": [
+        "fp8"
+      ],
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "require_parameters": true,
+      "route": "novita"
+    },
+    "order": "seed 20260910: shuffled family blocks and within-family variants; cyclic method order",
+    "output_tokens": {
+      "baseline": 256,
+      "extract": 3072,
+      "select": 1536
+    },
+    "repetitions": 1,
+    "sampling": {
+      "seed": 20260904,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "timeout_seconds": 120,
+    "transport_retries": 0,
+    "version": "v2.1-comparison-v1"
+  },
+  "exposure": "All 12 are exposed synthetic development cases; no held-out benchmark.",
+  "families": 4,
+  "identifier": "v2.1-comparison-v1",
+  "interruption_policy": "Any transport or runner interruption stops the entire study; preserve partial output and reservations. Validation uses existing one retry, then recorded fail-closed action. No supported resume; a fresh path cannot be supplied to LIVE.",
+  "maximum_model_attempts": 1344,
+  "maximum_queries": 288,
+  "method_trajectories": 36,
+  "methods": [
+    "A0",
+    "B_ledger",
+    "A2"
+  ],
+  "new_model_inference_authorized": false,
+  "order_seed": 20260910,
+  "output": "results/v2_1/comparison-v1",
+  "primary_contrast": "A2 minus B_ledger",
+  "prompt_schema_policy": {
+    "A0": "Original rendered baseline system prompt and action_schema, no explicit intention extraction; baseline output cap 256.",
+    "B_ledger_and_A2": "Same Agent, Store, Gateway, extract/select prompt files and extraction schema; only monitoring/query policy differs.",
+    "action_schema_empty_interface_sha256": "a31b82da0cbf3e45922be17d30103754781cc34014543915d3c7045ad186c504",
+    "binding_template_sha256": "9ec8daf21b0970888a93fb910a1451f066f1f9bd1a2d5705baa30930508916d3",
+    "dynamic_schemas": "Allowed handle/channel enums and eligible ledger ID/version constraints derive from each method own current public frame. Every exact request schema is logged.",
+    "extraction_schema_sha256": "00ed9e5cbd6c2f1c6b00dad2cc7115df277cddaa424c0da3b5d620712a274ed1",
+    "full_history": "Shared initial instructions and checkpoint schedule; complete own history with receipts. Later observations diverge legitimately. No cross-run sharing. Unchanged 65536 runtime context limit and 48000 serialized request-byte gate, no truncation.",
+    "not_compute_matched": "A0 256 output tokens; ledger selection 1536 and extraction 3072. A0/B_ledger may need an extra selection after a query; count all calls.",
+    "tools": "Same available channels/actions and one query per checkpoint; heartbeat off; no between-checkpoint A2 opportunities."
+  },
+  "repetitions": 1,
+  "schedule": [
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "instructed_obligations": 3,
+      "methods": [
+        "A2",
+        "B_ledger",
+        "A0"
+      ],
+      "path": "data/v2/v2_hidden_91320.json",
+      "prior_network_smoke": true,
+      "rendered_baseline_system_prompt_sha256": "fe25d58f244025e114546a3837260309eaf4290e7101a8717ff2452b33932d30",
+      "rendered_ledger_selection_system_prompt_sha256": "b251b5a32a4c1044c8e28ef835d331b1de79ed77704ef9dbf965bff4aa96f75b",
+      "scenario_sha256": "579d0d522ca8e85790dea6da25f3903c874950ba0463147c8bd901e8802280a4",
+      "seed": 91320,
+      "trajectory": "v2_hidden_91320"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "instructed_obligations": 3,
+      "methods": [
+        "B_ledger",
+        "A0",
+        "A2"
+      ],
+      "path": "data/v2/v2_hidden_91321.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "1c12069ed8edafbfa8337f37661cc5763ee312f3c7ce7c7d985e5c7a9ffbae3e",
+      "rendered_ledger_selection_system_prompt_sha256": "30849fa2877af4e686586365f5d311f02d868f7b7212984ad31851a9936cb7f2",
+      "scenario_sha256": "a7275590d381b37dcf9beb167de2198fa5c59dd329c3bc97f4993688baed2a5d",
+      "seed": 91321,
+      "trajectory": "v2_hidden_91321"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "hidden",
+      "instructed_obligations": 3,
+      "methods": [
+        "A0",
+        "A2",
+        "B_ledger"
+      ],
+      "path": "data/v2/v2_hidden_91322.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "e28b5a6d7d3c21559c7ee9a65d95bd73c661d4181ef6b35e99711df5759e270b",
+      "rendered_ledger_selection_system_prompt_sha256": "c1a30fc50a392c69a1ce4c57f9619b97cd5216e394ca126d8e1476e82f1a6915",
+      "scenario_sha256": "9d9a0f850768dce4f163234a32d7c01c1e0b0fa6d197a2c70b9ab5f7af1a5943",
+      "seed": 91322,
+      "trajectory": "v2_hidden_91322"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "instructed_obligations": 2,
+      "methods": [
+        "A2",
+        "B_ledger",
+        "A0"
+      ],
+      "path": "data/v2/v2_visible_events_91310.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "9c93898464e94c0e92009ba0a143a1ae95fb73c1021443daa1f8551a7540718f",
+      "seed": 91310,
+      "trajectory": "v2_visible_events_91310"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "instructed_obligations": 2,
+      "methods": [
+        "B_ledger",
+        "A0",
+        "A2"
+      ],
+      "path": "data/v2/v2_visible_events_91311.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "1fd2647116c3da3466bf103fe990aa90bdc823891c21db02dce3810480bd7b71",
+      "seed": 91311,
+      "trajectory": "v2_visible_events_91311"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "visible_events",
+      "instructed_obligations": 2,
+      "methods": [
+        "A0",
+        "A2",
+        "B_ledger"
+      ],
+      "path": "data/v2/v2_visible_events_91312.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "6d2d5ecf043cc5597b50fab2e99b61a040e841934d7029761d770f234c787765",
+      "seed": 91312,
+      "trajectory": "v2_visible_events_91312"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 2,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "instructed_obligations": 2,
+      "methods": [
+        "A2",
+        "B_ledger",
+        "A0"
+      ],
+      "path": "data/v2/v2_cross_day_91331.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "72c907aff88daeb1620ab7546cd0d6a92838f5399caa05b5c482ad53cdb0321d",
+      "seed": 91331,
+      "trajectory": "v2_cross_day_91331"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 2,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "instructed_obligations": 2,
+      "methods": [
+        "B_ledger",
+        "A0",
+        "A2"
+      ],
+      "path": "data/v2/v2_cross_day_91332.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "44a3e88974d68c604d4a36ffe1e63b2d056935a9fafb57958e5127fe592bef99",
+      "seed": 91332,
+      "trajectory": "v2_cross_day_91332"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 2,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "cross_day",
+      "instructed_obligations": 2,
+      "methods": [
+        "A0",
+        "A2",
+        "B_ledger"
+      ],
+      "path": "data/v2/v2_cross_day_91330.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "cdef8888e0f60547c2809850b9eabc84c681f454f6675dded6d1c295feb037aa",
+      "seed": 91330,
+      "trajectory": "v2_cross_day_91330"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "instructed_obligations": 2,
+      "methods": [
+        "A2",
+        "B_ledger",
+        "A0"
+      ],
+      "path": "data/v2/v2_revision_91301.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "1065e8c2a53422a99433756afd98e8e5ac3f2ce83e98386be407f3e295809e1c",
+      "seed": 91301,
+      "trajectory": "v2_revision_91301"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "instructed_obligations": 2,
+      "methods": [
+        "B_ledger",
+        "A0",
+        "A2"
+      ],
+      "path": "data/v2/v2_revision_91302.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "adb8b7feaa77fbfbcd33598f943129e2a89b476576699262cccf446e0225f81e",
+      "seed": 91302,
+      "trajectory": "v2_revision_91302"
+    },
+    {
+      "block_conservative_allowance_usd": 1.66270976,
+      "checkpoint_count": 8,
+      "days": 1,
+      "exposure": "synthetic development; authored and inspected by the implementation process",
+      "family": "revision",
+      "instructed_obligations": 2,
+      "methods": [
+        "A0",
+        "A2",
+        "B_ledger"
+      ],
+      "path": "data/v2/v2_revision_91300.json",
+      "prior_network_smoke": false,
+      "rendered_baseline_system_prompt_sha256": "59597b16198b24b99715a861ef4b9b8cfeb566fffc0dc23d4de99c30e7f598c9",
+      "rendered_ledger_selection_system_prompt_sha256": "2789773fde5fd6f3e5f9e25d05c63ab07d12e595f943ebb580b49c8e4ff69d86",
+      "scenario_sha256": "5c921150cb17eb16c237ab4d46f95f2f6c2191e9c7651526a9d39b45d86b9e1d",
+      "seed": 91300,
+      "trajectory": "v2_revision_91300"
+    }
+  ],
+  "secondary_contrast": "A2 minus A0",
+  "total_checkpoints": 288,
+  "trajectories": 12
+}

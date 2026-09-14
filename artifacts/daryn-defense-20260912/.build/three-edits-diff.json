@@ -1,0 +1,18 @@
+{
+  "source_sha256": "43e9ce06a69f904b09a926ec74501d5cb642921e5406d71f3fd89b6c0bfcd64c",
+  "changed_package_parts": [
+    "ppt/slides/slide3.xml",
+    "ppt/notesSlides/notesSlide3.xml",
+    "ppt/slides/slide9.xml",
+    "ppt/notesSlides/notesSlide9.xml",
+    "ppt/slides/slide14.xml"
+  ],
+  "all_other_parts_byte_identical": true,
+  "contribution_basis": "Research question and design in manuscript section 7; user direction and authorization of execution and analysis in authorization.txt. No claim of unaided coding or independent annotation.",
+  "changed_rendered_pdf_pages": [
+    3,
+    9,
+    14
+  ],
+  "slides_5_through_8_pixel_identical": true
+}

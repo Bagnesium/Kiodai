@@ -1,0 +1,46 @@
+{
+  "cap_usd": 1.0,
+  "context": "full history",
+  "heartbeat": false,
+  "max_queries_per_step": 1,
+  "max_request_bytes": 48000,
+  "max_validation_retries": 1,
+  "methods": [
+    "A2"
+  ],
+  "model": {
+    "allow_route_fallbacks": false,
+    "api_key_env": "OPENROUTER_API_KEY",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model_id": "deepseek/deepseek-chat-v3.1",
+    "pricing_usd_per_million_tokens": {
+      "input": 0.27,
+      "output": 1.0
+    },
+    "provider": "openrouter",
+    "quantizations": [
+      "fp8"
+    ],
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    },
+    "require_parameters": true,
+    "route": "novita"
+  },
+  "order": "one complete v2_hidden_91320 A2 trajectory",
+  "output_tokens": {
+    "baseline": 256,
+    "extract": 3072,
+    "select": 1536
+  },
+  "repetitions": 1,
+  "sampling": {
+    "seed": 20260904,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "timeout_seconds": 120,
+  "transport_retries": 0,
+  "version": "v2.1-deepseek-smoke-v1"
+}

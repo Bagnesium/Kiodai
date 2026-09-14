@@ -1,0 +1,1620 @@
+{
+  "status": "completed",
+  "mode": "LIVE",
+  "pair_id": "live-pair-bdf241965f35",
+  "pair_path": "/Users/bagnesium/Documents/GitHub/Kiodai/results/followup_v1/live-pair-bdf241965f35",
+  "started_at_utc": "2026-09-09T13:19:33.828Z",
+  "finished_at_utc": "2026-09-09T13:21:52.119Z",
+  "complete_matched_pairs": 1,
+  "repeats": 1,
+  "analysis_unit": "one full three-day paired trajectory; no independent step/day replication or pooling with pilot 1",
+  "conditions": {
+    "A0": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "set_f1": 0.9565217391304348,
+      "steps": 20,
+      "model_calls": 21,
+      "invalid_responses": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "tool_queries": 1,
+      "input_tokens": 59171,
+      "output_tokens": 699,
+      "total_tokens": 59870,
+      "cached_input_tokens_reported": 15808,
+      "model_latency_seconds": 68.270222,
+      "api_response_cost_usd": 0.01454109,
+      "usage_uncached_price_estimate_usd": 0.016675170000000003,
+      "verified_billed_cost_usd": null
+    },
+    "A1": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "set_f1": 0.9565217391304348,
+      "steps": 20,
+      "model_calls": 20,
+      "invalid_responses": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "tool_queries": 0,
+      "input_tokens": 68971,
+      "output_tokens": 665,
+      "total_tokens": 69636,
+      "cached_input_tokens_reported": 24832,
+      "model_latency_seconds": 68.147285,
+      "api_response_cost_usd": 0.01593485,
+      "usage_uncached_price_estimate_usd": 0.019287170000000003,
+      "verified_billed_cost_usd": null
+    }
+  },
+  "a1_minus_a0": {
+    "tp": 0.0,
+    "fp": 0.0,
+    "fn": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "set_f1": 0.0,
+    "steps": 0.0,
+    "model_calls": -1.0,
+    "invalid_responses": 0.0,
+    "retries": 0.0,
+    "transport_errors": 0.0,
+    "tool_queries": -1.0,
+    "input_tokens": 9800.0,
+    "output_tokens": -34.0,
+    "total_tokens": 9766.0,
+    "cached_input_tokens_reported": 9024.0,
+    "model_latency_seconds": -0.122937,
+    "api_response_cost_usd": 0.00139376,
+    "usage_uncached_price_estimate_usd": 0.002612,
+    "verified_billed_cost_usd": null
+  },
+  "descriptive_portions": {
+    "A0": {
+      "overlapping_Monday": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_f1": 1.0,
+        "steps": 8,
+        "model_calls": 8,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 13819,
+        "output_tokens": 269,
+        "total_tokens": 14088,
+        "cached_input_tokens_reported": 4480,
+        "model_latency_seconds": 28.936665,
+        "api_response_cost_usd": 0.00339533,
+        "usage_uncached_price_estimate_usd": 0.00400013,
+        "verified_billed_cost_usd": null
+      },
+      "additional_12_steps": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "set_f1": 0.9230769230769231,
+        "steps": 12,
+        "model_calls": 13,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 1,
+        "input_tokens": 45352,
+        "output_tokens": 430,
+        "total_tokens": 45782,
+        "cached_input_tokens_reported": 11328,
+        "model_latency_seconds": 39.333557,
+        "api_response_cost_usd": 0.01114576,
+        "usage_uncached_price_estimate_usd": 0.01267504,
+        "verified_billed_cost_usd": null
+      },
+      "Tuesday": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "set_f1": 0.8888888888888888,
+        "steps": 7,
+        "model_calls": 8,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 1,
+        "input_tokens": 25035,
+        "output_tokens": 267,
+        "total_tokens": 25302,
+        "cached_input_tokens_reported": 8000,
+        "model_latency_seconds": 23.194217000000002,
+        "api_response_cost_usd": 0.00594645,
+        "usage_uncached_price_estimate_usd": 0.007026450000000001,
+        "verified_billed_cost_usd": null
+      },
+      "Wednesday": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_f1": 1.0,
+        "steps": 5,
+        "model_calls": 5,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 20317,
+        "output_tokens": 163,
+        "total_tokens": 20480,
+        "cached_input_tokens_reported": 3328,
+        "model_latency_seconds": 16.13934,
+        "api_response_cost_usd": 0.00519931,
+        "usage_uncached_price_estimate_usd": 0.00564859,
+        "verified_billed_cost_usd": null
+      }
+    },
+    "A1": {
+      "overlapping_Monday": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_f1": 1.0,
+        "steps": 8,
+        "model_calls": 8,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 19179,
+        "output_tokens": 269,
+        "total_tokens": 19448,
+        "cached_input_tokens_reported": 8576,
+        "model_latency_seconds": 29.229392,
+        "api_response_cost_usd": 0.00428957,
+        "usage_uncached_price_estimate_usd": 0.00544733,
+        "verified_billed_cost_usd": null
+      },
+      "additional_12_steps": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "set_f1": 0.9230769230769231,
+        "steps": 12,
+        "model_calls": 12,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 49792,
+        "output_tokens": 396,
+        "total_tokens": 50188,
+        "cached_input_tokens_reported": 16256,
+        "model_latency_seconds": 38.917893,
+        "api_response_cost_usd": 0.01164528,
+        "usage_uncached_price_estimate_usd": 0.01383984,
+        "verified_billed_cost_usd": null
+      },
+      "Tuesday": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "set_f1": 0.8888888888888888,
+        "steps": 7,
+        "model_calls": 7,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 26395,
+        "output_tokens": 233,
+        "total_tokens": 26628,
+        "cached_input_tokens_reported": 9408,
+        "model_latency_seconds": 22.548954000000002,
+        "api_response_cost_usd": 0.00608957,
+        "usage_uncached_price_estimate_usd": 0.007359650000000001,
+        "verified_billed_cost_usd": null
+      },
+      "Wednesday": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_f1": 1.0,
+        "steps": 5,
+        "model_calls": 5,
+        "invalid_responses": 0,
+        "retries": 0,
+        "transport_errors": 0,
+        "tool_queries": 0,
+        "input_tokens": 23397,
+        "output_tokens": 163,
+        "total_tokens": 23560,
+        "cached_input_tokens_reported": 6848,
+        "model_latency_seconds": 16.368939,
+        "api_response_cost_usd": 0.00555571,
+        "usage_uncached_price_estimate_usd": 0.00648019,
+        "verified_billed_cost_usd": null
+      }
+    }
+  },
+  "trajectories": {
+    "A0": [
+      {
+        "line": 1,
+        "step_id": "dev_m_s1",
+        "day": "Monday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 2,
+        "step_id": "dev_m_s2",
+        "day": "Monday",
+        "time": "08:30",
+        "selected": [
+          "dev_m_seal_case"
+        ],
+        "due": [
+          "dev_m_seal_case"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "C",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_12",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "step_id": "dev_m_s3",
+        "day": "Monday",
+        "time": "09:40",
+        "selected": [
+          "dev_m_log_humidity"
+        ],
+        "due": [
+          "dev_m_log_humidity"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_1",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "step_id": "dev_m_s4",
+        "day": "Monday",
+        "time": "10:10",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 5,
+        "step_id": "dev_m_s5",
+        "day": "Monday",
+        "time": "10:50",
+        "selected": [
+          "dev_m_release_envelope"
+        ],
+        "due": [
+          "dev_m_release_envelope"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "step_id": "dev_m_s5b",
+        "day": "Monday",
+        "time": "11:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 7,
+        "step_id": "dev_m_s6",
+        "day": "Monday",
+        "time": "11:20",
+        "selected": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "due": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "C",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          },
+          {
+            "handle": "task_9",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "step_id": "dev_m_s7",
+        "day": "Monday",
+        "time": "14:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 9,
+        "step_id": "dev_t_s1",
+        "day": "Tuesday",
+        "time": "07:30",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "C",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 10,
+        "step_id": "dev_t_s2",
+        "day": "Tuesday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 11,
+        "step_id": "dev_t_s3",
+        "day": "Tuesday",
+        "time": "09:00",
+        "selected": [
+          "dev_t_lock_chamber"
+        ],
+        "due": [
+          "dev_t_lock_chamber"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "step_id": "dev_t_s4",
+        "day": "Tuesday",
+        "time": "11:30",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [
+          {
+            "channel": "sensor_board",
+            "observation": "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "execution": []
+      },
+      {
+        "line": 13,
+        "step_id": "dev_t_s5",
+        "day": "Tuesday",
+        "time": "13:00",
+        "selected": [
+          "dev_t_sign_record"
+        ],
+        "due": [
+          "dev_t_ack_cooling",
+          "dev_t_sign_record"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "missed": [
+          "dev_t_ack_cooling"
+        ],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_14",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "step_id": "dev_t_s6",
+        "day": "Tuesday",
+        "time": "15:00",
+        "selected": [
+          "dev_t_publish_manifest"
+        ],
+        "due": [
+          "dev_t_publish_manifest"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "step_id": "dev_t_s7",
+        "day": "Tuesday",
+        "time": "16:00",
+        "selected": [
+          "dev_t_call_calibration"
+        ],
+        "due": [
+          "dev_t_call_calibration"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_5",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "step_id": "dev_w_s1",
+        "day": "Wednesday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 17,
+        "step_id": "dev_w_s2",
+        "day": "Wednesday",
+        "time": "10:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 18,
+        "step_id": "dev_w_s3",
+        "day": "Wednesday",
+        "time": "12:00",
+        "selected": [
+          "dev_w_hang_badge"
+        ],
+        "due": [
+          "dev_w_hang_badge"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_11",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "step_id": "dev_w_s4",
+        "day": "Wednesday",
+        "time": "15:00",
+        "selected": [
+          "dev_w_archive_card"
+        ],
+        "due": [
+          "dev_w_archive_card"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_8",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "step_id": "dev_w_s5",
+        "day": "Wednesday",
+        "time": "17:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      }
+    ],
+    "A1": [
+      {
+        "line": 1,
+        "step_id": "dev_m_s1",
+        "day": "Monday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 2,
+        "step_id": "dev_m_s2",
+        "day": "Monday",
+        "time": "08:30",
+        "selected": [
+          "dev_m_seal_case"
+        ],
+        "due": [
+          "dev_m_seal_case"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_12",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "step_id": "dev_m_s3",
+        "day": "Monday",
+        "time": "09:40",
+        "selected": [
+          "dev_m_log_humidity"
+        ],
+        "due": [
+          "dev_m_log_humidity"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_1",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "step_id": "dev_m_s4",
+        "day": "Monday",
+        "time": "10:10",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 5,
+        "step_id": "dev_m_s5",
+        "day": "Monday",
+        "time": "10:50",
+        "selected": [
+          "dev_m_release_envelope"
+        ],
+        "due": [
+          "dev_m_release_envelope"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "step_id": "dev_m_s5b",
+        "day": "Monday",
+        "time": "11:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 7,
+        "step_id": "dev_m_s6",
+        "day": "Monday",
+        "time": "11:20",
+        "selected": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "due": [
+          "dev_m_pressure",
+          "dev_m_status_note"
+        ],
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          },
+          {
+            "handle": "task_9",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "step_id": "dev_m_s7",
+        "day": "Monday",
+        "time": "14:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 9,
+        "step_id": "dev_t_s1",
+        "day": "Tuesday",
+        "time": "07:30",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 10,
+        "step_id": "dev_t_s2",
+        "day": "Tuesday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 11,
+        "step_id": "dev_t_s3",
+        "day": "Tuesday",
+        "time": "09:00",
+        "selected": [
+          "dev_t_lock_chamber"
+        ],
+        "due": [
+          "dev_t_lock_chamber"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_6",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "step_id": "dev_t_s4",
+        "day": "Tuesday",
+        "time": "11:30",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 13,
+        "step_id": "dev_t_s5",
+        "day": "Tuesday",
+        "time": "13:00",
+        "selected": [
+          "dev_t_sign_record"
+        ],
+        "due": [
+          "dev_t_ack_cooling",
+          "dev_t_sign_record"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "missed": [
+          "dev_t_ack_cooling"
+        ],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_14",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "step_id": "dev_t_s6",
+        "day": "Tuesday",
+        "time": "15:00",
+        "selected": [
+          "dev_t_publish_manifest"
+        ],
+        "due": [
+          "dev_t_publish_manifest"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "step_id": "dev_t_s7",
+        "day": "Tuesday",
+        "time": "16:00",
+        "selected": [
+          "dev_t_call_calibration"
+        ],
+        "due": [
+          "dev_t_call_calibration"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_5",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "step_id": "dev_w_s1",
+        "day": "Wednesday",
+        "time": "08:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 17,
+        "step_id": "dev_w_s2",
+        "day": "Wednesday",
+        "time": "10:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "B",
+        "tools": [],
+        "execution": []
+      },
+      {
+        "line": 18,
+        "step_id": "dev_w_s3",
+        "day": "Wednesday",
+        "time": "12:00",
+        "selected": [
+          "dev_w_hang_badge"
+        ],
+        "due": [
+          "dev_w_hang_badge"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_11",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "step_id": "dev_w_s4",
+        "day": "Wednesday",
+        "time": "15:00",
+        "selected": [
+          "dev_w_archive_card"
+        ],
+        "due": [
+          "dev_w_archive_card"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": [
+          {
+            "handle": "task_8",
+            "outcome": "simulator_completed"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "step_id": "dev_w_s5",
+        "day": "Wednesday",
+        "time": "17:00",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "missed": [],
+        "false": [],
+        "ongoing_choice": "A",
+        "tools": [],
+        "execution": []
+      }
+    ]
+  },
+  "hidden_condition_audit": {
+    "A0": [
+      {
+        "step_id": "dev_t_s1",
+        "simulated_time": "07:30",
+        "steps_and_evaluator_line": 9,
+        "visible_before_any_query": "You begin with routine console checks and several irrelevant maintenance messages.\nA) Check the chair\nB) Open the shutters\nC) Set down the folder\n\nStep action menu:\n- task_6: Lock the test chamber.\n- task_7: Publish the manifest.\n- task_10: Stack unused coasters.\n- task_11: Move a spare cushion.\n- task_9: Remove the provisional placard.\n- task_4: Read the wall poster.\n- task_5: Call the calibration desk.\n- task_14: Sign the chamber record.\n- task_12: Acknowledge stable cooling.\n\nTime: 07:30 | Stopwatch: 0 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 9,
+        "final_choose_started_at_utc": "2026-09-09T13:20:33.666Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s2",
+        "simulated_time": "08:00",
+        "steps_and_evaluator_line": 10,
+        "visible_before_any_query": "A correction overrides the amber approval: publish the manifest only when the violet approval appears. The amber signal is obsolete.\nA) Confirm the correction\nB) Pin the notice\nC) Resume the checklist\n\nStep action menu:\n- task_9: Remove the provisional placard.\n- task_14: Sign the chamber record.\n- task_5: Call the calibration desk.\n- task_8: Sort colored pencils.\n- task_12: Acknowledge stable cooling.\n- task_6: Lock the test chamber.\n- task_2: Refill an empty cup.\n- task_7: Publish the corrected manifest.\n- task_4: Read the wall poster.\n\nTime: 08:00 | Stopwatch: 30 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 10,
+        "final_choose_started_at_utc": "2026-09-09T13:20:39.215Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s3",
+        "simulated_time": "09:00",
+        "steps_and_evaluator_line": 11,
+        "visible_before_any_query": "The safety chime sounds. The obsolete amber approval also appears, while cooling is reported as nearly stable but not fully stable.\nA) Face the chamber\nB) Read the side display\nC) Move the clipboard\n\nStep action menu:\n- task_6: Lock the test chamber.\n- task_14: Sign the chamber record.\n- task_5: Call the calibration desk.\n- task_12: Acknowledge stable cooling.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_3: Check your shoelaces.\n- task_4: Read the wall poster.\n- task_7: Publish the corrected manifest.\n\nTime: 09:00 | Stopwatch: 90 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 11,
+        "final_choose_started_at_utc": "2026-09-09T13:20:44.939Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s4",
+        "simulated_time": "11:30",
+        "steps_and_evaluator_line": 12,
+        "visible_before_any_query": "Three unrelated equipment notices arrive; none changes an intention or satisfies a trigger.\nA) Dismiss a notice\nB) Straighten the console\nC) Check the doorway\n\nStep action menu:\n- task_7: Publish the corrected manifest.\n- task_3: Check your shoelaces.\n- task_14: Sign the chamber record.\n- task_1: Wipe a cabinet handle.\n- task_5: Call the calibration desk.\n- task_8: Sort colored pencils.\n- task_12: Acknowledge stable cooling.\n- task_9: Remove the provisional placard.\n\nTime: 11:30 | Stopwatch: 240 min",
+        "queries": [
+          {
+            "raw_call_line": 12,
+            "channel": "sensor_board",
+            "query_decision_finished_at_utc": "2026-09-09T13:20:53.490Z"
+          }
+        ],
+        "tool_responses": [
+          {
+            "channel": "sensor_board",
+            "observation": "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "sensor_observations_in_final_request": [
+          "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+        ],
+        "final_choose_raw_call_line": 13,
+        "final_choose_started_at_utc": "2026-09-09T13:20:53.492Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s5",
+        "simulated_time": "13:00",
+        "steps_and_evaluator_line": 13,
+        "visible_before_any_query": "The chamber review window opens while the cooling process continues out of sight.\nA) Open the record\nB) Check the chamber\nC) Set the timer\n\nStep action menu:\n- task_5: Call the calibration desk.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_15: Align the desk stapler.\n- task_12: Acknowledge stable cooling.\n- task_14: Sign the chamber record.\n- task_7: Publish the corrected manifest.\n- task_13: Fold an empty wrapper.\n\nTime: 13:00 | Stopwatch: 330 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [
+          "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+        ],
+        "final_choose_raw_call_line": 14,
+        "final_choose_started_at_utc": "2026-09-09T13:21:00.101Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": true,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": true,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s6",
+        "simulated_time": "15:00",
+        "steps_and_evaluator_line": 14,
+        "visible_before_any_query": "The violet approval appears. A separate message cancels removal of the provisional placard.\nA) Read the approval\nB) Close the side panel\nC) Mark the cancellation\n\nStep action menu:\n- task_12: Acknowledge stable cooling.\n- task_7: Publish the corrected manifest.\n- task_10: Stack unused coasters.\n- task_9: Remove the provisional placard.\n- task_8: Sort colored pencils.\n- task_16: Count spare clips.\n- task_5: Call the calibration desk.\n\nTime: 15:00 | Stopwatch: 450 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [
+          "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+        ],
+        "final_choose_raw_call_line": 15,
+        "final_choose_started_at_utc": "2026-09-09T13:21:06.411Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s7",
+        "simulated_time": "16:00",
+        "steps_and_evaluator_line": 15,
+        "visible_before_any_query": "The canceled placard-removal signal appears. You jot a note: On Wednesday, Hang the visitor badge when the east gate opens.\nA) Review the clock\nB) Finish the console log\nC) Turn off the desk lamp\n\nStep action menu:\n- task_12: Acknowledge stable cooling.\n- task_5: Call the calibration desk.\n- task_10: Stack unused coasters.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_8: Sort colored pencils.\n\nTime: 16:00 | Stopwatch: 510 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [
+          "State [sensor_board]: Cooling is nearly stable; final stabilization is not complete."
+        ],
+        "final_choose_raw_call_line": 16,
+        "final_choose_started_at_utc": "2026-09-09T13:21:12.815Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      }
+    ],
+    "A1": [
+      {
+        "step_id": "dev_t_s1",
+        "simulated_time": "07:30",
+        "steps_and_evaluator_line": 9,
+        "visible_before_any_query": "You begin with routine console checks and several irrelevant maintenance messages.\nA) Check the chair\nB) Open the shutters\nC) Set down the folder\n\nStep action menu:\n- task_6: Lock the test chamber.\n- task_7: Publish the manifest.\n- task_10: Stack unused coasters.\n- task_11: Move a spare cushion.\n- task_9: Remove the provisional placard.\n- task_4: Read the wall poster.\n- task_5: Call the calibration desk.\n- task_14: Sign the chamber record.\n- task_12: Acknowledge stable cooling.\n\nTime: 07:30 | Stopwatch: 0 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 9,
+        "final_choose_started_at_utc": "2026-09-09T13:20:36.455Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s2",
+        "simulated_time": "08:00",
+        "steps_and_evaluator_line": 10,
+        "visible_before_any_query": "A correction overrides the amber approval: publish the manifest only when the violet approval appears. The amber signal is obsolete.\nA) Confirm the correction\nB) Pin the notice\nC) Resume the checklist\n\nStep action menu:\n- task_9: Remove the provisional placard.\n- task_14: Sign the chamber record.\n- task_5: Call the calibration desk.\n- task_8: Sort colored pencils.\n- task_12: Acknowledge stable cooling.\n- task_6: Lock the test chamber.\n- task_2: Refill an empty cup.\n- task_7: Publish the corrected manifest.\n- task_4: Read the wall poster.\n\nTime: 08:00 | Stopwatch: 30 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 10,
+        "final_choose_started_at_utc": "2026-09-09T13:20:41.846Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s3",
+        "simulated_time": "09:00",
+        "steps_and_evaluator_line": 11,
+        "visible_before_any_query": "The safety chime sounds. The obsolete amber approval also appears, while cooling is reported as nearly stable but not fully stable.\nA) Face the chamber\nB) Read the side display\nC) Move the clipboard\n\nStep action menu:\n- task_6: Lock the test chamber.\n- task_14: Sign the chamber record.\n- task_5: Call the calibration desk.\n- task_12: Acknowledge stable cooling.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_3: Check your shoelaces.\n- task_4: Read the wall poster.\n- task_7: Publish the corrected manifest.\n\nTime: 09:00 | Stopwatch: 90 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 11,
+        "final_choose_started_at_utc": "2026-09-09T13:20:47.519Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s4",
+        "simulated_time": "11:30",
+        "steps_and_evaluator_line": 12,
+        "visible_before_any_query": "Three unrelated equipment notices arrive; none changes an intention or satisfies a trigger.\nA) Dismiss a notice\nB) Straighten the console\nC) Check the doorway\n\nStep action menu:\n- task_7: Publish the corrected manifest.\n- task_3: Check your shoelaces.\n- task_14: Sign the chamber record.\n- task_1: Wipe a cabinet handle.\n- task_5: Call the calibration desk.\n- task_8: Sort colored pencils.\n- task_12: Acknowledge stable cooling.\n- task_9: Remove the provisional placard.\n\nTime: 11:30 | Stopwatch: 240 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 12,
+        "final_choose_started_at_utc": "2026-09-09T13:20:56.562Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s5",
+        "simulated_time": "13:00",
+        "steps_and_evaluator_line": 13,
+        "visible_before_any_query": "The chamber review window opens while the cooling process continues out of sight.\nA) Open the record\nB) Check the chamber\nC) Set the timer\n\nStep action menu:\n- task_5: Call the calibration desk.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_15: Align the desk stapler.\n- task_12: Acknowledge stable cooling.\n- task_14: Sign the chamber record.\n- task_7: Publish the corrected manifest.\n- task_13: Fold an empty wrapper.\n\nTime: 13:00 | Stopwatch: 330 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 13,
+        "final_choose_started_at_utc": "2026-09-09T13:21:03.461Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": true,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": true,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s6",
+        "simulated_time": "15:00",
+        "steps_and_evaluator_line": 14,
+        "visible_before_any_query": "The violet approval appears. A separate message cancels removal of the provisional placard.\nA) Read the approval\nB) Close the side panel\nC) Mark the cancellation\n\nStep action menu:\n- task_12: Acknowledge stable cooling.\n- task_7: Publish the corrected manifest.\n- task_10: Stack unused coasters.\n- task_9: Remove the provisional placard.\n- task_8: Sort colored pencils.\n- task_16: Count spare clips.\n- task_5: Call the calibration desk.\n\nTime: 15:00 | Stopwatch: 450 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 14,
+        "final_choose_started_at_utc": "2026-09-09T13:21:09.590Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      },
+      {
+        "step_id": "dev_t_s7",
+        "simulated_time": "16:00",
+        "steps_and_evaluator_line": 15,
+        "visible_before_any_query": "The canceled placard-removal signal appears. You jot a note: On Wednesday, Hang the visitor badge when the east gate opens.\nA) Review the clock\nB) Finish the console log\nC) Turn off the desk lamp\n\nStep action menu:\n- task_12: Acknowledge stable cooling.\n- task_5: Call the calibration desk.\n- task_10: Stack unused coasters.\n- task_9: Remove the provisional placard.\n- task_11: Move a spare cushion.\n- task_8: Sort colored pencils.\n\nTime: 16:00 | Stopwatch: 510 min",
+        "queries": [],
+        "tool_responses": [],
+        "sensor_observations_in_final_request": [],
+        "final_choose_raw_call_line": 15,
+        "final_choose_started_at_utc": "2026-09-09T13:21:15.688Z",
+        "positive_sensor_fact_observed_before_selection": false,
+        "cooling_selected": false,
+        "cooling_due": false,
+        "cooling_hit": false,
+        "cooling_false_selection": false,
+        "cooling_missed": false,
+        "query_supported_hit": false,
+        "correct_selection_without_sensor_query_evidence": false
+      }
+    ]
+  },
+  "cross_day_audit": {
+    "A0": [
+      {
+        "step_id": "dev_w_s1",
+        "time": "08:00",
+        "steps_and_evaluator_line": 16,
+        "final_choose_raw_call_line": 17,
+        "visible_current": "A new day begins with ordinary filing and no relevant trigger.\nA) Open the blinds\nB) Arrange the chairs\nC) Check the floor\n\nStep action menu:\n- task_8: File the blue archive card.\n- task_1: Count spare clips.\n- task_11: Hang the visitor badge.\n- task_12: Sort colored pencils.\n- task_3: Fold an empty wrapper.\n\nTime: 08:00 | Stopwatch: 0 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s2",
+        "time": "10:00",
+        "steps_and_evaluator_line": 17,
+        "final_choose_raw_call_line": 18,
+        "visible_current": "The brass cabinet shifts with a dull scrape but does not click. The east gate remains closed.\nA) Look toward the cabinet\nB) Continue filing\nC) Move a box\n\nStep action menu:\n- task_5: Refill an empty cup.\n- task_8: File the blue archive card.\n- task_7: Move a spare cushion.\n- task_10: Align the desk stapler.\n- task_11: Hang the visitor badge.\n\nTime: 10:00 | Stopwatch: 120 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s3",
+        "time": "12:00",
+        "steps_and_evaluator_line": 18,
+        "final_choose_raw_call_line": 19,
+        "visible_current": "The east gate opens for visitors.\nA) Check the entrance\nB) Set down the folder\nC) Move to the desk\n\nStep action menu:\n- task_8: File the blue archive card.\n- task_9: Stack unused coasters.\n- task_6: Wipe a cabinet handle.\n- task_11: Hang the visitor badge.\n- task_12: Sort colored pencils.\n\nTime: 12:00 | Stopwatch: 240 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [
+          "dev_w_hang_badge"
+        ],
+        "due": [
+          "dev_w_hang_badge"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s4",
+        "time": "15:00",
+        "steps_and_evaluator_line": 19,
+        "final_choose_raw_call_line": 20,
+        "visible_current": "The brass cabinet finally clicks into its unlocked position.\nA) Open the cabinet\nB) Inspect the hinge\nC) Clear the shelf\n\nStep action menu:\n- task_2: Read the wall poster.\n- task_6: Wipe a cabinet handle.\n- task_8: File the blue archive card.\n- task_5: Refill an empty cup.\n\nTime: 15:00 | Stopwatch: 420 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [
+          "dev_w_archive_card"
+        ],
+        "due": [
+          "dev_w_archive_card"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s5",
+        "time": "17:00",
+        "steps_and_evaluator_line": 20,
+        "final_choose_raw_call_line": 21,
+        "visible_current": "Someone mentions archive cards in passing, but no new request or trigger is present.\nA) Finish filing\nB) Lock the desk\nC) Turn off the lamp\n\nStep action menu:\n- task_6: Wipe a cabinet handle.\n- task_1: Count spare clips.\n- task_4: Check your shoelaces.\n\nTime: 17:00 | Stopwatch: 540 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    ],
+    "A1": [
+      {
+        "step_id": "dev_w_s1",
+        "time": "08:00",
+        "steps_and_evaluator_line": 16,
+        "final_choose_raw_call_line": 16,
+        "visible_current": "A new day begins with ordinary filing and no relevant trigger.\nA) Open the blinds\nB) Arrange the chairs\nC) Check the floor\n\nStep action menu:\n- task_8: File the blue archive card.\n- task_1: Count spare clips.\n- task_11: Hang the visitor badge.\n- task_12: Sort colored pencils.\n- task_3: Fold an empty wrapper.\n\nTime: 08:00 | Stopwatch: 0 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s2",
+        "time": "10:00",
+        "steps_and_evaluator_line": 17,
+        "final_choose_raw_call_line": 17,
+        "visible_current": "The brass cabinet shifts with a dull scrape but does not click. The east gate remains closed.\nA) Look toward the cabinet\nB) Continue filing\nC) Move a box\n\nStep action menu:\n- task_5: Refill an empty cup.\n- task_8: File the blue archive card.\n- task_7: Move a spare cushion.\n- task_10: Align the desk stapler.\n- task_11: Hang the visitor badge.\n\nTime: 10:00 | Stopwatch: 120 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s3",
+        "time": "12:00",
+        "steps_and_evaluator_line": 18,
+        "final_choose_raw_call_line": 18,
+        "visible_current": "The east gate opens for visitors.\nA) Check the entrance\nB) Set down the folder\nC) Move to the desk\n\nStep action menu:\n- task_8: File the blue archive card.\n- task_9: Stack unused coasters.\n- task_6: Wipe a cabinet handle.\n- task_11: Hang the visitor badge.\n- task_12: Sort colored pencils.\n\nTime: 12:00 | Stopwatch: 240 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [
+          "dev_w_hang_badge"
+        ],
+        "due": [
+          "dev_w_hang_badge"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s4",
+        "time": "15:00",
+        "steps_and_evaluator_line": 19,
+        "final_choose_raw_call_line": 19,
+        "visible_current": "The brass cabinet finally clicks into its unlocked position.\nA) Open the cabinet\nB) Inspect the hinge\nC) Clear the shelf\n\nStep action menu:\n- task_2: Read the wall poster.\n- task_6: Wipe a cabinet handle.\n- task_8: File the blue archive card.\n- task_5: Refill an empty cup.\n\nTime: 15:00 | Stopwatch: 420 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [
+          "dev_w_archive_card"
+        ],
+        "due": [
+          "dev_w_archive_card"
+        ],
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "step_id": "dev_w_s5",
+        "time": "17:00",
+        "steps_and_evaluator_line": 20,
+        "final_choose_raw_call_line": 20,
+        "visible_current": "Someone mentions archive cards in passing, but no new request or trigger is present.\nA) Finish filing\nB) Lock the desk\nC) Turn off the lamp\n\nStep action menu:\n- task_6: Wipe a cabinet handle.\n- task_1: Count spare clips.\n- task_4: Check your shoelaces.\n\nTime: 17:00 | Stopwatch: 540 min",
+        "monday_archive_note_present": true,
+        "tuesday_badge_note_present": true,
+        "wednesday_header": "=== Wednesday ===\nToday's immediate intentions:\n- none.",
+        "selected": [],
+        "due": [],
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    ]
+  },
+  "task_selections_identical": true,
+  "usage_informed_pre_run_estimate_usd": 0.03935938,
+  "conservative_pre_run_allowance_usd": 0.63708409,
+  "api_response_cost_total_usd": 0.03047594,
+  "usage_uncached_price_estimate_total_usd": 0.03596234000000001,
+  "verified_billed_cost_usd": null,
+  "final_cumulative_budget": {
+    "attempts": 41,
+    "ceiling_usd": 0.7,
+    "policy": "Reservations are conservative estimates, not a guaranteed billing cap; missing costs remain unavailable.",
+    "reported_cost_subtotal_usd": 0.03047594,
+    "reported_cost_usd": 0.03047594,
+    "reserved_estimate_usd": 0.06868424000000001,
+    "unreported_attempts": 0
+  },
+  "billable_preflight_requests": 0,
+  "experimental_deviations": [],
+  "artifact_sha256": {
+    "results/followup_v1/live-pair-bdf241965f35/A0-config.json": "f7cd7e0d19d4ccec5aaab96cefdef83b047f534821aed9469050c1f949ee6de9",
+    "results/followup_v1/live-pair-bdf241965f35/A1-config.json": "634fa04eafb9c6347bad9ea3bf6db62d01006c76baa84df49411db7e7ad64758",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/actions.jsonl": "b6d5a90efedcb43714a5cc7838a385f0e62126690efdd1d6108c0eebbd5e52ac",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/config.json": "d709ec555e0317547174291aa5d7d64e516c5fba75559a56243aa50e84021ef4",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/evaluator.jsonl": "f1c5e815afb0e595704a73dbecc073beb66337021bb1a94ae25571d98757a31b",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/manifest.json": "6f6a6f07cd601ee68617082111db4c6bfdc17214cf59b77b01ad7c4025fecd5a",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/raw_model_calls.jsonl": "b26dc18387d4d9ae7e02678c1ce1aca5be6796dc9fecc4c73a0a890b2f991099",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/scenario.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/score.json": "15cd4d67df0926f87a1a498f55e2ad181ea69f54d0e511eb1796f6f1e0a018de",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/steps.jsonl": "77b145b29835e086f0c7d8655d2bdd0e606c3b97146e6def07e20db32bf4522b",
+    "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a/system_prompt.txt": "a92e6af5cfc6bd7839a0b3ffc00022eb6b332a85ac0e292c61629f5c8a663c38",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/actions.jsonl": "f767a9f393032ea1b102098d8a5ea4dec42d6dc0d103aa3d358059aa6b37ce0a",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/addendum.txt": "fcbb7048bb57c0046caeb7246c83470a7980129fe27b4c413a09f80b4200651a",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/baseline_template.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/config.json": "677620e2cc39bbe28de6e01732354a0580cb6983ed975b8b9b31502a1d747499",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/evaluator.jsonl": "f1c5e815afb0e595704a73dbecc073beb66337021bb1a94ae25571d98757a31b",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/manifest.json": "8b0f624ab042a23b49bfa8e42b7a33b7a376c9e5a25928d423fb6742a9458469",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/raw_model_calls.jsonl": "20b70fcd52a0f6e0c6f9dd4f720451ad71c26bdf88f4f4780473134de215c046",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/scenario.json": "532486afa5c79a902791d6a6bcfb789b6b7b1dcb8a1a60c307b9dc5e1dbcc2a4",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/score.json": "02406c5c49c83b6ec012a2d59dd67368ae3e132a3b38bfe2c843cdac3ea4c5db",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/steps.jsonl": "1464a5342106e4844810ccbb29e9c254e21bdd27e55c8d23217def5655b00658",
+    "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513/system_prompt.txt": "3d8cc7b0a81f5d6ddfa56d526d3299d6582365fdf6e5a5515ca62c53ad9a02b4",
+    "results/followup_v1/live-pair-bdf241965f35/pair.json": "0df1da314460b006fa6b85aba7665208f449af848ab10c47c0322cfe6be917f6",
+    "results/followup_v1/protocol_snapshot.json": "b713600174e643fa38c9a3fb582830f3c465d472f1617d65f8d6675ea1ae016e",
+    "results/followup_v1/study.json": "ec39f09d090308760b230c726b4606eaaefa40fbac14fd981f7119e64e363131"
+  }
+}

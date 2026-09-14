@@ -1,0 +1,1206 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ykwc53",
+    "id": "ykwc53",
+    "slide": 13,
+    "layoutId": "84be554d-51ce-4c6b-b4ed-99e12a01d5d1",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "d5908a08-ba3f-426a-8d9f-f0664d16b025",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "84be554d-51ce-4c6b-b4ed-99e12a01d5d1",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "d5908a08-ba3f-426a-8d9f-f0664d16b025",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "d5908a08-ba3f-426a-8d9f-f0664d16b025",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cz61o7y9",
+      "id": "1",
+      "name": "source-13:10-1",
+      "bbox": [
+        64,
+        30,
+        240,
+        25
+      ],
+      "geometry": "rect",
+      "text": "РЕЗЕРВ C",
+      "textPreview": "РЕЗЕРВ C",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Arial",
+        "color": "#4D6CB5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "РЕЗЕРВ C"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "РЕЗЕРВ C",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Arial",
+            "color": "#4D6CB5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "РЕЗЕРВ C",
+              "fontSize": 17,
+              "typeface": "Arial",
+              "color": "#4D6CB5",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byxkf2ho",
+      "id": "2",
+      "name": "source-13:2-1",
+      "bbox": [
+        64,
+        76,
+        1120,
+        59
+      ],
+      "geometry": "rect",
+      "text": "Диагностика и её ограничения",
+      "textPreview": "Диагностика и её ограничения",
+      "resolvedFontSize": 37,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 37,
+        "typeface": "Arial",
+        "color": "#171A21",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Диагностика и её ограничения"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Диагностика и её ограничения",
+          "resolvedTextStyle": {
+            "fontSize": 37,
+            "typeface": "Arial",
+            "color": "#171A21",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Диагностика и её ограничения",
+              "fontSize": 37,
+              "typeface": "Arial",
+              "color": "#171A21",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adojmxg3",
+      "id": "3",
+      "name": "source-13:5-1",
+      "bbox": [
+        1188,
+        48,
+        28,
+        26
+      ],
+      "geometry": "rect",
+      "text": "C",
+      "textPreview": "C",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#666C78",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "C"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "C",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#666C78",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "C",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#666C78",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcf2dszi",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B6BEC9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ob61knyx",
+      "id": "5",
+      "name": "source-13:4-1",
+      "bbox": [
+        64,
+        680,
+        1152,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Источники: статья, § 5.3; comparison-v1, сценарии revision; semantic_review.json",
+      "textPreview": "Источники: статья, § 5.3; comparison-v1, сценарии revision; semantic_review.json",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Arial",
+        "color": "#666C78",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Источники: статья, § 5.3; comparison-v1, сценарии revision; semantic_review.json"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Источники: статья, § 5.3; comparison-v1, сценарии revision; semantic_review.json",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Arial",
+            "color": "#666C78",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Источники: статья, § 5.3; comparison-v1, сценарии revision; semantic_review.json",
+              "fontSize": 16,
+              "typeface": "Arial",
+              "color": "#666C78",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/y58rudo3",
+      "id": "6",
+      "bbox": [
+        64,
+        189,
+        1152,
+        259
+      ],
+      "text": "Счётчик | A0 | B_ledger | A2\nЗапросы скрытого канала | 15 | 8 | 18\nУспехи с опорой на запрос | 6 | 4 | 3\nОшибки проверки выбора | 2 | 24 | 15",
+      "textPreview": "Счётчик | A0 | B_ledger | A2 | Запросы скрытого канала | 15 | 8 | 18 | Успехи с опорой на запрос | 6 | 4 | 3 | Ошибки проверки выбора | 2...",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            64,
+            189,
+            637,
+            64.75
+          ],
+          "text": "Счётчик",
+          "textPreview": "Счётчик",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Счётчик",
+              "resolvedTextStyle": {
+                "fontSize": 20,
+                "typeface": "Arial",
+                "color": "#666C78",
+                "bold": true,
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Счётчик",
+                  "fontSize": 20,
+                  "typeface": "Arial",
+                  "color": "#666C78",
+                  "bold": true,
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            701,
+            189,
+            171,
+            64.75
+          ],
+          "text": "A0",
+          "textPreview": "A0",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "A0",
+              "resolvedTextStyle": {
+                "fontSize": 20,
+                "typeface": "Arial",
+                "color": "#666C78",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "A0",
+                  "fontSize": 20,
+                  "typeface": "Arial",
+                  "color": "#666C78",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            872,
+            189,
+            172,
+            64.75
+          ],
+          "text": "B_ledger",
+          "textPreview": "B_ledger",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "B_ledger",
+              "resolvedTextStyle": {
+                "fontSize": 20,
+                "typeface": "Arial",
+                "color": "#666C78",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "B_ledger",
+                  "fontSize": 20,
+                  "typeface": "Arial",
+                  "color": "#666C78",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            1044,
+            189,
+            172,
+            64.75
+          ],
+          "text": "A2",
+          "textPreview": "A2",
+          "fillColor": "#F4F6FA",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "A2",
+              "resolvedTextStyle": {
+                "fontSize": 20,
+                "typeface": "Arial",
+                "color": "#4D6CB5",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "A2",
+                  "fontSize": 20,
+                  "typeface": "Arial",
+                  "color": "#4D6CB5",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            64,
+            253.75,
+            637,
+            64.75
+          ],
+          "text": "Запросы скрытого канала",
+          "textPreview": "Запросы скрытого канала",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Запросы скрытого канала",
+              "resolvedTextStyle": {
+                "fontSize": 25,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Запросы скрытого канала",
+                  "fontSize": 25,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            701,
+            253.75,
+            171,
+            64.75
+          ],
+          "text": "15",
+          "textPreview": "15",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "15",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "15",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            872,
+            253.75,
+            172,
+            64.75
+          ],
+          "text": "8",
+          "textPreview": "8",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "8",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "8",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            1044,
+            253.75,
+            172,
+            64.75
+          ],
+          "text": "18",
+          "textPreview": "18",
+          "fillColor": "#F4F6FA",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "18",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#4D6CB5",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "18",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#4D6CB5",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            64,
+            318.5,
+            637,
+            64.75
+          ],
+          "text": "Успехи с опорой на запрос",
+          "textPreview": "Успехи с опорой на запрос",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Успехи с опорой на запрос",
+              "resolvedTextStyle": {
+                "fontSize": 25,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Успехи с опорой на запрос",
+                  "fontSize": 25,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            701,
+            318.5,
+            171,
+            64.75
+          ],
+          "text": "6",
+          "textPreview": "6",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "6",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "6",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            872,
+            318.5,
+            172,
+            64.75
+          ],
+          "text": "4",
+          "textPreview": "4",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            1044,
+            318.5,
+            172,
+            64.75
+          ],
+          "text": "3",
+          "textPreview": "3",
+          "fillColor": "#F4F6FA",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "3",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#4D6CB5",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "3",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#4D6CB5",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            64,
+            383.25,
+            637,
+            64.75
+          ],
+          "text": "Ошибки проверки выбора",
+          "textPreview": "Ошибки проверки выбора",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Ошибки проверки выбора",
+              "resolvedTextStyle": {
+                "fontSize": 25,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "left"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Ошибки проверки выбора",
+                  "fontSize": 25,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            701,
+            383.25,
+            171,
+            64.75
+          ],
+          "text": "2",
+          "textPreview": "2",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            872,
+            383.25,
+            172,
+            64.75
+          ],
+          "text": "24",
+          "textPreview": "24",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "24",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#171A21",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "24",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#171A21",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            1044,
+            383.25,
+            172,
+            64.75
+          ],
+          "text": "15",
+          "textPreview": "15",
+          "fillColor": "#F4F6FA",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "15",
+              "resolvedTextStyle": {
+                "fontSize": 28,
+                "typeface": "Arial",
+                "color": "#4D6CB5",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "15",
+                  "fontSize": 28,
+                  "typeface": "Arial",
+                  "color": "#4D6CB5",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/294jixg7",
+      "id": "7",
+      "name": "source-13:7-1",
+      "bbox": [
+        64,
+        478,
+        1152,
+        77
+      ],
+      "geometry": "rect",
+      "text": "Больше запросов не означает больше успешных действий.\nОшибки проверки не равны числу ошибочных намерений.",
+      "textPreview": "Больше запросов не означает больше успешных действий. | Ошибки проверки не равны числу ошибочных намерений.",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 26,
+        "typeface": "Arial",
+        "color": "#171A21",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Больше запросов не означает больше успешных действий."
+          },
+          {
+            "index": 2,
+            "text": "Ошибки проверки не равны числу ошибочных намерений."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Больше запросов не означает больше успешных действий.",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Arial",
+            "color": "#171A21",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Больше запросов не означает больше успешных действий.",
+              "fontSize": 26,
+              "typeface": "Arial",
+              "color": "#171A21",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Ошибки проверки не равны числу ошибочных намерений.",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Arial",
+            "color": "#171A21",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ошибки проверки не равны числу ошибочных намерений.",
+              "fontSize": 26,
+              "typeface": "Arial",
+              "color": "#171A21",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18vi9szm",
+      "id": "8",
+      "name": "source-13:8-1",
+      "bbox": [
+        64,
+        572,
+        1152,
+        78
+      ],
+      "geometry": "rect",
+      "text": "Учёт уточнён: 27 поручений = 24 завершённых\nили незавершённых без отменённых + 3 отменённых.",
+      "textPreview": "Учёт уточнён: 27 поручений = 24 завершённых | или незавершённых без отменённых + 3 отменённых.",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Arial",
+        "color": "#4D6CB5",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Учёт уточнён: 27 поручений = 24 завершённых"
+          },
+          {
+            "index": 2,
+            "text": "или незавершённых без отменённых + 3 отменённых."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Учёт уточнён: 27 поручений = 24 завершённых",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Arial",
+            "color": "#4D6CB5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Учёт уточнён: 27 поручений = 24 завершённых",
+              "fontSize": 30,
+              "typeface": "Arial",
+              "color": "#4D6CB5",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "или незавершённых без отменённых + 3 отменённых.",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Arial",
+            "color": "#4D6CB5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "или незавершённых без отменённых + 3 отменённых.",
+              "fontSize": 30,
+              "typeface": "Arial",
+              "color": "#4D6CB5",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/07m1gny1",
+      "id": "9",
+      "name": "source-13:9-1",
+      "bbox": [
+        64,
+        648,
+        1152,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Три отмены подтверждены в сценариях revision. Этот баланс не заменяет Set-F1.",
+      "textPreview": "Три отмены подтверждены в сценариях revision. Этот баланс не заменяет Set-F1.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Arial",
+        "color": "#666C78",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Три отмены подтверждены в сценариях revision. Этот баланс не заменяет Set-F1."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Три отмены подтверждены в сценариях revision. Этот баланс не заменяет Set-F1.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Arial",
+            "color": "#666C78",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Три отмены подтверждены в сценариях revision. Этот баланс не заменяет Set-F1.",
+              "fontSize": 19,
+              "typeface": "Arial",
+              "color": "#666C78",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,375 @@
+{
+  "status": "pass",
+  "recordings": [
+    {
+      "id": "live-pair-bdf241965f35",
+      "title": "frozen-development-v1 \u00b7 live-pair-bdf241965f35"
+    }
+  ],
+  "mode": "RECORDED",
+  "source_mode": "LIVE",
+  "visible_steps": 20,
+  "live_enabled": false,
+  "model_transport_blocked_during_check": true,
+  "reveals": {
+    "12": {
+      "mode": "RECORDED",
+      "label": "Evaluator visualization \u2014 not model internal memory",
+      "conditions": {
+        "A0": {
+          "day": "Tuesday",
+          "due_task_ids": [],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [],
+          "step_id": "dev_t_s4",
+          "tasks": [
+            {
+              "action": "Lock the test chamber.",
+              "id": "dev_t_lock_chamber",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Sign the chamber record.",
+              "id": "dev_t_sign_record",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Acknowledge stable cooling.",
+              "id": "dev_t_ack_cooling",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Publish the corrected manifest.",
+              "id": "dev_t_publish_manifest",
+              "status": "pending",
+              "updated": true
+            },
+            {
+              "action": "Remove the provisional placard.",
+              "id": "dev_t_remove_placard",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Call the calibration desk.",
+              "id": "dev_t_call_calibration",
+              "status": "pending",
+              "updated": false
+            }
+          ],
+          "tp": 0
+        },
+        "A1": {
+          "day": "Tuesday",
+          "due_task_ids": [],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [],
+          "step_id": "dev_t_s4",
+          "tasks": [
+            {
+              "action": "Lock the test chamber.",
+              "id": "dev_t_lock_chamber",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Sign the chamber record.",
+              "id": "dev_t_sign_record",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Acknowledge stable cooling.",
+              "id": "dev_t_ack_cooling",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Publish the corrected manifest.",
+              "id": "dev_t_publish_manifest",
+              "status": "pending",
+              "updated": true
+            },
+            {
+              "action": "Remove the provisional placard.",
+              "id": "dev_t_remove_placard",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Call the calibration desk.",
+              "id": "dev_t_call_calibration",
+              "status": "pending",
+              "updated": false
+            }
+          ],
+          "tp": 0
+        }
+      }
+    },
+    "13": {
+      "mode": "RECORDED",
+      "label": "Evaluator visualization \u2014 not model internal memory",
+      "conditions": {
+        "A0": {
+          "day": "Tuesday",
+          "due_task_ids": [
+            "dev_t_ack_cooling",
+            "dev_t_sign_record"
+          ],
+          "false": [],
+          "fn": 1,
+          "fp": 0,
+          "missed": [
+            "dev_t_ack_cooling"
+          ],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_t_sign_record"
+          ],
+          "step_id": "dev_t_s5",
+          "tasks": [
+            {
+              "action": "Lock the test chamber.",
+              "id": "dev_t_lock_chamber",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Sign the chamber record.",
+              "id": "dev_t_sign_record",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Acknowledge stable cooling.",
+              "id": "dev_t_ack_cooling",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Publish the corrected manifest.",
+              "id": "dev_t_publish_manifest",
+              "status": "pending",
+              "updated": true
+            },
+            {
+              "action": "Remove the provisional placard.",
+              "id": "dev_t_remove_placard",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Call the calibration desk.",
+              "id": "dev_t_call_calibration",
+              "status": "pending",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        },
+        "A1": {
+          "day": "Tuesday",
+          "due_task_ids": [
+            "dev_t_ack_cooling",
+            "dev_t_sign_record"
+          ],
+          "false": [],
+          "fn": 1,
+          "fp": 0,
+          "missed": [
+            "dev_t_ack_cooling"
+          ],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_t_sign_record"
+          ],
+          "step_id": "dev_t_s5",
+          "tasks": [
+            {
+              "action": "Lock the test chamber.",
+              "id": "dev_t_lock_chamber",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Sign the chamber record.",
+              "id": "dev_t_sign_record",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Acknowledge stable cooling.",
+              "id": "dev_t_ack_cooling",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Publish the corrected manifest.",
+              "id": "dev_t_publish_manifest",
+              "status": "pending",
+              "updated": true
+            },
+            {
+              "action": "Remove the provisional placard.",
+              "id": "dev_t_remove_placard",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Call the calibration desk.",
+              "id": "dev_t_call_calibration",
+              "status": "pending",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        }
+      }
+    },
+    "18": {
+      "mode": "RECORDED",
+      "label": "Evaluator visualization \u2014 not model internal memory",
+      "conditions": {
+        "A0": {
+          "day": "Wednesday",
+          "due_task_ids": [
+            "dev_w_hang_badge"
+          ],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_w_hang_badge"
+          ],
+          "step_id": "dev_w_s3",
+          "tasks": [
+            {
+              "action": "File the blue archive card.",
+              "id": "dev_w_archive_card",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Hang the visitor badge.",
+              "id": "dev_w_hang_badge",
+              "status": "completed",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        },
+        "A1": {
+          "day": "Wednesday",
+          "due_task_ids": [
+            "dev_w_hang_badge"
+          ],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_w_hang_badge"
+          ],
+          "step_id": "dev_w_s3",
+          "tasks": [
+            {
+              "action": "File the blue archive card.",
+              "id": "dev_w_archive_card",
+              "status": "pending",
+              "updated": false
+            },
+            {
+              "action": "Hang the visitor badge.",
+              "id": "dev_w_hang_badge",
+              "status": "completed",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        }
+      }
+    },
+    "19": {
+      "mode": "RECORDED",
+      "label": "Evaluator visualization \u2014 not model internal memory",
+      "conditions": {
+        "A0": {
+          "day": "Wednesday",
+          "due_task_ids": [
+            "dev_w_archive_card"
+          ],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_w_archive_card"
+          ],
+          "step_id": "dev_w_s4",
+          "tasks": [
+            {
+              "action": "File the blue archive card.",
+              "id": "dev_w_archive_card",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Hang the visitor badge.",
+              "id": "dev_w_hang_badge",
+              "status": "completed",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        },
+        "A1": {
+          "day": "Wednesday",
+          "due_task_ids": [
+            "dev_w_archive_card"
+          ],
+          "false": [],
+          "fn": 0,
+          "fp": 0,
+          "missed": [],
+          "mode": "LIVE",
+          "selected_task_ids": [
+            "dev_w_archive_card"
+          ],
+          "step_id": "dev_w_s4",
+          "tasks": [
+            {
+              "action": "File the blue archive card.",
+              "id": "dev_w_archive_card",
+              "status": "completed",
+              "updated": false
+            },
+            {
+              "action": "Hang the visitor badge.",
+              "id": "dev_w_hang_badge",
+              "status": "completed",
+              "updated": false
+            }
+          ],
+          "tp": 1
+        }
+      }
+    }
+  },
+  "export_sha256": "ede31ec8bea5dcabcfa4f3b05a688f3a468feb446ee91709cda3d243e70a6042"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "usable_matched_pairs": 1,
+  "model_attempts": 41,
+  "tests_passed": 62,
+  "protected_files_passed": 164,
+  "frozen_protocol_unchanged": true,
+  "original_pilot_raw_and_results_unchanged": true,
+  "raw_archive_files": 28,
+  "deterministic_analysis": true,
+  "api_cost_reconciles_with_saved_usage": true,
+  "verified_billed_cost_usd": null,
+  "model_request_canonical_task_id_scan": "pass",
+  "credential_scan_including_archives": "pass",
+  "recorded_replay": "pass",
+  "browser_replay": "pass",
+  "live_inference_finished": true,
+  "no_additional_inference_authorized": true,
+  "remaining_submission_step": "Author review/transfer of replacement text into Pages and required formatting/signatures; manuscript was not overwritten."
+}

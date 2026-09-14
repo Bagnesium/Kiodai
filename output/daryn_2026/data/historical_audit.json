@@ -1,0 +1,56 @@
+[
+  {
+    "summary": "RESULTS.json",
+    "method": "A0",
+    "folder": "results/kiodai/live-pair-42433e00474b/live-A0-20260908T164420-7848b46b",
+    "artifact_hashes_verified": 10,
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "set_f1": 1.0,
+    "input_tokens": 13819
+  },
+  {
+    "summary": "RESULTS.json",
+    "method": "A1",
+    "folder": "results/kiodai/live-pair-42433e00474b/live-A1-20260908T164420-2fdeb6e6",
+    "artifact_hashes_verified": 11,
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "set_f1": 1.0,
+    "input_tokens": 19179
+  },
+  {
+    "summary": "FOLLOWUP_RESULTS.json",
+    "method": "A0",
+    "folder": "results/followup_v1/live-pair-bdf241965f35/live-A0-20260909T131935-b7f6531a",
+    "artifact_hashes_verified": 10,
+    "tp": 11,
+    "fp": 0,
+    "fn": 1,
+    "set_f1": 0.9565217391304348,
+    "input_tokens": 59171
+  },
+  {
+    "summary": "FOLLOWUP_RESULTS.json",
+    "method": "A1",
+    "folder": "results/followup_v1/live-pair-bdf241965f35/live-A1-20260909T131935-5232d513",
+    "artifact_hashes_verified": 11,
+    "tp": 11,
+    "fp": 0,
+    "fn": 1,
+    "set_f1": 0.9565217391304348,
+    "input_tokens": 68971
+  },
+  {
+    "study": "v2.1 development smoke",
+    "official_counts": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "queries": 7,
+    "successful_receipts": 3
+  }
+]

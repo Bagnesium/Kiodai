@@ -1,0 +1,193 @@
+{
+  "days": [
+    {
+      "lures": [
+        {
+          "action_text": "Register a spare jade91311 sample.",
+          "id": "private_lure_91311_0"
+        },
+        {
+          "action_text": "Discard the jade91311 case.",
+          "id": "private_lure_91311_1"
+        },
+        {
+          "action_text": "Count spare envelopes.",
+          "id": "private_lure_91311_2"
+        },
+        {
+          "action_text": "Align a pen.",
+          "id": "private_lure_91311_3"
+        },
+        {
+          "action_text": "Polish a spare tray.",
+          "id": "private_lure_91311_4"
+        },
+        {
+          "action_text": "Fold a blank card.",
+          "id": "private_lure_91311_5"
+        },
+        {
+          "action_text": "Rearrange a stool.",
+          "id": "private_lure_91311_6"
+        },
+        {
+          "action_text": "Count spare clips.",
+          "id": "private_lure_91311_7"
+        },
+        {
+          "action_text": "Move a cushion.",
+          "id": "private_lure_91311_8"
+        },
+        {
+          "action_text": "Read a wall poster.",
+          "id": "private_lure_91311_9"
+        }
+      ],
+      "name": "DayOne",
+      "start_instructions": [
+        "Today's one-off tasks (new):",
+        "- When you see \"jade91311 hexagon\", Register the jade91311 sample. When you see \"jade91311 lantern\", Seal the jade91311 case."
+      ],
+      "steps": [
+        {
+          "cues": [],
+          "id": "private_step_91311_0",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "08:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91311_1",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "You see a jade91311 circle; it is not a hexagon.",
+          "time": "09:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91311_2",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "For \"Seal the jade91311 case.\" replace the earlier cue with \"jade91311 triangle\".",
+          "time": "10:00",
+          "updates": [
+            {
+              "action": "override",
+              "new_cue_id": "cue_triangle",
+              "task_id": "private_91311_1"
+            }
+          ]
+        },
+        {
+          "cues": [
+            "cue_lantern"
+          ],
+          "id": "private_step_91311_3",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "A jade91311 lantern appears.",
+          "time": "11:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91311_4",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "12:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "cue_hexagon"
+          ],
+          "id": "private_step_91311_5",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "A jade91311 hexagon appears.",
+          "time": "13:00",
+          "updates": []
+        },
+        {
+          "cues": [
+            "cue_triangle"
+          ],
+          "id": "private_step_91311_6",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "A jade91311 triangle appears.",
+          "time": "14:00",
+          "updates": []
+        },
+        {
+          "cues": [],
+          "id": "private_step_91311_7",
+          "options": [
+            "A) Read the notice",
+            "B) Sort stationery",
+            "C) Check a spelling"
+          ],
+          "text": "Discuss unrelated stationery prices.",
+          "time": "15:00",
+          "updates": []
+        }
+      ],
+      "tasks": [
+        {
+          "action_text": "Register the jade91311 sample.",
+          "cue_id": "cue_hexagon",
+          "encoding": "start",
+          "id": "private_91311_0",
+          "label": "Register the jade91311 sample.",
+          "regular": false,
+          "type": "event"
+        },
+        {
+          "action_text": "Seal the jade91311 case.",
+          "cue_id": "cue_lantern",
+          "encoding": "start",
+          "id": "private_91311_1",
+          "label": "Seal the jade91311 case.",
+          "regular": false,
+          "type": "event"
+        }
+      ]
+    }
+  ],
+  "scenario_name": "v2_visible_events_91311",
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    }
+  },
+  "state_visibility": {
+    "clock": true
+  },
+  "time_visible_by_default": true
+}

@@ -1,0 +1,24 @@
+{
+  "identifier": "v2.1-comparison-v1",
+  "command": "python3 scripts/run_v21_comparison.py --live --authorize-study v2.1-comparison-v1 --budget-usd 20.00 --env-file .env",
+  "execution_commit": "cd0ce89e10d036918d1af06e5f5f2140930a0981",
+  "started_at_utc": "2026-09-11T07:57:27.608Z",
+  "finished_at_utc": "2026-09-11T09:11:23.296Z",
+  "exit_code": 0,
+  "once_only": true,
+  "prior_funding_block_model_calls": 0,
+  "additional_inference_after_run": false,
+  "implementation_changes": false,
+  "paid_inference_ceiling_usd": 20,
+  "budget": {
+    "api_response_cost_usd": 0.45130261,
+    "attempts": 602,
+    "ceiling_usd": 20.0,
+    "reported_subtotal_usd": 0.45130261,
+    "reserved_usd": 9.138024960000001,
+    "unknown_cost_attempts": 0,
+    "verified_billed_cost_usd": null
+  },
+  "original_file_inventory": "research/v2_1/live_comparison_v1_inventory.json",
+  "analysis_policy": "Original 445 files archived before annotations or supplementary reports. All 36 scoreable units retained; 24 ledger and 12 baseline traces reviewed. No independent semantic annotator or verified billing."
+}

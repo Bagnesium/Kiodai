@@ -1,0 +1,196 @@
+{
+  "branch": "codex/kiodai-v2.1-extraction",
+  "changes_from_v2": [
+    "Versioned shared trigger/operation contract and prompt contrasts",
+    "Unknown records quarantined; exact duplicate checks and obligation provenance routing",
+    "Eligible binding IDs in selection schema and specific bounded retry feedback",
+    "Additive outcome/request/version metadata; historical source verification; one-method report scope"
+  ],
+  "configuration": {
+    "cap_usd": 1.0,
+    "context": "full history",
+    "heartbeat": false,
+    "max_queries_per_step": 1,
+    "max_request_bytes": 48000,
+    "max_validation_retries": 1,
+    "methods": [
+      "A2"
+    ],
+    "model": {
+      "allow_route_fallbacks": false,
+      "api_key_env": "OPENROUTER_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model_id": "deepseek/deepseek-chat-v3.1",
+      "pricing_usd_per_million_tokens": {
+        "input": 0.27,
+        "output": 1.0
+      },
+      "provider": "openrouter",
+      "quantizations": [
+        "fp8"
+      ],
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "require_parameters": true,
+      "route": "novita"
+    },
+    "order": "one complete v2_hidden_91320 A2 trajectory",
+    "output_tokens": {
+      "baseline": 256,
+      "extract": 3072,
+      "select": 1536
+    },
+    "repetitions": 1,
+    "sampling": {
+      "seed": 20260904,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "timeout_seconds": 120,
+    "transport_retries": 0,
+    "version": "v2.1-deepseek-smoke-v1"
+  },
+  "cost": {
+    "all_calls_retry_sensitivity_usd": 0.12188693724270522,
+    "budget_formula": "8 * (2 * ((48000+1024)*0.27 + 3072)/1e6 + 2 * ((48000+1024)*0.27 + 1536)/1e6)",
+    "call_breakdown": "8 extraction + 8 selection opportunities, each with at most 1 retry. A2 controller queries incur no extra model invocation; tool evidence enters that checkpoint selection.",
+    "candidate_ceiling_usd": 1.0,
+    "caveat": "Planning only. Token/byte ratio comes from the failed live smoke; populated-ledger sizes come from a restricted-language mock. No live extraction improvement or tokenizer upper bound is inferred.",
+    "conservative_allowance_usd": 0.49729536,
+    "guard_note": "Durable reservations for every attempt, never refunded. Oversized requests stop before inference, without truncation. A conservative allowance is not a guarantee that all possible histories fit the byte limit.",
+    "input_growth_margin": 1.35,
+    "input_token_per_request_byte_ratio": 0.24309721843468776,
+    "maximum_actual_mock_request_bytes": 21190,
+    "maximum_model_attempts": 32,
+    "maximum_tool_queries": 8,
+    "output_assumptions": {
+      "extract": 750,
+      "select": 256
+    },
+    "output_limits_unchanged": true,
+    "projected_calls_without_retries": 16,
+    "projected_input_tokens": 88777,
+    "projected_output_tokens": 8048,
+    "request_limit_bytes": 48000,
+    "retry_sensitivity_assumptions": {
+      "extra_attempts_per_call": 1,
+      "feedback_framing_bytes": 2048,
+      "previous_output_bytes_per_token": 8,
+      "retry_output": {
+        "baseline": 256,
+        "extract": 3072,
+        "select": 1536
+      }
+    },
+    "sources": {
+      "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/calls.jsonl": "c87f7a250f837f3ba832fc1aa9815aa690a872aefdce1b218ce0d984a4a7f68f",
+      "results/v2_1/offline-repair-v1/v2_hidden_91320/A2/calls.jsonl": "ca11c1ce68d37ea3be6def040d27b2f183b882935fcc8a20617e55a4f68e155d"
+    },
+    "usage_informed_projection_usd": 0.032017780527542956
+  },
+  "decision_rule": "Report scoreability separately from integration criteria. A perfect score is not required for a scoreable run. Retain all failures and official TP/FP/FN; no selective rerun. At most narrow integration feasibility, never reliability or superiority.",
+  "exposure": "Already-inspected development trajectory including the failed live smoke. Not held-out evidence.",
+  "extraction_schema_sha256": "00ed9e5cbd6c2f1c6b00dad2cc7115df277cddaa424c0da3b5d620712a274ed1",
+  "fresh_authorization_required": true,
+  "full_study": "The old 12-trajectory freeze does not authorize or describe v2.1. Any later full study needs its own matching implementation/configuration freeze and explicit authorization.",
+  "hashes": {
+    "configs/v21_deepseek_smoke_v1.json": "7561210aa7c0572fc282efbc4b75e8b19adea330c8077f1207a27887a8cce34a",
+    "data/v2/v2_hidden_91320.json": "579d0d522ca8e85790dea6da25f3903c874950ba0463147c8bd901e8802280a4",
+    "kiodai_v2/__init__.py": "f6d9ce0bc9366dd9c4978080875daeecb9953c386a3048411c44b913979f2e7e",
+    "kiodai_v2/agent.py": "eb8050b378e719e0b8b537488332e4d074eb380f91c814c9132e545da4e29e05",
+    "kiodai_v2/common.py": "59427d065c68be3d1011c92612e78159e4372f04f896c2fbbe0456c9db08e829",
+    "kiodai_v2/contract.py": "9d66c5acbee6692a8af97d24754b2e4d0aa046523c0bd31d56a0d998d49be488",
+    "kiodai_v2/dashboard.py": "005ab4b011221162f4657ee8e974d36f1302342ed0e450ebae9301012bd41f22",
+    "kiodai_v2/fixture.py": "a39e95840bf94455f51eaab6957904c7a3fef542b2337b2619a7e7c3bd91a0ec",
+    "kiodai_v2/gateway.py": "cf083a7f1de65486590313d959da19c85603e535504309ef3105b35d09e48902",
+    "kiodai_v2/local.py": "0d89f2128d13412307547d0bf9c4dfcbc76373b823b0f5b3e8019acb66f9316e",
+    "kiodai_v2/report.py": "1249f419e573f7c88f46695f876aaaee4bdb667bba4782ae0390177b9a4d0ed6",
+    "kiodai_v2/runner.py": "652ed5c0ebbb0ec226a085fefe35ada6a3aa3735eeaa958f6757f6c903a237b3",
+    "kiodai_v2/store.py": "3418a57b85ca68402556a5acff639b1c83decd75bbe580b4bdd7040967da5e14",
+    "prompts/baseline_system.txt": "3c729b644820e3b618534da0de52162d2a70a3f9fd4237f6650fdb7849e1dc32",
+    "prompts/v2_1/extract.txt": "577d64bad3e9b33c827785b6370c26a3b35794f8a180a641fb80ef8bbed4dff7",
+    "prompts/v2_1/select.txt": "0693e7c90b6a8b3b0e490028227368cc8c17635251c8a27e72132691b9a1360c",
+    "research_harness/__init__.py": "e42f53bf3e474078092cc940e15778d9882e44a9cecbcd975345cc48e38cb0e2",
+    "research_harness/analysis.py": "ab0d57fc05dde4e4f9f2e3ae1146021ef397987cbd41fd2db9222161d319fdb7",
+    "research_harness/config.py": "00088b3cbf91d0f70b378fd0918ce99f1396e294cb32ed440ab9e7b14c5cf595",
+    "research_harness/dashboard.py": "9d342afec9b6210de3633764641ebb6085eeeafa5bc662ff48146ffa3995c93f",
+    "research_harness/demo_transport.py": "72f9c8233b562d56b307d093997eb8b15245089e125fbd57baa5bc4cffdce069",
+    "research_harness/followup.py": "0a913e8200ed779d18bacbdc2b44e81ed4d804ed55b11f00e2200a2fb842eb9d",
+    "research_harness/hashing.py": "75a2b83279a66c7bd1761b75c1ed78ebd1282c97a416a995bfb6a339af5d0f9d",
+    "research_harness/live.py": "13b78f373ca4af3c427818544e43dbe1e5608041f4aeef6860c63ed73cd65bb3",
+    "research_harness/model_gateway.py": "6e978d10ee4606dee84b7d290ada28a60c91d1887bdc35bbdf822d8351bd5cfe",
+    "research_harness/paired.py": "9ae394d3b0eb3e76fa1a7090819c63a9024f04aad198d9974f8b16795f74c9f9",
+    "research_harness/runner.py": "4af0f4cc3b27215d8a26ef58c95a7e6409eecaa41eac614aff605018564a9567",
+    "research_harness/session.py": "cedc460ba57d7617dbf0fb7cbf59dafe14919ba314a6e08f06cb64615bf58d74",
+    "scripts/run_v2.py": "9915eaecab1b652189d3a8180a8069fb70e1404403d5f03111d0cdc79aa4b3be",
+    "scripts/run_v21_smoke.py": "eac9d762d17a127e8c26642f66c09c33206a220f1eb07661903c627f2baac959",
+    "scripts/run_v2_smoke.py": "1fa393b669436f64d7ca6b19439c22e960a63f3bf3b7c1a75d542523fb9f9473",
+    "scripts/verify_saved_smoke.py": "b5345b7e349f076b287604badcb3de7303afd3e982bf9be5986af5202143ed17",
+    "scripts/verify_v21_offline.py": "0e7cc6bdfadb6dff236235cc34f78b6d7f4be7a7b011a98a414a327e6cf3c47b",
+    "sim/pm_bench.py": "d8ec27d8dcf4679d7a789c52fc305286df460844d47e9f116b81f2400ac254d8",
+    "tests/fixtures/v21_failed_smoke_minimized.json": "da8dd30d65f31e86efde5c3bdaca9bc55b8ad9d5d36623047157265d194c4995",
+    "tests/test_development_smoke.py": "c0514cfef97794cc315cc241f5d5f49886c25fb1567ed25aefd7cfb44230ca28",
+    "tests/test_saved_smoke_integrity.py": "cd071881cf2d75887506f9f6ec59224937e0491f6cc34597d80456e50ddc1958",
+    "tests/test_v2.py": "5afc0433ba0acba07e2c7236bc1a0e40e1086cd6139b07e3ad463e9aca35f171",
+    "tests/test_v21_extraction.py": "2b191c332b0bfc1071d234b75075f76e62a50ee22ae27f4a7d57ebd8c7b498d8",
+    "tests/test_v21_smoke.py": "6d148146182816c8fa9a5fb8575c6b2c05acfd05804cdb3bb8dfd598354e231b"
+  },
+  "hypothesis": "The shared extraction contract can admit supported intentions, reject unsupported menu-only creation, and allow the existing A2 monitor, selector and receipt lifecycle to operate in one complete real-model trajectory.",
+  "implementation_commit": "959db38dac8b68f63ecf79420dcd53bea2278cf2",
+  "live_command_requires_fresh_authorization": "python3 scripts/run_v21_smoke.py --live --authorize-new-smoke v2.1-deepseek-smoke-v1 --budget-usd 1.00 --env-file .env",
+  "new_live_inference_authorized": false,
+  "observable_criteria": [
+    "All 8 checkpoints logged; incomplete trajectory is reported incomplete, no imputed actions.",
+    "Supported instructions create traceable intentions; compare actual ledger action/trigger/dependency fields with legitimate source observations.",
+    "No intention is created solely from a menu, hypothetical or quoted third-party instruction; manually inspect semantic support, not only source matching.",
+    "Each validation failure/retry/empty update is visible and accounted; no silent fallback success.",
+    "Monitor tickets reference actual eligible ledger IDs/versions and permitted channels; negative evidence can be followed by a later permitted check.",
+    "Selected handles are bound to current intentions and supported by available current evidence; missing/negative evidence is not fabricated.",
+    "Completion occurs only after a successful simulator receipt; dependencies remain blocked until prerequisite completion."
+  ],
+  "output": "results/v2_1/deepseek-smoke-v1",
+  "preflight_command": "python3 scripts/run_v21_smoke.py --preflight",
+  "provider_capabilities": {
+    "advertised_structured_outputs": "Observed in saved pinned-route metadata; not refreshed with credentials in this repair.",
+    "documentation_checked": [
+      "https://docs.novita.ai/guides/llm-structured-outputs",
+      "https://github.com/OpenRouterTeam/docs/blob/main/guides/features/structured-outputs.mdx"
+    ],
+    "exact_keyword_acceptance_and_enforcement": "UNVERIFIED on the pinned endpoint; local enforcement tested independently. Public docs do not certify these keywords for this exact route. No inference probe performed.",
+    "failure_policy": "Future authorized launcher checks nonbillable route metadata over verified TLS; no fallback or schema relaxation. Any transport/API rejection stops and retains reservation.",
+    "new_schema_keywords": [
+      "$defs",
+      "$ref",
+      "anyOf",
+      "pattern",
+      "minimum",
+      "minItems"
+    ],
+    "pinned": "deepseek/deepseek-chat-v3.1 via OpenRouter, Novita only, fp8, no fallbacks, require_parameters=true, reasoning disabled/excluded",
+    "saved_metadata": "results/v2/deepseek-smoke-v1/route_and_key_preflight.json"
+  },
+  "revision": "v2.1-deepseek-smoke-v1",
+  "scenario": "data/v2/v2_hidden_91320.json",
+  "selection_binding_template_sha256": "9ec8daf21b0970888a93fb910a1451f066f1f9bd1a2d5705baa30930508916d3",
+  "selection_schema_note": "Binding intention/handle enums and empty-ledger array limits are derived only from the public ledger/menu. Exact per-request schemas are logged.",
+  "status": "prepared_not_executed",
+  "unchanged": [
+    "Model/provider/quantization/sampling/reasoning/fallback settings",
+    "Full-history access and observation/checkpoint sequence",
+    "One query per checkpoint, heartbeat disabled, monitoring scheduling policy",
+    "Execution receipts and official scorer; historical A0/A1 prompts and artifacts"
+  ],
+  "validation": {
+    "context": "Exact cited spans, non-menu visible obligation source, field evidence, available channels, current versions, dependencies and receipt lifecycle.",
+    "empty_updates": "Accepted empty update distinguished from accepted operations, rejection, retry exhaustion and transport failure in every response log.",
+    "exhaustion": "Explicit fail-closed checkpoint with no task action; retained validation failures. Transport failure stops the study.",
+    "max_validation_retries": 1,
+    "semantics": "Single extractor interprets delegation/action/trigger; no deterministic entailment guarantee. Narrative hypothetical test intentionally demonstrates the limit.",
+    "structure": "One shared JSON Schema in contract.py; common.validate enforces its local subset for parse and Store.apply.",
+    "transaction": "Entire extraction batch atomic; any rejection rolls back all operations/events. No partial acceptance.",
+    "transport_retries": 0,
+    "unresolved": "Supported unknown-trigger records quarantined; no action or polling until resolved by revision."
+  }
+}

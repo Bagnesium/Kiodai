@@ -1,0 +1,1688 @@
+{
+  "scope": "Manual review of saved genuine completed cases only; never an agent input or replacement scorer. Findings include absent stored intentions after rejected extraction batches, separately explained from semantic understanding.",
+  "cases": [
+    {
+      "trajectory": "v2_hidden_91320",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 17 response drafts, action bindings and stored snapshots inspected. Cp1/2 extraction batches contained all three instructed actions but used nonexistent prerequisite placeholders; atomic application rejected each full batch, leaving no stored intentions until cp3. This is an application/storage omission, not evidence that the model failed to identify those actions in language. Cp3 omitted the sealing dependency; cp4 corrected it. No unsupported/distractor action intention or quarantined stored record observed. Cp7 selection attempted late registration plus dependency-ineligible sealing; retry bound sealing to the registration intention and was rejected. These rejected selection errors are documented separately from stored extraction fidelity. No task actions or receipts occurred.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:3"
+          ],
+          "notes": "Register intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:3"
+          ],
+          "notes": "Seal intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_2",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:3"
+          ],
+          "notes": "Archive intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_d1449d3ad46683d8",
+          "obligation": "DayOne/private_91320_1",
+          "first_checkpoint": 3,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:3",
+            "results/v2_1/comparison-v1/v2_hidden_91320/A2/steps.jsonl:4"
+          ],
+          "notes": "Accepted creation omitted the explicitly required successful registration dependency. Revision at cp4 linked i_36ff23e32fe6eeab while retaining condition/channel. Registration never succeeded, so sealing never became officially due; repair is not a successful pre-due completion.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "All six board checks address still-unfinished hidden obligations. Cp7 supplied the positive state but selections failed; other checks were negative. No query was demonstrably redundant from public evidence/lifecycle. This does not establish the optimal/minimal polling count; no immediate hit is not synonymous with unnecessary."
+      }
+    },
+    {
+      "trajectory": "v2_hidden_91320",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 19 response drafts, bindings and stored lifecycle inspected. Cp1/2 contain instructed action drafts but invalid dependency placeholders reject both batches; cp3 stores all three after registration time. Cp3 omits the sealing prerequisite; cp4 adds it but drops the known trigger/condition/channel, quarantining sealing through cp7. Cp8 restores the known hidden predicate; registration never succeeded, so sealing remains blocked. No unsupported/distractor intention observed. Cp3 late registration proposal is rejected for stale evidence; retry does nothing. Cp7 queries the board once and correctly archives with a successful receipt. Cp8 missing bindings field is corrected by the allowed retry.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Register intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Seal intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91320_2",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Archive intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_d1449d3ad46683d8",
+          "obligation": "DayOne/private_91320_1",
+          "first_checkpoint": 3,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:3",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Accepted creation at cp3 omitted the required registration-success dependency. Cp4 added its stored ID, but separately regressed the trigger fields. Registration never succeeded, so sealing never became due.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "missing_required_field",
+          "intention_id": "i_d1449d3ad46683d8",
+          "obligation": "DayOne/private_91320_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 8,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/calls.jsonl:34",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:7",
+            "results/v2_1/comparison-v1/v2_hidden_91320/B_ledger/steps.jsonl:8"
+          ],
+          "notes": "While adding the prerequisite, accepted revision changed trigger to unknown and erased the explicitly known condition and board channel. One composite predicate-loss defect, not three independent errors. Quarantined cp4-7; empty updates retained the incomplete representation. Cp8 restored the original hidden condition/channel. Never-due sealing prevents a successful repair-before-due claim.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          7
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "The sole board query obtains the hidden positive state and directly supports the archive action/receipt. No demonstrably unnecessary query. This is an evidence-supported success, not proof of causal internal reliance."
+      }
+    },
+    {
+      "trajectory": "v2_hidden_91321",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 32 response drafts reviewed. First extraction uses an invalid dependency placeholder; its allowed retry creates all three intentions, leaving sealing safely quarantined as unknown. The instruction requires retaining the unresolved prerequisite in condition; accepted condition retains only the cooling predicate (full prerequisite still occurs in sources/trigger evidence). Cp2 resolves the actual dependency and hidden trigger; registration succeeds at cp2 and seal/archive at cp7. Initial quarantine itself is appropriate and is not counted as an error. Ten selection responses omit bindings and are corrected by allowed retries. No unsupported/distractor intention or wrong executed binding observed. No final unresolved record.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_d8864ef851e19237",
+          "obligation": "DayOne/private_91321_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91321/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91321/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91321/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91321/B_ledger/steps.jsonl:2",
+            "prompts/v2_1/extract.txt: Dependencies paragraph"
+          ],
+          "notes": "While safely quarantined as trigger=unknown, the accepted record lacks the unresolved prerequisite in its condition, contrary to the explicit extraction contract. Its sources retain the prerequisite text, so this is incomplete structured representation rather than proof of misunderstanding. Cp2 supplies the assigned dependency ID and resolves the actual hidden trigger, before sealing first becomes due at cp7. Do not count initial quarantine itself as a defect.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "Board queries monitor unfinished hidden obligations; cp3-6 negative and cp7 positive with two receipt-supported actions. No demonstrably unnecessary query; polling optimality unmeasured."
+      }
+    },
+    {
+      "trajectory": "v2_hidden_91321",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 17 response drafts inspected. Cp1/2 batches rejected for invented dependency placeholders, delaying all three stored intentions until cp3 and missing registration at cp2. Cp3 omits sealing dependency, cp4 adds it. No unsupported/distractor created intention and no quarantined stored record. Cp7 query obtains positive state. First selection uses dependency-ineligible sealing ID and is rejected; retry substitutes the eligible registration ID for the seal handle and is accepted. Seal execution fails its prerequisite, archive succeeds. This accepted semantic binding error must not be hidden by mechanically valid IDs/versions. Registration ledger record is marked failed from the seal-handle receipt; it was not a real registration execution.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91321_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:3"
+          ],
+          "notes": "Register intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91321_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:3"
+          ],
+          "notes": "Seal intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91321_2",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:3"
+          ],
+          "notes": "Archive intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_d8864ef851e19237",
+          "obligation": "DayOne/private_91321_1",
+          "first_checkpoint": 3,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:3",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:4"
+          ],
+          "notes": "Accepted creation omitted the explicitly required successful registration dependency. Revision at cp4 linked i_fa9451205b462f12 while retaining condition/channel. Registration never succeeded, so sealing never became officially due; repair is not a successful pre-due completion.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "incorrect_binding",
+          "intention_id": "i_fa9451205b462f12",
+          "obligation": "DayOne/private_91321_1",
+          "first_checkpoint": 7,
+          "repair_checkpoint": null,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/calls.jsonl:30",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/agent.jsonl:12",
+            "results/v2_1/comparison-v1/v2_hidden_91321/A2/steps.jsonl:7"
+          ],
+          "notes": "Accepted retry binds seal handle task_12 to the registration intention i_fa9451205b462f12. The board reading establishes cooling, not a completed registration or action identity. The simulator records sealing as not completed; archive succeeds. This is an action-binding semantic error, separate from extraction; correct schema/ID membership did not establish correct binding.",
+          "layer": "accepted_selection"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "Five checks address unfinished hidden obligations. Cp3-6 negative; cp7 positive supports archive success but not prerequisite-violating sealing. No demonstrably unnecessary query; no optimal-polling claim."
+      }
+    },
+    {
+      "trajectory": "v2_hidden_91322",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 18 response drafts inspected. All three intentions created at cp1. Sealing was incorrectly represented as resolved with no prerequisite; cp2 adds registration ID while preserving known hidden predicate/channel. Registration then succeeds at cp2 and sealing/archive at cp7. Cp2 stale citation and cp6 missing bindings field are corrected by the permitted retries. No unsupported/distractor intention, quarantined stored record or incorrect executed action binding observed.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_32eed3e206a06cd0",
+          "obligation": "DayOne/private_91322_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/A2/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91322/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91322/A2/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91322/A2/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91322/A2/steps.jsonl:2"
+          ],
+          "notes": "Sealing initially has trigger=hidden and dependencies=[] despite the explicit successful-registration prerequisite. Thus it is incorrectly resolved, unlike a proper unknown/quarantined new dependency. Cp2 adds i_03f566d207977b50 before sealing is due at cp7. Perfect task score conceals this temporary omission.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "All seven checks address at least the independently executable unfinished archive obligation; cp1-6 negative, cp7 positive. The extra two early checks versus A0 did not improve this trajectory score. Their marginal necessity/optimality is not identifiable from the successful fixed trace; no demonstrably redundant query is claimed."
+      }
+    },
+    {
+      "trajectory": "v2_hidden_91322",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 22 response drafts inspected. Four rejected extraction attempts at cp1/2 contain all tasks but invalid dependency placeholders; all stored at cp3, after registration due. Sealing initially omits prerequisite, restored cp4. At cp6 model cancels registration citing only current time, without an instruction revoking the task; accepted unsupported cancellation is a semantic update error, not an official scenario cancellation. No unsupported new/distractor intention or quarantined stored record. Cp3 late-registration attempt is corrected to no action; cp7/8 dependency-ineligible sealing proposals are rejected and corrected. Only archive executes successfully at cp7.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91322_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Register intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91322_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Seal intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91322_2",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Archive intention absent from the stored ledger at cp1/2 because the complete extraction batches were rejected for unknown dependency placeholders. Draft action recognition was present. Stored at cp3; registration had already missed its cp2 opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_32eed3e206a06cd0",
+          "obligation": "DayOne/private_91322_1",
+          "first_checkpoint": 3,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:3",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Resolved hidden creation at cp3 omits the required successful-registration dependency. Cp4 adds i_03f566d207977b50 while preserving predicate/channel. Registration never succeeds, so sealing never becomes officially due.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "other",
+          "intention_id": "i_03f566d207977b50",
+          "obligation": "DayOne/private_91322_0",
+          "first_checkpoint": 6,
+          "repair_checkpoint": null,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/scenario.json: start_instructions and steps",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_hidden_91322/B_ledger/steps.jsonl:6"
+          ],
+          "notes": "Unsupported cancellation: accepted cancel operation cites only Time: 14:00 | Stopwatch: 300 min. No source instruction cancels registration. A missed time does not grant cancellation authority. The task remains an unfinished, uncanceled official obligation even though the ledger marks it canceled. Not an unsupported newly created intention.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [
+          6,
+          7
+        ],
+        "uncertain_checkpoints": [],
+        "notes": "Two board queries address unfinished archive obligation: negative cp6, positive cp7 with successful archive receipt. No demonstrably unnecessary query."
+      }
+    },
+    {
+      "trajectory": "v2_visible_events_91310",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 20 response drafts inspected. Initial two visible event obligations misclassified as hidden in a rejected draft; retry correctly creates event records. Cp2 negated hexagon is ignored. Cp3 correctly changes sealing cue to triangle, but cp4 reverts to obsolete lantern using the old instruction plus lantern observation; corrected citation retry executes premature sealing and gets failure receipt. Cp5 restores triangle. Registration succeeds cp6, sealing cp7. Rejected duplicate/recreation drafts cp6/7 do not create additional records. No unsupported new/distractor stored intention, missing prerequisite requirement, quarantine or wrong executed handle-to-intention binding. Zero queries.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_747e24465e23cf7e",
+          "obligation": "DayOne/private_91310_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/scenario.json: cp3 cue override and cp4 scene",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/steps.jsonl:5"
+          ],
+          "notes": "Accepted cp4 revision reverts the current triangle cue to superseded lantern. Seeing the old cue is evidence, not authority to undo the explicit override. Premature sealing executes at cp4 and fails; cp5 restores triangle before its first due cp7, but repair-before-due does not erase the earlier FP.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries; all cues and times visible."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Both visible-event drafts initially use trigger=hidden/channel=null; structure rejects, retry uses event. No malformed draft is stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            6,
+            7
+          ],
+          "issue": "Duplicate/recreation proposals for existing instructions, including a source based only on cue appearance at cp6 and obsolete seal cue at cp7. Both batches rejected; retries return empty. No new duplicate or distractor record stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/A2/calls.jsonl:34"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91310",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 18 response drafts inspected. Cp1 misclassifies visible cues as hidden and assigns unsupported clock channel; retry keeps hidden with null channel and fails schema. Cp2 creates both correct event intentions. Cp3 updates seal cue to triangle; cp4 wrongly reverts to lantern based on cue observation, executes premature sealing and receives failure. Cp5 restores triangle; registration cp6 and sealing cp7 succeed. Rejected duplicate/recreation drafts cp6/7 create no additional records. No unsupported new/distractor stored intention, quarantine or wrong executed binding. No queries.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91310_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:2"
+          ],
+          "notes": "Stored intention absent at cp1 because the atomic batch uses unsupported hidden/clock or hidden/null representations for a visible cue. Instruction/action content was present in rejected drafts. Correct event record stored cp2 before its actual due checkpoint.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayOne/private_91310_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/scenario.json: start_instructions",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:1",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:2"
+          ],
+          "notes": "Stored intention absent at cp1 because the atomic batch uses unsupported hidden/clock or hidden/null representations for a visible cue. Instruction/action content was present in rejected drafts. Correct event record stored cp2 before its actual due checkpoint.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_747e24465e23cf7e",
+          "obligation": "DayOne/private_91310_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/steps.jsonl:5"
+          ],
+          "notes": "Accepted revision treats lantern appearance as authority to revert the explicit triangle override. Premature sealing fails cp4; cp5 restores triangle before cp7 due, without undoing the earlier FP.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries; visible cues and clock."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Visible cues wrongly classified as hidden; clock lacks supporting instruction, retry null channel invalid. Both batches rejected.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            6,
+            7
+          ],
+          "issue": "Unsupported duplicate/recreation drafts for existing or completed one-off instructions, including obsolete sealing cue; rejected with empty retry, not stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_visible_events_91310/B_ledger/calls.jsonl:30"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91311",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 20 response drafts inspected. Rejected hidden/null initial draft corrected to event within cp1. Cp3 correct triangle override, cp4 accepted regression to obsolete lantern and premature failed seal, cp5 correction, correct registration cp6 and sealing cp7. Cp6 original-obligation duplicate batch rejected. Cp7 proposes the unassigned spare-sample menu distractor as a new unknown intention; provenance validation rejects it and retry is empty. No unsupported new intention reaches storage, no quarantine and no wrong executed binding. Zero queries.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_49d40ccdbd04f04d",
+          "obligation": "DayOne/private_91311_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/scenario.json: cp3 cue override and cp4 scene",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/steps.jsonl:5"
+          ],
+          "notes": "Accepted cp4 revision reverts the current triangle cue to superseded lantern. Seeing the old cue is evidence, not authority to undo the explicit override. Premature sealing executes at cp4 and fails; cp5 restores triangle before its first due cp7, but repair-before-due does not erase the earlier FP.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 7,
+          "repair_checkpoint": 7,
+          "layer": "rejected_draft",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:34",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/steps.jsonl:7"
+          ],
+          "notes": "One rejected distractor-intention proposal: Register a spare jade91311 sample, sourced only from action-menu spans. It is not an assigned obligation. Entire draft rejected by provenance validation; retry empty; no unsupported stored intention or execution. Finding concerns model interpretation, not a stored false-positive intention."
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries; all cues and times visible."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Both visible-cue records initially use hidden/null; corrected to event by retry.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            6
+          ],
+          "issue": "Duplicate original registration/sealing creation batch (including obsolete lantern) rejected; retry empty.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/B_ledger/calls.jsonl:28"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91311",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 21 response drafts reviewed. Accepted records correctly represent both event obligations; initial hidden/null misclassification is rejected and repaired within cp1. Cp3 correctly updates sealing to triangle. Repeated duplicate original-obligation drafts cp4-7 include obsolete lantern, but all are rejected and retried as empty; the current triangle record remains intact. No accepted-ledger semantic defect, missing obligation at checkpoint completion, unsupported/distractor stored intention, quarantine, or wrong executed binding identified. This does NOT mean all drafts were semantically correct: rejected draft errors are listed separately. Both actions succeed at cp6/7 without an FP. No queries.",
+      "findings": [],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No queries; all cues visible."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Both visible-event obligations initially mislabeled hidden/null; structure rejects and retry correctly uses event.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "issue": "Repeated unsupported duplicate/recreation drafts for original obligations, including superseded lantern cue. Atomic rejection preserves current triangle ledger; each retry empty. Perfect task score does not erase these extraction failures.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:30",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:34",
+            "results/v2_1/comparison-v1/v2_visible_events_91311/A2/calls.jsonl:36"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91312",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 20 response drafts reviewed. Action strings omit terminal periods but retain the assigned semantics. Hidden/null initial draft corrected to event. Cp3 correct triangle update; cp4 accepted obsolete-lantern regression and premature failed seal; cp5 restores triangle. Correct actions/receipts cp6/7. Rejected duplicate registration at cp6 and obsolete sealing recreation at cp7 create no additional records. No unsupported new/distractor stored intention, prerequisite requirement, quarantine or wrong executed binding. No queries.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_84ca223ff244ac0d",
+          "obligation": "DayOne/private_91312_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/scenario.json: cp3 cue override and cp4 scene",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/steps.jsonl:5"
+          ],
+          "notes": "Accepted cp4 revision reverts the current triangle cue to superseded lantern. Seeing the old cue is evidence, not authority to undo the explicit override. Premature sealing executes at cp4 and fails; cp5 restores triangle before its first due cp7, but repair-before-due does not erase the earlier FP.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries; all cues and times visible."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Both visible-event drafts initially use trigger=hidden/channel=null; structure rejects, retry uses event. No malformed draft is stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            6,
+            7
+          ],
+          "issue": "Duplicate/recreation proposals for existing instructions, including a source based only on cue appearance at cp6 and obsolete seal cue at cp7. Both batches rejected; retries return empty. No new duplicate or distractor record stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/A2/calls.jsonl:34"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_visible_events_91312",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 19 response drafts reviewed. Initial hidden/null visible-cue draft corrected within cp1; terminal punctuation omission does not change action meaning. Cp3 correct triangle override; cp4 accepted obsolete-lantern regression based on cue appearance and premature failed seal; cp5 restores triangle. Registration cp6 and seal cp7 succeed. Duplicate registration cp6 and obsolete sealing recreation cp7 rejected, retries empty. No unsupported new/distractor stored intention, quarantine or incorrect executed action binding. Zero queries.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_84ca223ff244ac0d",
+          "obligation": "DayOne/private_91312_1",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/scenario.json",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/steps.jsonl:4",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/steps.jsonl:5"
+          ],
+          "notes": "Accepted cp4 revision reverts the current triangle cue to superseded lantern. Seeing the old cue is evidence, not authority to undo the explicit override. Premature sealing executes at cp4 and fails; cp5 restores triangle before its first due cp7, but repair-before-due does not erase the earlier FP.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries; all cues and times visible."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1
+          ],
+          "issue": "Visible events misclassified as hidden/null; corrected by retry.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:4"
+          ]
+        },
+        {
+          "checkpoints": [
+            6,
+            7
+          ],
+          "issue": "Duplicate registration and obsolete sealing recreation rejected; retry empty. No new duplicate stored.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:30",
+            "results/v2_1/comparison-v1/v2_visible_events_91312/B_ledger/calls.jsonl:32"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91331",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 23 response drafts inspected. Both DayTwo restrictions are correctly retained throughout. Initial unknown quarantine is appropriate, but the unresolved prerequisite is absent from condition; cp2 resolves the assigned dependency. Cp3 accepted selection binds a spare-sample distractor handle to the registration intention on DayOne at 11:00 despite stored DayTwo 11:00. Its failed receipt marks the real registration intention failed, preventing its actual DayTwo opportunity and leaving sealing blocked. Cp8 sealing selection is rejected as ineligible and retry abstains. Three spare-sample creation proposals are rejected by provenance validation; none is stored. Cp5 duplicate registration creation is rejected; cp6 makes a redundant same-content sealing revision with scene citation, without changing its correct semantics. No queries or successful receipts.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_6c30fbcab62f0708",
+          "obligation": "DayTwo/private_91331_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/steps.jsonl:1"
+          ],
+          "notes": "Unknown record safely quarantined but condition omits unresolved prerequisite text required by prompt. Sources retain full prerequisite; cp2 links actual assigned ID before potential DayTwo trigger.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "incorrect_binding",
+          "intention_id": "i_c80cc5936d3d44ab",
+          "obligation": "DayTwo/private_91331_0",
+          "first_checkpoint": 3,
+          "repair_checkpoint": null,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/steps.jsonl:3"
+          ],
+          "notes": "Accepted binding maps spare-sample menu action to the instructed registration record and executes on DayOne despite stored DayTwo restriction. Failed receipt attached to registration leaves it failed through cp8. Composite selection/binding error; stored time field is correct.",
+          "layer": "accepted_selection"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 3,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/steps.jsonl:3"
+          ],
+          "notes": "Menu-only spare-sample obligation proposed, provenance validator rejects it, retry empty; no unsupported intention stored.",
+          "layer": "rejected_draft"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 4,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/steps.jsonl:4"
+          ],
+          "notes": "Menu-only spare-sample obligation proposed, provenance validator rejects it, retry empty; no unsupported intention stored.",
+          "layer": "rejected_draft"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 8,
+          "repair_checkpoint": 8,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:40",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:42",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/steps.jsonl:8"
+          ],
+          "notes": "Menu-only spare-sample obligation proposed, provenance validator rejects it, retry empty; no unsupported intention stored.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this visible cross-day trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoint": 1,
+          "notes": "Unknown dependency placeholder rejected; retry safely quarantines dependent.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:2"
+          ]
+        },
+        {
+          "checkpoint": 5,
+          "notes": "Duplicate registration recreation rejected; retry empty.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/A2/calls.jsonl:26"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91331",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 22 response drafts, stored snapshots and bindings inspected. Correct DayTwo restriction retained for registration. Sealing initially omits prerequisite; cp5 adds it while erasing known event/day fields, quarantining it for one checkpoint; cp6 restores. Cp3 accepted spare-action binding to real registration on DayOne fails and leaves registration failed through the final checkpoint, so actual DayTwo registration is missed and sealing never due. Two spare-sample creations are rejected, none stored. Cp5 duplicate batch rejected then predicate-losing revision accepted; cp7 recreation from menu rejected. No queries or successful receipts.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_6c30fbcab62f0708",
+          "obligation": "DayTwo/private_91331_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/steps.jsonl:1"
+          ],
+          "notes": "Accepted event record omits required successful-registration prerequisite through cp4; assigned ID added cp5.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "missing_required_field",
+          "intention_id": "i_6c30fbcab62f0708",
+          "obligation": "DayTwo/private_91331_1",
+          "first_checkpoint": 5,
+          "repair_checkpoint": 6,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/steps.jsonl:5"
+          ],
+          "notes": "Revision adding prerequisite erases known click condition and DayTwo restriction, sets unknown trigger; quarantined cp5, restored cp6. Composite predicate/time loss.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "incorrect_binding",
+          "intention_id": "i_c80cc5936d3d44ab",
+          "obligation": "DayTwo/private_91331_0",
+          "first_checkpoint": 3,
+          "repair_checkpoint": null,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:16",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Spare-sample handle bound to real registration on wrong day despite correct stored DayTwo 11:00. Failed receipt corrupts registration lifecycle; no later recovery.",
+          "layer": "accepted_selection"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 3,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/steps.jsonl:3"
+          ],
+          "notes": "Spare-sample obligation sourced only from action menu rejected; retry empty, no unsupported stored intention.",
+          "layer": "rejected_draft"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 4,
+          "repair_checkpoint": 4,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Spare-sample obligation sourced only from action menu rejected; retry empty, no unsupported stored intention.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1,
+            5,
+            7
+          ],
+          "notes": "Unknown placeholder cp1, duplicate task batch cp5 and menu-only registration recreation cp7 rejected.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_cross_day_91331/B_ledger/calls.jsonl:36"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91332",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 19 response drafts, bindings and stored snapshots reviewed. Both DayTwo restrictions retained. Sealing initially safely quarantined but lacks unresolved prerequisite text in condition; dependency resolves cp3. Spare-sample proposal cp2 rejected; none stored. Cp3 selection requests a nonexistent current handle at the wrong day, rejected by offered-enum validation and retry abstains. Cp6/8 update event records without losing semantics. Register cp7 and seal cp8 succeed with correct bindings and receipts. No queries; final score perfect despite rejected drafts and earlier structured omission.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_fffdb1e0e4de4de9",
+          "obligation": "DayTwo/private_91332_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 3,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/steps.jsonl:1"
+          ],
+          "notes": "Safely unknown/quarantined dependent lacks unresolved prerequisite in condition; sources preserve it. Cp3 resolves actual assigned ID before DayTwo due event. Initial quarantine itself is appropriate.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 2,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/steps.jsonl:2"
+          ],
+          "notes": "Menu-only spare-sample creation rejected, retry empty. No unsupported stored intention.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoint": 1,
+          "notes": "Unknown prerequisite placeholder rejected.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:2"
+          ]
+        },
+        {
+          "checkpoint": 3,
+          "notes": "Wrong-day registration handle proposal rejected because handle not currently offered; retry abstains.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/B_ledger/calls.jsonl:16"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91332",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints and 23 response drafts reviewed. DayTwo restrictions preserved; initial unknown dependent lacks unresolved prerequisite text, then cp2 resolves ID and event. No later accepted representation defect. Cp3 wrong-day unoffered handle rejected; retry abstains. Cp5/8 duplicate batches rejected; cp6 unsupported spare-sample creation rejected. At actual due cp7, correct registration selection includes old instruction citation and is rejected as stale; retry abstains. Cp8 attempts late registration and dependency-ineligible seal, then late registration with stale evidence; both reject, final fail-closed. No actions, queries or receipts; TP0 FP0 FN1, with sealing separately blocked. Omission after retry is observed behavior, not proof of forgetting or a stored-semantic defect.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_fffdb1e0e4de4de9",
+          "obligation": "DayTwo/private_91332_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 2,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/steps.jsonl:1"
+          ],
+          "notes": "Safely quarantined unknown dependent lacks unresolved prerequisite text in condition despite full source quote; corrected cp2 with assigned ID.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 6,
+          "repair_checkpoint": 6,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:30",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/steps.jsonl:6"
+          ],
+          "notes": "Spare-sample proposal sourced only from action menu rejected; retry empty, no unsupported stored intention.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "notes": "Invalid dependency placeholder cp1; wrong-day unoffered handle cp3; duplicate batches cp5/8; stale citation at due cp7; late/dependency-ineligible attempts cp8. All preserved in raw responses. Cp7 abstention after rejection misses registration despite correct stored fields.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:36",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:38",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:40",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:44",
+            "results/v2_1/comparison-v1/v2_cross_day_91332/A2/calls.jsonl:46"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91330",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 22 response drafts, bindings and ledgers reviewed. Initial known event omits registration prerequisite until cp6; DayTwo restrictions remain correct. Cp5 duplicate batch rejected; cp6 duplicate-plus-revise batch rejected then proper revision accepted. Cp7 menu-only spare-sample creation rejected. Correct registration attempt at actual due cp7 is rejected for including old instruction as trigger evidence; retry abstains, and cp8 abstains after duplicate batch rejection. No actions/queries/receipts; TP0 FP0 FN1, sealing separately blocked. Late prerequisite repair did not yield execution success. No quarantine and no unsupported stored intention.",
+      "findings": [
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_34903a4bab212a77",
+          "obligation": "DayTwo/private_91330_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 6,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/steps.jsonl:1"
+          ],
+          "notes": "Accepted event record omits required registration-success dependency through cp5; cp6 resolves ID with known click/day retained. Sealing never becomes due because registration was missed.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 7,
+          "repair_checkpoint": 7,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:34",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/steps.jsonl:7"
+          ],
+          "notes": "Menu-only spare-sample creation rejected, retry empty; no unsupported stored intention.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1,
+            5,
+            6,
+            7,
+            8
+          ],
+          "notes": "Initial invalid dependency placeholder; duplicate batches cp5/6/8; cp7 stale trigger citation on correct-time registration leads to accepted abstention. These are separate from stored representation findings.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:36",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:38",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/A2/calls.jsonl:40"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_cross_day_91330",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All 8 checkpoints, 21 response drafts, stored ledgers and bindings reviewed. Cp1-3 atomic batches rejected: five nonexistent prerequisite placeholders and one missing trigger-evidence validation. Cp4 empty update keeps ledger empty; cp5 retry stores both tasks. Drafts recognize the instructions; storage absence is separate. Sealing safely quarantined cp5 but condition lacks unresolved prerequisite; cp6 resolves it. Cp7 spare-sample creation rejected. Stale citation at due registration cp7 corrected on retry, then registration and sealing cp8 both succeed. Cp8 duplicate rejected. One clock query at cp5 repeats already visible time and stopwatch; no new information. No unsupported stored intention, no final quarantine; perfect task score despite early failures.",
+      "findings": [
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayTwo/private_91330_0",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/steps.jsonl:1"
+          ],
+          "notes": "Recognized instructed action absent from ledger through cp4 because entire extraction batches were rejected then empty update accepted. Stored cp5 before DayTwo due opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_intention",
+          "intention_id": null,
+          "obligation": "DayTwo/private_91330_1",
+          "first_checkpoint": 1,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/steps.jsonl:1"
+          ],
+          "notes": "Recognized instructed action absent from ledger through cp4 because entire extraction batches were rejected then empty update accepted. Stored cp5 before DayTwo due opportunity.",
+          "layer": "storage_absence_after_rejected_batch"
+        },
+        {
+          "category": "missing_prerequisite",
+          "intention_id": "i_6d45eb152bbf7ec1",
+          "obligation": "DayTwo/private_91330_1",
+          "first_checkpoint": 5,
+          "repair_checkpoint": 6,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/steps.jsonl:5"
+          ],
+          "notes": "Unknown dependent safely quarantined but unresolved prerequisite text absent from condition; full source retains it. Assigned ID supplied cp6 before due cp8.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "unsupported_intention",
+          "intention_id": null,
+          "obligation": null,
+          "first_checkpoint": 7,
+          "repair_checkpoint": 7,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:30",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/steps.jsonl:7"
+          ],
+          "notes": "Spare-sample proposal sourced only from menu rejected; retry empty, no unsupported stored intention.",
+          "layer": "rejected_draft"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [
+          5
+        ],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "Cp5 clock query returned Time 08:00 / Stopwatch 0 min, already present verbatim in current public observation before querying. Informationally redundant in this fixed-checkpoint simulator; this does not prove absence of a behavioral reassurance effect. Source: calls.jsonl:21 and :23 request messages, steps.jsonl:5."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "notes": "Rejected placeholder dependency batches, missing trigger evidence on cp3 retry, stale selection citation cp7 and duplicate sealing cp8 remain in raw traces.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:2",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:4",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:6",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:8",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:12",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:34",
+            "results/v2_1/comparison-v1/v2_cross_day_91330/B_ledger/calls.jsonl:38"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91301",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 18 response drafts, 8 ledgers and bindings reviewed. Two initial timed tasks stored; reschedules to 14:00 then 15:00 applied correctly. Cp4 accepted revision reverts registration to obsolete 12:00; selector executes nothing. Cp5 repairs to 15:00 and correctly cancels sealing before its old due action. Cp6 same-content revision sourced only from menu rejected. Cp7 redundant same-content revision cites unrelated stationery scene but retains correctly evidenced 15:00; registration executes with successful receipt. Cp8 repeated cancellation of already canceled record rejected then empty update. No queries, unsupported new intentions, missing prerequisites or quarantine. TP1 FP0 FN0; final task score hides temporary wrong stored time.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_09663c9a7f5b5763",
+          "obligation": "DayOne/private_91301_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/steps.jsonl:4"
+          ],
+          "notes": "After correctly applying the latest 15:00 reschedule, accepted cp4 revision restores superseded 12:00 solely on current clock plus old instruction. Selector abstains; cp5 restores 15:00 before actual due cp7. One accepted time-regression defect despite perfect final task score.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            6,
+            8
+          ],
+          "notes": "Menu-only source for redundant registration revision and repeated terminal cancellation rejected; retries empty.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_revision_91301/A2/calls.jsonl:34"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91301",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 20 response drafts, 8 ledgers and action bindings reviewed. Initial actions and both reschedules stored correctly; cp4 reverts to obsolete 12:00, cp5 restores 15:00 and correctly cancels sealing. No premature execution. Repeated cancellation proposals cp6/7 rejected (menu-only citation, then terminal state); retries empty. Correct registration cp7 initially rejected for stale instruction citation; retry uses current time and succeeds. Missing bindings cp8 corrected. No queries, unsupported new intentions, missing prerequisites or quarantine. TP1 FP0 FN0; task score hides temporary stored time regression.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_09663c9a7f5b5763",
+          "obligation": "DayOne/private_91301_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Accepted cp4 revision reverts latest 15:00 instruction to obsolete 12:00 using old instruction/menu text. Selector abstains. Cp5 repairs before actual due cp7; one time-regression defect despite perfect score.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            6,
+            7,
+            8
+          ],
+          "notes": "Redundant cancellation and selection citation/schema failures are preserved separately from accepted representation findings.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_revision_91301/B_ledger/calls.jsonl:38"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91302",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 18 response drafts, 8 ledgers and bindings reviewed. Initial tasks and two schedule updates stored correctly; cp4 reverts to obsolete intermediate 13:00, cp5 restores 14:00 and cancels sealing correctly. Cp6 redundant same-content registration revision from menu-only source rejected; retry empty. Registration succeeds cp7. Missing bindings cp8 corrected. No queries, unsupported new intentions, missing prerequisites, quarantine or false actions. TP1 FP0 FN0 with one temporary stored deadline regression.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f2efb28cb6c7e0e2",
+          "obligation": "DayOne/private_91302_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Accepted revision restores superseded intermediate 13:00 after latest 14:00 instruction. Cp5 repairs before due cp7, no premature action. Task score hides wrong stored time at cp4.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            6,
+            8
+          ],
+          "notes": "Menu-only citation on redundant revision rejected; missing bindings corrected.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_revision_91302/B_ledger/calls.jsonl:34"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91302",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 19 responses, 8 ledgers and bindings inspected. Initial tasks and both reschedules represented. Cp4 accepted revision restores obsolete intermediate 13:00; cp5 restores 14:00 and correctly cancels sealing. Cp6 redundant menu-only revision rejected; cp7 repeated cancellation rejected. Correct registration selection at due cp7 includes stale reschedule citation and is rejected; retry abstains, missing the task despite correct stored deadline. Cp8 accepted batch transiently restores 13:00 then immediately restores 14:00 within same atomic transaction (versions6/7); selector only sees final correct version7. No queries, new unsupported intentions or quarantine. TP0 FP0 FN1. Final correctness of stored time does not establish execution success.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f2efb28cb6c7e0e2",
+          "obligation": "DayOne/private_91302_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/steps.jsonl:4"
+          ],
+          "notes": "Accepted cp4 update restores obsolete 13:00 instead of latest 14:00; corrected cp5 before due cp7.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f2efb28cb6c7e0e2",
+          "obligation": "DayOne/private_91302_0",
+          "first_checkpoint": 8,
+          "repair_checkpoint": 8,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:36",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/steps.jsonl:8"
+          ],
+          "notes": "Accepted batch first revises to obsolete 13:00 (v6), then immediately to correct 14:00 (v7). Transient within atomic transaction, not a wrong checkpoint snapshot or selector input; occurs after missed due cp7.",
+          "layer": "accepted_transaction_intermediate"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            6,
+            7
+          ],
+          "notes": "Menu-only redundant revision and repeated terminal cancellation rejected. Cp7 correct-time action with stale citation rejected; retry abstains. No evidence that omitted action was caused by stored deadline, which was correct at cp7.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_revision_91302/A2/calls.jsonl:34"
+          ]
+        }
+      ]
+    },
+    {
+      "trajectory": "v2_revision_91300",
+      "method": "A2",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 16 response drafts, 8 ledgers and action bindings reviewed. Zero validation errors. Initial times and two reschedules represented correctly; cp4 reverts to superseded 12:00, cp5 repairs to 13:00 and correctly cancels sealing. Cp6 reverts again to 12:00 based only on current clock/menu, executes registration prematurely and receives failure. Cp7 correct revision restores 13:00 and resets failed record to pending, allowing successful registration receipt. No queries, unsupported new intentions, prerequisites or quarantine. TP1 FP1 FN0; schema/application validity did not prevent stale-time semantics or false execution.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f9b519452777bc5f",
+          "obligation": "DayOne/private_91300_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:18",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/steps.jsonl:4"
+          ],
+          "notes": "Accepted cp4 restores superseded intermediate 12:00 after latest 13:00. Corrected cp5.",
+          "layer": "stored_representation"
+        },
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f9b519452777bc5f",
+          "obligation": "DayOne/private_91300_0",
+          "first_checkpoint": 6,
+          "repair_checkpoint": 7,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:22",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:26",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/calls.jsonl:28",
+            "results/v2_1/comparison-v1/v2_revision_91300/A2/steps.jsonl:6"
+          ],
+          "notes": "A second accepted deadline regression uses current clock/menu as authority to restore 12:00, causes premature registration with failed receipt. Cp7 revises to 13:00 and succeeds. Repair at due decision is not strictly before due checkpoint.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "No tool queries in this trajectory."
+      },
+      "rejected_draft_review": []
+    },
+    {
+      "trajectory": "v2_revision_91300",
+      "method": "B_ledger",
+      "review_status": "reviewed",
+      "reviewer": "Codex inspection of saved instructions, all response drafts and checkpoint ledgers",
+      "notes": "All instructions, 21 responses, 8 ledgers and bindings reviewed. Initial tasks and both schedule revisions correctly represented; cp4 reverts to obsolete 12:00, cp5 restores 13:00 and cancels sealing correctly. Cp6 duplicate terminal cancellation rejected; cp7 redundant menu-only registration revision rejected. Correct registration succeeds cp7; missing bindings cp8 corrected. Two clock queries at cp4/6 repeat already visible time/stopwatch values. No unsupported new intention, prerequisite defect or quarantine. TP1 FP0 FN0, with temporary deadline regression hidden by perfect task score.",
+      "findings": [
+        {
+          "category": "incorrect_trigger",
+          "intention_id": "i_f9b519452777bc5f",
+          "obligation": "DayOne/private_91300_0",
+          "first_checkpoint": 4,
+          "repair_checkpoint": 5,
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:10",
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:14",
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:20",
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/steps.jsonl:4"
+          ],
+          "notes": "Accepted cp4 restores superseded 12:00 after latest 13:00 instruction. Cp5 repairs before due cp7; no wrong execution.",
+          "layer": "stored_representation"
+        }
+      ],
+      "query_necessity_review": {
+        "status": "reviewed",
+        "unnecessary_checkpoints": [
+          4,
+          6
+        ],
+        "relevant_checkpoints": [],
+        "uncertain_checkpoints": [],
+        "notes": "Clock queries return same current time/stopwatch already publicly visible (calls.jsonl:15 and :27 request messages; steps.jsonl:4 and :6). Informationally redundant; no causal internal reassurance claim."
+      },
+      "rejected_draft_review": [
+        {
+          "checkpoints": [
+            6,
+            7,
+            8
+          ],
+          "notes": "Repeated terminal cancellation, menu-only source on redundant revision, missing selection bindings; each rejected and retry corrected/empty.",
+          "source_refs": [
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:24",
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:32",
+            "results/v2_1/comparison-v1/v2_revision_91300/B_ledger/calls.jsonl:40"
+          ]
+        }
+      ]
+    }
+  ],
+  "counting_policy": "Findings are post-hoc annotations, not independent error trials or an exhaustive count of invalid draft fields. Layer distinguishes stored representation, storage absence after rejected atomic batch, accepted selection, and rejected draft. Repeated unsupported creation proposals are one finding per checkpoint; composite predicate loss is one finding. Invalid/retry attempt counts come from raw calls separately. Appropriate initial quarantine alone is not an error. AI-assisted reviewer; no independent annotator. Accepted-transaction intermediate findings are explicitly labeled: they are repaired within an atomic batch and are not wrong selector inputs."
+}

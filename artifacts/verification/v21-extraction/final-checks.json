@@ -1,0 +1,19 @@
+{
+  "after_snapshot_sha256": "0b37de1d640b357c9581bed4527807c84612c2eed78f2f1118d106f2c4eda9bb",
+  "before_snapshot_sha256": "0b37de1d640b357c9581bed4527807c84612c2eed78f2f1118d106f2c4eda9bb",
+  "compileall": "passed",
+  "diff_whitespace": "Code/docs pass. One inherited trailing space in the saved baseline system_prompt.txt is preserved byte-for-byte as raw evidence.",
+  "live_output_directory_exists": false,
+  "mismatches": [],
+  "original_mock_smoke": {
+    "command": "scripts/run_smoke_test.sh --output-root /tmp/kiodai-v21-original-smoke",
+    "new_inference": false,
+    "status": "passed"
+  },
+  "preexisting_files_compared": 2225,
+  "secret_pattern_scan": {
+    "files_checked": 34,
+    "findings": 0,
+    "scope": "Remaining intended documentation, manifests and MOCK artifacts; implementation also scanned before its commit."
+  }
+}

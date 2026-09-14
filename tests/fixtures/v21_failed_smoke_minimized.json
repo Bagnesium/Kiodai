@@ -1,0 +1,608 @@
+{
+  "provenance": {
+    "source": "results/v2/deepseek-smoke-v1/v2_hidden_91320/A2/calls.jsonl",
+    "source_sha256": "c87f7a250f837f3ba832fc1aa9815aa690a872aefdce1b218ce0d984a4a7f68f",
+    "construction": "Public request/response subsets only; first extraction operation retained. Development data, not held out."
+  },
+  "traces": [
+    {
+      "ordinal": 1,
+      "response_id": "gen-1788975238-6Gw2hWqx4LlluVoFnIxT",
+      "kind": "extract",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "operations": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "expected_version": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "kind": {
+                  "enum": [
+                    "create",
+                    "revise",
+                    "cancel",
+                    "ambiguous"
+                  ],
+                  "type": "string"
+                },
+                "record": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "action": {
+                      "type": "string"
+                    },
+                    "channel": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "condition": {
+                      "type": "string"
+                    },
+                    "dependencies": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "maxItems": 16,
+                      "type": "array"
+                    },
+                    "evidence": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "action": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        },
+                        "channel": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        },
+                        "condition": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        },
+                        "dependencies": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        },
+                        "trigger": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        },
+                        "when": {
+                          "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "quote": {
+                                "type": "string"
+                              },
+                              "ref": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "ref",
+                              "quote"
+                            ],
+                            "type": "object"
+                          },
+                          "maxItems": 16,
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "action",
+                        "trigger",
+                        "condition",
+                        "channel",
+                        "when",
+                        "dependencies"
+                      ],
+                      "type": "object"
+                    },
+                    "trigger": {
+                      "enum": [
+                        "time",
+                        "event",
+                        "hidden",
+                        "unknown"
+                      ],
+                      "type": "string"
+                    },
+                    "when": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "action",
+                    "trigger",
+                    "condition",
+                    "channel",
+                    "when",
+                    "dependencies",
+                    "evidence"
+                  ],
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                },
+                "sources": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "quote": {
+                        "type": "string"
+                      },
+                      "ref": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "ref",
+                      "quote"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 16,
+                  "type": "array"
+                },
+                "target": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "kind",
+                "target",
+                "expected_version",
+                "record",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "maxItems": 16,
+            "type": "array"
+          }
+        },
+        "required": [
+          "operations"
+        ],
+        "type": "object"
+      },
+      "output": {
+        "operations": [
+          {
+            "kind": "create",
+            "target": null,
+            "expected_version": null,
+            "record": {
+              "action": "Register the cobalt91320 sample.",
+              "trigger": "time",
+              "condition": "",
+              "channel": null,
+              "when": "08:00 on DayOne",
+              "dependencies": [],
+              "evidence": {
+                "action": [
+                  {
+                    "ref": "m1",
+                    "quote": "Register the cobalt91320 sample."
+                  }
+                ],
+                "trigger": [
+                  {
+                    "ref": "m1",
+                    "quote": "At 08:00 on DayOne"
+                  }
+                ],
+                "condition": [],
+                "channel": [],
+                "when": [
+                  {
+                    "ref": "m1",
+                    "quote": "At 08:00 on DayOne"
+                  }
+                ],
+                "dependencies": []
+              }
+            },
+            "sources": [
+              {
+                "ref": "m1",
+                "quote": "At 08:00 on DayOne, Register the cobalt91320 sample."
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Missing intention content",
+      "context": {
+        "observations": {
+          "m1": {
+            "text": "=== DayOne ===\nToday's one-off tasks (new):\n- At 08:00 on DayOne, Register the cobalt91320 sample.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "kind": "visible",
+            "checkpoint": 1
+          }
+        },
+        "channels": [
+          "board_cobalt91320",
+          "clock"
+        ]
+      }
+    },
+    {
+      "ordinal": 14,
+      "response_id": "gen-1788975347-wdHZHZ1rmsjvTMwzRy0z",
+      "kind": "extract",
+      "schema": null,
+      "output": {
+        "operations": [
+          {
+            "kind": "create",
+            "target": null,
+            "expected_version": null,
+            "record": {
+              "action": "Discard the cobalt91320 case",
+              "trigger": "unknown",
+              "condition": "",
+              "channel": null,
+              "when": null,
+              "dependencies": [],
+              "evidence": {
+                "action": [
+                  {
+                    "ref": "m11",
+                    "quote": "task_5: Discard the cobalt91320 case."
+                  }
+                ],
+                "trigger": [],
+                "condition": [],
+                "channel": [],
+                "when": [],
+                "dependencies": []
+              }
+            },
+            "sources": [
+              {
+                "ref": "m11",
+                "quote": "task_5: Discard the cobalt91320 case."
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Missing intention content",
+      "context": {
+        "observations": {
+          "m11": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_8: Move a cushion.\n- task_5: Discard the cobalt91320 case.\n- task_7: Archive the cobalt91320 note.\n- task_12: Seal the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_10: Register a spare cobalt91320 sample.\n\nTime: 11:00 | Stopwatch: 240 min",
+            "kind": "visible",
+            "checkpoint": 5
+          }
+        },
+        "channels": [
+          "board_cobalt91320",
+          "clock"
+        ]
+      }
+    },
+    {
+      "ordinal": 19,
+      "response_id": "gen-1788975365-sL9bRkcYH6QHwTbHVYGM",
+      "kind": "extract",
+      "schema": null,
+      "output": {
+        "operations": [
+          {
+            "kind": "create",
+            "target": null,
+            "expected_version": null,
+            "record": {
+              "action": "Discard the cobalt91320 case",
+              "trigger": "unknown",
+              "condition": "",
+              "channel": null,
+              "when": null,
+              "dependencies": [],
+              "evidence": {
+                "action": [
+                  {
+                    "ref": "m15",
+                    "quote": "task_5: Discard the cobalt91320 case"
+                  }
+                ],
+                "trigger": [],
+                "condition": [],
+                "channel": [],
+                "when": [],
+                "dependencies": []
+              }
+            },
+            "sources": [
+              {
+                "ref": "m15",
+                "quote": "task_5: Discard the cobalt91320 case"
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Missing intention content",
+      "context": {
+        "observations": {
+          "m15": {
+            "text": "The review window opens while cooling continues out of sight.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_5: Discard the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_7: Archive the cobalt91320 note.\n- task_2: Align a pen.\n- task_6: Polish a spare tray.\n- task_12: Seal the cobalt91320 case.\n\nTime: 13:00 | Stopwatch: 360 min",
+            "kind": "visible",
+            "checkpoint": 7
+          }
+        },
+        "channels": [
+          "board_cobalt91320",
+          "clock"
+        ]
+      }
+    },
+    {
+      "ordinal": 6,
+      "response_id": "gen-1788975294-6mYch4B7KPScDPQpV6Z0",
+      "kind": "select",
+      "schema": null,
+      "output": {
+        "action": "choose",
+        "choice": "B",
+        "task_ids": [
+          "task_1"
+        ],
+        "channel": "NONE",
+        "bindings": [
+          {
+            "handle": "task_1",
+            "intention": "Register the cobalt91320 sample.",
+            "version": 1,
+            "evidence": [
+              {
+                "ref": "m1",
+                "quote": "At 08:00 on DayOne, Register the cobalt91320 sample."
+              },
+              {
+                "ref": "m4",
+                "quote": "Time: 08:00 | Stopwatch: 60 min"
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "context": {
+        "observations": {
+          "m1": {
+            "text": "=== DayOne ===\nToday's one-off tasks (new):\n- At 08:00 on DayOne, Register the cobalt91320 sample.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m2": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_8: Move a cushion.\n- task_4: Fold a blank card.\n- task_7: Archive the cobalt91320 note.\n- task_3: Count spare envelopes.\n- task_1: Register the cobalt91320 sample.\n- task_12: Seal the cobalt91320 case.\n\nTime: 07:00 | Stopwatch: 0 min",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m4": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_12: Seal the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_7: Archive the cobalt91320 note.\n- task_11: Count spare clips.\n- task_9: Read a wall poster.\n- task_10: Register a spare cobalt91320 sample.\n\nTime: 08:00 | Stopwatch: 60 min",
+            "kind": "visible",
+            "checkpoint": 2
+          }
+        },
+        "intentions": {},
+        "checkpoint": 2
+      }
+    },
+    {
+      "ordinal": 7,
+      "response_id": "gen-1788975300-5kN2mtzUAWWqnXcgtqkg",
+      "kind": "select",
+      "schema": null,
+      "output": {
+        "action": "choose",
+        "choice": "B",
+        "task_ids": [
+          "task_1"
+        ],
+        "channel": "NONE",
+        "bindings": [
+          {
+            "handle": "task_1",
+            "intention": "Register the cobalt91320 sample.",
+            "version": 1,
+            "evidence": [
+              {
+                "ref": "m1",
+                "quote": "At 08:00 on DayOne, Register the cobalt91320 sample."
+              },
+              {
+                "ref": "m4",
+                "quote": "Time: 08:00 | Stopwatch: 60 min"
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "context": {
+        "observations": {
+          "m1": {
+            "text": "=== DayOne ===\nToday's one-off tasks (new):\n- At 08:00 on DayOne, Register the cobalt91320 sample.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m2": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_8: Move a cushion.\n- task_4: Fold a blank card.\n- task_7: Archive the cobalt91320 note.\n- task_3: Count spare envelopes.\n- task_1: Register the cobalt91320 sample.\n- task_12: Seal the cobalt91320 case.\n\nTime: 07:00 | Stopwatch: 0 min",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m4": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_12: Seal the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_7: Archive the cobalt91320 note.\n- task_11: Count spare clips.\n- task_9: Read a wall poster.\n- task_10: Register a spare cobalt91320 sample.\n\nTime: 08:00 | Stopwatch: 60 min",
+            "kind": "visible",
+            "checkpoint": 2
+          }
+        },
+        "intentions": {},
+        "checkpoint": 2
+      }
+    },
+    {
+      "ordinal": 10,
+      "response_id": "gen-1788975333-sLGHESP2tVO7UfdASGni",
+      "kind": "select",
+      "schema": null,
+      "output": {
+        "action": "choose",
+        "choice": "A",
+        "task_ids": [
+          "task_1"
+        ],
+        "channel": "NONE",
+        "bindings": [
+          {
+            "handle": "task_1",
+            "intention": "Register the cobalt91320 sample",
+            "version": 1,
+            "evidence": [
+              {
+                "ref": "m1",
+                "quote": "At 08:00 on DayOne, Register the cobalt91320 sample."
+              },
+              {
+                "ref": "m7",
+                "quote": "Time: 09:00 | Stopwatch: 120 min"
+              }
+            ]
+          }
+        ]
+      },
+      "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+      "context": {
+        "observations": {
+          "m1": {
+            "text": "=== DayOne ===\nToday's one-off tasks (new):\n- At 08:00 on DayOne, Register the cobalt91320 sample.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Seal the cobalt91320 case. Only after \"Register the cobalt91320 sample.\" succeeds.\n- When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m2": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_8: Move a cushion.\n- task_4: Fold a blank card.\n- task_7: Archive the cobalt91320 note.\n- task_3: Count spare envelopes.\n- task_1: Register the cobalt91320 sample.\n- task_12: Seal the cobalt91320 case.\n\nTime: 07:00 | Stopwatch: 0 min",
+            "kind": "visible",
+            "checkpoint": 1
+          },
+          "m4": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_12: Seal the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_7: Archive the cobalt91320 note.\n- task_11: Count spare clips.\n- task_9: Read a wall poster.\n- task_10: Register a spare cobalt91320 sample.\n\nTime: 08:00 | Stopwatch: 60 min",
+            "kind": "visible",
+            "checkpoint": 2
+          },
+          "m6": {
+            "text": "Harness notice: the previous response was invalid after all configured attempts. No task action was executed for this step.",
+            "kind": "visible",
+            "checkpoint": 3
+          },
+          "m7": {
+            "text": "Discuss unrelated stationery prices.\nA) Read the notice\nB) Sort stationery\nC) Check a spelling\n\nStep action menu:\n- task_12: Seal the cobalt91320 case.\n- task_1: Register the cobalt91320 sample.\n- task_2: Align a pen.\n- task_6: Polish a spare tray.\n- task_13: Rearrange a stool.\n- task_7: Archive the cobalt91320 note.\n\nTime: 09:00 | Stopwatch: 120 min",
+            "kind": "visible",
+            "checkpoint": 3
+          }
+        },
+        "intentions": {},
+        "checkpoint": 3
+      }
+    }
+  ]
+}

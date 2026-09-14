@@ -1,0 +1,1799 @@
+{
+  "analysis_type": "post-hoc, offline, recorded evidence; no model calls",
+  "complete_trace": {
+    "attempt_and_receipt": [
+      {
+        "checkpoint": 7,
+        "evidence": [
+          {
+            "quote": "State [board_cobalt91320]: Cooling is now fully stable.",
+            "ref": "m28"
+          }
+        ],
+        "execution_id": "exec_9ae0e3ab2712dbe7a316",
+        "handle": "task_7",
+        "id": "i_3bda66d76486b326",
+        "kind": "selected",
+        "seq": 25,
+        "version": 1
+      },
+      {
+        "execution_id": "exec_9ae0e3ab2712dbe7a316",
+        "kind": "attempted",
+        "seq": 26
+      },
+      {
+        "execution_id": "exec_9ae0e3ab2712dbe7a316",
+        "kind": "receipt",
+        "outcome": "success",
+        "seq": 28
+      }
+    ],
+    "final_state": {
+      "action": "Archive the cobalt91320 note.",
+      "attempt_id": "exec_9ae0e3ab2712dbe7a316",
+      "channel": "board_cobalt91320",
+      "condition": "Cooling is now fully stable.",
+      "dependencies": [],
+      "evidence": {
+        "action": [
+          {
+            "quote": "Archive the cobalt91320 note.",
+            "ref": "m1"
+          }
+        ],
+        "channel": [
+          {
+            "quote": "board_cobalt91320",
+            "ref": "m1"
+          }
+        ],
+        "condition": [
+          {
+            "quote": "\"Cooling is now fully stable.\"",
+            "ref": "m1"
+          }
+        ],
+        "dependencies": [],
+        "trigger": [
+          {
+            "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "ref": "m1"
+          }
+        ],
+        "when": []
+      },
+      "id": "i_3bda66d76486b326",
+      "last_query": {
+        "checkpoint": 7,
+        "observation": {
+          "checkpoint": 7,
+          "kind": "query",
+          "ref": "m28",
+          "text": "State [board_cobalt91320]: Cooling is now fully stable."
+        },
+        "version": 1
+      },
+      "receipt": {
+        "execution_id": "exec_9ae0e3ab2712dbe7a316",
+        "outcome": "success"
+      },
+      "status": "completed",
+      "trigger": "hidden",
+      "update_evidence": [
+        {
+          "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+          "ref": "m1"
+        }
+      ],
+      "version": 1,
+      "when": null
+    },
+    "instruction": [
+      {
+        "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+        "ref": "m1"
+      }
+    ],
+    "monitoring": [
+      {
+        "checkpoint": 1,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 4,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 1,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 1,
+          "kind": "query",
+          "ref": "m4",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 5
+      },
+      {
+        "checkpoint": 2,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 7,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 2,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 2,
+          "kind": "query",
+          "ref": "m8",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 8
+      },
+      {
+        "checkpoint": 3,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 12,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 3,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 3,
+          "kind": "query",
+          "ref": "m12",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 13
+      },
+      {
+        "checkpoint": 4,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 15,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 4,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 4,
+          "kind": "query",
+          "ref": "m16",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 16
+      },
+      {
+        "checkpoint": 5,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 17,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 5,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 5,
+          "kind": "query",
+          "ref": "m20",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 18
+      },
+      {
+        "checkpoint": 6,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 19,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 6,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 6,
+          "kind": "query",
+          "ref": "m24",
+          "text": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+        },
+        "seq": 20
+      },
+      {
+        "checkpoint": 7,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [
+          "board_cobalt91320"
+        ],
+        "seq": 21,
+        "unavailable": []
+      },
+      {
+        "channel": "board_cobalt91320",
+        "checkpoint": 7,
+        "kind": "query_received",
+        "observation": {
+          "checkpoint": 7,
+          "kind": "query",
+          "ref": "m28",
+          "text": "State [board_cobalt91320]: Cooling is now fully stable."
+        },
+        "seq": 22
+      },
+      {
+        "checkpoint": 8,
+        "kind": "monitor",
+        "remaining": 1,
+        "selected": [],
+        "seq": 29,
+        "unavailable": []
+      }
+    ],
+    "selection": {
+      "checkpoint": 7,
+      "evidence": [
+        {
+          "quote": "State [board_cobalt91320]: Cooling is now fully stable.",
+          "ref": "m28"
+        }
+      ],
+      "execution_id": "exec_9ae0e3ab2712dbe7a316",
+      "handle": "task_7",
+      "id": "i_3bda66d76486b326",
+      "kind": "selected",
+      "seq": 25,
+      "version": 1
+    },
+    "selection_call": {
+      "accepted": true,
+      "api_response_cost_usd": 0.001415,
+      "attempt": 1,
+      "calls_line": 30,
+      "checkpoint": 7,
+      "finish_reason": "stop",
+      "kind": "select",
+      "outcome": "accepted_selection",
+      "request_id": "call_0015",
+      "response_id": "gen-1788979053-2hA9zL52PMn6kggcHuoY",
+      "usage": {
+        "input_tokens": 5012,
+        "output_tokens": 200,
+        "total_tokens": 5212
+      },
+      "validation_error": null,
+      "validation_stage": null
+    },
+    "stored": {
+      "checkpoint": 1,
+      "id": "i_3bda66d76486b326",
+      "kind": "create",
+      "record": {
+        "action": "Archive the cobalt91320 note.",
+        "attempt_id": null,
+        "channel": "board_cobalt91320",
+        "condition": "Cooling is now fully stable.",
+        "dependencies": [],
+        "evidence": {
+          "action": [
+            {
+              "quote": "Archive the cobalt91320 note.",
+              "ref": "m1"
+            }
+          ],
+          "channel": [
+            {
+              "quote": "board_cobalt91320",
+              "ref": "m1"
+            }
+          ],
+          "condition": [
+            {
+              "quote": "\"Cooling is now fully stable.\"",
+              "ref": "m1"
+            }
+          ],
+          "dependencies": [],
+          "trigger": [
+            {
+              "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+              "ref": "m1"
+            }
+          ],
+          "when": []
+        },
+        "id": "i_3bda66d76486b326",
+        "last_query": null,
+        "receipt": null,
+        "status": "pending",
+        "trigger": "hidden",
+        "update_evidence": [
+          {
+            "quote": "When board_cobalt91320 reports \"Cooling is now fully stable.\", Archive the cobalt91320 note.",
+            "ref": "m1"
+          }
+        ],
+        "version": 1,
+        "when": null
+      },
+      "seq": 3
+    }
+  },
+  "current": {
+    "calls": [
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00157533,
+        "attempt": 1,
+        "calls_line": 2,
+        "checkpoint": 1,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_operations",
+        "request_id": "call_0001",
+        "response_id": "gen-1788978972-rHCDGTCI3SnmoOCV7xAa",
+        "usage": {
+          "input_tokens": 2679,
+          "output_tokens": 852,
+          "total_tokens": 3531
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00080407,
+        "attempt": 1,
+        "calls_line": 4,
+        "checkpoint": 1,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0002",
+        "response_id": "gen-1788978994-mESxkTVYKRdplOBpmjWN",
+        "usage": {
+          "input_tokens": 2841,
+          "output_tokens": 37,
+          "total_tokens": 2878
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.0009796,
+        "attempt": 1,
+        "calls_line": 6,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_operations",
+        "request_id": "call_0003",
+        "response_id": "gen-1788978997-YDfwPkwZQFSS28dTMhHJ",
+        "usage": {
+          "input_tokens": 3760,
+          "output_tokens": 310,
+          "total_tokens": 4070
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00085913,
+        "attempt": 1,
+        "calls_line": 8,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "validation_failure",
+        "request_id": "call_0004",
+        "response_id": "gen-1788979008-lqlnxvHn4G56QeWeWOU7",
+        "usage": {
+          "input_tokens": 3131,
+          "output_tokens": 152,
+          "total_tokens": 3283
+        },
+        "validation_error": "ValueError: sources: stale trigger evidence; use current-checkpoint observations",
+        "validation_stage": "application"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00062039,
+        "attempt": 2,
+        "calls_line": 10,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0005",
+        "response_id": "gen-1788979013-FzFrqZDQusxy4Hlg2gP9",
+        "usage": {
+          "input_tokens": 3361,
+          "output_tokens": 119,
+          "total_tokens": 3480
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00069677,
+        "attempt": 1,
+        "calls_line": 12,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_empty_update",
+        "request_id": "call_0006",
+        "response_id": "gen-1788979018-7J4q1eIWw2oa5LNo4Gsp",
+        "usage": {
+          "input_tokens": 3895,
+          "output_tokens": 8,
+          "total_tokens": 3903
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00098383,
+        "attempt": 1,
+        "calls_line": 14,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0007",
+        "response_id": "gen-1788979020-YPD1tBaWofcpg6B8Cx9P",
+        "usage": {
+          "input_tokens": 3529,
+          "output_tokens": 31,
+          "total_tokens": 3560
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.0010824,
+        "attempt": 1,
+        "calls_line": 16,
+        "checkpoint": 4,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_operations",
+        "request_id": "call_0008",
+        "response_id": "gen-1788979023-iVztdJ4lc8Wf0IKWObb9",
+        "usage": {
+          "input_tokens": 4060,
+          "output_tokens": 375,
+          "total_tokens": 4435
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00096771,
+        "attempt": 1,
+        "calls_line": 18,
+        "checkpoint": 4,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0009",
+        "response_id": "gen-1788979035-BIiwH7gUUYEcuUZkHXGn",
+        "usage": {
+          "input_tokens": 3985,
+          "output_tokens": 30,
+          "total_tokens": 4015
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.000764,
+        "attempt": 1,
+        "calls_line": 20,
+        "checkpoint": 5,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_empty_update",
+        "request_id": "call_0010",
+        "response_id": "gen-1788979038-GrhYiZOMiuAOWkRoEEWT",
+        "usage": {
+          "input_tokens": 4336,
+          "output_tokens": 8,
+          "total_tokens": 4344
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00106348,
+        "attempt": 1,
+        "calls_line": 22,
+        "checkpoint": 5,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0011",
+        "response_id": "gen-1788979041-lwitB7IPlIZEBPDCG7QY",
+        "usage": {
+          "input_tokens": 4336,
+          "output_tokens": 31,
+          "total_tokens": 4367
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00079127,
+        "attempt": 1,
+        "calls_line": 24,
+        "checkpoint": 6,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_empty_update",
+        "request_id": "call_0012",
+        "response_id": "gen-1788979044-cZWjkp9Zs4pKfMkRQyzu",
+        "usage": {
+          "input_tokens": 4501,
+          "output_tokens": 8,
+          "total_tokens": 4509
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00115401,
+        "attempt": 1,
+        "calls_line": 26,
+        "checkpoint": 6,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0013",
+        "response_id": "gen-1788979046-Cyvt0Q2TabqyH8EajWVh",
+        "usage": {
+          "input_tokens": 4675,
+          "output_tokens": 30,
+          "total_tokens": 4705
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00081233,
+        "attempt": 1,
+        "calls_line": 28,
+        "checkpoint": 7,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_empty_update",
+        "request_id": "call_0014",
+        "response_id": "gen-1788979049-SiQMuWBpeW1Mgz1KbdOb",
+        "usage": {
+          "input_tokens": 4675,
+          "output_tokens": 8,
+          "total_tokens": 4683
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.001415,
+        "attempt": 1,
+        "calls_line": 30,
+        "checkpoint": 7,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0015",
+        "response_id": "gen-1788979053-2hA9zL52PMn6kggcHuoY",
+        "usage": {
+          "input_tokens": 5012,
+          "output_tokens": 200,
+          "total_tokens": 5212
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00084257,
+        "attempt": 1,
+        "calls_line": 32,
+        "checkpoint": 8,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": "accepted_empty_update",
+        "request_id": "call_0016",
+        "response_id": "gen-1788979061-UNB3IodZuJZmL151HHhA",
+        "usage": {
+          "input_tokens": 4883,
+          "output_tokens": 8,
+          "total_tokens": 4891
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00132511,
+        "attempt": 1,
+        "calls_line": 34,
+        "checkpoint": 8,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": "accepted_selection",
+        "request_id": "call_0017",
+        "response_id": "gen-1788979063-08wj3dbipcJRplMAyoAi",
+        "usage": {
+          "input_tokens": 5305,
+          "output_tokens": 31,
+          "total_tokens": 5336
+        },
+        "validation_error": null,
+        "validation_stage": null
+      }
+    ],
+    "checkpoints": [
+      {
+        "checkpoint": 1,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "07:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 2,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "quarantined",
+            "trigger": "unknown",
+            "version": 2
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [
+          "task_1"
+        ],
+        "receipts": [
+          {
+            "handle": "task_1",
+            "outcome": "simulator_completed"
+          }
+        ],
+        "time": "08:00",
+        "tp": 1,
+        "validated_handles": [
+          "task_1"
+        ]
+      },
+      {
+        "checkpoint": 3,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "quarantined",
+            "trigger": "unknown",
+            "version": 2
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "09:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 4,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 3
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "10:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 5,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 3
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "11:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 6,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "pending",
+            "trigger": "hidden",
+            "version": 3
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is nearly stable; final stabilization is not complete."
+          }
+        ],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "12:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 7,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "completed",
+            "trigger": "hidden",
+            "version": 3
+          }
+        },
+        "queries": [
+          {
+            "channel": "board_cobalt91320",
+            "observation": "State [board_cobalt91320]: Cooling is now fully stable."
+          }
+        ],
+        "raw_handles": [
+          "task_12",
+          "task_7"
+        ],
+        "receipts": [
+          {
+            "handle": "task_12",
+            "outcome": "simulator_completed"
+          },
+          {
+            "handle": "task_7",
+            "outcome": "simulator_completed"
+          }
+        ],
+        "time": "13:00",
+        "tp": 2,
+        "validated_handles": [
+          "task_12",
+          "task_7"
+        ]
+      },
+      {
+        "checkpoint": 8,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {
+          "i_36ff23e32fe6eeab": {
+            "action": "Register the cobalt91320 sample.",
+            "channel": null,
+            "condition": null,
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "time",
+            "version": 1
+          },
+          "i_3bda66d76486b326": {
+            "action": "Archive the cobalt91320 note.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [],
+            "status": "completed",
+            "trigger": "hidden",
+            "version": 1
+          },
+          "i_d1449d3ad46683d8": {
+            "action": "Seal the cobalt91320 case.",
+            "channel": "board_cobalt91320",
+            "condition": "Cooling is now fully stable.",
+            "dependencies": [
+              "i_36ff23e32fe6eeab"
+            ],
+            "status": "completed",
+            "trigger": "hidden",
+            "version": 3
+          }
+        },
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "14:00",
+        "tp": 0,
+        "validated_handles": []
+      }
+    ],
+    "execution_commit": "392c58f80b61252759d0eb60df98be6c16d94e47",
+    "metrics": {
+      "accepted_empty_checkpoints": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "accepted_empty_updates": 5,
+      "accepted_operations": {
+        "create": 3,
+        "revise": 2
+      },
+      "api_response_cost_usd": 0.016737,
+      "attempts": 17,
+      "completed_intentions": 3,
+      "completed_steps": 8,
+      "extraction_responses": 8,
+      "extraction_validation_failures": 0,
+      "fail_closed_checkpoints": 0,
+      "finish_reasons": {
+        "stop": 17
+      },
+      "fn": 0,
+      "fp": 0,
+      "hidden_due_opportunities": 2,
+      "hidden_hits": 2,
+      "input_tokens": 68964,
+      "interrupted_requests": 0,
+      "latency_seconds": 96.06000799889443,
+      "model_calls": 17,
+      "output_tokens": 2238,
+      "planned_steps": 8,
+      "precision": 1.0,
+      "primary_usable": true,
+      "recall": 1.0,
+      "reserved_usd": 0.26342016,
+      "retries": 1,
+      "selection_validation_failures": 1,
+      "set_f1": 1.0,
+      "successful_receipts": 3,
+      "task_executions": 3,
+      "tool_queries": 7,
+      "total_tokens": 71202,
+      "tp": 3,
+      "transport_errors": 0,
+      "unique_intentions_stored": 3,
+      "unsupported_action_proposals": 0,
+      "unsupported_action_proposals_accepted": 0,
+      "validation_failures_by_stage": {
+        "application": 1
+      },
+      "verified_billed_cost_usd": null
+    },
+    "path": "results/v2_1/deepseek-smoke-v1",
+    "unsupported_proposals": []
+  },
+  "dashboard": {
+    "inference_enabled": false,
+    "methods": [
+      "A2"
+    ],
+    "mode": "RECORDED",
+    "source_mode": "LIVE",
+    "status": "completed",
+    "trajectories": [
+      "v2_hidden_91320"
+    ]
+  },
+  "interpretation_limits": [
+    "One exposed development trajectory per revision; no A0 or B_ledger comparator.",
+    "Action-identity audit is specific to this story; it is not a general semantic validator.",
+    "Sealing dependencies omitted at checkpoint 1; known trigger fields dropped at checkpoint 2; restored at checkpoint 4.",
+    "Checkpoint 3 accepted empty update retained an unresolved sealing record; empties do not prove adequate extraction.",
+    "Score denominator differs because registration success makes dependent sealing due under unchanged scoring.",
+    "API schema acceptance observed; server enforcement of each keyword is not independently established.",
+    "API-response cost is reconciled; independently verified billing is unavailable."
+  ],
+  "preservation": {
+    "archive_sha256": "566625f24819696191b2d5b69d84a2286c9f841b9d2bf01c9b60b55494b6027b",
+    "original_run_files": 20,
+    "previous_archive_files": 24,
+    "previous_frozen_sources": 59,
+    "same_scenario_bytes": true,
+    "v21_frozen_sources": 40
+  },
+  "previous": {
+    "calls": [
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00118676,
+        "attempt": 1,
+        "calls_line": 2,
+        "checkpoint": 1,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975238-6Gw2hWqx4LlluVoFnIxT",
+        "usage": {
+          "input_tokens": 1388,
+          "output_tokens": 812,
+          "total_tokens": 2200
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00043811,
+        "attempt": 2,
+        "calls_line": 4,
+        "checkpoint": 1,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975261-ACwn0BBnziyK2YVqrhuW",
+        "usage": {
+          "input_tokens": 2233,
+          "output_tokens": 8,
+          "total_tokens": 2241
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.0005014,
+        "attempt": 1,
+        "calls_line": 6,
+        "checkpoint": 1,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975264-OuVZEqOcVIyi057iIa8u",
+        "usage": {
+          "input_tokens": 1720,
+          "output_tokens": 37,
+          "total_tokens": 1757
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00104231,
+        "attempt": 1,
+        "calls_line": 8,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975267-IRSh8m2wRDpj1NxLcprK",
+        "usage": {
+          "input_tokens": 1525,
+          "output_tokens": 812,
+          "total_tokens": 2337
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00045782,
+        "attempt": 2,
+        "calls_line": 10,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975291-UtaXZqGDKnZT5KY80nek",
+        "usage": {
+          "input_tokens": 2370,
+          "output_tokens": 8,
+          "total_tokens": 2378
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00053958,
+        "attempt": 1,
+        "calls_line": 12,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975294-6mYch4B7KPScDPQpV6Z0",
+        "usage": {
+          "input_tokens": 1998,
+          "output_tokens": 147,
+          "total_tokens": 2145
+        },
+        "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00046722,
+        "attempt": 2,
+        "calls_line": 14,
+        "checkpoint": 2,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975300-5kN2mtzUAWWqnXcgtqkg",
+        "usage": {
+          "input_tokens": 2178,
+          "output_tokens": 147,
+          "total_tokens": 2325
+        },
+        "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00107552,
+        "attempt": 1,
+        "calls_line": 16,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975307-UJ4H4Y3ANjZSR16nJvrG",
+        "usage": {
+          "input_tokens": 1712,
+          "output_tokens": 812,
+          "total_tokens": 2524
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00048239,
+        "attempt": 2,
+        "calls_line": 18,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975330-YIchadctUDW6Q1bPETGi",
+        "usage": {
+          "input_tokens": 2557,
+          "output_tokens": 8,
+          "total_tokens": 2565
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00063246,
+        "attempt": 1,
+        "calls_line": 20,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975333-sLGHESP2tVO7UfdASGni",
+        "usage": {
+          "input_tokens": 2342,
+          "output_tokens": 147,
+          "total_tokens": 2489
+        },
+        "validation_error": "ValueError: Intention is stale, canceled, unresolved or dependency-blocked",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00041554,
+        "attempt": 2,
+        "calls_line": 22,
+        "checkpoint": 3,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975339-zeT6yckD8X9MvNaFDQcJ",
+        "usage": {
+          "input_tokens": 2522,
+          "output_tokens": 37,
+          "total_tokens": 2559
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00029042,
+        "attempt": 1,
+        "calls_line": 24,
+        "checkpoint": 4,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975342-LpKNk35EVmmM00UnUvce",
+        "usage": {
+          "input_tokens": 1846,
+          "output_tokens": 8,
+          "total_tokens": 1854
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.0005899,
+        "attempt": 1,
+        "calls_line": 26,
+        "checkpoint": 4,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975344-ii2oWGYVWysGVpyDWuUx",
+        "usage": {
+          "input_tokens": 2614,
+          "output_tokens": 31,
+          "total_tokens": 2645
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00049402,
+        "attempt": 1,
+        "calls_line": 28,
+        "checkpoint": 5,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975347-wdHZHZ1rmsjvTMwzRy0z",
+        "usage": {
+          "input_tokens": 1990,
+          "output_tokens": 190,
+          "total_tokens": 2180
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00034631,
+        "attempt": 2,
+        "calls_line": 30,
+        "checkpoint": 5,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975354-XCga8pwku4JBPB7g9kp5",
+        "usage": {
+          "input_tokens": 2213,
+          "output_tokens": 8,
+          "total_tokens": 2221
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00081946,
+        "attempt": 1,
+        "calls_line": 32,
+        "checkpoint": 5,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975357-5ZlaApj8yWdpZD53KJcy",
+        "usage": {
+          "input_tokens": 2898,
+          "output_tokens": 37,
+          "total_tokens": 2935
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00032336,
+        "attempt": 1,
+        "calls_line": 34,
+        "checkpoint": 6,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975360-NvO92nLvHl3jO96Jd2Ai",
+        "usage": {
+          "input_tokens": 2128,
+          "output_tokens": 8,
+          "total_tokens": 2136
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00074002,
+        "attempt": 1,
+        "calls_line": 36,
+        "checkpoint": 6,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975362-5hJXwtZ28xRp2zgazFxV",
+        "usage": {
+          "input_tokens": 3170,
+          "output_tokens": 31,
+          "total_tokens": 3201
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00053641,
+        "attempt": 1,
+        "calls_line": 38,
+        "checkpoint": 7,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975365-sL9bRkcYH6QHwTbHVYGM",
+        "usage": {
+          "input_tokens": 2275,
+          "output_tokens": 190,
+          "total_tokens": 2465
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.0003887,
+        "attempt": 2,
+        "calls_line": 40,
+        "checkpoint": 7,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975372-DlmbrXf518rrgie1za4c",
+        "usage": {
+          "input_tokens": 2498,
+          "output_tokens": 8,
+          "total_tokens": 2506
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00082432,
+        "attempt": 1,
+        "calls_line": 42,
+        "checkpoint": 7,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975374-niFalKr1REjvdq9jsOno",
+        "usage": {
+          "input_tokens": 3460,
+          "output_tokens": 37,
+          "total_tokens": 3497
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": false,
+        "api_response_cost_usd": 0.00118784,
+        "attempt": 1,
+        "calls_line": 44,
+        "checkpoint": 8,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975378-wubj4Y3KN9cI2lR88daw",
+        "usage": {
+          "input_tokens": 2416,
+          "output_tokens": 812,
+          "total_tokens": 3228
+        },
+        "validation_error": "ValueError: Missing intention content",
+        "validation_stage": "application (historical classification)"
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00057743,
+        "attempt": 2,
+        "calls_line": 46,
+        "checkpoint": 8,
+        "finish_reason": "stop",
+        "kind": "extract",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975401-iHLoAAstiJqTpOlIlVQX",
+        "usage": {
+          "input_tokens": 3261,
+          "output_tokens": 8,
+          "total_tokens": 3269
+        },
+        "validation_error": null,
+        "validation_stage": null
+      },
+      {
+        "accepted": true,
+        "api_response_cost_usd": 0.00089938,
+        "attempt": 1,
+        "calls_line": 48,
+        "checkpoint": 8,
+        "finish_reason": "stop",
+        "kind": "select",
+        "outcome": null,
+        "request_id": null,
+        "response_id": "gen-1788975405-dBGv7PwdKjT2YKGE3XAc",
+        "usage": {
+          "input_tokens": 3738,
+          "output_tokens": 37,
+          "total_tokens": 3775
+        },
+        "validation_error": null,
+        "validation_stage": null
+      }
+    ],
+    "checkpoints": [
+      {
+        "checkpoint": 1,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "07:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 2,
+        "fn": 1,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "08:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 3,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "09:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 4,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "10:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 5,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "11:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 6,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "12:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 7,
+        "fn": 1,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "13:00",
+        "tp": 0,
+        "validated_handles": []
+      },
+      {
+        "checkpoint": 8,
+        "fn": 0,
+        "fp": 0,
+        "ledger": {},
+        "queries": [],
+        "raw_handles": [],
+        "receipts": [],
+        "time": "14:00",
+        "tp": 0,
+        "validated_handles": []
+      }
+    ],
+    "execution_commit": "a754559351ba017bb4fc00aa5e0527ea68d05572",
+    "metrics": {
+      "accepted_empty_checkpoints": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "accepted_empty_updates": 8,
+      "accepted_operations": {},
+      "api_response_cost_usd": 0.01525668,
+      "attempts": 24,
+      "completed_intentions": 0,
+      "completed_steps": 8,
+      "extraction_responses": 14,
+      "extraction_validation_failures": 6,
+      "fail_closed_checkpoints": 1,
+      "finish_reasons": {
+        "stop": 24
+      },
+      "fn": 2,
+      "fp": 0,
+      "hidden_due_opportunities": 1,
+      "hidden_hits": 0,
+      "input_tokens": 57052,
+      "interrupted_requests": 0,
+      "latency_seconds": 170.0310376259149,
+      "model_calls": 24,
+      "output_tokens": 4380,
+      "planned_steps": 8,
+      "precision": null,
+      "primary_usable": true,
+      "recall": 0.0,
+      "reserved_usd": 0.37604352,
+      "retries": 8,
+      "selection_validation_failures": 3,
+      "set_f1": 0.0,
+      "successful_receipts": 0,
+      "task_executions": 0,
+      "tool_queries": 0,
+      "total_tokens": 61432,
+      "tp": 0,
+      "transport_errors": 0,
+      "unique_intentions_stored": 0,
+      "unsupported_action_proposals": 2,
+      "unsupported_action_proposals_accepted": 0,
+      "validation_failures_by_stage": {
+        "application (historical classification)": 9
+      },
+      "verified_billed_cost_usd": null
+    },
+    "path": "results/v2/deepseek-smoke-v1",
+    "unsupported_proposals": [
+      {
+        "accepted": false,
+        "action": "Discard the cobalt91320 case",
+        "calls_line": 28,
+        "checkpoint": 5,
+        "sources": [
+          {
+            "quote": "task_5: Discard the cobalt91320 case.",
+            "ref": "m11"
+          }
+        ]
+      },
+      {
+        "accepted": false,
+        "action": "Discard the cobalt91320 case",
+        "calls_line": 38,
+        "checkpoint": 7,
+        "sources": [
+          {
+            "quote": "task_5: Discard the cobalt91320 case",
+            "ref": "m15"
+          }
+        ]
+      }
+    ]
+  }
+}

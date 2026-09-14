@@ -4,7 +4,9 @@ Bagdat Beimzhan / Беймжан Багдат, Grade 10 · Daryn, 9 September 20
 
 Kiodai tests whether one fixed prospective-memory instruction changes timely action selection by the same language model. **One genuine frozen pilot completed on 8 September 2026: both A0 and A1 scored TP=5, FP=0, FN=0, Set-F1=1.00. No accuracy benefit was observed.** This is one development scenario, not evidence of general equivalence or superiority. The 16 saved model responses report $0.00765034 total cost; verified billed cost is unavailable. MOCK remains software validation only. See `RESULTS.md`.
 
-The first result remains separately archived with hashes in `research/pilot1_preservation_v1.json`. A broader **prepared, not-run** evaluation is frozen in [FOLLOWUP_EVALUATION.md](FOLLOWUP_EVALUATION.md); [COVERAGE.md](COVERAGE.md) distinguishes actual live coverage from mock demonstrations. Its offline check is `python3 scripts/run_followup.py --preflight`. The proposed new ceiling is $0.70, with a $0.63708409 conservative allowance; the original pilot authorization does not cover it. Follow-up results must use `results/followup_v1/` and `FOLLOWUP_RESULTS.md`, never replace or pool with `RESULTS.md`.
+The separately authorized **follow-up completed on 9 September 2026**: one full three-day, 20-step paired trajectory; both A0 and A1 scored TP=11, FP=0, FN=1, Set-F1=0.956522. Both missed the hidden cooling event and completed two cross-day intentions. No accuracy improvement was observed; A1 used 9,800 more input tokens. All 41 saved API responses report $0.03047594 total; independently verified billing is unavailable. See [FOLLOWUP_RESULTS.md](FOLLOWUP_RESULTS.md). The follow-up was planned after the first pilot and overlaps its Monday portion; results are kept separate. Experimental development is finished.
+
+The first result remains separately archived with hashes in `research/pilot1_preservation_v1.json`. [FOLLOWUP_EVALUATION.md](FOLLOWUP_EVALUATION.md) and [COVERAGE.md](COVERAGE.md) are unchanged **pre-run historical records**, not current execution status. The executed protocol snapshot and cumulative ledger are in `results/followup_v1/`. No additional run is authorized by these reproduction notes.
 
 ## Run the local demo
 
@@ -16,6 +18,8 @@ python3 -m research_harness.dashboard
 ```
 
 Open [the local demo](http://127.0.0.1:8765). Choose a scenario, leave mode **MOCK**, click **Start run**, then **Advance timeline**. Inspect both agents, reveal the evaluator for a completed step, and export the saved pair. Reset preserves an interrupted pair instead of deleting it. Six educational demos cover time, an exact event, cancellation, rescheduling, completion, and a hidden teacher-feed condition.
+
+To replay the completed follow-up, run `python3 -m research_harness.dashboard --output-root results/followup_v1 --port 8766`, open http://127.0.0.1:8766, choose **RECORDED** → **frozen-development-v1 · live-pair-bdf241965f35** → **Start run**. The existing interface reads saved LIVE artifacts; it makes no inference calls.
 
 For the genuine result, choose **RECORDED**, select **first-development-day-pilot-v1 · live-pair-42433e00474b**, and click **Start run**. Advance through the saved steps without making model calls. The pair is stored under `results/kiodai/live-pair-42433e00474b`. The interface is a thin wrapper over the same `RunSession`/`Pair` used by the CLI. The protected upstream human-evaluation UI is preserved separately in `webapp/frontend`; it does not run this paired harness.
 
@@ -30,11 +34,10 @@ bash scripts/run_smoke_test.sh
 python3 scripts/run_paired.py --suite demo --scenario all
 python3 scripts/run_paired.py --suite pilot
 python3 scripts/analyze_results.py --root results/kiodai --mode MOCK --output MOCK_RESULTS.md
-python3 scripts/analyze_results.py --root results/kiodai --mode LIVE --output RESULTS.md
-python3 artifacts/verification/analyze_live_pilot_20260908.py
+python3 scripts/analyze_followup_saved.py
 ```
 
-For the same checks with output saved to `artifacts/verification/`, run `python3 scripts/verify_local.py`. With the default offline server running, `python3 scripts/exercise_demo.py` also exercises the HTTP API and saves a sample export; it resets the current demo session.
+Final verification outputs are in `artifacts/verification/followup-live-20260909/`. The historical `verify_local.py` regenerates old reports and should not be used to overwrite the preserved first-pilot materials. The submission evidence and recorded exports are already saved.
 
 `--suite pilot` in default MOCK mode returns scripted empty actions for both conditions. It checks the experiment machinery; it does not manufacture a prompt benefit. The educational demo suite uses identical visible-input scripts for both conditions. Existing protected scoring semantics are unchanged. Zero-denominator precision/recall/Set-F1 are `unavailable` (`n/a` in the upstream formatter).
 
@@ -63,7 +66,6 @@ The completed pilot used the following existing command (default repeat count 1)
 
 ```bash
 python3 scripts/run_paired.py --suite pilot --live --budget-usd 0.30
-python3 scripts/analyze_results.py --root results/kiodai --mode LIVE --output RESULTS.md
 ```
 
 This exact command performs a free route/price/parameter check before inference. It stops if credentials, the pinned route, price support, or budget are missing. It cannot silently change providers or substitute a mock answer. The budget is shared across repeats in one CLI invocation, but resets in a later invocation. That reset does not renew the user's total authorization: inspect prior costs and uncertain attempts first. The one authorized repeat is now complete; unused budget does not authorize extra repetitions. The server shares one budget across its lifetime. Provider-side accounting is not under perfect client control.

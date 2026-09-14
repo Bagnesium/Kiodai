@@ -1,0 +1,111 @@
+{
+  "i_c80cc5936d3d44ab": {
+    "action": "Register the saffron91331 sample.",
+    "attempt_id": "exec_4a27b302582842093502",
+    "channel": null,
+    "condition": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+    "dependencies": [],
+    "evidence": {
+      "action": [
+        {
+          "quote": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [],
+      "trigger": [
+        {
+          "quote": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_c80cc5936d3d44ab",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_4a27b302582842093502",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "time",
+    "update_evidence": [
+      {
+        "quote": "At 11:00 on DayTwo, Register the saffron91331 sample.",
+        "ref": "m1"
+      }
+    ],
+    "version": 1,
+    "when": "DayTwo 11:00"
+  },
+  "i_d37d3e25f3280c7d": {
+    "action": "Seal the saffron91331 case.",
+    "attempt_id": "exec_b767eaf3cae968264e54",
+    "channel": null,
+    "condition": "saffron91331 cabinet clicks",
+    "dependencies": [
+      "i_c80cc5936d3d44ab"
+    ],
+    "evidence": {
+      "action": [
+        {
+          "quote": "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case.",
+          "ref": "m1"
+        }
+      ],
+      "channel": [],
+      "condition": [
+        {
+          "quote": "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case.",
+          "ref": "m1"
+        }
+      ],
+      "dependencies": [
+        {
+          "quote": "Seal the saffron91331 case. Only after \"Register the saffron91331 sample.\" succeeds.",
+          "ref": "m1"
+        }
+      ],
+      "trigger": [
+        {
+          "quote": "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case.",
+          "ref": "m1"
+        }
+      ],
+      "when": [
+        {
+          "quote": "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case.",
+          "ref": "m1"
+        }
+      ]
+    },
+    "id": "i_d37d3e25f3280c7d",
+    "last_query": null,
+    "receipt": {
+      "execution_id": "exec_b767eaf3cae968264e54",
+      "outcome": "success"
+    },
+    "status": "completed",
+    "trigger": "event",
+    "update_evidence": [
+      {
+        "quote": "On DayTwo when you see \"saffron91331 cabinet clicks\", Seal the saffron91331 case.",
+        "ref": "m1"
+      }
+    ],
+    "version": 2,
+    "when": "DayTwo"
+  }
+}

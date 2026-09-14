@@ -1,0 +1,7 @@
+{
+  "full_check_exit_code": 2,
+  "preserved_original_prompt_trailing_whitespace_warnings": 36,
+  "all_warnings_in_original_hash_verified_recording": true,
+  "authored_documentation_and_posthoc_artifacts_check_exit_code": 0,
+  "decision": "Preserve original prompt bytes exactly; do not normalize experimental evidence."
+}
