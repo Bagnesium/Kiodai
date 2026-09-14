@@ -1,0 +1,48 @@
+{
+  "version": "v2.0",
+  "model": {
+    "provider": "openrouter",
+    "route": "novita",
+    "quantizations": [
+      "fp8"
+    ],
+    "allow_route_fallbacks": false,
+    "require_parameters": true,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    },
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "model_id": "deepseek/deepseek-chat-v3.1",
+    "pricing_usd_per_million_tokens": {
+      "input": 0.27,
+      "output": 1.0
+    }
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 20260904
+  },
+  "output_tokens": {
+    "extract": 3072,
+    "select": 1536,
+    "baseline": 256
+  },
+  "max_request_bytes": 48000,
+  "timeout_seconds": 120,
+  "max_validation_retries": 1,
+  "transport_retries": 0,
+  "max_queries_per_step": 1,
+  "methods": [
+    "A0",
+    "B_ledger",
+    "A2"
+  ],
+  "repetitions": 1,
+  "order": "trajectory catalog order, cyclic method order by trajectory index",
+  "context": "full history",
+  "heartbeat": false,
+  "cap_usd": 20.0
+}
