@@ -1,0 +1,28 @@
+{
+  "Kiodai_Daryn_2026": {
+    "pages": 16,
+    "docx_pdf_text_mismatches": 0,
+    "editable_tables": 7,
+    "editable_equations": 3,
+    "figures": 3,
+    "toc_entries_verified": 23,
+    "abstract_word_counts": {
+      "Аңдатпа": 146,
+      "Аннотация": 144,
+      "Abstract": 153
+    },
+    "conclusion_pages": 1,
+    "introduction_pages": 1,
+    "research_page_span": [
+      4,
+      14
+    ]
+  },
+  "Kiodai_Evidence_and_Verification": {
+    "pages": 5,
+    "docx_pdf_text_mismatches": 0,
+    "editable_tables": 0,
+    "editable_equations": 0,
+    "figures": 0
+  }
+}
