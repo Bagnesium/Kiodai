@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-12",
+  "main_document_pages": 16,
+  "evidence_note_pages": 5,
+  "main_visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "status": "all rendered pages visually inspected; no remaining clipping, overlap, missing glyphs or broken table words",
+    "render_folder": "tmp/daryn_qa/release_final"
+  },
+  "note_visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "all note_v4 pages visually inspected; release_note pages verified pixel-identical",
+    "render_folder": "tmp/daryn_qa/release_note"
+  },
+  "content_and_navigation": {
+    "Kiodai_Daryn_2026": {
+      "pages": 16,
+      "docx_pdf_text_mismatches": 0,
+      "editable_tables": 7,
+      "editable_equations": 3,
+      "figures": 3,
+      "toc_entries_verified": 23,
+      "abstract_word_counts": {
+        "Аңдатпа": 146,
+        "Аннотация": 144,
+        "Abstract": 153
+      },
+      "conclusion_pages": 1,
+      "introduction_pages": 1,
+      "research_page_span": [
+        4,
+        14
+      ]
+    },
+    "Kiodai_Evidence_and_Verification": {
+      "pages": 5,
+      "docx_pdf_text_mismatches": 0,
+      "editable_tables": 0,
+      "editable_equations": 0,
+      "figures": 0
+    }
+  },
+  "scientific_checks": {
+    "official_scores_replayed": 36,
+    "due_checkpoints_replayed": 288,
+    "model_calls_audited": 602,
+    "frozen_file_hashes": 59,
+    "original_run_file_hashes": 445,
+    "preparation_file_hashes": 442,
+    "provenance_file_hashes": 65,
+    "historical_pilots": "both A0/A1 studies replayed separately",
+    "obligation_discrepancy": "resolved by 3 evaluator cancellations; A0 dependency-blocked 0 independently recalculated",
+    "causal_or_significance_claims": "not asserted; no new intervention performed"
+  },
+  "local_checks": {
+    "protected_files_verified": 164,
+    "unit_tests_passed": 162,
+    "compileall": "research_harness scripts tests passed",
+    "mock_smoke": "passed; see verification/mock_smoke.log",
+    "logs": "verification/"
+  },
+  "chart_checks": {
+    "data": "data/method_summary.csv",
+    "f1_axis": [
+      0,
+      1
+    ],
+    "cost_axis_usd": [
+      0,
+      0.25
+    ],
+    "uncertainty_bars": false,
+    "embedded_docx_images": "all 3 match supplied PNG hashes"
+  },
+  "paid_inference_calls_during_authoring": 0,
+  "evaluated_code_or_evidence_modified": false,
+  "remaining_submission_items": [
+    "Signed supervisor review not supplied",
+    "Turnitin report not supplied",
+    "Author should confirm personal contribution wording",
+    "Independent Kazakh language review desirable; not performed"
+  ],
+  "claim_limitations": [
+    "One model configuration",
+    "Exposed development scenarios; one smoke overlap",
+    "Four template families",
+    "One run per method-trajectory",
+    "Unequal compute",
+    "AI-assisted semantic review without independent human annotation",
+    "No independent billed invoice or server-parameter execution verification"
+  ],
+  "archive_sha256": "942fb127adb110c69ec8a0a74d6100cca2059b13c91cd450b190fd0b19931499"
+}
