@@ -1,0 +1,164 @@
+{
+  "scenario_name": "independent_lab_smoke_v1",
+  "time_visible_by_default": true,
+  "state_visibility": {
+    "clock": true,
+    "instrument_feed": false
+  },
+  "state_channels": {
+    "clock": {"mode": "snapshot"},
+    "instrument_feed": {"mode": "delta"}
+  },
+  "days": [
+    {
+      "name": "LabDay",
+      "start_instructions": [
+        "Today's independent lab checks:",
+        "- Seal the amber vial when the centrifuge chime sounds.",
+        "- Label the sealed vial when the labeling station opens, but only after sealing it.",
+        "- Record the freezer reading at 09:00.",
+        "- Discard the scratch readout when the discard flag appears.",
+        "- Send the calibration note when the instrument feed reports the green signal."
+      ],
+      "tasks": [
+        {
+          "id": "lab_seal_amber",
+          "label": "Seal the amber vial when the centrifuge chime sounds",
+          "type": "event",
+          "cue_id": "lab_centrifuge_chime",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Seal the amber vial."
+        },
+        {
+          "id": "lab_label_amber",
+          "label": "Label the sealed vial when the labeling station opens",
+          "type": "event",
+          "cue_id": "lab_label_station_open",
+          "depends_on": "lab_seal_amber",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Label the sealed amber vial."
+        },
+        {
+          "id": "lab_freezer_log",
+          "label": "Record the freezer reading at 09:00",
+          "type": "time",
+          "target_time": "09:00",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Record the freezer reading."
+        },
+        {
+          "id": "lab_discard_readout",
+          "label": "Discard the scratch readout when the discard flag appears",
+          "type": "event",
+          "cue_id": "lab_discard_flag",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Discard the scratch readout."
+        },
+        {
+          "id": "lab_send_calibration",
+          "label": "Send the calibration note when the instrument feed reports the green signal",
+          "type": "event",
+          "cue_id": "lab_sensor_green_v1",
+          "cue_channel": "instrument_feed",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Send the calibration note."
+        }
+      ],
+      "lures": [
+        {"id": "lab_polish_tongs", "action_text": "Polish the sample tongs."},
+        {"id": "lab_sort_caps", "action_text": "Sort spare vial caps."},
+        {"id": "lab_water_fern", "action_text": "Water the laboratory fern."},
+        {"id": "lab_count_pipettes", "action_text": "Count the spare pipettes."},
+        {"id": "lab_fold_wipes", "action_text": "Fold the bench wipes."},
+        {"id": "lab_check_coat", "action_text": "Check the coat pocket."},
+        {"id": "lab_move_stool", "action_text": "Move the empty stool."},
+        {"id": "lab_read_poster", "action_text": "Read the safety poster."},
+        {"id": "lab_sharpen_pencil", "action_text": "Sharpen a pencil."},
+        {"id": "lab_align_notebooks", "action_text": "Align the unused notebooks."}
+      ],
+      "steps": [
+        {
+          "id": "lab_s1",
+          "time": "08:00",
+          "text": "You arrange blank labels beside the spectrometer.",
+          "options": ["A) Align the tray", "B) Close the drawer", "C) Check the lamp"],
+          "cues": [],
+          "updates": []
+        },
+        {
+          "id": "lab_s2",
+          "time": "08:30",
+          "text": "The supervisor cancels the scratch-readout disposal, moves the freezer reading to 10:00, and says only the revised blue-panel signal should trigger the calibration note.",
+          "options": ["A) Acknowledge", "B) Mark the worksheet", "C) Return to the bench"],
+          "cues": ["lab_update_notice"],
+          "updates": [
+            {"task_id": "lab_discard_readout", "action": "cancel", "cue_id": "lab_update_notice"},
+            {
+              "task_id": "lab_freezer_log",
+              "action": "reschedule",
+              "new_target_time": "10:00",
+              "new_label": "Record the freezer reading at 10:00",
+              "new_action_text": "Record the freezer reading.",
+              "cue_id": "lab_update_notice"
+            },
+            {
+              "task_id": "lab_send_calibration",
+              "action": "override",
+              "new_cue_id": "lab_sensor_blue_v2",
+              "new_label": "Send the calibration note when the blue-panel signal appears",
+              "new_action_text": "Send the revised calibration note.",
+              "cue_id": "lab_update_notice"
+            }
+          ]
+        },
+        {
+          "id": "lab_s3",
+          "time": "09:00",
+          "text": "The centrifuge chime sounds. An obsolete green indicator also flashes, and the canceled discard flag is visible.",
+          "options": ["A) Stop the rotor", "B) Read the gauge", "C) Move the rack"],
+          "cues": ["lab_centrifuge_chime", "lab_discard_flag", "lab_sensor_green_v1"],
+          "state_events": {
+            "instrument_feed": [
+              {"id": "lab_sensor_green_v1", "text": "The obsolete green signal flashes."}
+            ]
+          },
+          "updates": []
+        },
+        {
+          "id": "lab_s4",
+          "time": "09:30",
+          "text": "The labeling station opens for the sealed vial.",
+          "options": ["A) Lift the shield", "B) Load the printer", "C) Clean the mat"],
+          "cues": ["lab_label_station_open"],
+          "updates": []
+        },
+        {
+          "id": "lab_s5",
+          "time": "10:00",
+          "text": "You continue documenting the batch while the instrument runs quietly.",
+          "options": ["A) File the sheet", "B) Check the seals", "C) Refill the rack"],
+          "cues": ["lab_sensor_blue_v2"],
+          "state_events": {
+            "instrument_feed": [
+              {"id": "lab_sensor_blue_v2", "text": "The revised blue-panel signal is active."}
+            ]
+          },
+          "updates": []
+        },
+        {
+          "id": "lab_s6",
+          "time": "10:30",
+          "text": "The batch rests while you prepare the handoff note.",
+          "options": ["A) Cap the marker", "B) Stack the trays", "C) Sign the cover sheet"],
+          "cues": [],
+          "updates": []
+        }
+      ]
+    }
+  ]
+}
