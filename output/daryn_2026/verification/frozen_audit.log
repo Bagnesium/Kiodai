@@ -1,0 +1,115 @@
+{
+  "audit_date": "2026-09-12",
+  "execution_commit": "cd0ce89e10d036918d1af06e5f5f2140930a0981",
+  "candidate_commit": "959db38dac8b68f63ecf79420dcd53bea2278cf2",
+  "manifest_sha256": "bfaf52df48553e35978f39f406fd5eb3d78c918a5ac2713a0a169746f23036d5",
+  "checks": {
+    "frozen": {
+      "files": 59,
+      "mismatches": []
+    },
+    "raw": {
+      "files": 445,
+      "mismatches": []
+    },
+    "preparation": {
+      "files": 442,
+      "mismatches": []
+    },
+    "provenance": {
+      "files": 65,
+      "mismatches": []
+    },
+    "archive_sha256": "942fb127adb110c69ec8a0a74d6100cca2059b13c91cd450b190fd0b19931499",
+    "evaluated_code_matches": [
+      "kiodai_v2/agent.py",
+      "kiodai_v2/store.py",
+      "kiodai_v2/runner.py",
+      "kiodai_v2/report.py",
+      "sim/pm_bench.py",
+      "research_harness/runner.py",
+      "scripts/report_v21_comparison.py",
+      "prompts/v2_1/extract.txt",
+      "prompts/v2_1/select.txt",
+      "prompts/baseline_system.txt"
+    ],
+    "checkpoints": 288,
+    "method_trajectories": 36
+  },
+  "totals": {
+    "A0": {
+      "tp": 22,
+      "fp": 6,
+      "fn": 2,
+      "model_calls": 117,
+      "input_tokens": 177855,
+      "output_tokens": 3175,
+      "board_queries": 15,
+      "executions": 28,
+      "successful_receipts": 22,
+      "selection_validation_failures": 2,
+      "total_instructed_obligations": 27,
+      "unique_obligations_ever_due": 24,
+      "unique_obligations_blocked_at_trigger": 0,
+      "completed_obligations": 22,
+      "unfinished_including_canceled": 5,
+      "unfinished_not_canceled": 2,
+      "canceled_obligations": 3,
+      "query_supported_successes": 6,
+      "mean_trajectory_set_f1": 0.8642857142857143,
+      "micro_set_f1": 0.8461538461538461,
+      "api_cost_usd": "0.04047361"
+    },
+    "B_ledger": {
+      "tp": 18,
+      "fp": 4,
+      "fn": 3,
+      "model_calls": 251,
+      "input_tokens": 910740,
+      "output_tokens": 44534,
+      "board_queries": 8,
+      "executions": 22,
+      "successful_receipts": 18,
+      "selection_validation_failures": 24,
+      "total_instructed_obligations": 27,
+      "unique_obligations_ever_due": 21,
+      "unique_obligations_blocked_at_trigger": 3,
+      "completed_obligations": 18,
+      "unfinished_including_canceled": 9,
+      "unfinished_not_canceled": 6,
+      "canceled_obligations": 3,
+      "query_supported_successes": 4,
+      "mean_trajectory_set_f1": 0.8111111111111112,
+      "micro_set_f1": 0.8372093023255814,
+      "api_cost_usd": "0.21212084"
+    },
+    "A2": {
+      "tp": 12,
+      "fp": 5,
+      "fn": 7,
+      "model_calls": 234,
+      "input_tokens": 843540,
+      "output_tokens": 42889,
+      "board_queries": 18,
+      "executions": 17,
+      "successful_receipts": 12,
+      "selection_validation_failures": 15,
+      "total_instructed_obligations": 27,
+      "unique_obligations_ever_due": 19,
+      "unique_obligations_blocked_at_trigger": 5,
+      "completed_obligations": 12,
+      "unfinished_including_canceled": 15,
+      "unfinished_not_canceled": 12,
+      "canceled_obligations": 3,
+      "query_supported_successes": 3,
+      "mean_trajectory_set_f1": 0.48055555555555557,
+      "micro_set_f1": 0.6666666666666666,
+      "api_cost_usd": "0.19870816"
+    }
+  },
+  "mean_paired_contrasts": {
+    "B_ledger": -0.33055555555555555,
+    "A0": -0.3837301587301587
+  },
+  "a2_to_a0_api_cost_ratio": "4.909573423275067383413537858"
+}
