@@ -1,0 +1,744 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ckaw51",
+    "id": "ckaw51",
+    "slide": 2,
+    "layoutId": "b8ccb44d-5843-4764-97cf-540112f08690",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8F9F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b8ccb44d-5843-4764-97cf-540112f08690",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a482ef70-76be-4328-a8c9-38535fd5a95e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9032xkf",
+      "id": "1",
+      "bbox": [
+        64,
+        43,
+        1152,
+        117
+      ],
+      "geometry": "rect",
+      "text": "Исследовательский вопрос и гипотеза",
+      "textPreview": "Исследовательский вопрос и гипотеза",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Исследовательский вопрос и гипотеза"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Исследовательский вопрос и гипотеза",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Исследовательский вопрос и гипотеза",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cb2xc3q",
+      "id": "2",
+      "bbox": [
+        64,
+        657,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bil4725",
+      "id": "3",
+      "bbox": [
+        64,
+        672,
+        1070,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Источники: статья, § 1–2; PM-Bench (2026); PIS (2026)",
+      "textPreview": "Источники: статья, § 1–2; PM-Bench (2026); PIS (2026)",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Источники: статья, § 1–2; PM-Bench (2026); PIS (2026)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Источники: статья, § 1–2; PM-Bench (2026); PIS (2026)",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Источники: статья, § 1–2; PM-Bench (2026); PIS (2026)",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/netkzmlw",
+      "id": "4",
+      "bbox": [
+        1140,
+        669,
+        76,
+        31
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mdk36hkb",
+      "id": "5",
+      "bbox": [
+        64,
+        184,
+        535,
+        46
+      ],
+      "geometry": "rect",
+      "text": "Вспомнить поручение",
+      "textPreview": "Вспомнить поручение",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 34,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Вспомнить поручение"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Вспомнить поручение",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Вспомнить поручение",
+              "fontSize": 34,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gb21c32",
+      "id": "6",
+      "bbox": [
+        665,
+        184,
+        550,
+        46
+      ],
+      "geometry": "rect",
+      "text": "Выполнить его вовремя",
+      "textPreview": "Выполнить его вовремя",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 34,
+        "typeface": "Arial",
+        "color": "#368276",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Выполнить его вовремя"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Выполнить его вовремя",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Arial",
+            "color": "#368276",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Выполнить его вовремя",
+              "fontSize": 34,
+              "typeface": "Arial",
+              "color": "#368276",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/of2l872h",
+      "id": "7",
+      "bbox": [
+        64,
+        250,
+        1152,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D5DEDF",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2tk3mls",
+      "id": "8",
+      "bbox": [
+        64,
+        290,
+        1152,
+        150
+      ],
+      "geometry": "rect",
+      "text": "Помогает ли явная поддержка намерений\nдействовать вовремя по сравнению с тем же\nагентом без такой поддержки?",
+      "textPreview": "Помогает ли явная поддержка намерений | действовать вовремя по сравнению с тем же | агентом без такой поддержки?",
+      "resolvedFontSize": 37,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 37,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Помогает ли явная поддержка намерений"
+          },
+          {
+            "index": 2,
+            "text": "действовать вовремя по сравнению с тем же"
+          },
+          {
+            "index": 3,
+            "text": "агентом без такой поддержки?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Помогает ли явная поддержка намерений",
+          "resolvedTextStyle": {
+            "fontSize": 37,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Помогает ли явная поддержка намерений",
+              "fontSize": 37,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "действовать вовремя по сравнению с тем же",
+          "resolvedTextStyle": {
+            "fontSize": 37,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "действовать вовремя по сравнению с тем же",
+              "fontSize": 37,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "агентом без такой поддержки?",
+          "resolvedTextStyle": {
+            "fontSize": 37,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "агентом без такой поддержки?",
+              "fontSize": 37,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahk3ahkn",
+      "id": "9",
+      "bbox": [
+        64,
+        469,
+        1130,
+        84
+      ],
+      "geometry": "rect",
+      "text": "Гипотеза: условия, действия и состояния\nв явном виде повысят качество.",
+      "textPreview": "Гипотеза: условия, действия и состояния | в явном виде повысят качество.",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 32,
+        "typeface": "Arial",
+        "color": "#172B36",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Гипотеза: условия, действия и состояния"
+          },
+          {
+            "index": 2,
+            "text": "в явном виде повысят качество."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Гипотеза: условия, действия и состояния",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Гипотеза: условия, действия и состояния",
+              "fontSize": 32,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "в явном виде повысят качество.",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Arial",
+            "color": "#172B36",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "в явном виде повысят качество.",
+              "fontSize": 32,
+              "typeface": "Arial",
+              "color": "#172B36",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87uh0na9",
+      "id": "10",
+      "bbox": [
+        64,
+        582,
+        1150,
+        57
+      ],
+      "geometry": "rect",
+      "text": "Структурированное хранение уже исследуется в PIS.\nСама идея хранения не заявляется как новая.",
+      "textPreview": "Структурированное хранение уже исследуется в PIS. | Сама идея хранения не заявляется как новая.",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Arial",
+        "color": "#52656C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Структурированное хранение уже исследуется в PIS."
+          },
+          {
+            "index": 2,
+            "text": "Сама идея хранения не заявляется как новая."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Структурированное хранение уже исследуется в PIS.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Структурированное хранение уже исследуется в PIS.",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Сама идея хранения не заявляется как новая.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#52656C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Сама идея хранения не заявляется как новая.",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#52656C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
